@@ -1,0 +1,40 @@
+name: StoreLoop tests and builds
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: project
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.13.3'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22.12.0'
+          cache: npm
+          cache-dependency-path: project/package-lock.json
+      - name: Prepare isolated local configuration
+        run: python3 scripts/local_runtime.py prepare
+      - name: Install frozen dependencies
+        run: |
+          python3 -m venv server/.venv
+          python3 -m venv ai-service/.venv
+          server/.venv/bin/python -m pip install -r server/requirements.lock
+          ai-service/.venv/bin/python -m pip install -r ai-service/requirements.lock
+          npm ci --ignore-scripts --no-audit --no-fund
+      - name: Test backend, AI contract, and process ownership
+        run: |
+          server/.venv/bin/python -m pytest server/tests -q --tb=short -m 'not postgres and not real_ai'
+          ai-service/.venv/bin/python -m pytest ai-service/tests -q --tb=short -m 'not real_ai'
+          python3 -m unittest discover -s tests/runtime -p 'test_*.py'
+      - name: Test and build all concepts
+        run: |
+          npm run test:client
+          npm run test --workspaces --if-present
+          npm run test:ui --workspaces --if-present
+          npm run build

@@ -1,0 +1,337 @@
+{
+  "manifest_version": "1.0",
+  "seed_version": "storeloop-demo-v1",
+  "images": [
+    {
+      "image_id": "beverage-after-01",
+      "path": "assets/shelves/beverage-after-01.png",
+      "sha256": "48e58986409fd98419ed59aacced93a4b5f72cbe0df941b640fd1e81c7f38f19",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 2127066,
+      "category_code": "beverage",
+      "purpose": "submission_after",
+      "source_kind": "ai_generated_demo",
+      "generation_prompt": "용도: precise-object-edit. 자산: StoreLoop beverage-after-01, 제출 사진의 개선 후 기록. 입력 이미지1은 편집 대상 beverage-before-01이다. 이 이미지의 카메라 위치·정면 구도·3단 흰 선반·조명·벽 구멍·전체 프레임·사진 비율·상품 포장 종류/색·생수/탄산수/차 라벨과 위치를 그대로 유지한다. 다음 정리만 바꾼다: 중간 선반 중앙의 넓은 빈 공간을 기존과 동일한 탄산수 캔으로 채우고, 중간 녹색/은색 캔 앞줄을 선반 앞 가장자리에 일정한 간격과 같은 깊이로 맞춘다. 위칸에서 뒤로 물러난 생수병도 같은 종류의 앞줄과 맞춰 당겨 페이싱을 고르게 한다. 아래 차 음료는 그대로 둔다. 제품군은 원래 선반별 구분을 유지한다. 수량 변화가 필요한 중간 빈칸 보충 외에는 새 유형의 제품을 추가하지 않는다. 같은 매대의 실제 정리 전후처럼 보이는 자연스러운 사진이어야 한다. 다른 사진으로 재구성·카메라 이동·선반 높이 변경·과도한 미화·새 장식·사람·상표·워터마크·After 글자·설명·화살표·UI를 넣지 않는다. 정확한 재고 수량이나 개선 점수를 이미지에 쓰지 않는다.",
+      "reference_image_id": "beverage-before-01",
+      "guideline_rule_keys": [
+        "label_visibility",
+        "facing",
+        "shelf_gap",
+        "category_grouping"
+      ],
+      "reference_codes": [],
+      "submission_codes": [
+        "beverage-after-01"
+      ],
+      "observed_features": [
+        "개선 전과 흰 3단 선반, 뒷판 구멍, 정면 구도, 생수·탄산수·차 라벨 위치가 유지된다.",
+        "개선 전 중간 선반 중앙의 큰 빈 공간에 캔이 채워져 있으며 앞줄이 이어진다.",
+        "위칸 생수병과 중간 캔의 앞줄 높이·앞뒤 위치가 이전보다 고르게 보인다."
+      ],
+      "review_status": "approved",
+      "reviewer": "demo-images/product_design",
+      "reviewed_at": "2026-09-21T09:01:02Z",
+      "review_notes": "beverage-before-01을 직접 연 후 image_gen 편집 입력으로 사용했다. 카메라·선반·라벨 구도와 지정 개선을 시각 대조했다. 합성 편집의 미세 포장/수량 변화는 재고 정확성 또는 점수 정답으로 사용하지 않는다. 자체 시각 검수 approved이며 독립 Golden Case 검수 전에는 golden_approved가 아니다."
+    },
+    {
+      "image_id": "beverage-before-01",
+      "path": "assets/shelves/beverage-before-01.png",
+      "sha256": "8e72ae4f11c60a58b8ab0b0fb03e307082945bac56aa44c28d60a7983b61c3b7",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 2304719,
+      "category_code": "beverage",
+      "purpose": "submission_before",
+      "source_kind": "ai_generated_demo",
+      "generation_prompt": "용도: photorealistic-natural. 자산: StoreLoop AI 생성 시연 이미지 beverage-before-01, 음료 매대 평가용 개선 전 사진. 정사각형 1024×1024 자연스러운 현장 기록사진 한 장을 만든다. 독립된 가상 편의점의 흰 금속 냉장 진열대 3단을 정면 눈높이에서 전체 촬영한다. 선반 위치·벽면·카메라 구도가 향후 개선 후 편집의 기준이므로 단순하고 똑바른 구도다. 위칸에는 파란 뚜껑의 생수병, 중간칸에는 녹색 캔과 은색 캔의 탄산수, 아래칸에는 갈색 차 음료병. 포장은 상표 없는 가상의 단순 색상·기하무늬다. 중간 선반의 왼쪽 중앙에는 캔 약 세 개 폭의 빈 간격을 명확히 만들고, 오른쪽 중앙의 캔 두세 개는 앞줄보다 10cm 뒤에 놓아 페이싱이 들쭉날쭉하게 보이게 한다. 위칸의 일부 생수병도 뒤로 밀려 앞줄이 고르지 않다. 빈 곳은 선반 바닥이 실제로 보여야 한다. 아래 차 음료 줄은 비교적 정돈되어 있다. 제품 범주는 선반별로 유지하며 범주 라벨은 위부터 정확하게 '생수', '탄산수', '차'라고 큼직하게 적어 모두 보이게 한다. 밝고 중립적인 매장 조명·현실적인 병/캔 반사. 개선점을 과장한 쓰레기나 파손은 없다. 사람·손·얼굴·개인정보·실제 상표·워터마크·화살표·동그라미·평가 점수·Before 글자·UI·콜라주는 넣지 않는다. Reference 사진을 복제하지 말고 별개의 매대 사진으로 만든다.",
+      "reference_image_id": null,
+      "guideline_rule_keys": [
+        "label_visibility",
+        "facing",
+        "shelf_gap",
+        "category_grouping"
+      ],
+      "reference_codes": [],
+      "submission_codes": [
+        "beverage-before-01"
+      ],
+      "observed_features": [
+        "중간 선반의 녹색 캔과 은색 캔 사이에 선반 바닥이 넓게 드러나는 빈 공간이 있다.",
+        "중간 오른쪽 은색 캔과 위칸 일부 생수병의 앞뒤 위치가 고르지 않다.",
+        "생수·탄산수·차 범주 라벨은 읽히며 제품군은 선반별로 구분된다."
+      ],
+      "review_status": "golden_approved",
+      "reviewer": "root (independent reviewer)",
+      "reviewed_at": "2026-09-21T09:15:24.104371+00:00",
+      "review_notes": "Reference와 별도 신규 생성한 평가용 사진이다. 빈 공간과 앞뒤 위치 차이를 직접 확인했다. 프롬프트의 10cm 수치는 사진에서 측정할 수 없어 관찰사실에서 제외했다. 자체 시각 검수 approved이며 독립 Golden Case 검수 전에는 golden_approved가 아니다. 독립 육안 검수: 중간 선반의 초록 캔과 은색 캔 사이에 넓은 공백, 윗줄 일부 병이 뒤로 들어감."
+    },
+    {
+      "image_id": "beverage-reference-01",
+      "path": "assets/shelves/beverage-reference-01.png",
+      "sha256": "a96648449ff2fc1d5266965669cd44ee051539d6db565795e8c2587d0550f986",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 2298206,
+      "category_code": "beverage",
+      "purpose": "reference",
+      "source_kind": "ai_generated_demo",
+      "generation_prompt": "용도: photorealistic-natural. 자산: StoreLoop AI 생성 시연 이미지 beverage-reference-01, 실제 매장 사진이 아닌 합성 편의점 음료 매대 Reference. 정사각형 1024×1024의 자연스러운 현장 사진 한 장을 생성한다. 정면 눈높이 카메라로 흰 금속 음료 냉장 진열대 3단 전체를 선명하게 촬영한다. 위칸은 투명한 생수병, 중간칸은 녹색과 은색의 탄산수 캔, 아래칸은 갈색 차 음료병을 같은 종류끼리 단정하게 묶는다. 각 줄 앞면이 선반 앞쪽 같은 선에 맞춰 있고 간격이 일정하며 상품군이 섞이지 않는다. 각 선반 전면의 큼직한 범주 라벨에는 정확하게 위부터 '생수', '탄산수', '차'를 표기하며 상품이나 물건이 라벨을 가리지 않는다. 제품 포장은 실제 브랜드나 상표 없이 단순한 가상 색상·기하무늬다. 자연스러운 매장 조명, 실제 플라스틱·알루미늄·선반 질감, 렌즈 왜곡이 적은 기록 사진. 선반 네 모서리와 모든 범주 라벨이 프레임 안에 있다. 사람·얼굴·손·개인정보·실제 로고·워터마크·설명문·평가 점수·UI 프레임·콜라주는 넣지 않는다. 광고처럼 극적인 연출이나 과도한 장식 없이 관찰 가능한 정돈 상태가 주제다.",
+      "reference_image_id": null,
+      "guideline_rule_keys": [
+        "label_visibility",
+        "facing",
+        "shelf_gap",
+        "category_grouping"
+      ],
+      "reference_codes": [
+        "beverage-reference-01"
+      ],
+      "submission_codes": [],
+      "observed_features": [
+        "위칸 생수병, 중간 녹색·은색 캔, 아래칸 갈색 차 음료병이 선반별로 묶여 있다.",
+        "앞줄 병·캔이 대체로 같은 깊이에 정렬되어 있고 중간 선반에 큰 빈 구간이 보이지 않는다.",
+        "생수·탄산수·차 선반 라벨 세 개가 가림 없이 읽힌다."
+      ],
+      "review_status": "golden_approved",
+      "reviewer": "root (independent reviewer)",
+      "reviewed_at": "2026-09-21T09:15:24.104443+00:00",
+      "review_notes": "내장 image_gen 신규 생성 후 프로젝트 파일을 view_image로 직접 검수했다. Reference 용도만 사용한다. 미세 상품문자·정확한 재고 수량은 판단 근거로 사용하지 않는다. 자체 시각 검수 approved이며 독립 Golden Case 검수 전에는 golden_approved가 아니다. 독립 육안 검수: 중간 선반의 캔이 연속으로 정렬되어 넓은 빈 간격이 없음."
+    },
+    {
+      "image_id": "beverage-reference-02",
+      "path": "assets/shelves/beverage-reference-02.png",
+      "sha256": "c41d47d219ba263ceb30ef04545b4734e10fee65526ac1717a7c4727e0930135",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 2139454,
+      "category_code": "beverage",
+      "purpose": "reference",
+      "source_kind": "ai_generated_demo",
+      "generation_prompt": "용도: photorealistic-natural. 자산: StoreLoop AI 생성 시연 이미지 beverage-reference-02. 이전 사진과 다른 가상의 편의점 음료 진열대 Reference를 새로 생성한다. 정사각형 현장 기록사진. 짙은 회색 금속 3단 선반을 약간 오른쪽에서 바라보는 아주 완만한 사선 구도로 전체 촬영한다. 위칸에는 하얀 뚜껑과 연한 파란 무상표 라벨의 생수병, 중간에는 노란색과 민트색 무상표 탄산수 캔, 아래에는 작은 갈색 차병을 같은 종류끼리 묶어 단정하게 진열한다. 상품 앞줄은 각 선반 앞 가장자리에 일정하게 정렬되어 있으며 큰 빈 간격이 없다. 선반 전면의 흰 범주판에 위부터 '생수', '탄산수', '차'라는 큰 한글을 정확하게 표시한다. 라벨은 가려지지 않는다. 자연스러운 밝은 매장 조명, 실물같은 금속·병·캔 질감, 선반 전체와 측면 구조 일부가 보여 기존 정면 사진과 다른 사진임을 알 수 있다. 모든 포장은 가상 디자인·로고 없는 단순 기하무늬다. 인물·손·실제 브랜드·개인정보·워터마크·점수·설명 오버레이·Reference 글자·UI·콜라주 없이 독립된 사진 한 장.",
+      "reference_image_id": null,
+      "guideline_rule_keys": [
+        "label_visibility",
+        "facing",
+        "shelf_gap",
+        "category_grouping"
+      ],
+      "reference_codes": [
+        "beverage-reference-02"
+      ],
+      "submission_codes": [],
+      "observed_features": [
+        "짙은 회색 선반을 사선에서 촬영한 구도로 정면 흰 선반 Reference와 별개 사진이다.",
+        "생수병·노란색과 민트색 캔·갈색 차병이 각각 선반별로 묶이고 앞줄이 정렬되어 있다.",
+        "생수·탄산수·차 범주판이 제품에 가리지 않고 읽힌다."
+      ],
+      "review_status": "approved",
+      "reviewer": "demo-images/product_design",
+      "reviewed_at": "2026-09-21T09:01:02Z",
+      "review_notes": "독립 생성 후 실제 파일을 열어 검수했다. 현재 파일은 Reference 용도이며 제출 데이터로 재사용하지 않는다. 사선 시점으로 인한 원근 차이를 비교 한계로 설명한다. 자체 시각 검수 approved이며 독립 Golden Case 검수 전에는 golden_approved가 아니다."
+    },
+    {
+      "image_id": "beverage-uncertain-01",
+      "path": "assets/shelves/beverage-uncertain-01.png",
+      "sha256": "6efa3fb467b33aebd5ecbe5f8fd4dfb0105ec9bc3a97b949aeea021e7f4318af",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 1623460,
+      "category_code": "beverage",
+      "purpose": "uncertain",
+      "source_kind": "ai_generated_demo",
+      "generation_prompt": "용도: photorealistic-natural. 자산: StoreLoop beverage-uncertain-01, 음료 매대 분석에서 재촬영 안내가 필요한 판단곤란 시연 사진. 어두운 가상 편의점의 3단 음료 선반을 휴대폰으로 촬영한 정사각형 사진 한 장. 상단에는 물병, 중간에는 캔, 하단에는 갈색 병의 대략적인 형태가 있지만 조명이 거의 꺼져 있어 어둡고, 카메라 흔들림으로 상품 윤곽이 수평으로 강하게 번진다. 선반 전면 범주 라벨도 실제로 읽기 어려워야 한다. 전경 오른쪽 아래에는 무상표 갈색 종이상자의 흐릿한 모서리가 하단 선반 일부를 가린다. 전체가 검은 화면이 되지는 말고 음료 진열대가 있다는 맥락과 밝은 부분 몇 개는 보여준다. 세부 상품의 앞뒤 정렬·간격·라벨 가림 여부를 확신해서 평가하기 어렵도록 실제 시각 정보가 제한된 사진이다. 포장은 가상의 단순 색상이며 실제 상표·사람·손·얼굴·개인정보·워터마크·흐림 설명글·평가 점수·UI는 넣지 않는다. 깔끔한 제품광고 사진이나 선명한 정상 매대 사진으로 만들지 않는다.",
+      "reference_image_id": null,
+      "guideline_rule_keys": [
+        "label_visibility",
+        "facing",
+        "shelf_gap",
+        "category_grouping"
+      ],
+      "reference_codes": [],
+      "submission_codes": [
+        "beverage-uncertain-01"
+      ],
+      "observed_features": [
+        "음료병과 캔이 놓인 여러 선반의 큰 형태는 보인다.",
+        "어두운 노출과 수평 흔들림으로 라벨 글자와 개별 상품 윤곽이 뚜렷하지 않다.",
+        "오른쪽 아래 상자가 하단 선반 일부를 가려 세부 진열을 충분히 확인하기 어렵다."
+      ],
+      "review_status": "approved",
+      "reviewer": "demo-images/product_design",
+      "reviewed_at": "2026-09-21T09:01:02Z",
+      "review_notes": "어두움·흔들림·가림이 실제 세부 관찰을 제한한다. 특정 기준의 fail을 확정하지 않으며 모델이 관찰 제한과 재촬영 필요를 설명하는지 검증하는 입력이다. 자체 시각 검수 approved이며 독립 Golden Case 검수 전에는 golden_approved가 아니다."
+    },
+    {
+      "image_id": "snack-after-01",
+      "path": "assets/shelves/snack-after-01.png",
+      "sha256": "1668005c877d14660c17c2028bf310399e28fe68153637f9bfc62ff7f91246c4",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 1940888,
+      "category_code": "snack",
+      "purpose": "submission_after",
+      "source_kind": "ai_generated_demo",
+      "generation_prompt": "용도: precise-object-edit. 자산: StoreLoop snack-after-01, 스낵 개선 후 비교용 시연 사진. 입력 이미지1은 최종 snack-before-01 편집 대상이다. 카메라 정면 위치·사진 비율·프레임·흰 금속 선반의 높이/구조·뒷판·바닥·조명·상품 포장 색과 그림·범주판 위치를 그대로 유지한다. 오직 진열을 정리한다. 노란 감자스낵 봉지는 모두 위칸으로, 갈색 쿠키 상자는 모두 중간칸으로, 파란 견과 파우치는 모두 아래칸으로 옮겨 상품군 혼재를 해소한다. 선반 앞에 걸쳐 범주 글자를 가린 노란 봉지와 파란 파우치를 각 올바른 선반 안쪽에 똑바로 세워 넣어, 큰 한글 '스낵', '쿠키', '견과' 세 라벨이 가림 없이 온전히 읽히게 한다. 앞줄 상품은 대체로 같은 선에 맞추고 앞면을 카메라로 향하게 한다. 제품 유형이나 새 디자인은 추가하지 말고 원래 상품을 재배치한 같은 매대의 정리 후처럼 자연스럽게 보이게 한다. 선반·라벨·조명 재디자인, 카메라 이동, 화면자르기, 과도한 광택 보정, 사람·손·워터마크·설명·After글자·점수·UI·콜라주를 넣지 않는다.",
+      "reference_image_id": "snack-before-01",
+      "guideline_rule_keys": [
+        "label_visibility",
+        "facing",
+        "shelf_gap",
+        "category_grouping"
+      ],
+      "reference_codes": [],
+      "submission_codes": [
+        "snack-after-01"
+      ],
+      "observed_features": [
+        "개선 전과 같은 흰 3단 선반·정면 구도·바닥·범주판 위치가 유지된다.",
+        "노란 스낵 봉지는 위칸, 갈색 쿠키 상자는 중간칸, 파란 견과 파우치는 아래칸으로 분리되어 있다.",
+        "앞쪽에 걸친 봉지가 제거되어 스낵·쿠키·견과 라벨이 모두 드러나고 읽힌다."
+      ],
+      "review_status": "approved",
+      "reviewer": "demo-images/product_design",
+      "reviewed_at": "2026-09-21T09:01:02Z",
+      "review_notes": "최종 snack-before-01을 직접 연 후 image_gen 편집 대상으로 사용했다. 선반과 카메라 구도, 상품군 분리 및 라벨 노출을 대조했다. 합성 편집의 상품 수량/세부 포장 차이는 개선 판단의 기준에서 제외한다. 자체 시각 검수 approved이며 독립 Golden Case 검수 전에는 golden_approved가 아니다."
+    },
+    {
+      "image_id": "snack-before-01",
+      "path": "assets/shelves/snack-before-01.png",
+      "sha256": "7be49d046c4e03d539a59d112d877cc3e76bb17a1e40595c3c43754e26d5d410",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 1979627,
+      "category_code": "snack",
+      "purpose": "submission_before",
+      "source_kind": "ai_generated_demo",
+      "generation_prompt": "용도: photorealistic-natural. 자산: StoreLoop snack-before-01, 평가용 스낵 매대 개선 전 시연 사진. 새로운 가상 편의점의 흰색 금속 3단 선반을 똑바른 정면 눈높이에서 촬영한 정사각형 현장 사진 한 장을 생성한다. 상품은 감자 그림이 있는 노란 스낵 봉지, 쿠키 그림이 있는 갈색 상자, 견과 그림이 있는 파란 지퍼 파우치 세 종류뿐이며 모두 무상표 가상포장이다. 개선 전 상태: 위칸에는 노란 스낵 봉지 사이에 갈색 쿠키 상자 두 개와 파란 견과 파우치 한 개가 섞여 있다. 중간칸에는 갈색 쿠키 상자 사이에 노란 스낵 봉지와 파란 견과 파우치가 섞여 있다. 아래칸은 주로 파란 견과 파우치지만 노란 봉지 하나가 끼어 있다. 일부 상품 앞면이 비스듬하고 간격이 불균일하다. 각 선반 전면의 큰 범주 라벨은 위 '스낵', 중간 '쿠키', 아래 '견과'이며, 위칸 노란 봉지 한 개가 선반 앞에 낮게 걸쳐져 '스낵' 라벨의 일부를 가리고, 중간칸 파란 파우치 한 개가 앞쪽으로 처져 '쿠키' 라벨 일부를 가린다. 라벨의 나머지 부분과 아래 '견과'는 보인다. 개선 후 편집에서 같은 구도를 유지하기 쉽도록 선반 네 모서리·같은 폭·단순 흰 뒷판·모든 3단을 프레임에 넣는다. 중립적 밝은 매장 조명, 실물 포장 질감. 쓰레기·파손·사람·손·얼굴·실제 브랜드·개인정보·워터마크·Before 글자·화살표·평가 점수·UI·콜라주는 넣지 않는다.\n\n초안 시각검수 후 실제 라벨 가림을 위한 편집 프롬프트:\n용도: precise-object-edit. 입력 이미지1이 편집 대상 snack-before-01 초안이다. 카메라·흰 3단 선반·조명·프레임·상품 혼재·상품 그림·색·전체 나머지를 그대로 유지하고 봉지 두 개의 위치만 바꾼다. 위칸 왼쪽에서 선반 앞에 걸친 노란 스낵 봉지를 선반 정중앙으로 옮겨, 봉지 아래끝이 중앙 범주판 '스낵' 글자 위에 실제로 겹치게 한다. 두 글자 중 최소 한 글자의 절반 이상을 상품 봉지가 가려 읽기 어렵게 만든다. 중간칸 앞쪽으로 처진 파란 견과 파우치도 약간 왼쪽으로 옮겨 중앙의 '쿠키' 글자 위에 겹치도록 한다. 역시 글자 일부를 파우치가 실제로 가려야 한다. 범주판에 새 문자나 새 스티커를 그리지 않고 기존 글자와 판 위치는 유지한다. 아래 '견과' 글자는 그대로 보인다. 두 봉지는 선반 앞에 자연스럽게 걸쳐 있는 형태이며 상품과 그림자도 물리적으로 자연스럽다. 다른 상품을 정돈하거나 새로운 문제를 추가하지 않는다. 사람·손·화살표·원·설명글·UI·워터마크 없음.",
+      "reference_image_id": null,
+      "guideline_rule_keys": [
+        "label_visibility",
+        "facing",
+        "shelf_gap",
+        "category_grouping"
+      ],
+      "reference_codes": [],
+      "submission_codes": [
+        "snack-before-01"
+      ],
+      "observed_features": [
+        "위칸 노란 스낵 사이에 갈색 쿠키 상자와 파란 견과 파우치가 섞여 있다.",
+        "중간 쿠키 선반에 노란 봉지와 파란 파우치가 있고 아래 견과 선반에도 노란 봉지가 끼어 있다.",
+        "중앙 앞쪽 노란 봉지가 스낵 글자 윗부분에 겹치고, 중간 파란 파우치가 쿠키 글자 일부를 가린다.",
+        "아래 견과 범주 라벨은 읽을 수 있다."
+      ],
+      "review_status": "approved",
+      "reviewer": "demo-images/product_design",
+      "reviewed_at": "2026-09-21T09:01:02Z",
+      "review_notes": "초안에서는 범주 글자가 충분히 가리지 않아 image_gen으로 봉지 위치를 추가 수정한 최종본이다. 전체 생성 및 수정 프롬프트를 함께 보존한다. 최종 파일을 직접 열어 혼재·문자 일부 가림을 확인했으며 포장 개수는 정답으로 고정하지 않는다. 자체 시각 검수 approved이며 독립 Golden Case 검수 전에는 golden_approved가 아니다."
+    },
+    {
+      "image_id": "snack-reference-01",
+      "path": "assets/shelves/snack-reference-01.png",
+      "sha256": "2f0bce5ed1645713e53154bd51c8ef3cc134bef752baf7a9b79938d8f9aadece",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 2143557,
+      "category_code": "snack",
+      "purpose": "reference",
+      "source_kind": "ai_generated_demo",
+      "generation_prompt": "용도: photorealistic-natural. 자산: StoreLoop snack-reference-01, AI 생성 시연용 스낵 매대 Reference. 밝은 가상 편의점 흰 금속 3단 선반을 정면 눈높이로 촬영한 정사각형 실제감 있는 기록사진 한 장. 위칸에는 감자 그림이 있는 노란색 무상표 스낵 봉지를 단정하게 세워 같은 종류끼리 묶는다. 중간칸에는 동그란 쿠키 그림이 있는 갈색 직사각 상자들을 가지런히 세운다. 아래칸에는 아몬드·호두 그림이 있는 파란색 지퍼 파우치를 같은 종류끼리 묶는다. 세 상품군이 선반별로 명확히 분리되고 앞면이 카메라를 향한다. 앞줄 정렬과 간격이 대체로 일정하다. 선반 전면 흰 범주 라벨에는 위부터 정확한 큰 한글 '스낵', '쿠키', '견과'를 넣고 물건이 가리지 않게 한다. 제품 포장은 단순한 가상 디자인이며 제품군을 구분할 그림만, 실존 상표·로고 없음. 금속 선반·비닐 포장·상자의 현실적 질감, 자연스러운 매장 조명. 선반 전체를 보여준다. 사람·손·개인정보·워터마크·점수·설명문·UI·콜라주 없음. 관찰하기 좋은 우수 진열 예시 사진이다.",
+      "reference_image_id": null,
+      "guideline_rule_keys": [
+        "label_visibility",
+        "facing",
+        "shelf_gap",
+        "category_grouping"
+      ],
+      "reference_codes": [
+        "snack-reference-01"
+      ],
+      "submission_codes": [],
+      "observed_features": [
+        "위칸 노란 감자스낵 봉지, 중간 갈색 쿠키 상자, 아래 파란 견과 파우치가 선반별로 분리되어 있다.",
+        "스낵·쿠키·견과 범주판 글자가 가림 없이 읽힌다.",
+        "상품 앞면 그림이 전면을 향하고 앞줄이 대체로 정렬되어 있다."
+      ],
+      "review_status": "approved",
+      "reviewer": "demo-images/product_design",
+      "reviewed_at": "2026-09-21T09:01:02Z",
+      "review_notes": "독립 생성한 Reference를 직접 열어 상품군/범주판을 확인했다. 합성 제품 그림이며 실 상품 식별이나 정확한 재고 수량 평가 용도가 아니다. 자체 시각 검수 approved이며 독립 Golden Case 검수 전에는 golden_approved가 아니다."
+    },
+    {
+      "image_id": "snack-reference-02",
+      "path": "assets/shelves/snack-reference-02.png",
+      "sha256": "1920ac33b9a49f343d0d1d6cbec9019e1ffb97eef0a3971006e3da9ad94e5db9",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 2046369,
+      "category_code": "snack",
+      "purpose": "reference",
+      "source_kind": "ai_generated_demo",
+      "generation_prompt": "용도: photorealistic-natural. 자산: StoreLoop snack-reference-02, 두 번째 독립 스낵 Reference. 다른 가상 편의점의 짙은 회색 3단 금속 선반을 왼쪽에서 약간 사선으로 보는 정사각형 자연스러운 매장 기록사진 한 장. 위칸에는 감자칩 그림이 있는 주황빛 노란 봉지들이 같은 방향으로 서 있고, 중간칸에는 쿠키 그림이 있는 연갈색 직사각 상자가 정렬되어 있으며, 아래칸에는 견과 그림이 있는 청록색 파우치가 모여 있다. 상품군은 서로 섞이지 않고 앞줄의 깊이와 간격이 대체로 일정하다. 선반 전면의 큰 흰 범주판에는 위부터 정확한 한글 '스낵', '쿠키', '견과'가 선명하게 보이며 상품이 가리지 않는다. 기존 정면의 흰 선반 사진과 다른 회색 선반·시점·포장 디자인을 가진 독립 사진이다. 모든 포장은 실존 상표나 로고 없는 단순 가상포장. 옆 매장 통로는 배경으로 조금만 보이며 제품군을 평가하기 좋은 선명도와 중립적 조명. 사람·손·실제 상표·개인정보·워터마크·설명글·평가 수치·UI·콜라주를 넣지 않는다.",
+      "reference_image_id": null,
+      "guideline_rule_keys": [
+        "label_visibility",
+        "facing",
+        "shelf_gap",
+        "category_grouping"
+      ],
+      "reference_codes": [
+        "snack-reference-02"
+      ],
+      "submission_codes": [],
+      "observed_features": [
+        "회색 선반을 사선에서 촬영하여 정면 흰 선반 Reference와 구도가 다르다.",
+        "주황빛 스낵 봉지·연갈색 쿠키 상자·청록 견과 파우치가 각 선반에 묶여 있다.",
+        "스낵·쿠키·견과 라벨은 보이며 상품 앞면이 통로 쪽을 향한다."
+      ],
+      "review_status": "approved",
+      "reviewer": "demo-images/product_design",
+      "reviewed_at": "2026-09-21T09:01:02Z",
+      "review_notes": "별도 신규 생성한 Reference다. 사선 사진이지만 세 상품군과 범주판이 직접 보이는 것을 확인했다. 가상 색상·상품 그림은 제품군 시연용이며 실제 브랜드 정보가 아니다. 자체 시각 검수 approved이며 독립 Golden Case 검수 전에는 golden_approved가 아니다."
+    },
+    {
+      "image_id": "snack-uncertain-01",
+      "path": "assets/shelves/snack-uncertain-01.png",
+      "sha256": "0501b44e28fb4ecb92d095f4f7b286a14ad0fcbee29e95890a133a867119246c",
+      "mime_type": "image/png",
+      "width": 1254,
+      "height": 1254,
+      "byte_size": 1434126,
+      "category_code": "snack",
+      "purpose": "uncertain",
+      "source_kind": "ai_generated_demo",
+      "generation_prompt": "용도: photorealistic-natural. 자산: StoreLoop snack-uncertain-01, 스낵 매대에서 판단 불가·재촬영 요청을 검증하기 위한 AI 생성 시연 사진. 가상 편의점 3단 스낵 선반을 급히 휴대폰으로 찍어 초점이 크게 빗나가고 수평 흔들림도 있는 정사각형 현장 사진 한 장. 배경에 위쪽 노란 봉지류, 중간 갈색 상자류, 아래 파란 파우치류의 색과 대략적인 덩어리는 보이지만 개별 상품의 정확한 경계·앞면 그림·라벨 글자는 선명하게 읽히지 않는다. 전경 왼쪽 아래와 중앙 일부를 큰 무상표 갈색 종이상자가 가려 중간/아래 선반 상품 배치를 충분히 볼 수 없다. 실내 조명은 어둡고 상품 포장에 약한 반사만 보인다. 선반이라는 맥락은 남기되 상품군 정렬·선반 라벨 노출 여부를 확실히 판정할 만한 세부정보는 부족해야 한다. 전부 검은 화면이나 추상 그림은 아니다. 브랜드 로고·사람·손·얼굴·개인정보·워터마크·흐림을 설명하는 글자·점수·UI·콜라주 없음. 선명한 제품광고 사진으로 보정하지 않는다.",
+      "reference_image_id": null,
+      "guideline_rule_keys": [
+        "label_visibility",
+        "facing",
+        "shelf_gap",
+        "category_grouping"
+      ],
+      "reference_codes": [],
+      "submission_codes": [
+        "snack-uncertain-01"
+      ],
+      "observed_features": [
+        "노란 봉지·갈색 상자·파란 봉지류가 있는 선반의 큰 색상 구역은 보인다.",
+        "초점 흐림과 흔들림으로 상품 그림·경계·선반 글자를 선명하게 읽기 어렵다.",
+        "전경의 종이상자가 왼쪽과 중앙 아래의 선반을 상당 부분 가린다."
+      ],
+      "review_status": "golden_approved",
+      "reviewer": "root (independent reviewer)",
+      "reviewed_at": "2026-09-21T09:15:24.104446+00:00",
+      "review_notes": "최종 파일을 직접 열어 흐림과 전경 가림을 확인했다. 라벨·개별 제품 배치를 단정할 수 없다는 시각 제한을 관찰사실로 기록한다. 자체 시각 검수 approved이며 독립 Golden Case 검수 전에는 golden_approved가 아니다. 독립 육안 검수: 어두움·흔들림·전경 상자로 세부 라벨과 일부 상품군을 확정할 수 없음."
+    }
+  ]
+}

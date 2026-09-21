@@ -1,0 +1,3 @@
+title = "StoreLoop secret protection"
+[extend]
+useDefault = true

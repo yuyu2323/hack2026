@@ -1,0 +1,38 @@
+import test,{afterEach} from 'node:test';
+import assert from 'node:assert/strict';
+import {JSDOM} from 'jsdom';
+import {createElement as h} from 'react';
+const dom=new JSDOM('<!doctype html><html><body></body></html>',{url:'http://localhost:5175/ofc-admin/guidelines/g1'});
+for(const name of ['window','document','HTMLElement','HTMLInputElement','HTMLFormElement','Event','CustomEvent','MouseEvent','FormData','File','history','location'])Object.defineProperty(globalThis,name,{value:(dom.window as any)[name],configurable:true,writable:true});
+Object.defineProperty(globalThis,'navigator',{value:dom.window.navigator,configurable:true});
+const {render,screen,fireEvent,waitFor,cleanup,within}=await import('@testing-library/react');
+const {api,Session}=await import('../src/shared/ui.tsx');
+const {Guidelines}=await import('../src/ofc-admin/pages.tsx');
+const original={get:api.get,post:api.post};
+const account={id:'history-hq',login_id:'synthetic-hq',display_name:'검증 본사',role:'hq',region_id:null,is_active:true,version:1,store_ids:[],permissions:[]};
+const page=(items:any[])=>({items,total:items.length,page:1,page_size:100});
+afterEach(()=>{cleanup();api.get=original.get;api.post=original.post;});
+
+test('새 기준 버전 저장 성공 시 상세와 버전 이력이 모두 갱신되어 이전·새 본문과 사유가 즉시 보인다',async()=>{
+  let saved=false;const requests:string[]=[],writes:any[]=[];
+  const first={version_id:'v1',version:1,text:'기존 앞줄 기준',created_at:'2026-09-20T00:00:00Z',change_reason:'최초 등록'};
+  const second={version_id:'v2',version:2,text:'새 앞줄 정렬 기준',created_at:'2026-09-21T00:00:00Z',change_reason:'사진 근거 반영'};
+  const detail=()=>({id:'g1',rule_key:'facing',title:'검증 CATEGORY 기준',level:'CATEGORY',store_id:null,category_id:'c1',is_active:true,version:saved?5:4,current_version:saved?2:1,current:saved?second:first});
+  api.get=async(path:string)=>{requests.push(path);if(path==='/guidelines/g1')return detail() as any;if(path.startsWith('/guidelines/g1/versions'))return page(saved?[second,first]:[first]) as any;return page([]) as any;};
+  api.post=async(path:string,body:any)=>{writes.push({path,body});saved=true;return detail() as any;};
+  const {container}=render(h(Session.Provider,{value:account as any},h(Guidelines,{id:'g1'})));
+  await screen.findByText('현재 기준 v1');
+  await waitFor(()=>assert.equal(container.querySelectorAll('.timeline article').length,1));
+  fireEvent.change(screen.getByLabelText('진열 기준 내용'),{target:{value:second.text}});
+  fireEvent.change(screen.getByLabelText('변경 사유'),{target:{value:second.change_reason}});
+  fireEvent.click(screen.getByRole('button',{name:'새 버전 저장'}));
+  await screen.findByText('저장했습니다.');
+  await screen.findByText('현재 기준 v2');
+  await waitFor(()=>assert.equal(container.querySelectorAll('.timeline article').length,2,'별도 새로고침 없이 새 버전 이력도 보여야 합니다.'));
+  const timeline=within(container.querySelector('.timeline') as HTMLElement);
+  assert.ok(timeline.getByText(second.text));assert.ok(timeline.getByText(second.change_reason));
+  assert.ok(timeline.getByText(first.text));assert.ok(timeline.getByText(first.change_reason));
+  assert.deepEqual(writes,[{path:'/guidelines/g1/versions',body:{version:4,text:second.text,title:'검증 CATEGORY 기준',reason:second.change_reason}}]);
+  assert.equal(requests.filter(path=>path==='/guidelines/g1').length,2);
+  assert.equal(requests.filter(path=>path.startsWith('/guidelines/g1/versions')).length,2);
+});

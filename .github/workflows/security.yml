@@ -1,0 +1,21 @@
+name: StoreLoop repository security
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+      - name: Install pinned scanner
+        run: |
+          python3 -m pip install certifi==2026.7.22
+          python3 project/scripts/install_security.py
+      - name: Scan current files and all reachable history
+        run: |
+          python3 project/scripts/security_guard.py files
+          printf 'refs/heads/ci %s refs/heads/ci 0000000000000000000000000000000000000000\n' "$(git rev-parse HEAD)" | python3 project/scripts/security_guard.py push
+      - name: Verify security regression fixtures
+        run: python3 -m unittest discover -s project/tests/security -p 'test_*.py'
