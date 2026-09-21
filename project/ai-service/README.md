@@ -3,7 +3,7 @@
 프로젝트 루트에서 실행한다. `server`와 별도의 가상환경을 사용하며 공유 Python 계약은 `packages.review_contract`다.
 
 ```sh
-PYTHONPATH=. ai-service/.venv/bin/python -m uvicorn app.main:app --app-dir ai-service --host 127.0.0.1 --port 8010 --no-access-log
+PYTHONPATH=. ai-service/.venv/bin/python -m uvicorn app.main:app --app-dir ai-service --host 127.0.0.1 --port 8202 --no-access-log
 ai-service/.venv/bin/python -m pytest ai-service/tests -q --tb=short
 PYTHONPATH=.:ai-service ai-service/.venv/bin/python -m app.smoke --output execute/workHitory/local-ai/evidence/real-ai-run.json
 ```

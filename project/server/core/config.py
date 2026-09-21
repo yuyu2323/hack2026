@@ -13,8 +13,8 @@ class Settings(BaseSettings):
     media_root: Path = PROJECT_ROOT / '.local/media'
     session_cookie_secure: bool = False
     session_cookie_name: str = 'storeloop_session'
-    allowed_origins_value: str = Field(default='http://127.0.0.1:5173', validation_alias='ALLOWED_ORIGINS')
-    ai_service_url: str = 'http://127.0.0.1:8010'
+    allowed_origins_value: str = Field(default='http://127.0.0.1:5182', validation_alias='ALLOWED_ORIGINS')
+    ai_service_url: str = 'http://127.0.0.1:8202'
     ai_service_token: str = ''
     queue_timeout_seconds: int = 180
     model_timeout_seconds: int = 120

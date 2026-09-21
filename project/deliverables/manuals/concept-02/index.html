@@ -13,7 +13,7 @@
 <div class="eyebrow">StoreLoop · Concept 02 · 사용 설명서</div>
 <h1>오늘 할 일에서<br>다음 개선까지.</h1>
 <p>시안 02는 점검·검토·조치·후속 확인을 업무 카드로 연결합니다. 한 접속 주소에서 점주, OFC, 지역, 본사, 플랫폼 운영자가 자신의 역할과 담당 범위에 맞게 이용합니다.</p>
-<a href="http://127.0.0.1:5174/">시안 02 열기 ↗</a> · <button class="print" type="button" onclick="window.print()">매뉴얼 인쇄</button>
+<a href="http://127.0.0.1:5182/">시안 02 열기 ↗</a> · <button class="print" type="button" onclick="window.print()">매뉴얼 인쇄</button>
 </header>
 <div class="layout">
 <nav class="contents" aria-label="사용 설명서 목차"><strong>이 매뉴얼에서</strong>
@@ -21,7 +21,7 @@
 <main>
 <div class="draft" role="note">이 매뉴얼은 1440×900 및 390×844의 화면·로컬 이미지·키보드·본문 건너뛰기를 확인했습니다. 200% 확대는 사용자 후속 검수로 NOT_RUN이며, 전체 제품 기능·디자인 인수는 진행 중입니다.</div>
 <section class="intro" id="start"><h2><span class="number">01</span>준비와 로그인</h2>
-<p>로컬 서비스가 실행된 컴퓨터에서 <a href="http://127.0.0.1:5174/">http://127.0.0.1:5174</a>를 엽니다. 로그인 후 역할에 맞는 시작 화면으로 이동합니다. 이 HTML과 화면 이미지는 인터넷 연결 없이 읽을 수 있습니다. 앱 이용과 새 AI 분석에는 실행 중인 서비스와 현재 Codex 로그인 연결이 필요합니다.</p>
+<p>로컬 서비스가 실행된 컴퓨터에서 <a href="http://127.0.0.1:5182/">http://127.0.0.1:5182</a>를 엽니다. 로그인 후 역할에 맞는 시작 화면으로 이동합니다. 이 HTML과 화면 이미지는 인터넷 연결 없이 읽을 수 있습니다. 앱 이용과 새 AI 분석에는 실행 중인 서비스와 현재 Codex 로그인 연결이 필요합니다.</p>
 <h3>실행 담당자를 위한 시작 명령</h3><p>Python 3.11 이상, Node 22.12 이상, npm 10 이상, PostgreSQL 14 이상과 이미지·JSON Schema를 지원하는 Codex CLI가 필요합니다. 처음 준비할 때는 패키지 다운로드가 필요하며, <code>setup.sh</code>가 버전 확인·로컬 설정·의존성·전용 DB와 합성 시드를 준비합니다. 자세한 환경 구성은 <a href="../../../README.md">전체 실행 안내</a>를 따르세요.</p><pre><code>cd /path/to/hack2026/project
 ./scripts/setup.sh
 ./scripts/start.sh --concept 2</code></pre>

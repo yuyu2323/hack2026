@@ -1,0 +1,119 @@
+[
+  {
+    "check": "backend",
+    "exit_code": 0,
+    "command": [
+      "server/.venv/bin/python",
+      "-m",
+      "pytest",
+      "server/tests",
+      "-q",
+      "--tb=short",
+      "-m",
+      "not real_ai"
+    ],
+    "summary": [
+      "102 passed, 1 deselected, 2 warnings in 119.42s (0:01:59)"
+    ]
+  },
+  {
+    "check": "ai",
+    "exit_code": 0,
+    "command": [
+      "ai-service/.venv/bin/python",
+      "-m",
+      "pytest",
+      "ai-service/tests",
+      "-q",
+      "--tb=short",
+      "-m",
+      "not real_ai"
+    ],
+    "summary": [
+      "39 passed, 2 warnings in 11.74s"
+    ]
+  },
+  {
+    "check": "runtime",
+    "exit_code": 0,
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/runtime",
+      "-p",
+      "test_*.py"
+    ],
+    "summary": [
+      "Ran 5 tests in 0.005s"
+    ]
+  },
+  {
+    "check": "security",
+    "exit_code": 0,
+    "command": [
+      "server/.venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests/security",
+      "-p",
+      "test_*.py"
+    ],
+    "summary": [
+      "Ran 11 tests in 7.255s"
+    ]
+  },
+  {
+    "check": "client",
+    "exit_code": 0,
+    "command": [
+      "npm",
+      "run",
+      "test:client"
+    ],
+    "summary": []
+  },
+  {
+    "check": "frontend",
+    "exit_code": 0,
+    "command": [
+      "npm",
+      "run",
+      "test",
+      "--workspaces",
+      "--if-present"
+    ],
+    "summary": [
+      " Test Files  5 passed (5)",
+      "      Tests  22 passed (22)"
+    ]
+  },
+  {
+    "check": "frontend-ui",
+    "exit_code": 0,
+    "command": [
+      "npm",
+      "run",
+      "test:ui",
+      "--workspaces",
+      "--if-present"
+    ],
+    "summary": []
+  },
+  {
+    "check": "build",
+    "exit_code": 0,
+    "command": [
+      "npm",
+      "run",
+      "build"
+    ],
+    "summary": [
+      "✓ built in 1.09s"
+    ]
+  }
+]

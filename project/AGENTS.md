@@ -1,3 +1,7 @@
+# 시안 02 독립 브랜치 적용 범위
+
+사용자 승인에 따라 이 브랜치는 공통 백엔드·AI·공유 클라이언트와 `web-concepts-02`만 유지한다. 아래 5개 시안 완료 규칙과 docs/00~02는 원래 main의 역사적 기준이다. 이 브랜치의 실행·검증 범위는 README.md와 docs/10-execution.md를 따른다. 원본 계약은 수정하지 않는다.
+
 # StoreLoop 협업 규칙
 
 기준은 docs/00-vision.md → docs/01-architecture.md → docs/02-development-orchestration.md 순서다. 세 문서는 명시적 사용자 승인 없이 수정하지 않는다. 제품은 StoreLoop이며 공통 FastAPI 업무 서버·PostgreSQL·독립 worker·로컬 Codex AI 서버와 React 시안 5개다. 각 시안 단일 빌드에 점주·영업·플랫폼 운영자 화면을 포함한다. 역할별 소스/라우트/메뉴/서버 권한을 분리한다.
