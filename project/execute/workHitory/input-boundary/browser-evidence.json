@@ -1,0 +1,264 @@
+[
+  {
+    "concept": 1,
+    "stage": "no-photo-long-question",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - button \"주 메뉴 열기\": ☰\n  - strong: 점주\n  - link \"알림\":\n    - /url: /store-owner/notifications\n  - button \"로그아웃\"\n- main:\n  - strong: 안내 · StoreLoop 시연 안내\n  - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n  - paragraph: STORELOOP / 관제 데스크\n  - heading \"사진으로 매대 점검\" [level=1]\n  - paragraph: 매대 사진과 질문을 보내면 적용 기준에 따라 개선 방향을 확인할 수 있어요.\n  - heading \"점검할 사진\" [level=2]\n  - generic: 매장 (필수)\n  - combobox \"매장 (필수)\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리 (필수)\n  - combobox \"카테고리 (필수)\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - generic: 매대 사진 (필수, 1~5장)\n  - button \"매대 사진 (필수, 1~5장) JPEG / PNG · 장당 최대 10MiB · 선택 순서대로 분석합니다.\"\n  - generic: JPEG / PNG · 장당 최대 10MiB · 선택 순서대로 분석합니다.\n  - generic: 궁금한 점 (선택)\n  - textbox \"궁금한 점 (선택) 2,000 / 2,000자\":\n    - /placeholder: \"예: 앞줄 진열과 가격표를 어떻게 정리하면 좋을까요?\"\n    - text: [합성 2000자 질문]\n  - generic: 2,000 / 2,000자\n  - alert: 사진은 1~5장 선택해 주세요.\n  - paragraph: 제출 시점의 기준과 Reference가 적용됩니다. AI는 1차 검토를 돕고, 판단이 어려운 항목은 OFC가 확인합니다.\n  - button \"사진 접수하고 분석 시작\" [active]\n  - complementary:\n    - heading \"잘 보이는 사진 촬영법\" [level=2]\n    - list:\n      - listitem: 매대 전체와 상품 앞면이 보이게 촬영해 주세요.\n      - listitem: 흔들리지 않게 밝은 곳에서 촬영해 주세요.\n      - listitem: 가격표와 가려진 부분은 가까이 한 장 더 촬영해 주세요.\n    - paragraph: 접수 후 화면을 나가도 제출 이력에서 분석 상태를 확인할 수 있습니다.\n  - text: StoreLoop · 관제 데스크\n  - generic: 표시 시각 KST · 기간 필터 UTC\n- navigation \"점주 빠른 탐색\":\n  - link \"내 매장 현황\":\n    - /url: /store-owner\n    - generic: ▦\n    - text: 내 매장 현황\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n    - generic: ＋\n    - text: 사진 제출\n  - link \"제출 이력\":\n    - /url: /store-owner/history\n    - generic: ▤\n    - text: 제출 이력\n  - link \"OFC 확인 요청\":\n    - /url: /store-owner/issues\n    - generic: ◇\n    - text: OFC 확인 요청",
+    "dom": {
+      "length": 2000,
+      "maxLength": "2000",
+      "scrollWidth": 375,
+      "width": 390
+    }
+  },
+  {
+    "concept": 1,
+    "stage": "invalid-type",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - button \"주 메뉴 열기\": ☰\n  - strong: 점주\n  - link \"알림\":\n    - /url: /store-owner/notifications\n  - button \"로그아웃\"\n- main:\n  - strong: 안내 · StoreLoop 시연 안내\n  - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n  - paragraph: STORELOOP / 관제 데스크\n  - heading \"사진으로 매대 점검\" [level=1]\n  - paragraph: 매대 사진과 질문을 보내면 적용 기준에 따라 개선 방향을 확인할 수 있어요.\n  - heading \"점검할 사진\" [level=2]\n  - generic: 매장 (필수)\n  - combobox \"매장 (필수)\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리 (필수)\n  - combobox \"카테고리 (필수)\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - generic: 매대 사진 (필수, 1~5장)\n  - button \"매대 사진 (필수, 1~5장) JPEG / PNG · 장당 최대 10MiB · 선택 순서대로 분석합니다.\"\n  - generic: JPEG / PNG · 장당 최대 10MiB · 선택 순서대로 분석합니다.\n  - article:\n    - img \"선택한 사진 1\"\n    - strong: 1. unsupported.txt\n    - generic: 0.00 MiB\n    - button \"사진 1 앞으로\" [disabled]: ←\n    - button \"사진 1 뒤로\" [disabled]: →\n    - button \"제거\"\n  - generic: 궁금한 점 (선택)\n  - textbox \"궁금한 점 (선택) 2,000 / 2,000자\":\n    - /placeholder: \"예: 앞줄 진열과 가격표를 어떻게 정리하면 좋을까요?\"\n    - text: [합성 2000자 질문]\n  - generic: 2,000 / 2,000자\n  - alert: JPEG 또는 PNG 사진만 사용할 수 있습니다.\n  - paragraph: 제출 시점의 기준과 Reference가 적용됩니다. AI는 1차 검토를 돕고, 판단이 어려운 항목은 OFC가 확인합니다.\n  - button \"사진 접수하고 분석 시작\" [active]\n  - complementary:\n    - heading \"잘 보이는 사진 촬영법\" [level=2]\n    - list:\n      - listitem: 매대 전체와 상품 앞면이 보이게 촬영해 주세요.\n      - listitem: 흔들리지 않게 밝은 곳에서 촬영해 주세요.\n      - listitem: 가격표와 가려진 부분은 가까이 한 장 더 촬영해 주세요.\n    - paragraph: 접수 후 화면을 나가도 제출 이력에서 분석 상태를 확인할 수 있습니다.\n  - text: StoreLoop · 관제 데스크\n  - generic: 표시 시각 KST · 기간 필터 UTC\n- navigation \"점주 빠른 탐색\":\n  - link \"내 매장 현황\":\n    - /url: /store-owner\n    - generic: ▦\n    - text: 내 매장 현황\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n    - generic: ＋\n    - text: 사진 제출\n  - link \"제출 이력\":\n    - /url: /store-owner/history\n    - generic: ▤\n    - text: 제출 이력\n  - link \"OFC 확인 요청\":\n    - /url: /store-owner/issues\n    - generic: ◇\n    - text: OFC 확인 요청"
+  },
+  {
+    "concept": 1,
+    "stage": "oversize",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - button \"주 메뉴 열기\": ☰\n  - strong: 점주\n  - link \"알림\":\n    - /url: /store-owner/notifications\n  - button \"로그아웃\"\n- main:\n  - strong: 안내 · StoreLoop 시연 안내\n  - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n  - paragraph: STORELOOP / 관제 데스크\n  - heading \"사진으로 매대 점검\" [level=1]\n  - paragraph: 매대 사진과 질문을 보내면 적용 기준에 따라 개선 방향을 확인할 수 있어요.\n  - heading \"점검할 사진\" [level=2]\n  - generic: 매장 (필수)\n  - combobox \"매장 (필수)\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리 (필수)\n  - combobox \"카테고리 (필수)\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - generic: 매대 사진 (필수, 1~5장)\n  - button \"매대 사진 (필수, 1~5장) JPEG / PNG · 장당 최대 10MiB · 선택 순서대로 분석합니다.\"\n  - generic: JPEG / PNG · 장당 최대 10MiB · 선택 순서대로 분석합니다.\n  - article:\n    - img \"선택한 사진 1\"\n    - strong: 1. oversize.png\n    - generic: 10.00 MiB\n    - button \"사진 1 앞으로\" [disabled]: ←\n    - button \"사진 1 뒤로\" [disabled]: →\n    - button \"제거\"\n  - generic: 궁금한 점 (선택)\n  - textbox \"궁금한 점 (선택) 2,000 / 2,000자\":\n    - /placeholder: \"예: 앞줄 진열과 가격표를 어떻게 정리하면 좋을까요?\"\n    - text: [합성 2000자 질문]\n  - generic: 2,000 / 2,000자\n  - alert: 사진 한 장은 10MiB 이하로 선택해 주세요.\n  - paragraph: 제출 시점의 기준과 Reference가 적용됩니다. AI는 1차 검토를 돕고, 판단이 어려운 항목은 OFC가 확인합니다.\n  - button \"사진 접수하고 분석 시작\" [active]\n  - complementary:\n    - heading \"잘 보이는 사진 촬영법\" [level=2]\n    - list:\n      - listitem: 매대 전체와 상품 앞면이 보이게 촬영해 주세요.\n      - listitem: 흔들리지 않게 밝은 곳에서 촬영해 주세요.\n      - listitem: 가격표와 가려진 부분은 가까이 한 장 더 촬영해 주세요.\n    - paragraph: 접수 후 화면을 나가도 제출 이력에서 분석 상태를 확인할 수 있습니다.\n  - text: StoreLoop · 관제 데스크\n  - generic: 표시 시각 KST · 기간 필터 UTC\n- navigation \"점주 빠른 탐색\":\n  - link \"내 매장 현황\":\n    - /url: /store-owner\n    - generic: ▦\n    - text: 내 매장 현황\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n    - generic: ＋\n    - text: 사진 제출\n  - link \"제출 이력\":\n    - /url: /store-owner/history\n    - generic: ▤\n    - text: 제출 이력\n  - link \"OFC 확인 요청\":\n    - /url: /store-owner/issues\n    - generic: ◇\n    - text: OFC 확인 요청"
+  },
+  {
+    "concept": 1,
+    "stage": "six-photos-blocked",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - button \"주 메뉴 열기\": ☰\n  - strong: 점주\n  - link \"알림\":\n    - /url: /store-owner/notifications\n  - button \"로그아웃\"\n- main:\n  - strong: 안내 · StoreLoop 시연 안내\n  - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n  - paragraph: STORELOOP / 관제 데스크\n  - heading \"사진으로 매대 점검\" [level=1]\n  - paragraph: 매대 사진과 질문을 보내면 적용 기준에 따라 개선 방향을 확인할 수 있어요.\n  - heading \"점검할 사진\" [level=2]\n  - generic: 매장 (필수)\n  - combobox \"매장 (필수)\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리 (필수)\n  - combobox \"카테고리 (필수)\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - generic: 매대 사진 (필수, 1~5장)\n  - button \"매대 사진 (필수, 1~5장) JPEG / PNG · 장당 최대 10MiB · 선택 순서대로 분석합니다.\"\n  - generic: JPEG / PNG · 장당 최대 10MiB · 선택 순서대로 분석합니다.\n  - article:\n    - img \"선택한 사진 1\"\n    - strong: 1. beverage-before-01.png\n    - generic: 2.20 MiB\n    - button \"사진 1 앞으로\" [disabled]: ←\n    - button \"사진 1 뒤로\": →\n    - button \"제거\"\n  - article:\n    - img \"선택한 사진 2\"\n    - strong: 2. beverage-after-01.png\n    - generic: 2.03 MiB\n    - button \"사진 2 앞으로\": ←\n    - button \"사진 2 뒤로\": →\n    - button \"제거\"\n  - article:\n    - img \"선택한 사진 3\"\n    - strong: 3. beverage-uncertain-01.png\n    - generic: 1.55 MiB\n    - button \"사진 3 앞으로\": ←\n    - button \"사진 3 뒤로\": →\n    - button \"제거\"\n  - article:\n    - img \"선택한 사진 4\"\n    - strong: 4. snack-before-01.png\n    - generic: 1.89 MiB\n    - button \"사진 4 앞으로\": ←\n    - button \"사진 4 뒤로\": →\n    - button \"제거\"\n  - article:\n    - img \"선택한 사진 5\"\n    - strong: 5. snack-after-01.png\n    - generic: 1.85 MiB\n    - button \"사진 5 앞으로\": ←\n    - button \"사진 5 뒤로\": →\n    - button \"제거\"\n  - article:\n    - img \"선택한 사진 6\"\n    - strong: 6. snack-uncertain-01.png\n    - generic: 1.37 MiB\n    - button \"사진 6 앞으로\": ←\n    - button \"사진 6 뒤로\" [disabled]: →\n    - button \"제거\"\n  - generic: 궁금한 점 (선택)\n  - textbox \"궁금한 점 (선택) 2,000 / 2,000자\":\n    - /placeholder: \"예: 앞줄 진열과 가격표를 어떻게 정리하면 좋을까요?\"\n    - text: [합성 2000자 질문]\n  - generic: 2,000 / 2,000자\n  - alert: 사진은 1~5장 선택해 주세요.\n  - paragraph: 제출 시점의 기준과 Reference가 적용됩니다. AI는 1차 검토를 돕고, 판단이 어려운 항목은 OFC가 확인합니다.\n  - button \"사진 접수하고 분석 시작\" [active]\n  - complementary:\n    - heading \"잘 보이는 사진 촬영법\" [level=2]\n    - list:\n      - listitem: 매대 전체와 상품 앞면이 보이게 촬영해 주세요.\n      - listitem: 흔들리지 않게 밝은 곳에서 촬영해 주세요.\n      - listitem: 가격표와 가려진 부분은 가까이 한 장 더 촬영해 주세요.\n    - paragraph: 접수 후 화면을 나가도 제출 이력에서 분석 상태를 확인할 수 있습니다.\n  - text: StoreLoop · 관제 데스크\n  - generic: 표시 시각 KST · 기간 필터 UTC\n- navigation \"점주 빠른 탐색\":\n  - link \"내 매장 현황\":\n    - /url: /store-owner\n    - generic: ▦\n    - text: 내 매장 현황\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n    - generic: ＋\n    - text: 사진 제출\n  - link \"제출 이력\":\n    - /url: /store-owner/history\n    - generic: ▤\n    - text: 제출 이력\n  - link \"OFC 확인 요청\":\n    - /url: /store-owner/issues\n    - generic: ◇\n    - text: OFC 확인 요청"
+  },
+  {
+    "concept": 1,
+    "stage": "reorder-remove-five",
+    "dom": {
+      "loaded": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "photos": [
+        "1. beverage-after-01.png2.03 MiB←→제거",
+        "2. beverage-uncertain-01.png1.55 MiB←→제거",
+        "3. snack-before-01.png1.89 MiB←→제거",
+        "4. snack-after-01.png1.85 MiB←→제거",
+        "5. snack-uncertain-01.png1.37 MiB←→제거"
+      ],
+      "questionLength": 2000,
+      "scrollWidth": 375,
+      "width": 390
+    }
+  },
+  {
+    "concept": 2,
+    "stage": "no-photo-long-question",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - link \"↻ StoreLoop\":\n    - /url: /store-owner\n    - generic: ↻\n    - text: StoreLoop\n  - text: owner.north\n  - generic: 점주\n  - button \"로그아웃\"\n- navigation \"주요 업무\":\n  - link \"오늘 할 일\":\n    - /url: /store-owner\n  - link \"사진 점검\":\n    - /url: /store-owner/submit\n  - link \"점검 이력\":\n    - /url: /store-owner/history\n  - link \"확인할 일\":\n    - /url: /store-owner/issues\n  - link \"알림\":\n    - /url: /store-owner/notifications\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - paragraph: TODAY’S WORK\n  - heading \"오늘의 매대, 사진으로 점검\" [level=1]\n  - paragraph: 매장과 매대 유형을 확인하고 사진을 보내 주세요.\n  - list:\n    - listitem: 1 매장과 매대\n    - listitem: 2 사진과 질문\n    - listitem: 3 분석 결과 확인\n  - heading \"1. 어디를 점검할까요?\" [level=2]\n  - generic: 매장 *\n  - combobox \"매장 *\":\n    - option \"선택하세요\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 매대 유형 *\n  - combobox \"매대 유형 *\":\n    - option \"선택하세요\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - heading \"2. 사진과 궁금한 점을 알려 주세요\" [level=2]\n  - generic: ＋\n  - strong: 매대 사진 선택\n  - generic: JPEG·PNG, 장당 10MiB 이하 · 최대 5장\n  - button \"＋ 매대 사진 선택 JPEG·PNG, 장당 10MiB 이하 · 최대 5장\"\n  - paragraph: 매대 전체와 상품 앞면이 보이도록 밝은 곳에서 촬영해 주세요. 선택 순서대로 사진 번호가 정해집니다.\n  - text: 질문 또는 현장 상황\n  - textbox \"질문 또는 현장 상황 2000 / 2,000자\":\n    - /placeholder: \"예: 앞줄 간격과 음료 배치가 기준에 맞는지 확인해 주세요.\"\n    - text: [합성 2000자 질문]\n  - generic: 2000 / 2,000자\n  - alert: 사진을 1장 이상 선택해 주세요.\n  - paragraph: AI는 1차 점검을 도와요. 최종 조치와 예외 판단은 점주·OFC가 함께 확인해요.\n  - button \"사진 제출하기 →\" [active]\n- contentinfo:\n  - generic: StoreLoop · 오늘 할 일\n  - generic: 작은 점검, 이어지는 개선.",
+    "dom": {
+      "length": 2000,
+      "maxLength": "2000",
+      "scrollWidth": 375,
+      "width": 390
+    }
+  },
+  {
+    "concept": 3,
+    "stage": "no-photo-long-question",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - link \"StoreLoop\":\n    - /url: /store-owner\n  - text: owner.north\n  - generic: 점주 · 연결 매장\n  - button \"로그아웃\"\n- navigation \"업무 탐색\":\n  - link \"사진 작업실\":\n    - /url: /store-owner\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n  - link \"사진 이력\":\n    - /url: /store-owner/history\n  - link \"문의·조치\":\n    - /url: /store-owner/issues\n  - link \"알림\":\n    - /url: /store-owner/notifications\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - paragraph: NEW FRAME\n  - heading \"사진으로 점검하기\" [level=1]\n  - paragraph: 매대 전체가 보이도록 밝게 촬영해 주세요. 사진과 질문, 적용 기준을 함께 분석합니다.\n  - heading \"01 점검할 매대\" [level=2]:\n    - generic: \"01\"\n    - text: 점검할 매대\n  - generic: 매장\n  - combobox \"매장\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리\n  - combobox \"카테고리\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - heading \"02 사진을 펼쳐 주세요\" [level=2]:\n    - generic: \"02\"\n    - text: 사진을 펼쳐 주세요\n  - generic: 제출 사진\n  - button \"제출 사진 JPEG/PNG 1~5장, 한 장당 최대10MiB. 번호 순서대로 분석 근거와 연결됩니다.\"\n  - generic: JPEG/PNG 1~5장, 한 장당 최대10MiB. 번호 순서대로 분석 근거와 연결됩니다.\n  - alert: 사진은 1~5장을 선택해 주세요.\n  - heading \"03 무엇이 궁금한가요?\" [level=2]:\n    - generic: \"03\"\n    - text: 무엇이 궁금한가요?\n  - generic: 점주 질문\n  - textbox \"점주 질문 2000/2,000자 · 선택 입력\":\n    - /placeholder: \"예: 앞줄 상품 간격을 어떻게 정리하면 좋을까요?\"\n    - text: [합성 2000자 질문]\n  - generic: 2000/2,000자 · 선택 입력\n  - button \"사진 제출하기\" [active]\n- contentinfo:\n  - generic: StoreLoop · Evidence Atelier\n  - generic: AI는 보조 판단입니다. 현장 예외는 OFC와 함께 확인하세요.",
+    "dom": {
+      "length": 2000,
+      "maxLength": "2000",
+      "scrollWidth": 375,
+      "width": 390
+    }
+  },
+  {
+    "concept": 5,
+    "stage": "no-photo-long-question",
+    "snapshot": "- link \"본문으로 바로가기\":\n  - /url: \"#main\"\n- banner:\n  - link \"StoreLoop\":\n    - /url: /store-owner\n    - generic: ▦\n    - strong: StoreLoop\n  - generic: owner.north · 점주\n  - button \"로그아웃\"\n- navigation \"주요 업무\":\n  - link \"이력 탐색\":\n    - /url: /store-owner\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n  - link \"확인 문의\":\n    - /url: /store-owner/issues\n  - link \"내 알림\":\n    - /url: /store-owner/notifications\n- strong: StoreLoop 시연 안내\n- paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n- button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n- main:\n  - link \"← 이력 탐색으로\":\n    - /url: /store-owner\n  - paragraph: NEW OBSERVATION\n  - heading \"사진으로 점검하기\" [level=1]\n  - paragraph: 매대 전체와 앞줄이 선명하게 보이는 사진을 선택해 주세요.\n  - generic: 매장 *\n  - combobox \"매장 *\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리 *\n  - combobox \"카테고리 *\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - generic: 사진 선택 · JPEG/PNG, 장당 10MiB, 최대 5장\n  - button \"사진 선택 · JPEG/PNG, 장당 10MiB, 최대 5장\"\n  - generic: 질문 또는 현장 상황\n  - textbox \"질문 또는 현장 상황\" [active]: [합성 2000자 질문]\n  - generic: 2000/2000자\n  - button \"사진 제출하기\"\n- contentinfo: StoreLoop · 탐색과 비교 · 표시 시각 Asia/Seoul · 가상 매장 시연 환경",
+    "dom": {
+      "length": 2000,
+      "maxLength": "2000",
+      "scrollWidth": 375,
+      "width": 390
+    }
+  },
+  {
+    "concept": 2,
+    "stage": "invalid-type",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - link \"↻ StoreLoop\":\n    - /url: /store-owner\n    - generic: ↻\n    - text: StoreLoop\n  - text: owner.north\n  - generic: 점주\n  - button \"로그아웃\"\n- navigation \"주요 업무\":\n  - link \"오늘 할 일\":\n    - /url: /store-owner\n  - link \"사진 점검\":\n    - /url: /store-owner/submit\n  - link \"점검 이력\":\n    - /url: /store-owner/history\n  - link \"확인할 일\":\n    - /url: /store-owner/issues\n  - link \"알림\":\n    - /url: /store-owner/notifications\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - paragraph: TODAY’S WORK\n  - heading \"오늘의 매대, 사진으로 점검\" [level=1]\n  - paragraph: 매장과 매대 유형을 확인하고 사진을 보내 주세요.\n  - list:\n    - listitem: 1 매장과 매대\n    - listitem: 2 사진과 질문\n    - listitem: 3 분석 결과 확인\n  - heading \"1. 어디를 점검할까요?\" [level=2]\n  - generic: 매장 *\n  - combobox \"매장 *\":\n    - option \"선택하세요\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 매대 유형 *\n  - combobox \"매대 유형 *\":\n    - option \"선택하세요\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - heading \"2. 사진과 궁금한 점을 알려 주세요\" [level=2]\n  - generic: ＋\n  - strong: 매대 사진 선택\n  - generic: JPEG·PNG, 장당 10MiB 이하 · 최대 5장\n  - button \"＋ 매대 사진 선택 JPEG·PNG, 장당 10MiB 이하 · 최대 5장\" [active]\n  - paragraph: 매대 전체와 상품 앞면이 보이도록 밝은 곳에서 촬영해 주세요. 선택 순서대로 사진 번호가 정해집니다.\n  - alert: JPEG·PNG, 장당 10MiB 이하 사진을 선택해 주세요.\n  - text: 질문 또는 현장 상황\n  - textbox \"질문 또는 현장 상황 2000 / 2,000자\":\n    - /placeholder: \"예: 앞줄 간격과 음료 배치가 기준에 맞는지 확인해 주세요.\"\n    - text: [합성 2000자 질문]\n  - generic: 2000 / 2,000자\n  - alert: 사진을 1장 이상 선택해 주세요.\n  - paragraph: AI는 1차 점검을 도와요. 최종 조치와 예외 판단은 점주·OFC가 함께 확인해요.\n  - button \"사진 제출하기 →\"\n- contentinfo:\n  - generic: StoreLoop · 오늘 할 일\n  - generic: 작은 점검, 이어지는 개선."
+  },
+  {
+    "concept": 3,
+    "stage": "invalid-type",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - link \"StoreLoop\":\n    - /url: /store-owner\n  - text: owner.north\n  - generic: 점주 · 연결 매장\n  - button \"로그아웃\"\n- navigation \"업무 탐색\":\n  - link \"사진 작업실\":\n    - /url: /store-owner\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n  - link \"사진 이력\":\n    - /url: /store-owner/history\n  - link \"문의·조치\":\n    - /url: /store-owner/issues\n  - link \"알림\":\n    - /url: /store-owner/notifications\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - paragraph: NEW FRAME\n  - heading \"사진으로 점검하기\" [level=1]\n  - paragraph: 매대 전체가 보이도록 밝게 촬영해 주세요. 사진과 질문, 적용 기준을 함께 분석합니다.\n  - heading \"01 점검할 매대\" [level=2]:\n    - generic: \"01\"\n    - text: 점검할 매대\n  - generic: 매장\n  - combobox \"매장\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리\n  - combobox \"카테고리\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - heading \"02 사진을 펼쳐 주세요\" [level=2]:\n    - generic: \"02\"\n    - text: 사진을 펼쳐 주세요\n  - generic: 제출 사진\n  - button \"제출 사진 JPEG/PNG 1~5장, 한 장당 최대10MiB. 번호 순서대로 분석 근거와 연결됩니다.\"\n  - generic: JPEG/PNG 1~5장, 한 장당 최대10MiB. 번호 순서대로 분석 근거와 연결됩니다.\n  - article:\n    - img \"제출할 사진 1\"\n    - strong: 사진 1\n    - generic: unsupported.txt · 0.0MiB\n    - button \"사진 1 앞으로\" [disabled]: ←\n    - button \"사진 1 뒤로\" [disabled]: →\n    - button \"삭제\"\n  - alert: JPEG 또는 PNG 사진을 선택해 주세요.\n  - heading \"03 무엇이 궁금한가요?\" [level=2]:\n    - generic: \"03\"\n    - text: 무엇이 궁금한가요?\n  - generic: 점주 질문\n  - textbox \"점주 질문 2000/2,000자 · 선택 입력\":\n    - /placeholder: \"예: 앞줄 상품 간격을 어떻게 정리하면 좋을까요?\"\n    - text: [합성 2000자 질문]\n  - generic: 2000/2,000자 · 선택 입력\n  - button \"사진 제출하기\" [active]\n- contentinfo:\n  - generic: StoreLoop · Evidence Atelier\n  - generic: AI는 보조 판단입니다. 현장 예외는 OFC와 함께 확인하세요."
+  },
+  {
+    "concept": 5,
+    "stage": "invalid-type",
+    "snapshot": "- link \"본문으로 바로가기\":\n  - /url: \"#main\"\n- banner:\n  - link \"StoreLoop\":\n    - /url: /store-owner\n    - generic: ▦\n    - strong: StoreLoop\n  - generic: owner.north · 점주\n  - button \"로그아웃\"\n- navigation \"주요 업무\":\n  - link \"이력 탐색\":\n    - /url: /store-owner\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n  - link \"확인 문의\":\n    - /url: /store-owner/issues\n  - link \"내 알림\":\n    - /url: /store-owner/notifications\n- strong: StoreLoop 시연 안내\n- paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n- button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n- main:\n  - link \"← 이력 탐색으로\":\n    - /url: /store-owner\n  - paragraph: NEW OBSERVATION\n  - heading \"사진으로 점검하기\" [level=1]\n  - paragraph: 매대 전체와 앞줄이 선명하게 보이는 사진을 선택해 주세요.\n  - generic: 매장 *\n  - combobox \"매장 *\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리 *\n  - combobox \"카테고리 *\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - generic: 사진 선택 · JPEG/PNG, 장당 10MiB, 최대 5장\n  - button \"사진 선택 · JPEG/PNG, 장당 10MiB, 최대 5장\" [active]\n  - alert: JPEG 또는 PNG 사진만 선택해 주세요.\n  - generic: 질문 또는 현장 상황\n  - textbox \"질문 또는 현장 상황\": [합성 2000자 질문]\n  - generic: 2000/2000자\n  - button \"사진 제출하기\"\n- contentinfo: StoreLoop · 탐색과 비교 · 표시 시각 Asia/Seoul · 가상 매장 시연 환경"
+  },
+  {
+    "concept": 2,
+    "stage": "oversize",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - link \"↻ StoreLoop\":\n    - /url: /store-owner\n    - generic: ↻\n    - text: StoreLoop\n  - text: owner.north\n  - generic: 점주\n  - button \"로그아웃\"\n- navigation \"주요 업무\":\n  - link \"오늘 할 일\":\n    - /url: /store-owner\n  - link \"사진 점검\":\n    - /url: /store-owner/submit\n  - link \"점검 이력\":\n    - /url: /store-owner/history\n  - link \"확인할 일\":\n    - /url: /store-owner/issues\n  - link \"알림\":\n    - /url: /store-owner/notifications\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - paragraph: TODAY’S WORK\n  - heading \"오늘의 매대, 사진으로 점검\" [level=1]\n  - paragraph: 매장과 매대 유형을 확인하고 사진을 보내 주세요.\n  - list:\n    - listitem: 1 매장과 매대\n    - listitem: 2 사진과 질문\n    - listitem: 3 분석 결과 확인\n  - heading \"1. 어디를 점검할까요?\" [level=2]\n  - generic: 매장 *\n  - combobox \"매장 *\":\n    - option \"선택하세요\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 매대 유형 *\n  - combobox \"매대 유형 *\":\n    - option \"선택하세요\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - heading \"2. 사진과 궁금한 점을 알려 주세요\" [level=2]\n  - generic: ＋\n  - strong: 매대 사진 선택\n  - generic: JPEG·PNG, 장당 10MiB 이하 · 최대 5장\n  - button \"＋ 매대 사진 선택 JPEG·PNG, 장당 10MiB 이하 · 최대 5장\" [active]\n  - paragraph: 매대 전체와 상품 앞면이 보이도록 밝은 곳에서 촬영해 주세요. 선택 순서대로 사진 번호가 정해집니다.\n  - alert: JPEG·PNG, 장당 10MiB 이하 사진을 선택해 주세요.\n  - text: 질문 또는 현장 상황\n  - textbox \"질문 또는 현장 상황 2000 / 2,000자\":\n    - /placeholder: \"예: 앞줄 간격과 음료 배치가 기준에 맞는지 확인해 주세요.\"\n    - text: [合성 2000자 질문]\n  - generic: 2000 / 2,000자\n  - alert: 사진을 1장 이상 선택해 주세요.\n  - paragraph: AI는 1차 점검을 도와요. 최종 조치와 예외 판단은 점주·OFC가 함께 확인해요.\n  - button \"사진 제출하기 →\"\n- contentinfo:\n  - generic: StoreLoop · 오늘 할 일\n  - generic: 작은 점검, 이어지는 개선."
+  },
+  {
+    "concept": 3,
+    "stage": "oversize",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - link \"StoreLoop\":\n    - /url: /store-owner\n  - text: owner.north\n  - generic: 점주 · 연결 매장\n  - button \"로그아웃\"\n- navigation \"업무 탐색\":\n  - link \"사진 작업실\":\n    - /url: /store-owner\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n  - link \"사진 이력\":\n    - /url: /store-owner/history\n  - link \"문의·조치\":\n    - /url: /store-owner/issues\n  - link \"알림\":\n    - /url: /store-owner/notifications\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - paragraph: NEW FRAME\n  - heading \"사진으로 점검하기\" [level=1]\n  - paragraph: 매대 전체가 보이도록 밝게 촬영해 주세요. 사진과 질문, 적용 기준을 함께 분석합니다.\n  - heading \"01 점검할 매대\" [level=2]:\n    - generic: \"01\"\n    - text: 점검할 매대\n  - generic: 매장\n  - combobox \"매장\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리\n  - combobox \"카테고리\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - heading \"02 사진을 펼쳐 주세요\" [level=2]:\n    - generic: \"02\"\n    - text: 사진을 펼쳐 주세요\n  - generic: 제출 사진\n  - button \"제출 사진 JPEG/PNG 1~5장, 한 장당 최대10MiB. 번호 순서대로 분석 근거와 연결됩니다.\"\n  - generic: JPEG/PNG 1~5장, 한 장당 최대10MiB. 번호 순서대로 분석 근거와 연결됩니다.\n  - article:\n    - img \"제출할 사진 1\"\n    - strong: 사진 1\n    - generic: oversize.png · 10.0MiB\n    - button \"사진 1 앞으로\" [disabled]: ←\n    - button \"사진 1 뒤로\" [disabled]: →\n    - button \"삭제\"\n  - alert: 사진 한 장은 0보다 크고 10MiB 이하여야 합니다.\n  - heading \"03 무엇이 궁금한가요?\" [level=2]:\n    - generic: \"03\"\n    - text: 무엇이 궁금한가요?\n  - generic: 점주 질문\n  - textbox \"점주 질문 2000/2,000자 · 선택 입력\":\n    - /placeholder: \"예: 앞줄 상품 간격을 어떻게 정리하면 좋을까요?\"\n    - text: [合성 2000자 질문]\n  - generic: 2000/2,000자 · 선택 입력\n  - button \"사진 제출하기\" [active]\n- contentinfo:\n  - generic: StoreLoop · Evidence Atelier\n  - generic: AI는 보조 판단입니다. 현장 예외는 OFC와 함께 확인하세요."
+  },
+  {
+    "concept": 5,
+    "stage": "oversize",
+    "snapshot": "- link \"본문으로 바로가기\":\n  - /url: \"#main\"\n- banner:\n  - link \"StoreLoop\":\n    - /url: /store-owner\n    - generic: ▦\n    - strong: StoreLoop\n  - generic: owner.north · 점주\n  - button \"로그아웃\"\n- navigation \"주요 업무\":\n  - link \"이력 탐색\":\n    - /url: /store-owner\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n  - link \"확인 문의\":\n    - /url: /store-owner/issues\n  - link \"내 알림\":\n    - /url: /store-owner/notifications\n- strong: StoreLoop 시연 안내\n- paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n- button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n- main:\n  - link \"← 이력 탐색으로\":\n    - /url: /store-owner\n  - paragraph: NEW OBSERVATION\n  - heading \"사진으로 점검하기\" [level=1]\n  - paragraph: 매대 전체와 앞줄이 선명하게 보이는 사진을 선택해 주세요.\n  - generic: 매장 *\n  - combobox \"매장 *\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리 *\n  - combobox \"카테고리 *\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - generic: 사진 선택 · JPEG/PNG, 장당 10MiB, 최대 5장\n  - button \"사진 선택 · JPEG/PNG, 장당 10MiB, 최대 5장\" [active]\n  - alert: 사진 한 장은 10MiB 이하여야 합니다.\n  - generic: 질문 또는 현장 상황\n  - textbox \"질문 또는 현장 상황\": [合성 2000자 질문]\n  - generic: 2000/2000자\n  - button \"사진 제출하기\"\n- contentinfo: StoreLoop · 탐색과 비교 · 표시 시각 Asia/Seoul · 가상 매장 시연 환경"
+  },
+  {
+    "concept": 2,
+    "stage": "six-photos-blocked",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - link \"↻ StoreLoop\":\n    - /url: /store-owner\n    - generic: ↻\n    - text: StoreLoop\n  - text: owner.north\n  - generic: 점주\n  - button \"로그아웃\"\n- navigation \"주요 업무\":\n  - link \"오늘 할 일\":\n    - /url: /store-owner\n  - link \"사진 점검\":\n    - /url: /store-owner/submit\n  - link \"점검 이력\":\n    - /url: /store-owner/history\n  - link \"확인할 일\":\n    - /url: /store-owner/issues\n  - link \"알림\":\n    - /url: /store-owner/notifications\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - paragraph: TODAY’S WORK\n  - heading \"오늘의 매대, 사진으로 점검\" [level=1]\n  - paragraph: 매장과 매대 유형을 확인하고 사진을 보내 주세요.\n  - list:\n    - listitem: 1 매장과 매대\n    - listitem: 2 사진과 질문\n    - listitem: 3 분석 결과 확인\n  - heading \"1. 어디를 점검할까요?\" [level=2]\n  - generic: 매장 *\n  - combobox \"매장 *\":\n    - option \"선택하세요\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 매대 유형 *\n  - combobox \"매대 유형 *\":\n    - option \"선택하세요\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - heading \"2. 사진과 궁금한 점을 알려 주세요\" [level=2]\n  - generic: ＋\n  - strong: 매대 사진 선택\n  - generic: JPEG·PNG, 장당 10MiB 이하 · 최대 5장\n  - button \"＋ 매대 사진 선택 JPEG·PNG, 장당 10MiB 이하 · 최대 5장\" [active]\n  - paragraph: 매대 전체와 상품 앞면이 보이도록 밝은 곳에서 촬영해 주세요. 선택 순서대로 사진 번호가 정해집니다.\n  - alert: 사진은 5장까지 선택할 수 있습니다.\n  - text: 질문 또는 현장 상황\n  - textbox \"질문 또는 현장 상황 2000 / 2,000자\":\n    - /placeholder: \"예: 앞줄 간격과 음료 배치가 기준에 맞는지 확인해 주세요.\"\n    - text: [합성2000자]\n  - generic: 2000 / 2,000자\n  - alert: 사진을 1장 이상 선택해 주세요.\n  - paragraph: AI는 1차 점검을 도와요. 최종 조치와 예외 판단은 점주·OFC가 함께 확인해요.\n  - button \"사진 제출하기 →\"\n- contentinfo:\n  - generic: StoreLoop · 오늘 할 일\n  - generic: 작은 점검, 이어지는 개선."
+  },
+  {
+    "concept": 3,
+    "stage": "six-photos-blocked",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - link \"StoreLoop\":\n    - /url: /store-owner\n  - text: owner.north\n  - generic: 점주 · 연결 매장\n  - button \"로그아웃\"\n- navigation \"업무 탐색\":\n  - link \"사진 작업실\":\n    - /url: /store-owner\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n  - link \"사진 이력\":\n    - /url: /store-owner/history\n  - link \"문의·조치\":\n    - /url: /store-owner/issues\n  - link \"알림\":\n    - /url: /store-owner/notifications\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - paragraph: NEW FRAME\n  - heading \"사진으로 점검하기\" [level=1]\n  - paragraph: 매대 전체가 보이도록 밝게 촬영해 주세요. 사진과 질문, 적용 기준을 함께 분석합니다.\n  - heading \"01 점검할 매대\" [level=2]:\n    - generic: \"01\"\n    - text: 점검할 매대\n  - generic: 매장\n  - combobox \"매장\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리\n  - combobox \"카테고리\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - heading \"02 사진을 펼쳐 주세요\" [level=2]:\n    - generic: \"02\"\n    - text: 사진을 펼쳐 주세요\n  - generic: 제출 사진\n  - button \"제출 사진 JPEG/PNG 1~5장, 한 장당 최대10MiB. 번호 순서대로 분석 근거와 연결됩니다.\"\n  - generic: JPEG/PNG 1~5장, 한 장당 최대10MiB. 번호 순서대로 분석 근거와 연결됩니다.\n  - article:\n    - img \"제출할 사진 1\"\n    - strong: 사진 1\n    - generic: beverage-before-01.png · 2.2MiB\n    - button \"사진 1 앞으로\" [disabled]: ←\n    - button \"사진 1 뒤로\": →\n    - button \"삭제\"\n  - article:\n    - img \"제출할 사진 2\"\n    - strong: 사진 2\n    - generic: beverage-after-01.png · 2.0MiB\n    - button \"사진 2 앞으로\": ←\n    - button \"사진 2 뒤로\": →\n    - button \"삭제\"\n  - article:\n    - img \"제출할 사진 3\"\n    - strong: 사진 3\n    - generic: beverage-uncertain-01.png · 1.5MiB\n    - button \"사진 3 앞으로\": ←\n    - button \"사진 3 뒤로\": →\n    - button \"삭제\"\n  - article:\n    - img \"제출할 사진 4\"\n    - strong: 사진 4\n    - generic: snack-before-01.png · 1.9MiB\n    - button \"사진 4 앞으로\": ←\n    - button \"사진 4 뒤로\": →\n    - button \"삭제\"\n  - article:\n    - img \"제출할 사진 5\"\n    - strong: 사진 5\n    - generic: snack-after-01.png · 1.9MiB\n    - button \"사진 5 앞으로\": ←\n    - button \"사진 5 뒤로\": →\n    - button \"삭제\"\n  - article:\n    - img \"제출할 사진 6\"\n    - strong: 사진 6\n    - generic: snack-uncertain-01.png · 1.4MiB\n    - button \"사진 6 앞으로\": ←\n    - button \"사진 6 뒤로\" [disabled]: →\n    - button \"삭제\"\n  - alert: 사진은 1~5장을 선택해 주세요.\n  - heading \"03 무엇이 궁금한가요?\" [level=2]:\n    - generic: \"03\"\n    - text: 무엇이 궁금한가요?\n  - generic: 점주 질문\n  - textbox \"점주 질문 2000/2,000자 · 선택 입력\":\n    - /placeholder: \"예: 앞줄 상품 간격을 어떻게 정리하면 좋을까요?\"\n    - text: [합성2000자]\n  - generic: 2000/2,000자 · 선택 입력\n  - button \"사진 제출하기\" [active]\n- contentinfo:\n  - generic: StoreLoop · Evidence Atelier\n  - generic: AI는 보조 판단입니다. 현장 예외는 OFC와 함께 확인하세요."
+  },
+  {
+    "concept": 5,
+    "stage": "six-photos-blocked",
+    "snapshot": "- link \"본문으로 바로가기\":\n  - /url: \"#main\"\n- banner:\n  - link \"StoreLoop\":\n    - /url: /store-owner\n    - generic: ▦\n    - strong: StoreLoop\n  - generic: owner.north · 점주\n  - button \"로그아웃\"\n- navigation \"주요 업무\":\n  - link \"이력 탐색\":\n    - /url: /store-owner\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n  - link \"확인 문의\":\n    - /url: /store-owner/issues\n  - link \"내 알림\":\n    - /url: /store-owner/notifications\n- strong: StoreLoop 시연 안내\n- paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n- button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n- main:\n  - link \"← 이력 탐색으로\":\n    - /url: /store-owner\n  - paragraph: NEW OBSERVATION\n  - heading \"사진으로 점검하기\" [level=1]\n  - paragraph: 매대 전체와 앞줄이 선명하게 보이는 사진을 선택해 주세요.\n  - generic: 매장 *\n  - combobox \"매장 *\":\n    - option \"매장 선택\"\n    - option \"봄빛역점\" [selected]\n    - option \"은행길점\"\n    - option \"푸른언덕점\"\n  - generic: 카테고리 *\n  - combobox \"카테고리 *\":\n    - option \"카테고리 선택\"\n    - option \"간편식\"\n    - option \"생활용품\"\n    - option \"스낵\"\n    - option \"음료\" [selected]\n  - generic: 사진 선택 · JPEG/PNG, 장당 10MiB, 최대 5장\n  - button \"사진 선택 · JPEG/PNG, 장당 10MiB, 최대 5장\" [active]\n  - alert: 사진은 5장까지 선택할 수 있습니다.\n  - generic: 질문 또는 현장 상황\n  - textbox \"질문 또는 현장 상황\": [합성2000자]\n  - generic: 2000/2000자\n  - button \"사진 제출하기\"\n- contentinfo: StoreLoop · 탐색과 비교 · 표시 시각 Asia/Seoul · 가상 매장 시연 환경"
+  },
+  {
+    "concept": 2,
+    "stage": "reorder-remove",
+    "dom": {
+      "loaded": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "photos": [
+        "사진 1 · beverage-after-01.png2.0 MiB←→삭제",
+        "사진 2 · beverage-uncertain-01.png1.5 MiB←→삭제",
+        "사진 3 · snack-before-01.png1.9 MiB←→삭제",
+        "사진 4 · snack-after-01.png1.9 MiB←→삭제"
+      ],
+      "questionLength": 2000,
+      "scrollWidth": 375,
+      "width": 390
+    }
+  },
+  {
+    "concept": 3,
+    "stage": "reorder-remove",
+    "dom": {
+      "loaded": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "photos": [
+        "사진 1beverage-after-01.png · 2.0MiB←→삭제",
+        "사진 2beverage-uncertain-01.png · 1.5MiB←→삭제",
+        "사진 3snack-before-01.png · 1.9MiB←→삭제",
+        "사진 4snack-after-01.png · 1.9MiB←→삭제",
+        "사진 5snack-uncertain-01.png · 1.4MiB←→삭제"
+      ],
+      "questionLength": 2000,
+      "scrollWidth": 375,
+      "width": 390
+    }
+  },
+  {
+    "concept": 5,
+    "stage": "reorder-remove",
+    "dom": {
+      "loaded": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "photos": [
+        "사진 1 · beverage-after-01.png2077 KiB사진 1 앞으로사진 1 삭제",
+        "사진 2 · beverage-uncertain-01.png1585 KiB사진 2 앞으로사진 2 삭제",
+        "사진 3 · snack-before-01.png1933 KiB사진 3 앞으로사진 3 삭제",
+        "사진 4 · snack-after-01.png1895 KiB사진 4 앞으로사진 4 삭제"
+      ],
+      "questionLength": 2000,
+      "scrollWidth": 375,
+      "width": 390
+    }
+  },
+  {
+    "concept": 4,
+    "stage": "no-photo",
+    "snapshot": "- link \"본문 바로가기\":\n  - /url: \"#main\"\n- banner:\n  - link \"◒ StoreLoop\":\n    - /url: /store-owner\n  - text: owner.north\n  - generic: 점주\n  - button \"로그아웃\"\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - generic: 새로운 현장 점검\n  - heading \"오늘의 매대를 담아 주세요\" [level=1]\n  - list:\n    - generic: ✓\n    - text: 매장\n    - generic: \"2\"\n    - text: 사진\n    - generic: \"3\"\n    - text: 질문\n    - generic: \"4\"\n    - text: 확인\n  - strong: 매대 전체가 보이게, 밝고 또렷하게\n  - paragraph: 정면에서 촬영해 상품 앞줄과 가격표가 보이도록 해 주세요.\n  - generic: 사진 선택\n  - button \"사진 선택 JPG·PNG, 1~5장, 한 장당 최대 10MB\"\n  - generic: JPG·PNG, 1~5장, 한 장당 최대 10MB\n  - alert: 사진을 1~5장 선택해 주세요.\n  - button \"이전\"\n  - button \"다음 단계 →\" [active]\n- navigation \"주요 메뉴\":\n  - link \"홈\":\n    - /url: /store-owner\n    - generic: ⌂\n    - text: 홈\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n    - generic: ＋\n    - text: 사진 제출\n  - link \"이력\":\n    - /url: /store-owner/history\n    - generic: ◷\n    - text: 이력\n  - link \"문의\":\n    - /url: /store-owner/issues\n    - generic: ◇\n    - text: 문의\n  - link \"더보기\":\n    - /url: /store-owner/more\n    - generic: •••\n    - text: 더보기"
+  },
+  {
+    "concept": 4,
+    "stage": "unsupported.txt",
+    "snapshot": "- link \"본문 바로가기\":\n  - /url: \"#main\"\n- banner:\n  - link \"◒ StoreLoop\":\n    - /url: /store-owner\n  - text: owner.north\n  - generic: 점주\n  - button \"로그아웃\"\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - generic: 새로운 현장 점검\n  - heading \"오늘의 매대를 담아 주세요\" [level=1]\n  - list:\n    - generic: ✓\n    - text: 매장\n    - generic: \"2\"\n    - text: 사진\n    - generic: \"3\"\n    - text: 질문\n    - generic: \"4\"\n    - text: 확인\n  - strong: 매대 전체가 보이게, 밝고 또렷하게\n  - paragraph: 정면에서 촬영해 상품 앞줄과 가격표가 보이도록 해 주세요.\n  - generic: 사진 선택\n  - button \"사진 선택 JPG·PNG, 1~5장, 한 장당 최대 10MB\" [active]\n  - generic: JPG·PNG, 1~5장, 한 장당 최대 10MB\n  - alert: JPG 또는 PNG 사진을 선택해 주세요.\n  - button \"이전\"\n  - button \"다음 단계 →\"\n- navigation \"주요 메뉴\":\n  - link \"홈\":\n    - /url: /store-owner\n    - generic: ⌂\n    - text: 홈\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n    - generic: ＋\n    - text: 사진 제출\n  - link \"이력\":\n    - /url: /store-owner/history\n    - generic: ◷\n    - text: 이력\n  - link \"문의\":\n    - /url: /store-owner/issues\n    - generic: ◇\n    - text: 문의\n  - link \"더보기\":\n    - /url: /store-owner/more\n    - generic: •••\n    - text: 더보기"
+  },
+  {
+    "concept": 4,
+    "stage": "oversize.png",
+    "snapshot": "- link \"본문 바로가기\":\n  - /url: \"#main\"\n- banner:\n  - link \"◒ StoreLoop\":\n    - /url: /store-owner\n  - text: owner.north\n  - generic: 점주\n  - button \"로그아웃\"\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - generic: 새로운 현장 점검\n  - heading \"오늘의 매대를 담아 주세요\" [level=1]\n  - list:\n    - generic: ✓\n    - text: 매장\n    - generic: \"2\"\n    - text: 사진\n    - generic: \"3\"\n    - text: 질문\n    - generic: \"4\"\n    - text: 확인\n  - strong: 매대 전체가 보이게, 밝고 또렷하게\n  - paragraph: 정면에서 촬영해 상품 앞줄과 가격표가 보이도록 해 주세요.\n  - generic: 사진 선택\n  - button \"사진 선택 JPG·PNG, 1~5장, 한 장당 최대 10MB\" [active]\n  - generic: JPG·PNG, 1~5장, 한 장당 최대 10MB\n  - alert: 사진은 한 장당 10MB 이내여야 합니다.\n  - button \"이전\"\n  - button \"다음 단계 →\"\n- navigation \"주요 메뉴\":\n  - link \"홈\":\n    - /url: /store-owner\n    - generic: ⌂\n    - text: 홈\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n    - generic: ＋\n    - text: 사진 제출\n  - link \"이력\":\n    - /url: /store-owner/history\n    - generic: ◷\n    - text: 이력\n  - link \"문의\":\n    - /url: /store-owner/issues\n    - generic: ◇\n    - text: 문의\n  - link \"더보기\":\n    - /url: /store-owner/more\n    - generic: •••\n    - text: 더보기"
+  },
+  {
+    "concept": 4,
+    "stage": "six-photos-blocked",
+    "snapshot": "- link \"본문 바로가기\":\n  - /url: \"#main\"\n- banner:\n  - link \"◒ StoreLoop\":\n    - /url: /store-owner\n  - text: owner.north\n  - generic: 점주\n  - button \"로그아웃\"\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - generic: 새로운 현장 점검\n  - heading \"오늘의 매대를 담아 주세요\" [level=1]\n  - list:\n    - generic: ✓\n    - text: 매장\n    - generic: \"2\"\n    - text: 사진\n    - generic: \"3\"\n    - text: 질문\n    - generic: \"4\"\n    - text: 확인\n  - strong: 매대 전체가 보이게, 밝고 또렷하게\n  - paragraph: 정면에서 촬영해 상품 앞줄과 가격표가 보이도록 해 주세요.\n  - generic: 사진 선택\n  - button \"사진 선택 JPG·PNG, 1~5장, 한 장당 최대 10MB\" [active]\n  - generic: JPG·PNG, 1~5장, 한 장당 최대 10MB\n  - alert: 사진을 1~5장 선택해 주세요.\n  - button \"이전\"\n  - button \"다음 단계 →\"\n- navigation \"주요 메뉴\":\n  - link \"홈\":\n    - /url: /store-owner\n    - generic: ⌂\n    - text: 홈\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n    - generic: ＋\n    - text: 사진 제출\n  - link \"이력\":\n    - /url: /store-owner/history\n    - generic: ◷\n    - text: 이력\n  - link \"문의\":\n    - /url: /store-owner/issues\n    - generic: ◇\n    - text: 문의\n  - link \"더보기\":\n    - /url: /store-owner/more\n    - generic: •••\n    - text: 더보기"
+  },
+  {
+    "concept": 4,
+    "stage": "reorder-remove",
+    "dom": {
+      "loaded": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "photos": [
+        "1. beverage-after-01.png2.0MB←→삭제",
+        "2. beverage-uncertain-01.png1.5MB←→삭제",
+        "3. snack-before-01.png1.9MB←→삭제",
+        "4. snack-after-01.png1.9MB←→삭제"
+      ],
+      "scrollWidth": 375,
+      "width": 390
+    }
+  },
+  {
+    "concept": 4,
+    "stage": "long-question",
+    "dom": {
+      "length": 2000,
+      "maxLength": "2000",
+      "scrollWidth": 375,
+      "width": 390
+    }
+  },
+  {
+    "concept": 4,
+    "stage": "review-preserves-input",
+    "snapshot": "- link \"본문 바로가기\":\n  - /url: \"#main\"\n- banner:\n  - link \"◒ StoreLoop\":\n    - /url: /store-owner\n  - text: owner.north\n  - generic: 점주\n  - button \"로그아웃\"\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - generic: 새로운 현장 점검\n  - heading \"이대로 점검을 시작할까요?\" [level=1]\n  - list:\n    - generic: ✓\n    - text: 매장\n    - generic: ✓\n    - text: 사진\n    - generic: ✓\n    - text: 질문\n    - generic: \"4\"\n    - text: 확인\n  - term: 매장\n  - definition: 봄빛역점\n  - term: 카테고리\n  - definition: 음료\n  - term: 사진\n  - definition: 4장\n  - term: 질문\n  - definition: [합성2000자]\n  - paragraph: AI가 먼저 살펴보고, 필요한 경우 OFC와 함께 확인합니다. 분석 중 화면을 나가도 이력에서 이어 볼 수 있어요.\n  - button \"이전\"\n  - button \"사진 제출하기\" [active]\n- navigation \"주요 메뉴\":\n  - link \"홈\":\n    - /url: /store-owner\n    - generic: ⌂\n    - text: 홈\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n    - generic: ＋\n    - text: 사진 제출\n  - link \"이력\":\n    - /url: /store-owner/history\n    - generic: ◷\n    - text: 이력\n  - link \"문의\":\n    - /url: /store-owner/issues\n    - generic: ◇\n    - text: 문의\n  - link \"더보기\":\n    - /url: /store-owner/more\n    - generic: •••\n    - text: 더보기"
+  },
+  {
+    "concept": 1,
+    "stage": "no-criteria-reference",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - button \"주 메뉴 열기\": ☰\n  - strong: 점주\n  - link \"알림\":\n    - /url: /store-owner/notifications\n  - button \"로그아웃\"\n- main:\n  - strong: 안내 · StoreLoop 시연 안내\n  - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n  - paragraph: STORELOOP / 관제 데스크\n  - heading \"사진 · 평가 근거\" [level=1]\n  - paragraph: 제출 당시의 기준과 사진을 함께 확인합니다.\n  - generic: 봄빛역점 / 음료 · 2026. 7. 17. 오전 9:00\n  - generic: 분석 완료\n  - heading \"제출 사진\" [level=2]\n  - link \"사진 1 원본 새 창 보기\":\n    - /url: /api/media/b40a641a-21e8-5185-8e6f-ac0087bd2b4f\n    - img \"진열 상태 사진 1\"\n  - paragraph: 사진 1/1 · 원본을 누르면 확대됩니다.\n  - generic: AI 생성 시연 이미지\n  - button \"사진 1 선택\" [pressed]: \"1\"\n  - heading \"점주 질문\" [level=3]\n  - paragraph: 시연용 경계 사례입니다. 관찰할 수 있는 내용과 한계를 알려주세요.\n  - heading \"분석 결과\" [level=2]\n  - generic: Mock 데이터\n  - heading \"질문에 대한 답변\" [level=2]\n  - paragraph: Mock 과거 평가입니다. 당시 등록된 진열 기준과 Reference가 없어 OFC 확인이 필요합니다.\n  - paragraph: 기준 도입 이전의 합성 경계 사례입니다.\n  - generic: 준수율\n  - strong:\n    - generic: —\n    - generic: 판단 가능 —\n  - generic: 판단 표본\n  - strong: 0 / 0\n  - generic: 준수 + 개선 필요 / 전체 기준\n  - generic: AI 신뢰도\n  - strong: 낮음\n  - paragraph: OFC 확인이 필요합니다. 판단이 어려운 항목과 제한 사항을 확인해 주세요.\n  - generic: 기준별 판정\n  - combobox \"기준별 판정\":\n    - option \"전체\" [selected]\n    - option \"준수\"\n    - option \"개선 필요\"\n    - option \"판단 불가\"\n  - text: ▤\n  - paragraph: 선택한 조건에 해당하는 기록이 없습니다.\n  - generic \"Reference 비교와 분석 제한\"\n  - paragraph: AI는 1차 검토를 돕습니다. 최종 업무 판단은 담당자가 확인합니다. · 분석 0.0초\n  - link \"개선 후 다시 제출\":\n    - /url: /store-owner/submit?parent_submission_id=540333dc-3e4d-5864-8d4b-0ae75d2da2a1\n  - tablist:\n    - tab \"적용 기준 · Reference\" [selected]\n    - tab \"제출 이력\"\n    - tab \"OFC 대응\"\n  - tabpanel \"적용 기준 · Reference\":\n    - heading \"제출 시점의 적용 기준\" [level=3]\n    - text: ▤\n    - paragraph: 선택한 조건에 해당하는 기록이 없습니다.\n    - heading \"분석에 사용한 Reference\" [level=3]\n    - text: ▤\n    - paragraph: 비교 Reference가 없습니다.\n  - text: StoreLoop · 관제 데스크\n  - generic: 표시 시각 KST · 기간 필터 UTC\n- navigation \"점주 빠른 탐색\":\n  - link \"내 매장 현황\":\n    - /url: /store-owner\n    - generic: ▦\n    - text: 내 매장 현황\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n    - generic: ＋\n    - text: 사진 제출\n  - link \"제출 이력\":\n    - /url: /store-owner/history\n    - generic: ▤\n    - text: 제출 이력\n  - link \"OFC 확인 요청\":\n    - /url: /store-owner/issues\n    - generic: ◇\n    - text: OFC 확인 요청"
+  },
+  {
+    "concept": 2,
+    "stage": "no-criteria-reference",
+    "snapshot": "- link \"본문으로 건너뛰기\":\n  - /url: \"#main\"\n- banner:\n  - link \"↻ StoreLoop\":\n    - /url: /store-owner\n    - generic: ↻\n    - text: StoreLoop\n  - text: owner.north\n  - generic: 점주\n  - button \"로그아웃\"\n- navigation \"주요 업무\":\n  - link \"오늘 할 일\":\n    - /url: /store-owner\n  - link \"사진 점검\":\n    - /url: /store-owner/submit\n  - link \"점검 이력\":\n    - /url: /store-owner/history\n  - link \"확인할 일\":\n    - /url: /store-owner/issues\n  - link \"알림\":\n    - /url: /store-owner/notifications\n- main:\n  - complementary:\n    - strong: StoreLoop 시연 안내\n    - paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n    - button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n  - link \"← 점검 이력으로\":\n    - /url: /store-owner/history\n  - paragraph: TODAY’S WORK\n  - heading \"음료 점검 결과\" [level=1]\n  - paragraph: 봄빛역점 · 7월 17일 오전 09:00 (한국 시간)\n  - generic: 분석 완료\n  - region \"분석 진행 상태\":\n    - generic: 분석 완료\n    - generic: 12초 경과\n    - paragraph: 점검을 마쳤어요. 아래 근거와 개선 행동을 확인해 주세요.\n  - generic: Mock 데이터\n  - heading \"제출 사진\" [level=2]\n  - figure \"음료 제출 사진 1 AI 생성 시연 이미지\":\n    - link \"음료 제출 사진 1\":\n      - /url: /api/media/b40a641a-21e8-5185-8e6f-ac0087bd2b4f\n      - img \"음료 제출 사진 1\"\n    - text: 음료 제출 사진 1\n    - generic: AI 생성 시연 이미지\n  - blockquote:\n    - text: 점주의 질문\n    - paragraph: 시연용 경계 사례입니다. 관찰할 수 있는 내용과 한계를 알려주세요.\n  - heading \"AI가 제안하는 다음 한 걸음\" [level=2]\n  - generic: 준수율\n  - strong: —\n  - generic: 판단 가능률\n  - strong: —\n  - generic: 판단 가능한 기준\n  - strong: 0 / 0\n  - paragraph: 판단 가능한 기준이 없어 준수율을 계산할 수 없습니다.\n  - paragraph: 기준 도입 이전의 합성 경계 사례입니다.\n  - heading \"질문에 대한 답변\" [level=3]\n  - paragraph: Mock 과거 평가입니다. 당시 등록된 진열 기준과 Reference가 없어 OFC 확인이 필요합니다.\n  - paragraph:\n    - text: 모델 신뢰도\n    - generic: 낮음\n  - paragraph: OFC 확인 필요 · 사진만으로 판단하기 어려운 내용은 함께 확인해 주세요.\n  - heading \"기준별 근거와 개선 행동\" [level=2]\n  - heading \"Reference와 비교\" [level=2]\n  - paragraph: 비교 Reference가 없습니다.\n  - strong: 이번 점검의 한계\n  - list:\n    - listitem: 당시 적용할 기준과 비교 Reference가 없었습니다.\n  - complementary:\n    - heading \"다음 행동\" [level=2]\n    - link \"개선 후 다시 제출\":\n      - /url: /store-owner/submit?parent_submission_id=540333dc-3e4d-5864-8d4b-0ae75d2da2a1\n    - paragraph: 판단하기 어려운 항목은 OFC와 함께 확인해 주세요.\n    - heading \"OFC에 확인 요청\" [level=3]\n    - generic: 문의 제목 *\n    - textbox \"문의 제목 *\"\n    - generic: 확인할 내용 *\n    - textbox \"확인할 내용 *\"\n    - button \"OFC에 확인 요청\"\n    - 'link \"검토 대기 시연: 기준 도입 전 평가 확인\"':\n      - /url: /store-owner/issues/ec3e434f-c957-587f-be77-33c8e6bee05a\n      - generic: 검토 대기\n      - text: \"시연: 기준 도입 전 평가 확인\"\n    - heading \"연결된 개선 이력\" [level=2]\n    - paragraph: 첫 점검 기록이에요. 개선 후 다시 제출하면 변화가 이어져요.\n  - heading \"점검에 적용한 기준과 Reference\" [level=2]\n  - paragraph: 제출 당시 고정한 기준입니다. 이후 기준이 바뀌어도 이 점검의 근거는 보존됩니다.\n  - paragraph: 적용할 기준이 없어 OFC 확인이 필요해요.\n  - paragraph: 비교 Reference가 없습니다.\n- contentinfo:\n  - generic: StoreLoop · 오늘 할 일\n  - generic: 작은 점검, 이어지는 개선."
+  },
+  {
+    "concept": 5,
+    "stage": "no-criteria-reference",
+    "snapshot": "- link \"본문으로 바로가기\":\n  - /url: \"#main\"\n- banner:\n  - link \"StoreLoop\":\n    - /url: /store-owner\n    - generic: ▦\n    - strong: StoreLoop\n  - generic: owner.north · 점주\n  - button \"로그아웃\"\n- navigation \"주요 업무\":\n  - link \"이력 탐색\":\n    - /url: /store-owner\n  - link \"사진 제출\":\n    - /url: /store-owner/submit\n  - link \"확인 문의\":\n    - /url: /store-owner/issues\n  - link \"내 알림\":\n    - /url: /store-owner/notifications\n- strong: StoreLoop 시연 안내\n- paragraph: AI 생성 사진과 Mock 과거 데이터를 사용합니다. 새 제출은 실제 AI로 분석됩니다.\n- button \"StoreLoop 시연 안내 공지 닫기\": 닫기\n- main:\n  - link \"← 탐색 결과로\":\n    - /url: /store-owner/submissions\n  - paragraph: 봄빛역점 / 2026. 7. 17. 오전 9:00\n  - heading \"음료 점검 결과\" [level=1]\n  - generic: 분석 완료\n  - status: 분석 완료 · 결과를 확인해 주세요.\n  - heading \"제출 사진과 질문\" [level=2]\n  - paragraph: 시연용 경계 사례입니다. 관찰할 수 있는 내용과 한계를 알려주세요.\n  - figure \"음료 제출 사진 1 · 2026. 7. 17. 오전 9:00 AI 생성 시연 이미지\":\n    - img \"음료 제출 사진 1 · 2026. 7. 17. 오전 9:00\"\n    - text: 음료 제출 사진 1 · 2026. 7. 17. 오전 9:00\n    - generic: AI 생성 시연 이미지\n  - generic \"제출 당시 적용 기준 · 0개\"\n  - paragraph: Mock 데이터\n  - heading \"평가와 개선 제안\" [level=2]\n  - generic: 준수율\n  - strong: —\n  - generic: 판단 가능률\n  - strong: —\n  - generic: 판단 가능한 기준\n  - strong: 0/0\n  - paragraph: 판단 가능한 기준이 없어 준수율을 계산할 수 없습니다.\n  - heading \"질문에 대한 답변\" [level=3]\n  - paragraph: Mock 과거 평가입니다. 당시 등록된 진열 기준과 Reference가 없어 OFC 확인이 필요합니다.\n  - paragraph: 기준 도입 이전의 합성 경계 사례입니다.\n  - paragraph: \"모델 신뢰도: 낮음\"\n  - generic: OFC 확인이 필요합니다. 아래 확인 요청에서 추가 의견을 남겨 주세요.\n  - heading \"Reference 비교\" [level=3]\n  - paragraph: 비교 Reference가 없습니다.\n  - strong: 판단의 한계\n  - list:\n    - listitem: 당시 적용할 기준과 비교 Reference가 없었습니다.\n  - link \"개선 후 다시 제출\":\n    - /url: /store-owner/submit?parent=540333dc-3e4d-5864-8d4b-0ae75d2da2a1\n  - heading \"연결된 이력\" [level=2]\n  - paragraph:\n    - 'link \"시연: 기준 도입 전 평가 확인\"':\n      - /url: /store-owner/issues/ec3e434f-c957-587f-be77-33c8e6bee05a\n    - generic: 확인 대기\n  - heading \"OFC에 확인 요청\" [level=2]\n  - generic: 문의 제목 *\n  - textbox \"문의 제목 *\"\n  - generic: 확인할 내용 *\n  - textbox \"확인할 내용 *\"\n  - button \"OFC에 확인 요청\"\n- contentinfo: StoreLoop · 탐색과 비교 · 표시 시각 Asia/Seoul · 가상 매장 시연 환경"
+  }
+]

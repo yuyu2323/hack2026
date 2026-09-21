@@ -1,0 +1,91 @@
+{
+  "concept01": {
+    "active": "역할 안내",
+    "documentWidth": 375,
+    "height": 844,
+    "loaded": 8,
+    "tables": [
+      {
+        "left": 40,
+        "name": "역할 안내",
+        "scrollWidth": 580,
+        "width": 309
+      },
+      {
+        "left": 0,
+        "name": "사용자 안내",
+        "scrollWidth": 580,
+        "width": 309
+      },
+      {
+        "left": 0,
+        "name": "입력 안내",
+        "scrollWidth": 580,
+        "width": 309
+      },
+      {
+        "left": 0,
+        "name": "역할 안내",
+        "scrollWidth": 580,
+        "width": 309
+      },
+      {
+        "left": 0,
+        "name": "보이는 상태 안내",
+        "scrollWidth": 580,
+        "width": 309
+      },
+      {
+        "left": 0,
+        "name": "표시 안내",
+        "scrollWidth": 580,
+        "width": 309
+      },
+      {
+        "left": 0,
+        "name": "확인 항목 안내",
+        "scrollWidth": 580,
+        "width": 309
+      }
+    ],
+    "total": 8,
+    "width": 390
+  },
+  "concept02": {
+    "active": "시연 계정과 확인 범위 표",
+    "documentWidth": 375,
+    "focusOutline": "rgb(184, 84, 36) solid 3px",
+    "height": 844,
+    "left": 0,
+    "tableScrollWidth": 303,
+    "tableWidth": 303,
+    "width": 390
+  },
+  "concept03": {
+    "active": "역할 안내",
+    "documentWidth": 375,
+    "height": 844,
+    "imagesLoaded": 10,
+    "left": 40,
+    "total": 10,
+    "width": 390
+  },
+  "concept04": {
+    "active": "역할 안내",
+    "documentWidth": 375,
+    "height": 844,
+    "imagesLoaded": 10,
+    "left": 40,
+    "total": 10,
+    "width": 390
+  },
+  "concept05": {
+    "active": "역할 안내",
+    "documentWidth": 375,
+    "height": 844,
+    "imagesLoaded": 12,
+    "left": 40,
+    "total": 12,
+    "width": 390
+  }
+}

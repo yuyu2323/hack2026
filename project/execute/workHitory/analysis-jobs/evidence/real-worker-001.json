@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "source_kind": "real_ai",
+  "image_source_kind": "ai_generated_demo",
+  "tested_at": "2026-09-21T09:12:14.603051+00:00",
+  "job_id": "f98a124b-ccee-4f1a-9cbb-5f2f6ef61bde",
+  "attempt_id": "9153aaff-f364-4b67-8917-fd1c6cfdf89c",
+  "worker_elapsed_ms": 25805,
+  "target_30_seconds_met": true,
+  "attempt_status": "succeeded",
+  "error_code": null,
+  "result_applied": true,
+  "photo_sha256": "8e72ae4f11c60a58b8ab0b0fb03e307082945bac56aa44c28d60a7983b61c3b7",
+  "reference_sha256": "a96648449ff2fc1d5266965669cd44ee051539d6db565795e8c2587d0550f986",
+  "review_count": 1,
+  "criterion_count": 1,
+  "issue_count": 0,
+  "notification_count": 1,
+  "model_name": "gpt-6-astra",
+  "model_latency_ms": 25472,
+  "compliance_rate": 0.0,
+  "assessable_rate": 100.0,
+  "question_answer": "생수와 탄산수의 앞줄이 고르게 정렬되어 있지 않습니다. 뒤로 들어간 상품을 선반 앞쪽으로 당겨 정렬해야 합니다. 차의 앞줄은 대체로 정렬되어 있습니다.",
+  "evidence": [
+    {
+      "observation": "상단 생수는 중앙과 오른쪽 일부 병이 인접한 앞쪽 병보다 뒤에 놓여 있습니다.",
+      "photo_position": 1
+    },
+    {
+      "observation": "중단 탄산수는 녹색 캔 오른쪽 일부와 은색 캔 일부가 뒤로 물러나 있어 앞줄이 고르지 않습니다.",
+      "photo_position": 1
+    },
+    {
+      "observation": "하단 차 병은 선반 앞쪽에 대체로 일정한 줄로 놓여 있습니다.",
+      "photo_position": 1
+    }
+  ],
+  "reference_comparison": [
+    {
+      "verdict": "different",
+      "observation": "Reference는 생수와 탄산수의 앞줄이 연속적으로 고르게 정렬되어 있지만, 제출 사진은 빈 간격과 뒤로 들어간 상품이 보여 앞줄이 불규칙합니다.",
+      "reference_id": "19c2e444-58fa-4ccb-b3a4-102ea07bd807",
+      "photo_positions": [
+        1
+      ]
+    }
+  ],
+  "database": "전용 테스트 schema, 종료 후 삭제",
+  "schema_and_reference_validation": "PASS"
+}

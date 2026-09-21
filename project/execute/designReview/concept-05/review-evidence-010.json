@@ -1,0 +1,55 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-ofc-evidence.png",
+      "sha256": "5045c1482995a47e60faf5de0bdd6a958fd2d63160ea64758d59b64eb3892817",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "왼쪽 개선 후 원본 사진·사진1/시각/생성 배지와 오른쪽 질문 답변·기준별 사진1 근거를 함께 읽을 수 있다. 사진과 질문/기준 카드가 겹치지 않는다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-ofc-resolved.png",
+      "sha256": "44d95378e8b6cf4321f85814ac443d3ed567bc4c2f7f47bd0d0c3c9937a58674",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "ofc.south의 노을공원점 음료 이슈가 해결 상태이며 해결 내용·원본 근거 이동·담당/상태·조치 의견 폼이 구별된다. 전체 조치 이력은 현재 viewport 아래다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-analytics-empty.png",
+      "sha256": "c424e62fa5d9bc091019a607e73a8a509ee923ecca7617cffc117fb70a7ad8de",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "생활용품 조건에서 선택 기간 자료 없음과 유효 표본0/Pearson r—를 구분한다. Mock 매출과 비인과 안내를 표시한다. 계산 불가 상세 이유는 화면 아래다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-analytics-zero-variance.png",
+      "sha256": "a4be759c0cb4f022788da5fc3390a1d4537b071d73ecb70b727a18a3f092bfab",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "유효 표본3인데 값 변화가 없어 계산 불가/Pearson r—임을 명시한다. 결측/판단불가 제외0, 같은 높이의 산점과 원래 값 표를 제공하며 0상관으로 위장하지 않는다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-owner-notifications.png",
+      "sha256": "703b9b92dbd300ce7d8cad5d3682d2a148409f961b3188bf610bd089093a46cb",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "owner.south 내 알림에서 읽지 않음16건·새 조치/분석 알림·시각·대상 확인이 읽힌다. 현재 접근 가능한 업무 알림만 표시한다는 안내가 있다."
+    }
+  ]
+}

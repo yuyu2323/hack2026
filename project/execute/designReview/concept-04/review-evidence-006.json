@@ -1,0 +1,85 @@
+{
+  "scope": "독립 직접 시각 검수; 실제 동작/전체 인수 완료와 구분",
+  "items": [
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-owner-home.png",
+      "sha256": "89b86dbc3f11bc13d820f8f32e6872988b0a2d347cb0ce63ddd5020054bfa861",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "점주 첫 화면의 큰 사진 제출 CTA·연결 매장 카드·하단5탭. 단열이며 사진 점검 대표 행동이 우선."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-required-error.png",
+      "sha256": "59c69c262128eb16b7588df8c23f7e5c61cf76b51ad8a98cd4ec7144c6161d46",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "매장 단계의4단계 진행 표시·매장/카테고리 미선택 오류·다음 단계 버튼. 항목과 오류 문구 대응."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-upload-preview.png",
+      "sha256": "7a961ad4e3c229d3ffb729f511a5b83f40cf81395c515bcdf7537f4aea434576",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "사진 단계의 스낵1장 미리보기·이름/용량·비활성 이동 버튼·삭제·이전/다음. 하단 탐색과 조작이 함께 읽힘."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-long-question.png",
+      "sha256": "be1529d8c5943609ea8d498585e51061b296553f7d8d85060366350c28c1550d",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "질문 단계2000/2000자·필드 내부 스크롤·강조 초점·이전/다음. 긴 질문의 문서 가로 잘림 없음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-confirm.png",
+      "sha256": "afe46f23b5560209a8ccc2d49916876e12011b084b63ac59046d2ba10fd690cd",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "확인 단계에서 매장 봄빛역점·스낵·사진1장·현재 질문 및 분석 후 이어보기 안내. 이전/사진 제출하기가 구분됨."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-processing.png",
+      "sha256": "8b5533de209f6fc16a483524c3f8b43f7cfd9e601c6636387fc56901dc120cff",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "생성 이미지 출처·사진1·질문과 분석 중16초. 분석 적용 기준/Reference 접힘과 다음 행동 카드."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-processing-delayed.png",
+      "sha256": "d0f7e6226f599f2ad98131275fd6ee646739c2532b0449a62a91a4b38c069a88",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "분석 중54초와 시간이 더 필요함/이력에서 확인 가능 안내. 성공이나 기술실패로 오인시키지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-reference-preview.png",
+      "sha256": "803e2f2b420530628b1e8c57a79af4096f7c735276e729d2a1a32b9e6762c854",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "Reference 등록의 매장·카테고리·설명·파일명과 스낵 이미지 미리보기. 원본의 아래 부분은 화면 밖이라 전체 이미지 시각 검수로 확대하지 않음."
+    }
+  ]
+}

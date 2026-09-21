@@ -1,0 +1,48 @@
+{
+  "checked_at": "2026-09-21T10:46:09.218063+00:00",
+  "scope": "390 모바일 부분 시각 검수. 전체 디자인 PASS 아님.",
+  "files": [
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-mobile390-first-preview.png",
+      "sha256": "37af61bb8eb585bcfac0361a981a5a039bf9ba52a7e7d9a3070cdef2b371b6d7",
+      "width": 375,
+      "height": 812,
+      "observation": "실제 사진 미리보기 1장·파일명·2.2MiB·순서/삭제, F03-UPLOAD 수정 후 화면"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-mobile390-first-processing.png",
+      "sha256": "84a2a0bb72dd6f9de65d51290adfe59d754baa834c15cc016f6885870d9e3e13",
+      "width": 375,
+      "height": 812,
+      "observation": "분석 중·경과 14초·시도 1회·상태 재조회 및 적용 기준 보존 안내"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-mobile390-technical-failure.png",
+      "sha256": "6d2222cf580defe892f28191fc8397972f95c93f1f79a3f459461a04004e67a8",
+      "width": 375,
+      "height": 812,
+      "observation": "분석 서비스 연결 실패, 운영자 복구 요청/새 현장 별도 제출 안내"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-mobile390-unknown-mock.png",
+      "sha256": "0bb55796b9d250419e1f3979728024d305bf0b81f48834c23d30edc750d1f204",
+      "width": 375,
+      "height": 812,
+      "observation": "Mock 배지·실제 AI 아님·준수율 계산불가/판단가능 0%·unknown4 구분"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-mobile390-empty-history.png",
+      "sha256": "bfc30f7df9f3028b5d408b49ab835006e7ff21a3b4fd4d2900209d29ba619265",
+      "width": 375,
+      "height": 812,
+      "observation": "해당 조건 사진 없음·0개·비활성 페이지 버튼·명명된 필터"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-mobile390-upload-missing-reproduction.png",
+      "sha256": "fa36d550a7f9a72a1de7bb3d2095768baf60b3b83883993eb35ed53918ca5f5e",
+      "width": 375,
+      "height": 812,
+      "observation": "F03-UPLOAD 최초 재현: 업로드 후 미리보기 소실. 수정 전 결함 증거이며 매뉴얼에 사용하지 않음"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "status": "STATIC_TEXT_LINK_PASS; 지정 viewport 기존 렌더 PASS; 최신 본문 추가 렌더 NOT_RUN",
+  "checked_at": "2026-09-21T13:28:54.779450+00:00",
+  "html_sha256": "b1803bb717d41615e7bcbd2e933eea3540c7b7f01cb44f9e114b2754a13f9dd9",
+  "anchors": 11,
+  "internal_anchor_refs": 12,
+  "relative_path_links_images": 23,
+  "local_app_links": 2,
+  "external_dependencies": [],
+  "errors": [],
+  "images": [
+    {
+      "path": "assets/owner-home.png",
+      "sha256": "d69d31c08010e8fd650be89e123644cb89fcf4d63c81870c2dbbbb3f6c4b5941",
+      "unchanged": true
+    },
+    {
+      "path": "assets/photo-preview-keyboard.png",
+      "sha256": "ecf33bf60023187dd2f2b8639d588ba0e15dbaa330a17113560c00d7bfb45d85",
+      "unchanged": true
+    },
+    {
+      "path": "assets/unknown-metrics.png",
+      "sha256": "ecf19e95ac536b05bc05475f4e3f22a34cac579a6e73312681dfa914f5805053",
+      "unchanged": true
+    },
+    {
+      "path": "assets/changed-criteria-comparison.png",
+      "sha256": "4a6f34330402513803f5ed0c689d4aae0896d5b9bbef6df9ed1a0bf604e90fff",
+      "unchanged": true
+    },
+    {
+      "path": "assets/reference-preview.png",
+      "sha256": "890e45415be0593c79fb7b8c93e4b29169a6529570e3c23b2a16ca3d7d959e50",
+      "unchanged": true
+    },
+    {
+      "path": "assets/analysis-delayed.png",
+      "sha256": "5d7a45f9b0c83376dd771de95f8a33f98d96300a1916e1a3353f71f2876e694e",
+      "unchanged": true
+    },
+    {
+      "path": "assets/mapping-revoked.png",
+      "sha256": "7bc7e6f5c5ad5c0b0c93c0ecf2f306d2e5cd99757f08d81394bb22eda0f1b2f0",
+      "unchanged": true
+    }
+  ],
+  "local_paths": [
+    {
+      "path": "../../../README.md",
+      "exists": true
+    },
+    {
+      "path": "../../../docs/10-execution.md#관리-프로세스와-db-종료",
+      "exists": true
+    },
+    {
+      "path": "assets/owner-home.png",
+      "exists": true
+    },
+    {
+      "path": "assets/owner-home.png",
+      "exists": true
+    },
+    {
+      "path": "assets/photo-preview-keyboard.png",
+      "exists": true
+    },
+    {
+      "path": "assets/photo-preview-keyboard.png",
+      "exists": true
+    },
+    {
+      "path": "assets/unknown-metrics.png",
+      "exists": true
+    },
+    {
+      "path": "assets/unknown-metrics.png",
+      "exists": true
+    },
+    {
+      "path": "assets/changed-criteria-comparison.png",
+      "exists": true
+    },
+    {
+      "path": "assets/changed-criteria-comparison.png",
+      "exists": true
+    },
+    {
+      "path": "assets/reference-preview.png",
+      "exists": true
+    },
+    {
+      "path": "assets/reference-preview.png",
+      "exists": true
+    },
+    {
+      "path": "assets/analysis-delayed.png",
+      "exists": true
+    },
+    {
+      "path": "assets/analysis-delayed.png",
+      "exists": true
+    },
+    {
+      "path": "assets/mapping-revoked.png",
+      "exists": true
+    },
+    {
+      "path": "assets/mapping-revoked.png",
+      "exists": true
+    },
+    {
+      "path": "../../../execute/workHitory/manuals-browser/independent-recheck.md",
+      "exists": true
+    },
+    {
+      "path": "../../frontend-comparison.md",
+      "exists": true
+    },
+    {
+      "path": "../../../execute/question/frontend-selection/select-concept.md",
+      "exists": true
+    },
+    {
+      "path": "../../../execute/designReview/concept-02/review-001.md",
+      "exists": true
+    },
+    {
+      "path": "../../../execute/workHitory/integration-concept-02/actual-ai.json",
+      "exists": true
+    },
+    {
+      "path": "../../../README.md",
+      "exists": true
+    }
+  ],
+  "last_change": "CSRF/Reference409 복구·queued/API/timeout·입력 경계 완료 본문 갱신. CSS/figure/7이미지 불변.",
+  "table_regions": [
+    "시연 계정과 확인 범위 표",
+    "역할별 시작 경로와 메뉴 표",
+    "분석 결과 표시와 읽는 방법 표",
+    "플랫폼 운영 메뉴와 확인 사항 표",
+    "화면 상태별 대응 방법 표",
+    "시안02 실제 AI 검증 실측 표",
+    "다섯 시안 정보 배치 비교 표"
+  ],
+  "table_identifier_rule": ".table-wrap code{white-space:nowrap;overflow-wrap:normal;word-break:normal}"
+}

@@ -1,0 +1,11 @@
+# 시안 03 독립 기능 인수
+- 담당 root. 개발/디자인 작성자 concept03 및 최종디자인 검수 contract_ai와 분리.
+- 상태 RUNNING, storeloop_test / .local/test-media, 실제 AI 순차.
+- [x] E01 4단계 기준·Reference 및 실제 첫 평가
+- [x] E02 실제 재제출·전후 비교·관리자·조치·알림
+- [x] E03 변경 기준/Reference·과거 보존
+- [x] E04 권한 즉시 반영
+- [x] E05 장애 재처리
+- [ ] E06 상태 경계
+- [ ] E07 분석/알림/공지
+- [ ] E08 viewport/키보드/preview/매뉴얼

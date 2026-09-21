@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-09-21T12:39:03.498840+00:00",
+  "database_alias": "test",
+  "scope": "READ ONLY / 비밀·본문 출력 없음",
+  "read_only": true,
+  "existing_boundary": {
+    "submission_id": "1dd78a42-e241-52a9-b718-694b8faa0ea1",
+    "job_id": "330bc920-98f9-5bd4-b9ba-3c0e491fede6",
+    "status": "succeeded",
+    "error_code": null,
+    "is_fixture": true,
+    "source_kind": "seed_demo",
+    "queued_at": "2026-09-21T19:58:55.454961+09:00",
+    "queue_deadline_at": "2026-09-21T20:01:55.454961+09:00",
+    "attempt_count": 2,
+    "review_count": 1,
+    "snapshot_sha256": "9bb818b326b1a4e132266c8c9936c0211ef46fae5146a2a26521a4d8435364b9"
+  },
+  "queued_jobs": [],
+  "candidate_source": {
+    "account_login": "owner.north",
+    "account_id": "978cd014-02fe-50cd-a300-c0bd66279d4d",
+    "role": "store_owner",
+    "account_active": true,
+    "store_id": "e4ef147d-b64e-5b66-b686-d2314f2a225a",
+    "store_active": true,
+    "category_id": "d1b2e38e-cfc2-564b-a183-45b23eb82eaa",
+    "category_active": true,
+    "current_owner_mapping": true,
+    "media_id": "b40a641a-21e8-5185-8e6f-ac0087bd2b4f",
+    "media_source_kind": "ai_generated_demo",
+    "media_sha256": "9723404dbd7ca09170f2a2253736518bbcb260f45b5b3ee389dafddf057433a6"
+  }
+}

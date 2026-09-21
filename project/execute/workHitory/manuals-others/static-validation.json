@@ -1,0 +1,50 @@
+{
+  "scope": "HTML/로컬 이미지 링크 정적 검사. 별도 root 실제 문서 desktop1440×900/mobile390×844·로컬 이미지·키보드/본문 건너뛰기 및 독립 PNG 재검수 PASS. 200% 확대·OS 네트워크 차단 오프라인 검사 NOT_RUN, 전체 제품 인수 진행 중.",
+  "credential_check": "비밀 값 노출 없음",
+  "results": [
+    {
+      "concept": "01",
+      "status": "PASS",
+      "bytes": 46700,
+      "sha256": "c5133143a3f97f87d7d337b8b6fc2e625a8b19df056a50520a509208404ef445",
+      "anchors": 20,
+      "local_links": 39,
+      "images": 8,
+      "external_resource_dependencies": 0,
+      "errors": []
+    },
+    {
+      "concept": "03",
+      "status": "PASS",
+      "bytes": 49981,
+      "sha256": "610ff58bfb09971c52321604bd09c7793bb0bb57565b19e0d70f7fb82b73cd38",
+      "anchors": 22,
+      "local_links": 39,
+      "images": 10,
+      "external_resource_dependencies": 0,
+      "errors": []
+    },
+    {
+      "concept": "04",
+      "status": "PASS",
+      "bytes": 50066,
+      "sha256": "3b55e56f71c31664643b0f31f40bb43b9d724a09ba91c4a5b65f0027802b6ef8",
+      "anchors": 22,
+      "local_links": 39,
+      "images": 10,
+      "external_resource_dependencies": 0,
+      "errors": []
+    },
+    {
+      "concept": "05",
+      "status": "PASS",
+      "bytes": 54313,
+      "sha256": "86a4f05c36c2c05ee4eef46f5013f43824f1261440edcc0918e2ef5f6543ad3f",
+      "anchors": 24,
+      "local_links": 43,
+      "images": 12,
+      "external_resource_dependencies": 0,
+      "errors": []
+    }
+  ]
+}

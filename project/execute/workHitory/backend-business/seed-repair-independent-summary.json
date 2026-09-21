@@ -1,0 +1,23 @@
+{
+  "reviewer": "root",
+  "databases": {
+    "demo": {
+      "changed_submissions": 12,
+      "change_count": 40,
+      "replay_change_count": 0,
+      "backup_count": 1,
+      "backup_modes": [
+        "0o600"
+      ]
+    },
+    "test": {
+      "changed_submissions": 12,
+      "change_count": 40,
+      "replay_change_count": 0,
+      "backup_count": 1,
+      "backup_modes": [
+        "0o600"
+      ]
+    }
+  }
+}

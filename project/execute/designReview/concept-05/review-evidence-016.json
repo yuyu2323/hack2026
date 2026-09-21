@@ -1,0 +1,15 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-audit-expanded.png",
+      "sha256": "1bf6aefadc27b253044e0e91e3b7481cf530fd6b2de66e0b18080b667823ea0e",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "감사 대상 필터와 수행자/시각/대상/성공·변경 사유, 계정OFC→점주/버전6→7·매장 연결 종료의 전후 요약이 모두 읽힌다. 업무 사진/평가/비밀값은 표시되지 않고 이력 수정·삭제를 제공하지 않음을 안내한다."
+    }
+  ]
+}

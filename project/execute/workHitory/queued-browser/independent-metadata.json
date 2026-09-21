@@ -1,0 +1,334 @@
+{
+  "status": "PASS",
+  "started_at": "2026-09-21T13:14:54.579268+00:00",
+  "checks": [
+    {
+      "check": "database_read_only",
+      "status": "PASS"
+    },
+    {
+      "check": "mock_fixture_identity_and_queue_timeout",
+      "status": "PASS"
+    },
+    {
+      "check": "exactly_one_initial_expired_attempt",
+      "status": "PASS"
+    },
+    {
+      "check": "attempt_was_not_started_or_claimed",
+      "status": "PASS"
+    },
+    {
+      "check": "no_result_applied_or_created",
+      "status": "PASS"
+    },
+    {
+      "check": "timeout_happened_after_queue_deadline",
+      "status": "PASS"
+    },
+    {
+      "check": "snapshot_same_as_apply_and_creation_audit",
+      "status": "PASS"
+    },
+    {
+      "check": "creation_audit_still_mock",
+      "status": "PASS"
+    },
+    {
+      "check": "original_boundary_status_counts_snapshot_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "17f959e5-831a-4ff7-842d-22575e6cfad5:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "2b0e717c-c161-4caa-8d1e-f1b7c9c88106:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "e3488415-6745-56a8-be69-7d3010521033:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "8259ce47-90ce-4a85-8496-8ed27edeb375:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "46e985b6-58cd-4376-b035-cd5f0e38c600:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "dfc9189b-e833-4500-bc37-c0f4976f0625:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "1dd78a42-e241-52a9-b718-694b8faa0ea1:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "b0dbd6a2-3b6c-4442-8b57-902448539127:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "96165c7c-53c9-5ded-9f99-f9ee67ec2c86:existing_ai_record_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "no_pending_orm_writes",
+      "status": "PASS"
+    }
+  ],
+  "scope": "READ ONLY; 원문·비밀·이미지 출력 없음, API/AI/Browser/서비스/DB 쓰기 없음",
+  "baseline_files": [
+    {
+      "path": "execute/workHitory/integration-concept-01/independent-ai-metadata-20260921T124354Z.json",
+      "sha256": "f151e0c63502cc88c5cdbffafcaf7b45fbfc9824afad1b94a9343556b2797533"
+    },
+    {
+      "path": "execute/workHitory/integration-concept-01/independent-operations-metadata-20260921T125136Z.json",
+      "sha256": "a0415fabced04de50455b15298e6ffeeaeb01ad828f27c1e03894ab4460f61e0"
+    },
+    {
+      "path": "execute/workHitory/integration-concept-02/independent-ai-metadata-20260921T124410Z.json",
+      "sha256": "0d3dc02fd70ff4b9895b45e42a33b505eff0c3a788f7594f58d8d1daa1a6100f"
+    },
+    {
+      "path": "execute/workHitory/integration-concept-03/actual-ai.json",
+      "sha256": "b7d1c9c1fde8f8c3e871722f2995d0fc91978cc2f2775d3a3595db39af2cb2a6"
+    },
+    {
+      "path": "execute/workHitory/integration-concept-04/independent-metadata-http.json",
+      "sha256": "fa0c3a18eb495450064f507588e15a973bbd0a5296067b4e4da77bdf454cb72c"
+    },
+    {
+      "path": "execute/workHitory/integration-concept-05/independent-pair-metadata.json",
+      "sha256": "0e14535613fa9ee56a9119ce94f148d4baeb3106947f0db6bc42bb0a892a9e4c"
+    },
+    {
+      "path": "execute/workHitory/integration-concept-05/independent-operations-metadata.json",
+      "sha256": "4f2b217216b4b9cb4abac51269b4c1083de0b8769a9a56c7dd82fbb328886481"
+    }
+  ],
+  "new_snapshot_baseline": {
+    "sha256": "7a09aa3f289e307a825a20921522ed3d030004c01e7a5289e9efc4d0cf7ee7e8",
+    "source": "execute/workHitory/queued-browser/browser.md root 실제 apply 기록 + 생성 감사 after_data",
+    "browser_record_sha256": "fa2161688ebf26632cc67f3db9bcc6c98df0785b549a0a80ad64147c4df3dbf8"
+  },
+  "fixture": {
+    "submission_id": "2f9b333f-8a43-5df0-841d-f1c66b213ab3",
+    "job_id": "0d50701f-c61b-5c48-80ea-1df7ca4d2cb4",
+    "status": "failed",
+    "error_code": "QUEUE_TIMEOUT",
+    "is_fixture": true,
+    "source_kind": "seed_demo",
+    "snapshot_sha256": "7a09aa3f289e307a825a20921522ed3d030004c01e7a5289e9efc4d0cf7ee7e8",
+    "created_at": "2026-09-21T21:51:54.764852+09:00",
+    "queued_at": "2026-09-21T21:51:54.764852+09:00",
+    "queue_deadline_at": "2026-09-21T21:54:54.764852+09:00",
+    "finished_at": "2026-09-21T22:13:05.343422+09:00",
+    "review_count": 0,
+    "attempt_count": 1,
+    "attempt": {
+      "id": "34bfc307-d4cb-4ae8-9097-042326355a5c",
+      "number": 1,
+      "status": "expired",
+      "error_code": "QUEUE_TIMEOUT",
+      "started_at": null,
+      "worker_id": null,
+      "result_applied": false,
+      "finished_at": "2026-09-21T22:13:05.343422+09:00"
+    },
+    "ai_input_counts": {
+      "photos": 1,
+      "guidelines": 5,
+      "references": 3
+    },
+    "new_ai_call_evidence": "점유/시작/worker/lease/heartbeat 없음 + QUEUE_TIMEOUT expired; 결과0. 외부 모델 서버 로그 직접 계수는 수행하지 않음"
+  },
+  "original_boundary": {
+    "submission_id": "1dd78a42-e241-52a9-b718-694b8faa0ea1",
+    "job_id": "330bc920-98f9-5bd4-b9ba-3c0e491fede6",
+    "status": "succeeded",
+    "attempt_count": 2,
+    "review_count": 1,
+    "snapshot_sha256": "9bb818b326b1a4e132266c8c9936c0211ef46fae5146a2a26521a4d8435364b9"
+  },
+  "preserved_ai_records": [
+    {
+      "submission_id": "17f959e5-831a-4ff7-842d-22575e6cfad5",
+      "snapshot_sha256": "8e16a5856ff0c31b2fc8e06f061a1974b9546a879600de5da6a87dd9f68b70e3",
+      "result_sha256": "66b99e91e4e56f189c0025a563e83d7151acc8b0d324c38832bff47fba237252",
+      "source": "execute/workHitory/integration-concept-01/independent-ai-metadata-20260921T124354Z.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "2b0e717c-c161-4caa-8d1e-f1b7c9c88106",
+      "snapshot_sha256": "bee63c5c0c8c83f49c661cdf64f0c1b864bd72db3cd0ca5f7fdd45420a01ad48",
+      "result_sha256": "1965c36d91a9ff756e9c882927167cdacf19b54f43caf18bc72450f3916fcbdc",
+      "source": "execute/workHitory/integration-concept-01/independent-ai-metadata-20260921T124354Z.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "e3488415-6745-56a8-be69-7d3010521033",
+      "snapshot_sha256": "3e438fda1ea1a520e1ad65be3cc516c1af0723b5e54d1558eb3af819ea62059c",
+      "result_sha256": "54a58b67fdc40edeea729f1a54794ee6894262ba0f9929b2283961f2bf5d305b",
+      "source": "execute/workHitory/integration-concept-01/independent-operations-metadata-20260921T125136Z.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "snapshot_sha256": "23c2609844cb17fb887fb9d07917cf88ec08b76bae7a63824c5c4dfda029e65c",
+      "result_sha256": "a18d48e3d7c3320cadc2cb5c8ac2a613780ca59fb0c552b19f3e1dcbe38625b7",
+      "source": "execute/workHitory/integration-concept-02/independent-ai-metadata-20260921T124410Z.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "snapshot_sha256": "e61cc99e9ef4915c3d13d4d9027f326ea51ff65bf00b3939cba3db4893d6fbb5",
+      "result_sha256": "ebe161afa146d16e9b287e4190f33aa82e073f42f9d93b037f827d06ff6a4f4b",
+      "source": "execute/workHitory/integration-concept-02/independent-ai-metadata-20260921T124410Z.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703",
+      "snapshot_sha256": "479c9c85ae8a6ced1267ed9a9d2b8ea2c5a718d099eda70f02fd150a487a6b1b",
+      "result_sha256": "3d058bc073878de2d0816de93e12d4a13c0605bfa4adb29c8f19bf6dcbf92c89",
+      "source": "execute/workHitory/integration-concept-02/independent-ai-metadata-20260921T124410Z.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "46e985b6-58cd-4376-b035-cd5f0e38c600",
+      "snapshot_sha256": "31cf89afcfe7f33a7cf1355c35006365603a0895efa55c00dccc9e3b1e82a5d6",
+      "result_sha256": null,
+      "source": "execute/workHitory/integration-concept-03/actual-ai.json",
+      "snapshot_preserved": true,
+      "result_preserved": null,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "dfc9189b-e833-4500-bc37-c0f4976f0625",
+      "snapshot_sha256": "2a9a172cd283e31e729999c00664025fd5776fb73a242acb1c49c88d7aa1a31c",
+      "result_sha256": null,
+      "source": "execute/workHitory/integration-concept-03/actual-ai.json",
+      "snapshot_preserved": true,
+      "result_preserved": null,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "1dd78a42-e241-52a9-b718-694b8faa0ea1",
+      "snapshot_sha256": "9bb818b326b1a4e132266c8c9936c0211ef46fae5146a2a26521a4d8435364b9",
+      "result_sha256": null,
+      "source": "execute/workHitory/integration-concept-03/actual-ai.json",
+      "snapshot_preserved": true,
+      "result_preserved": null,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "snapshot_sha256": "61410b3e2a2f025ffff4fe4d0c41353131d072aef442ce49c7c6572bb47075c0",
+      "result_sha256": "3b6d6f8fe24d3bec643beafb5032e547c84548716ead620d8e82f3c14eceb255",
+      "source": "execute/workHitory/integration-concept-04/independent-metadata-http.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "80d35004-ef2b-4d18-8618-f2199b6878a2",
+      "snapshot_sha256": "e45196c29fa44299151e2260b74aa88026cd713382759c0b444f4335baec2290",
+      "result_sha256": "e58b759fe144d478eec6cd1a0c489257a6baf28b24d9a36a17a252f92b15b0c4",
+      "source": "execute/workHitory/integration-concept-04/independent-metadata-http.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8",
+      "snapshot_sha256": "95a2be8f2be2b41fe1a2980c7b31848478ee802087015af6a6aace8f15c86487",
+      "result_sha256": "da18f3f0f93a85f8f7c75e32d8ef0534205b914c7a88fe60cf25828c0be36156",
+      "source": "execute/workHitory/integration-concept-04/independent-metadata-http.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "snapshot_sha256": "328e242f70db0b606c9cb1f05ff507408440c80fea4dd6d5e4ca9c51e53fccab",
+      "result_sha256": "2ed952ff398fd14a8ac1e6445013028849d81f88e79cd1a1ea94ca280eb2e8e1",
+      "source": "execute/workHitory/integration-concept-05/independent-pair-metadata.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "b0dbd6a2-3b6c-4442-8b57-902448539127",
+      "snapshot_sha256": "36f6b34d61e44877e1fca80118eb9dc855e09d2e973a6be9c19812d0a9cbe9d7",
+      "result_sha256": "bcde9a27b6bea35f3327a5d2ebfd61a65664eaa01b1d42c44734814e899dba0a",
+      "source": "execute/workHitory/integration-concept-05/independent-pair-metadata.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    },
+    {
+      "submission_id": "96165c7c-53c9-5ded-9f99-f9ee67ec2c86",
+      "snapshot_sha256": "054ac71a99b45bd6793f8abf38682c13ec6611917274d2843ce2e2f270943344",
+      "result_sha256": "2d2575e10c56bf796913f541d24d78c40bc7f0ff93f037af86a06a25b7ce8acc",
+      "source": "execute/workHitory/integration-concept-05/independent-operations-metadata.json",
+      "snapshot_preserved": true,
+      "result_preserved": true,
+      "job_status": "succeeded",
+      "source_kind": "real_ai"
+    }
+  ],
+  "finished_at": "2026-09-21T13:14:54.682463+00:00"
+}

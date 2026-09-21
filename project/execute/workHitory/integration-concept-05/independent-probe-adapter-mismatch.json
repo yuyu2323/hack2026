@@ -1,0 +1,197 @@
+{
+  "status": "FAIL",
+  "started_at": "2026-09-21T11:58:33.957410+00:00",
+  "checks": [
+    {
+      "check": "read_only_transaction",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:snapshot_sha256",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:succeeded_real_ai",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:current_applied_attempt",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:input_result_schema_and_references",
+      "status": "FAIL"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:photo:1:hash",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:reference:dd5e826b-618a-4f55-8777-34eb3d9e81db:hash",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:reference:58fe8e1e-8cb4-54f5-898a-2066d979ea3e:hash",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:guideline:a9dda64f-4efa-5fc1-a941-16ebc5ef168b:immutable",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:guideline:8a009953-950b-5fdb-9aa2-c4bd42db2e00:immutable",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:guideline:b3d4c8b8-83aa-5bc0-8f02-3417d4bf65fa:immutable",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:guideline:ea82cea5-18f9-4f58-913d-06ccbf61782f:immutable",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:guideline:5952450f-40f1-59ca-bf7e-a860ea2a8193:immutable",
+      "status": "PASS"
+    },
+    {
+      "check": "first_has_no_parent",
+      "status": "PASS"
+    }
+  ],
+  "submissions": [
+    {
+      "submission_id": "3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "parent_submission_id": null,
+      "job_id": "d9f18dfb-ceae-45f3-8776-991383794be8",
+      "review_id": "4625a155-3c9c-4d7a-b2d5-988d26dbb8b0",
+      "source_kind": "real_ai",
+      "is_fixture": false,
+      "status": "succeeded",
+      "model": "gpt-6-astra",
+      "prompt_version": "storeloop-review-v1",
+      "schema_version": "1.0",
+      "submitted_at": "2026-09-21T20:52:55.417512+09:00",
+      "model_ms": 60273,
+      "submit_to_db_ms": 61422,
+      "snapshot_sha256": "328e242f70db0b606c9cb1f05ff507408440c80fea4dd6d5e4ca9c51e53fccab",
+      "result_sha256": "2ed952ff398fd14a8ac1e6445013028849d81f88e79cd1a1ea94ca280eb2e8e1",
+      "ai_input_sha256": "5ca8049f042ea7784aedde2ee75136869d0ac7863dcef062cb603138557e4d4c",
+      "question_length": 97,
+      "question_sha256": "50ed3a6cac6ec17ee78f4828b49edf5279b12b9f57b3c35c8646976ed812e13a",
+      "counts": {
+        "photos": 1,
+        "guidelines": 5,
+        "references": 2
+      },
+      "guidelines": [
+        {
+          "guideline_id": "9288a8f0-4e8b-5746-8150-4445dc4f5841",
+          "version_id": "a9dda64f-4efa-5fc1-a941-16ebc5ef168b",
+          "version": 1,
+          "rule_key": "category_grouping",
+          "level": "CATEGORY"
+        },
+        {
+          "guideline_id": "f4a3c527-c699-5f16-bbc5-4994d8bbd156",
+          "version_id": "8a009953-950b-5fdb-9aa2-c4bd42db2e00",
+          "version": 2,
+          "rule_key": "facing",
+          "level": "CATEGORY"
+        },
+        {
+          "guideline_id": "0cb0f81a-0e58-5466-9063-21ed0dfaa40a",
+          "version_id": "b3d4c8b8-83aa-5bc0-8f02-3417d4bf65fa",
+          "version": 1,
+          "rule_key": "label_visibility",
+          "level": "HQ"
+        },
+        {
+          "guideline_id": "1750bc1d-332f-472e-9f0f-528d5f632844",
+          "version_id": "ea82cea5-18f9-4f58-913d-06ccbf61782f",
+          "version": 1,
+          "rule_key": "qa05_labels",
+          "level": "CATEGORY"
+        },
+        {
+          "guideline_id": "7001c16a-e034-5371-9acc-2de349530b77",
+          "version_id": "5952450f-40f1-59ca-bf7e-a860ea2a8193",
+          "version": 1,
+          "rule_key": "shelf_gap",
+          "level": "STORE"
+        }
+      ],
+      "qa05_candidates": [
+        {
+          "guideline_id": "2ed8f65e-479e-41cf-96c5-4cd1176510c1",
+          "version_id": "d9301707-7ef2-4c7b-9f35-2aa4a590a388",
+          "version": 1,
+          "rule_key": "qa05_labels",
+          "level": "HQ",
+          "selected": false
+        },
+        {
+          "guideline_id": "0d553d0a-aaf3-4ff5-8c60-e24e6b65530c",
+          "version_id": "65b8cef4-ba25-4fab-a3b2-1085db4faa25",
+          "version": 1,
+          "rule_key": "qa05_labels",
+          "level": "REGION",
+          "selected": false
+        },
+        {
+          "guideline_id": "9cc0155e-9214-4b21-bb64-e852306bf251",
+          "version_id": "13a3b6f1-dcf0-4a5d-8809-a87f786b2147",
+          "version": 1,
+          "rule_key": "qa05_labels",
+          "level": "STORE",
+          "selected": false
+        },
+        {
+          "guideline_id": "1750bc1d-332f-472e-9f0f-528d5f632844",
+          "version_id": "ea82cea5-18f9-4f58-913d-06ccbf61782f",
+          "version": 1,
+          "rule_key": "qa05_labels",
+          "level": "CATEGORY",
+          "selected": true
+        }
+      ],
+      "photos": [
+        {
+          "photo_id": "b4b0b665-3ec5-4f45-80b0-6281e46aaa78",
+          "position": 1,
+          "sha256": "86d21c85c15d0328e6942a82c7fe0d797d1dbc4584bb320fab4bd80e7e7f4329"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "dd5e826b-618a-4f55-8777-34eb3d9e81db",
+          "lineage_id": "dd5e826b-618a-4f55-8777-34eb3d9e81db",
+          "version": 1,
+          "active_now": true,
+          "photo_id": "9227f81b-6c33-47e1-8991-096de4a14dc1",
+          "sha256": "63c02dac9d0410a8e2b6a03b6668d5b3070baebd76f452cefecbef47964bb5aa"
+        },
+        {
+          "reference_id": "58fe8e1e-8cb4-54f5-898a-2066d979ea3e",
+          "lineage_id": "58fe8e1e-8cb4-54f5-898a-2066d979ea3e",
+          "version": 1,
+          "active_now": true,
+          "photo_id": "16d4c243-3905-569f-85e7-65514805b594",
+          "sha256": "63c02dac9d0410a8e2b6a03b6668d5b3070baebd76f452cefecbef47964bb5aa"
+        }
+      ],
+      "attempts": [
+        {
+          "number": 1,
+          "status": "succeeded",
+          "error_code": null,
+          "result_applied": true,
+          "attempt_id": "4ee3e319-938d-483e-9dcc-e758c24fb191"
+        }
+      ]
+    }
+  ],
+  "scope": "읽기 전용 DB 관찰; 브라우저/HTTP 세션/업무 쓰기/신규 실제 AI 호출 없음",
+  "finished_at": "2026-09-21T11:58:34.031862+00:00",
+  "exporter_sha256": "cc5344870a178e48e0fde7d8bcd88c6c8a298230ed512ef582b57790f3b3db87"
+}

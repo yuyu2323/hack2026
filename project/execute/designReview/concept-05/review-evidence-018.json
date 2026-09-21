@@ -1,0 +1,15 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-retry-success-applied.png",
+      "sha256": "011e8215591ff3fe2a6cdfa970a8e2947b9f84f811454c7676255ef9117f83d8",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "보존된 첫 AI_UNAVAILABLE 실패/결과미반영과 둘째 분석완료·시작/종료/수용·점유기한·결과반영예를 함께 보여 준다. 성공 작업 재처리 불가 안내와 업무본문 미노출을 확인한다."
+    }
+  ]
+}

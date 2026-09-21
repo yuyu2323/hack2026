@@ -1,0 +1,11 @@
+{
+  "submission_id": "46e985b6-58cd-4376-b035-cd5f0e38c600",
+  "started_at": "2026-09-21T10:44:23.920Z",
+  "browser_first_visible_ms": 98468,
+  "poll_interval_ms": 3000,
+  "target_30s": false,
+  "viewport": {
+    "width": 390,
+    "height": 844
+  }
+}

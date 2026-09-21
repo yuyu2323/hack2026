@@ -1,0 +1,55 @@
+{
+  "phase": "HMR root 재사용 수정 이후. 실제 화면 캡처 대기.",
+  "created_at": "2026-09-21T10:44:04.820343+00:00",
+  "files": [
+    {
+      "path": "web-concepts-04/src/app/main.tsx",
+      "sha256": "99175aa93365def9035e92f5a6bdb017987d8e6a5f297f18161cd25fedfd71ce"
+    },
+    {
+      "path": "web-concepts-04/src/ofc-admin/Business.tsx",
+      "sha256": "d52064d9c13ce909faf5ebf3e74b0b0bf73733576d43e3770a3cfc3195ecdea7"
+    },
+    {
+      "path": "web-concepts-04/src/ofc-admin/Standards.tsx",
+      "sha256": "a638769b81f8dcafa2efaed38cd7bb36d4c52eae88ac2dfa2d2a0add704b5f1d"
+    },
+    {
+      "path": "web-concepts-04/src/platform-admin/Operations.tsx",
+      "sha256": "2b92d8ef61bc28d2d957efda6d2a1670cb6e97b0812c3508b5e38268232b532c"
+    },
+    {
+      "path": "web-concepts-04/src/shared/data.tsx",
+      "sha256": "7fa5b6a09cb726986a61f93d6f1fe9ddb62c358c233e6b91936b6a8bd428bbe6"
+    },
+    {
+      "path": "web-concepts-04/src/shared/rules.ts",
+      "sha256": "7a409af3b47ef683a73486ffaa9cace7fb0ea6552e17f34799b9627d8b7df29d"
+    },
+    {
+      "path": "web-concepts-04/src/shared/style.css",
+      "sha256": "dab99b8edcda16e1978c0cdb6252fdfdc55e988eb06643c33d02936315e3b475"
+    },
+    {
+      "path": "web-concepts-04/src/shared/ui.tsx",
+      "sha256": "b742bede192ed71728d8dca6e4f43af06867ed5d4f4e4e63df83bb1b3cc1e9fe"
+    },
+    {
+      "path": "web-concepts-04/src/store-owner/Owner.tsx",
+      "sha256": "2d8751bf986768bea88fc55c79a29dfeb0b9845d2409d79249f578cac607af23"
+    },
+    {
+      "path": "execute/design/concept-04/acceptance.md",
+      "sha256": "84cccafe9f9bfde88b7b9072b70450b5321dd4ecec41107565d152b3d2a3c586"
+    },
+    {
+      "path": "execute/design/concept-04/brief.md",
+      "sha256": "d21708974e51552a273302d18676514526505c58de72473e7de0d0857a223447"
+    },
+    {
+      "path": "execute/design/concept-04/design-spec.md",
+      "sha256": "91ef9ec62d6652e23e046da0b57d3a36ebf76f824c88ab37e04f1e63765ad668"
+    }
+  ],
+  "limitation": "현 시점 파일 hash 기록이며 이전 캡처의 정확한 빌드 hash를 소급 확정하지 않는다. 최종 root 실행 기록과 대조 필요."
+}

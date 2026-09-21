@@ -1,0 +1,10 @@
+[
+  {
+    "path": "web-concepts-03/src/ofc-admin/pages.tsx",
+    "sha256": "75e358ea4a48adc7480f3141e57f48ae2cb0d26707779ce4e4eb2eb73ed33b35"
+  },
+  {
+    "path": "web-concepts-03/tests/issue-state.test.ts",
+    "sha256": "cbd3b269969e50f7789bc98c7cde71443f1e43c0b09b90c367f9a6f25bab2dc9"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "status": "CHANGES_REQUESTED",
+  "reviewed_at": "2026-09-21T13:26:32.036351+00:00",
+  "author_regressions": {
+    "tests": 3,
+    "passed": 3,
+    "exit_code": 0
+  },
+  "independent_edges": {
+    "tests": 2,
+    "failed": 2,
+    "exit_code": 1,
+    "command": "npx vitest run --config execute/workHitory/input-boundary/independent-recovery01-vitest.config.ts"
+  },
+  "findings": [
+    {
+      "id": "R01-01",
+      "expected": "B 초안은 /references/reference-b1에 저장",
+      "actual": "A의 늦은응답 후 /references/reference-a2에 B초안 전송",
+      "priority": "P1"
+    },
+    {
+      "id": "R01-02",
+      "expected": "현재 권한403 즉시 업무 캐시/이미지 폐기",
+      "actual": "직접 복구 api.get 실패가 query cache onError를 거치지 않아 기존 /references data 보존",
+      "priority": "P1"
+    }
+  ],
+  "files": [
+    {
+      "file": "web-concepts-01/src/ofc-admin/Standards.tsx",
+      "sha256": "dc84fb87fd87ece968ed714864afcb38939c252390c480000da05e9df808410b"
+    },
+    {
+      "file": "web-concepts-01/src/app/query-client.ts",
+      "sha256": "49055a90df9936903d6ef2390400bb546b65bf73a46c96d56a07ea46f4b2678f"
+    },
+    {
+      "file": "web-concepts-01/src/main.tsx",
+      "sha256": "34a43683bdd5e8ee61378317c3dd6565bdbbec64522e25e5f897c6e07a46a0e6"
+    },
+    {
+      "file": "web-concepts-01/src/shared/ui.tsx",
+      "sha256": "c8df60b9510582d62d25acf9a5679e94010443f99ae99b42f2113bd55f4d7a92"
+    },
+    {
+      "file": "web-concepts-01/tests/conflict-recovery.test.tsx",
+      "sha256": "6cc22bfdb1fd0cdced0532c258fe4c1755fbf0143779e48b5faaff4b155b955a"
+    },
+    {
+      "file": "web-concepts-01/tests/csrf-recovery.test.tsx",
+      "sha256": "f9b84aa95170aff67bb991d711b7756beaedf7ac40c2e237f44fd17f897b26ab"
+    },
+    {
+      "file": "execute/workHitory/input-boundary/independent-recovery01-edge.test.tsx",
+      "sha256": "97f9f3eb7954ed216f38ce7d161832f312f995d7cdeb21b92804042b723ea97e"
+    },
+    {
+      "file": "execute/workHitory/input-boundary/independent-recovery01-vitest.config.ts",
+      "sha256": "cae68c967d8863f84bc41133cb5f9cafc1edf27c2797ed107c1f8373904937d3"
+    }
+  ]
+}

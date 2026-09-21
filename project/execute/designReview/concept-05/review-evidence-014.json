@@ -1,0 +1,35 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-operator-home.png",
+      "sha256": "94d15a653526b35de1c6c61a63beeaeb7b8637420c773a171fcf5785d99b4ebb",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "운영자 전용 상태/연결·계정·기준정보·처리/감사/공지 탭이다. 계정↔매장 연결 누락을 앞에 두고 실제 작업/Mock 장애를 분리한다. 영업 알림·사진·질문·평가 본문은 없다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1280-account-disabled-session.png",
+      "sha256": "87a9c80d73824aa32f4cf6e45feb9a1bd6d79cba26db594fc9cf36539f52f793",
+      "decoded_size": [
+        1265,
+        712
+      ],
+      "format": "JPEG",
+      "observation": "로그인으로 복귀하며 ID/비밀번호 입력은 빈칸이고 이전 영업 사진/질문/평가는 없다. 저장1265×712로1280×800 검수 증거로 계산하지 않는다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1280-mapping-revoked.png",
+      "sha256": "d73df02b543ab2e108e52d85c87d73d44cd7aed4ecf90a74ab1b20fc06cf0cb8",
+      "decoded_size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "observation": "매핑 철회 후 역할/연결 범위 접근 불가와 시작 화면 이동만 남아 업무 본문을 폐기한다. 저장1280×720이며1280×800과 구분한다."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "D-MAN02-02",
+  "status": "STATIC_PASS; 실제 모바일 재검수 대기",
+  "selector": ".table-wrap code{white-space:nowrap;overflow-wrap:normal;word-break:normal}",
+  "before_sha256": "6065e1fa38470d33f81a17ac56050e8962d3615e5b0166bed3e071ca79229887",
+  "html_sha256": "50421f5b5e5fab2f074af7f0537d36354998c325ffba86684fa2533d7ddfa9b3",
+  "only_table_code_rule_added": true,
+  "body_and_images_unchanged": true,
+  "basis": "concept-02-mobile390-table-fixed.png에서 owner.north/regional.north ID의 중간분할 직접 확인. 표 외 code 줄바꿈과 표 region/키보드/overflow 유지."
+}

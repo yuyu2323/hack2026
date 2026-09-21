@@ -1,0 +1,18 @@
+{
+  "file": "execute/designReview/concept-04/evidence/vp-desktop1440-ofc-evidence-fixed.png",
+  "sha256": "136df7e595a49c4c3a989746a4a551f4ce2bff1fc9e911dc38c8457cb8cc7593",
+  "decoded_size": [
+    1425,
+    891
+  ],
+  "format": "JPEG",
+  "actual_role": "regional",
+  "root_dom": {
+    "inner_width": 1440,
+    "inner_height": 900,
+    "photos_main_bottom": 386.18,
+    "question_heading_top": 435.18
+  },
+  "independent_visual": "PASS: D04-V02 겹침 해소",
+  "role_source": "root 촬영 보고상 지역 관리자. 계정ID를 PNG에서 추정하지 않음"
+}

@@ -1,0 +1,45 @@
+{
+  "managed": [
+    {
+      "pid": 73325,
+      "marker": "--port 5176",
+      "name": "concept-04"
+    },
+    {
+      "pid": 73262,
+      "marker": "server.main:app",
+      "name": "api"
+    },
+    {
+      "pid": 73332,
+      "marker": "--port 5177",
+      "name": "concept-05"
+    },
+    {
+      "pid": 73245,
+      "marker": "app.main:app",
+      "name": "ai"
+    },
+    {
+      "pid": 73315,
+      "marker": "--port 5174",
+      "name": "concept-02"
+    },
+    {
+      "pid": 73321,
+      "marker": "--port 5175",
+      "name": "concept-03"
+    },
+    {
+      "pid": 73305,
+      "marker": "worker_entry.py",
+      "name": "worker"
+    },
+    {
+      "pid": 73312,
+      "marker": "--port 5173",
+      "name": "concept-01"
+    }
+  ],
+  "remaining": []
+}

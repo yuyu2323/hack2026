@@ -1,0 +1,8 @@
+{
+  "submission_url": "http://localhost:5177/store-owner/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+  "first_observed_ms": 63181,
+  "last_pending_ms": 51315,
+  "observation_window_ms": 11866,
+  "target_ms": 30000,
+  "target_met": false
+}

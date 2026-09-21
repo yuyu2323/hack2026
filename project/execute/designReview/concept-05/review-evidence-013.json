@@ -1,0 +1,25 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-regional-scope.png",
+      "sha256": "a8302ca661ecaf08c2ca1f17c6f574bfdcdf99ef966579397bb80ca28fe11804",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "소속 지역 범위의3개 매장과 노을공원/별하천/새봄로 행을 표시한다. 미제출은0/0·준수/판단가능—·이슈0이며 기술실패를 미준수로 계산하지 않는 안내가 읽힌다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-region-denied.png",
+      "sha256": "bea89485f22bbf79897169f0a9d1908fa18a9f2cb86f836f736eb12e502a2dd6",
+      "decoded_size": [
+        1440,
+        900
+      ],
+      "format": "JPEG",
+      "observation": "현재 역할/연결 범위에서 허용되지 않는 자료 안내와 시작 화면 이동만 표시하며 영업 사진·질문·평가 본문은 없다. 특정 API 상태코드는 이 이미지로 단정하지 않는다."
+    }
+  ]
+}

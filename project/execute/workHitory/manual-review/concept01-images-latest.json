@@ -1,0 +1,74 @@
+{
+  "concept": "01",
+  "status": "PASS",
+  "scope": "원본/복사/manifest·alt·캡션과 정적 링크 검사. 사진 직접 시각 검수 기록과 별도로 사용하며 Browser 문서 렌더를 대신하지 않는다.",
+  "html_sha256": "ec104d19a70b06a9cfce460bb9db554d00af8ff80a47021037ce60f44771de77",
+  "images": [
+    {
+      "source": "execute/designReview/concept-01/evidence/vp-mobile390-owner-home.png",
+      "asset": "deliverables/manuals/concept-01/assets/vp-mobile390-owner-home.png",
+      "sha256": "b08e6bd0ce146ad5884314c59af56123c1a2f8a3d411798039aa31d33407df64",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-01/evidence/vp-mobile390-preview-keyboard.png",
+      "asset": "deliverables/manuals/concept-01/assets/vp-mobile390-preview-keyboard.png",
+      "sha256": "bd8e04468379207c9489d9b9b69883834f9ad726d67710a9b14e2c720e13552f",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-01/evidence/vp-mobile390-real-first-answer.png",
+      "asset": "deliverables/manuals/concept-01/assets/vp-mobile390-real-first-answer.png",
+      "sha256": "170ab3642e3870c88797a8b87c7e4e30c5cb3c348a892b16b13a5578d7341c93",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-01/evidence/vp-desktop1440-before-after.png",
+      "asset": "deliverables/manuals/concept-01/assets/vp-desktop1440-before-after.png",
+      "sha256": "0edb96e2aaa922a19bc357f81f0f8e2657a0c5d1de22c84e5ea3ea8741b8a8ce",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-01/evidence/vp-desktop1440-ofc-resolved.png",
+      "asset": "deliverables/manuals/concept-01/assets/vp-desktop1440-ofc-resolved.png",
+      "sha256": "8fe4132375348b38c0b761e408486ec81784f2a60f091917f539ee142f896f90",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-01/evidence/vp-desktop1440-hq-dashboard.png",
+      "asset": "deliverables/manuals/concept-01/assets/vp-desktop1440-hq-dashboard.png",
+      "sha256": "b442ce9fc079211cfcd6be50eb327a58197a598abf5ae7c48380f9250363998e",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-01/evidence/vp-desktop1280-category-v2.png",
+      "asset": "deliverables/manuals/concept-01/assets/vp-desktop1280-category-v2.png",
+      "sha256": "3562c066bddbf620109241e3dca898810c6b33842ebee0e3e0c48a8be8d00821",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-01/evidence/vp-desktop1440-reference-list.png",
+      "asset": "deliverables/manuals/concept-01/assets/vp-desktop1440-reference-list.png",
+      "sha256": "cb321bc438659f9be46aeaa16a89b04ccd2653129c94360cccb46e56582433aa",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    }
+  ],
+  "local_links": 45,
+  "broken_links": []
+}

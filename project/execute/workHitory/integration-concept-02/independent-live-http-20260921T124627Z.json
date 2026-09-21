@@ -1,0 +1,745 @@
+{
+  "status": "PASS",
+  "started_at": "2026-09-21T12:46:26.931223+00:00",
+  "concept": 2,
+  "scope": "localhost Vite 프록시 독립 HTTP 세션; CSRF/login/logout 외에는 GET만 사용; AI·Browser·업무 쓰기 없음",
+  "checks": [
+    {
+      "check": "owner.north:expected_role",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/submissions/8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "status": "PASS"
+    },
+    {
+      "check": "8259ce47-90ce-4a85-8496-8ed27edeb375:owner_snapshot_and_media",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/submissions/bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "status": "PASS"
+    },
+    {
+      "check": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9:owner_snapshot_and_media",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/submissions/e9fd4f27-0d3e-42a1-9e58-9c255f49d703",
+      "status": "PASS"
+    },
+    {
+      "check": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703:owner_snapshot_and_media",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/16d4c243-3905-569f-85e7-65514805b594",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/16d4c243-3905-569f-85e7-65514805b594?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner_all_real_media_baselines_pass",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:logout",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:expected_role",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/submissions/8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/submissions/bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/submissions/e9fd4f27-0d3e-42a1-9e58-9c255f49d703",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/16d4c243-3905-569f-85e7-65514805b594",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/16d4c243-3905-569f-85e7-65514805b594?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:logout",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:expected_role",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/submissions/8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/submissions/bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/submissions/e9fd4f27-0d3e-42a1-9e58-9c255f49d703",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/16d4c243-3905-569f-85e7-65514805b594",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/16d4c243-3905-569f-85e7-65514805b594?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:logout",
+      "status": "PASS"
+    }
+  ],
+  "http": [
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/submissions/8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/submissions/bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/submissions/e9fd4f27-0d3e-42a1-9e58-9c255f49d703",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "86d21c85c15d0328e6942a82c7fe0d797d1dbc4584bb320fab4bd80e7e7f4329",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "283ab88714aef8521bdb47b1dd79a2afed388fd38b3f9bd1712575271802ea2a",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/16d4c243-3905-569f-85e7-65514805b594",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "63c02dac9d0410a8e2b6a03b6668d5b3070baebd76f452cefecbef47964bb5aa",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/16d4c243-3905-569f-85e7-65514805b594?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "26f62fc402a8ae76e160b7c63d24432c14534e3a3656bc6e317ad8fe7b9d155f",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "9723404dbd7ca09170f2a2253736518bbcb260f45b5b3ee389dafddf057433a6",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "283ab88714aef8521bdb47b1dd79a2afed388fd38b3f9bd1712575271802ea2a",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/submissions/8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/submissions/bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/submissions/e9fd4f27-0d3e-42a1-9e58-9c255f49d703",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/16d4c243-3905-569f-85e7-65514805b594",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/16d4c243-3905-569f-85e7-65514805b594?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/submissions/8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/submissions/bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/submissions/e9fd4f27-0d3e-42a1-9e58-9c255f49d703",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/004af8bc-f527-4e4a-b96f-c51fdbf1c21e?variant=thumbnail",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/d41bca4d-e500-5971-acae-fcefd2ef7f1e?variant=thumbnail",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/16d4c243-3905-569f-85e7-65514805b594",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "63c02dac9d0410a8e2b6a03b6668d5b3070baebd76f452cefecbef47964bb5aa",
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/16d4c243-3905-569f-85e7-65514805b594?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/70f39641-2f28-422c-8995-bc00c0bd06c9?variant=thumbnail",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/2799edaf-d709-4f29-ad3e-c2991efbf745?variant=thumbnail",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/96d2b776-1666-4614-bd8a-cf8f203b2602?variant=thumbnail",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    }
+  ],
+  "sessions": [
+    {
+      "login_id": "owner.north",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    },
+    {
+      "login_id": "operator.demo",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    },
+    {
+      "login_id": "regional.south",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    }
+  ],
+  "metadata_evidence": "execute/workHitory/integration-concept-02/independent-ai-metadata-20260921T124410Z.json",
+  "metadata_sha256": "0d3dc02fd70ff4b9895b45e42a33b505eff0c3a788f7594f58d8d1daa1a6100f",
+  "targets": {
+    "submission_ids": [
+      "8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "e9fd4f27-0d3e-42a1-9e58-9c255f49d703"
+    ],
+    "media": [
+      {
+        "media_id": "004af8bc-f527-4e4a-b96f-c51fdbf1c21e",
+        "sha256": "86d21c85c15d0328e6942a82c7fe0d797d1dbc4584bb320fab4bd80e7e7f4329",
+        "kind": "submission"
+      },
+      {
+        "media_id": "d41bca4d-e500-5971-acae-fcefd2ef7f1e",
+        "sha256": "283ab88714aef8521bdb47b1dd79a2afed388fd38b3f9bd1712575271802ea2a",
+        "kind": "reference",
+        "store_specific": true
+      },
+      {
+        "media_id": "16d4c243-3905-569f-85e7-65514805b594",
+        "sha256": "63c02dac9d0410a8e2b6a03b6668d5b3070baebd76f452cefecbef47964bb5aa",
+        "kind": "reference",
+        "store_specific": false
+      },
+      {
+        "media_id": "70f39641-2f28-422c-8995-bc00c0bd06c9",
+        "sha256": "26f62fc402a8ae76e160b7c63d24432c14534e3a3656bc6e317ad8fe7b9d155f",
+        "kind": "submission"
+      },
+      {
+        "media_id": "2799edaf-d709-4f29-ad3e-c2991efbf745",
+        "sha256": "9723404dbd7ca09170f2a2253736518bbcb260f45b5b3ee389dafddf057433a6",
+        "kind": "submission"
+      },
+      {
+        "media_id": "96d2b776-1666-4614-bd8a-cf8f203b2602",
+        "sha256": "283ab88714aef8521bdb47b1dd79a2afed388fd38b3f9bd1712575271802ea2a",
+        "kind": "reference",
+        "store_specific": true
+      }
+    ],
+    "regional_allowed_baseline": "3fdb0cf3-61da-4008-84c1-79e2a58cde05"
+  },
+  "finished_at": "2026-09-21T12:46:27.535195+00:00"
+}

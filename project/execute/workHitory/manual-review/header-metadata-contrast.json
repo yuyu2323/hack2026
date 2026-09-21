@@ -1,0 +1,40 @@
+{
+  "finding": "D-MAN-H01",
+  "selector": "header > p.compact",
+  "font_size_px": 14,
+  "foreground": "#516977",
+  "background": "#173c48",
+  "contrast_ratio": 2.047,
+  "required_ratio": 4.5,
+  "status": "REQUESTED",
+  "manuals": [
+    {
+      "concept": "01",
+      "html_path": "deliverables/manuals/concept-01/index.html",
+      "html_sha256": "0cfbe1080751dfb0ba4f814ca12f1740cb06aa80b012074f6232d10490b3fb6b",
+      "screenshot_path": "execute/designReview/manuals/evidence/concept-01-desktop1440-top.png",
+      "screenshot_sha256": "734248634a236b2931bcec2b58e0fd3341b636c703f4093d55fe127692f6efb8"
+    },
+    {
+      "concept": "03",
+      "html_path": "deliverables/manuals/concept-03/index.html",
+      "html_sha256": "cf6e3931375293dffe07eda430a68bb0a674b18b1e861910502bbedb708ebe71",
+      "screenshot_path": "execute/designReview/manuals/evidence/concept-03-desktop1440-top.png",
+      "screenshot_sha256": "e774dd92f6702b2b093e4356057ca17b30c8d7929d83d984a86d30f9206310ea"
+    },
+    {
+      "concept": "04",
+      "html_path": "deliverables/manuals/concept-04/index.html",
+      "html_sha256": "8ce49fb7117c8703ef57600b135671176c7012676627b407e459be5278971ef5",
+      "screenshot_path": "execute/designReview/manuals/evidence/concept-04-desktop1440-top.png",
+      "screenshot_sha256": "dff76d244d946a3d4f41c2f005b26abfc8ee7d04b6ed7cd17f27ce5e15725f12"
+    },
+    {
+      "concept": "05",
+      "html_path": "deliverables/manuals/concept-05/index.html",
+      "html_sha256": "75b8f36f0ea54a9984586838547583ab2fbd285d4e913c7a1ac510999da6f65b",
+      "screenshot_path": "execute/designReview/manuals/evidence/concept-05-desktop1440-top.png",
+      "screenshot_sha256": "dd9f7a63774f9d242688f1f2312e1378e714c206d1b194d200d39c076b35bc00"
+    }
+  ]
+}

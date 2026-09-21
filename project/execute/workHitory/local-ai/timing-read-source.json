@@ -1,0 +1,10 @@
+{
+  "scope": "읽기 검토 시점 소스 hash",
+  "files": {
+    "ai-service/app/adapters/codex.py": "5d083df76d8f36bec843b6cfc174a009b203b21ec634fcfd236e28dddef7bf2f",
+    "ai-service/app/main.py": "fc79882ea6903dfea052a3de197e8e663b7099e11e5830ba018aac0874e3a0c1",
+    "server/analysis_jobs/service.py": "4aa00073aa5e766d422646b8167738f673491c316aa4df4bd067df509fdf06f4",
+    "server/analysis_jobs/worker.py": "390fde2d1f4a4706d73897a384dce0ed38683bc29f19ef8e6912dcd603e53424",
+    "server/core/base.py": "7f19cd6bc3d473b5be98086790247846c3b44dbd3cd535c29552322cca789061"
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "path": "web-concepts-03/src/store-owner/pages.tsx",
+    "sha256": "5f7ba258107f474f09b72afca12c21f8bc7ee9850853895ab2236dbdfeec8546"
+  },
+  {
+    "path": "web-concepts-03/tests/file-selection.test.ts",
+    "sha256": "0d7a4dd475d0c57eb918e79b813cc8a8390a8501b3059a0fe9449ec2accc745a"
+  }
+]

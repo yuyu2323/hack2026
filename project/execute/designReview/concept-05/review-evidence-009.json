@@ -1,0 +1,55 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-first-result-fixed.png",
+      "sha256": "a5717d9328c1b098b5cc1f3125d94c1efd7b0062f1e37666dddcc405675a17b0",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "정상 재촬영. 실제AI 준수60/판단가능100/5개판단·질문답변·앞줄/중단빈공간개선·가격숫자판독불가·높은신뢰/OFC확인을구분. 흰first-result 대체."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-comparison-dates.png",
+      "sha256": "7460934e4ea75509ea3b4c06fdc4e00ed17c73edbbf66416b15704e42be6af80",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "1440 양쪽 이전/개선후 일시2026년9월21일20:52/20:59·60→100·양쪽판단가능100·변경기준주의가두열로읽힘.사진하부는다음구간."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-comparison-versions.png",
+      "sha256": "22930bc4edeeecd6255a5dfbc372100df88187aa5056dcfc63f0ad922209e297",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "파일명versions지만실제내용은전후전체사진/생성배지/원본보기와표제목까지. 버전행은화면밖으로독립확인하지않음.다음아래구간요청."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-first-snapshot-v1.png",
+      "sha256": "2ba4516f58deffb78a56b13ece7c4da817ff0ec353170c7ad45956f38f0d2efb",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "첫결과사진/기준별사진1근거·개선행동과왼쪽제출당시5기준펼침. qa05_labels CATEGORY v1본문이보존됨. facing은기존CATEGORY v2이며QA05 v1과혼동하지않음."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-ofc-filtered.png",
+      "sha256": "e60fe1109530bd9101c17059930b3ba0e87696a36204955cb37e328bedd71cea",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "OFC 노을공원점/음료 조건의1매장·제출/완료5/5·81.8/100·Mock3·행렬근거링크,주소복사성공문구를확인. 이전조건은URL기록별도대조."
+    }
+  ]
+}

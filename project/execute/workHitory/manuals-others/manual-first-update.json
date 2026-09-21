@@ -1,0 +1,35 @@
+{
+  "id": "MAN-FIRST-001",
+  "status": "REVIEW_FROZEN",
+  "scope": "사용자 매뉴얼 우선 인계, 상태·복구 안내·근거 링크만 갱신",
+  "manuals": [
+    {
+      "concept": "01",
+      "sha256": "c5133143a3f97f87d7d337b8b6fc2e625a8b19df056a50520a509208404ef445",
+      "bytes": 46700,
+      "css_figure_images_unchanged": true,
+      "image_count": 8
+    },
+    {
+      "concept": "03",
+      "sha256": "610ff58bfb09971c52321604bd09c7793bb0bb57565b19e0d70f7fb82b73cd38",
+      "bytes": 49981,
+      "css_figure_images_unchanged": true,
+      "image_count": 10
+    },
+    {
+      "concept": "04",
+      "sha256": "3b55e56f71c31664643b0f31f40bb43b9d724a09ba91c4a5b65f0027802b6ef8",
+      "bytes": 50066,
+      "css_figure_images_unchanged": true,
+      "image_count": 10
+    },
+    {
+      "concept": "05",
+      "sha256": "86a4f05c36c2c05ee4eef46f5013f43824f1261440edcc0918e2ef5f6543ad3f",
+      "bytes": 54313,
+      "css_figure_images_unchanged": true,
+      "image_count": 12
+    }
+  ]
+}

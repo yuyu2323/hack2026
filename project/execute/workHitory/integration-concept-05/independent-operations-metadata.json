@@ -1,0 +1,462 @@
+{
+  "status": "FUNCTIONAL_PASS_WITH_TIMING_ANOMALY",
+  "started_at": "2026-09-21T12:19:23.402114+00:00",
+  "checks": [
+    {
+      "check": "database_read_only",
+      "status": "PASS"
+    },
+    {
+      "check": "current_v8_active_owner_null_region_unmapped",
+      "status": "PASS"
+    },
+    {
+      "check": "v6_ofc_audit",
+      "status": "PASS"
+    },
+    {
+      "check": "v7_owner_ends_exactly_one_mapping",
+      "status": "PASS"
+    },
+    {
+      "check": "new_ofc_claim_then_ended",
+      "status": "PASS"
+    },
+    {
+      "check": "account_audit_integrity",
+      "status": "PASS"
+    },
+    {
+      "check": "category_created_renamed_inactive",
+      "status": "PASS"
+    },
+    {
+      "check": "retry_job_submission",
+      "status": "PASS"
+    },
+    {
+      "check": "failed_attempt_preserved_11_seconds",
+      "status": "PASS"
+    },
+    {
+      "check": "second_success_is_only_applied_result",
+      "status": "PASS"
+    },
+    {
+      "check": "retry_snapshot_digest",
+      "status": "PASS"
+    },
+    {
+      "check": "retry_result_contract_and_metrics",
+      "status": "PASS"
+    },
+    {
+      "check": "retry_times_match_root_export",
+      "status": "PASS"
+    },
+    {
+      "check": "3fdb0cf3-61da-4008-84c1-79e2a58cde05:first_child_hash_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "b0dbd6a2-3b6c-4442-8b57-902448539127:first_child_hash_preserved",
+      "status": "PASS"
+    }
+  ],
+  "scope": "READ ONLY metadata; 업무 본문/비밀/사진 및 새 HTTP/AI 호출 없음",
+  "account": {
+    "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+    "version": 8,
+    "role": "store_owner",
+    "region_id": null,
+    "is_active": true,
+    "owner_mapping_count": 1,
+    "active_owner_mapping_count": 0,
+    "ofc_mapping_count": 1,
+    "active_ofc_mapping_count": 0,
+    "ofc_mappings": [
+      {
+        "id": "1b0354d0-2023-47d9-b366-de87f29a0672",
+        "store_id": "ae43dd9f-2dfa-5bc0-8e1e-ce1106c5d01d",
+        "created_at": "2026-09-21T21:13:00.174535+09:00",
+        "ended_at": "2026-09-21T21:13:22.906586+09:00"
+      }
+    ]
+  },
+  "account_audits": [
+    {
+      "id": "597100b6-c028-414e-b466-8f389447217c",
+      "action": "accounts.create",
+      "target_type": "account",
+      "target_id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+      "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+      "created_at": "2026-09-21T21:09:10.990138+09:00",
+      "outcome": "succeeded",
+      "reason_present": true,
+      "request_id_present": true,
+      "before": {},
+      "after": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 1,
+        "is_active": true,
+        "region_id": null,
+        "store_ids": []
+      }
+    },
+    {
+      "id": "15b6cad9-2aa0-4e1e-b1c3-860ecb1659ff",
+      "action": "accounts.mappings",
+      "target_type": "account",
+      "target_id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+      "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+      "created_at": "2026-09-21T21:09:22.451508+09:00",
+      "outcome": "succeeded",
+      "reason_present": true,
+      "request_id_present": true,
+      "before": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 1,
+        "is_active": true,
+        "region_id": null,
+        "store_ids": []
+      },
+      "after": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 2,
+        "is_active": true,
+        "region_id": null,
+        "store_ids": [
+          "de6aeb99-cb21-5009-97e4-63bb63c23f2d"
+        ],
+        "ended_mapping_ids": []
+      }
+    },
+    {
+      "id": "4d3a4b33-5cbb-4511-aec1-75640aeb1abd",
+      "action": "accounts.update",
+      "target_type": "account",
+      "target_id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+      "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+      "created_at": "2026-09-21T21:10:18.954953+09:00",
+      "outcome": "succeeded",
+      "reason_present": true,
+      "request_id_present": true,
+      "before": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 2,
+        "is_active": true,
+        "region_id": null,
+        "store_ids": [
+          "de6aeb99-cb21-5009-97e4-63bb63c23f2d"
+        ]
+      },
+      "after": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 3,
+        "is_active": false,
+        "region_id": null,
+        "store_ids": [
+          "de6aeb99-cb21-5009-97e4-63bb63c23f2d"
+        ],
+        "ended_mapping_ids": []
+      }
+    },
+    {
+      "id": "ac528732-979e-4deb-8e88-98dbe0b9f516",
+      "action": "accounts.update",
+      "target_type": "account",
+      "target_id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+      "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+      "created_at": "2026-09-21T21:10:41.622878+09:00",
+      "outcome": "succeeded",
+      "reason_present": true,
+      "request_id_present": true,
+      "before": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 3,
+        "is_active": false,
+        "region_id": null,
+        "store_ids": [
+          "de6aeb99-cb21-5009-97e4-63bb63c23f2d"
+        ]
+      },
+      "after": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 4,
+        "is_active": true,
+        "region_id": null,
+        "store_ids": [
+          "de6aeb99-cb21-5009-97e4-63bb63c23f2d"
+        ],
+        "ended_mapping_ids": []
+      }
+    },
+    {
+      "id": "52fb0229-2013-48eb-8ade-0a3625f10b52",
+      "action": "accounts.mappings",
+      "target_type": "account",
+      "target_id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+      "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+      "created_at": "2026-09-21T21:11:10.873632+09:00",
+      "outcome": "succeeded",
+      "reason_present": true,
+      "request_id_present": true,
+      "before": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 4,
+        "is_active": true,
+        "region_id": null,
+        "store_ids": [
+          "de6aeb99-cb21-5009-97e4-63bb63c23f2d"
+        ]
+      },
+      "after": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 5,
+        "is_active": true,
+        "region_id": null,
+        "store_ids": [],
+        "ended_mapping_ids": [
+          "bcd67ffd-4665-42c0-90fe-bbce475226c2"
+        ]
+      }
+    },
+    {
+      "id": "61ec093f-71b8-4ff6-bbae-269d2ce17766",
+      "action": "accounts.update",
+      "target_type": "account",
+      "target_id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+      "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+      "created_at": "2026-09-21T21:12:10.153471+09:00",
+      "outcome": "succeeded",
+      "reason_present": true,
+      "request_id_present": true,
+      "before": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 5,
+        "is_active": true,
+        "region_id": null,
+        "store_ids": []
+      },
+      "after": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "ofc",
+        "version": 6,
+        "is_active": true,
+        "region_id": "22427009-de3b-5363-b04f-fa0181288c28",
+        "store_ids": [],
+        "ended_mapping_ids": []
+      }
+    },
+    {
+      "id": "07926d60-9a51-482f-8358-15b0a3ba27cd",
+      "action": "accounts.update",
+      "target_type": "account",
+      "target_id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+      "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+      "created_at": "2026-09-21T21:13:22.908583+09:00",
+      "outcome": "succeeded",
+      "reason_present": true,
+      "request_id_present": true,
+      "before": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "ofc",
+        "version": 6,
+        "is_active": true,
+        "region_id": "22427009-de3b-5363-b04f-fa0181288c28",
+        "store_ids": [
+          "ae43dd9f-2dfa-5bc0-8e1e-ce1106c5d01d"
+        ]
+      },
+      "after": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 7,
+        "is_active": true,
+        "region_id": "22427009-de3b-5363-b04f-fa0181288c28",
+        "store_ids": [],
+        "ended_mapping_ids": [
+          "1b0354d0-2023-47d9-b366-de87f29a0672"
+        ]
+      }
+    },
+    {
+      "id": "0ee319e1-5607-49a4-9798-e7e408235024",
+      "action": "accounts.update",
+      "target_type": "account",
+      "target_id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+      "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+      "created_at": "2026-09-21T21:14:10.486983+09:00",
+      "outcome": "succeeded",
+      "reason_present": true,
+      "request_id_present": true,
+      "before": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 7,
+        "is_active": true,
+        "region_id": "22427009-de3b-5363-b04f-fa0181288c28",
+        "store_ids": []
+      },
+      "after": {
+        "id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+        "role": "store_owner",
+        "version": 8,
+        "is_active": true,
+        "region_id": null,
+        "store_ids": [],
+        "ended_mapping_ids": []
+      }
+    }
+  ],
+  "claim_audits": [
+    {
+      "id": "d8a2950d-9d93-41ea-af8c-9669c2882b44",
+      "action": "stores.claim",
+      "target_type": "store",
+      "target_id": "ae43dd9f-2dfa-5bc0-8e1e-ce1106c5d01d",
+      "actor_id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9",
+      "created_at": "2026-09-21T21:13:00.174281+09:00",
+      "outcome": "succeeded",
+      "reason_present": true,
+      "request_id_present": true,
+      "before": {
+        "ofc_id": null
+      },
+      "after": {
+        "ofc_id": "b979fd3d-661c-45eb-8c4d-f3c1dd155aa9"
+      }
+    }
+  ],
+  "category": {
+    "id": "b14e0298-9fb3-4fc5-bba7-d80a13e3786c",
+    "code": "qa05_test_category",
+    "version": 2,
+    "is_active": false,
+    "name_contains_completed_marker": true,
+    "audits": [
+      {
+        "id": "508276a0-5c10-4e68-b200-ebcf17929786",
+        "action": "categories.create",
+        "target_type": "category",
+        "target_id": "b14e0298-9fb3-4fc5-bba7-d80a13e3786c",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T21:15:49.593211+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {},
+        "after": {
+          "id": "b14e0298-9fb3-4fc5-bba7-d80a13e3786c",
+          "version": 1,
+          "is_active": true
+        }
+      },
+      {
+        "id": "f3646718-ad9a-4d82-8d54-bec0c7c9f8bb",
+        "action": "categories.update",
+        "target_type": "category",
+        "target_id": "b14e0298-9fb3-4fc5-bba7-d80a13e3786c",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T21:16:08.730043+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "id": "b14e0298-9fb3-4fc5-bba7-d80a13e3786c",
+          "version": 1,
+          "is_active": true
+        },
+        "after": {
+          "id": "b14e0298-9fb3-4fc5-bba7-d80a13e3786c",
+          "version": 2,
+          "is_active": false,
+          "ended_mapping_ids": []
+        }
+      }
+    ]
+  },
+  "retry": {
+    "job_id": "aa73ad7e-9d08-5a5b-b035-96941a217621",
+    "submission_id": "96165c7c-53c9-5ded-9f99-f9ee67ec2c86",
+    "review_id": "29c615ba-5396-4f31-9d70-12a4b203c973",
+    "is_fixture": true,
+    "source_kind": "real_ai",
+    "status": "succeeded",
+    "model_ms": 50635,
+    "snapshot_sha256": "054ac71a99b45bd6793f8abf38682c13ec6611917274d2843ce2e2f270943344",
+    "result_sha256": "2d2575e10c56bf796913f541d24d78c40bc7f0ff93f037af86a06a25b7ce8acc",
+    "review_created_at": "2026-09-21T21:15:45.752032+09:00",
+    "attempts": [
+      {
+        "number": 1,
+        "id": "38f1320e-9115-54c0-a815-71be8d886530",
+        "status": "failed",
+        "error_code": "AI_UNAVAILABLE",
+        "result_applied": false,
+        "queued_at": "2026-09-10T09:00:00+09:00",
+        "started_at": "2026-09-10T09:00:01+09:00",
+        "finished_at": "2026-09-10T09:00:12+09:00",
+        "heartbeat_at": null,
+        "deadline_at": null,
+        "queue_ms": 1000,
+        "run_ms": 11000
+      },
+      {
+        "number": 2,
+        "id": "f0c2035a-0cb3-4308-a685-736429b1ab87",
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queued_at": "2026-09-21T21:14:56.443952+09:00",
+        "started_at": "2026-09-21T21:14:56.963490+09:00",
+        "finished_at": "2026-09-21T21:15:45.749933+09:00",
+        "heartbeat_at": "2026-09-21T21:15:45.057591+09:00",
+        "deadline_at": "2026-09-21T21:17:06.963490+09:00",
+        "queue_ms": 520,
+        "run_ms": 48786
+      }
+    ]
+  },
+  "timing": {
+    "model_clock": "time.monotonic in AI adapter",
+    "attempt_clock": "datetime.now(UTC) in worker",
+    "run_minus_model_ms": -1849,
+    "nested_elapsed_relation_observed": false,
+    "classification": "CLOCK_BASIS_ANOMALY_UNRESOLVED",
+    "cause_proven": false,
+    "excluded_from_new_submission_latency": true,
+    "source_sha256": {
+      "ai-service/app/adapters/codex.py": "5d083df76d8f36bec843b6cfc174a009b203b21ec634fcfd236e28dddef7bf2f",
+      "server/analysis_jobs/service.py": "4aa00073aa5e766d422646b8167738f673491c316aa4df4bd067df509fdf06f4",
+      "server/analysis_jobs/worker.py": "390fde2d1f4a4706d73897a384dce0ed38683bc29f19ef8e6912dcd603e53424",
+      "server/core/base.py": "7f19cd6bc3d473b5be98086790247846c3b44dbd3cd535c29552322cca789061"
+    },
+    "author_source_review": "contract_ai 확인: 생산 now 주입/기간 캐시 없음, 안정된 시계에서 포함 구간 역전은 범위/반올림으로 설명 불가; NTP 원인 미확정"
+  },
+  "first_child_preserved": [
+    {
+      "submission_id": "3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "snapshot_sha256": "328e242f70db0b606c9cb1f05ff507408440c80fea4dd6d5e4ca9c51e53fccab",
+      "result_sha256": "2ed952ff398fd14a8ac1e6445013028849d81f88e79cd1a1ea94ca280eb2e8e1",
+      "preserved": true
+    },
+    {
+      "submission_id": "b0dbd6a2-3b6c-4442-8b57-902448539127",
+      "snapshot_sha256": "36f6b34d61e44877e1fca80118eb9dc855e09d2e973a6be9c19812d0a9cbe9d7",
+      "result_sha256": "bcde9a27b6bea35f3327a5d2ebfd61a65664eaa01b1d42c44734814e899dba0a",
+      "preserved": true
+    }
+  ],
+  "finished_at": "2026-09-21T12:19:23.480096+00:00"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "SOURCE_COPY_PASS",
+  "authority": "execute/workHitory/manuals-browser/independent-recheck.md",
+  "rows": [
+    {
+      "concept": "01",
+      "html_sha256": "ec104d19a70b06a9cfce460bb9db554d00af8ff80a47021037ce60f44771de77",
+      "status": "PASS",
+      "render_scope": "1440×900/390×844 로컬이미지·키보드·본문건너뛰기",
+      "not_run": "200% 사용자후속/OS차단오프라인",
+      "product_acceptance": "진행 중",
+      "markdown_limit_explained": true
+    },
+    {
+      "concept": "03",
+      "html_sha256": "ab756a47babf1f66dc94b0b4bcc3e904b1aa2ff09c96ba85a26148d6f52ce672",
+      "status": "PASS",
+      "render_scope": "1440×900/390×844 로컬이미지·키보드·본문건너뛰기",
+      "not_run": "200% 사용자후속/OS차단오프라인",
+      "product_acceptance": "진행 중",
+      "markdown_limit_explained": true
+    },
+    {
+      "concept": "04",
+      "html_sha256": "8b1bfffdd929f0ffa1e1e596c23cb24c4ed6d970bd0246076fc8d8508c86b744",
+      "status": "PASS",
+      "render_scope": "1440×900/390×844 로컬이미지·키보드·본문건너뛰기",
+      "not_run": "200% 사용자후속/OS차단오프라인",
+      "product_acceptance": "진행 중",
+      "markdown_limit_explained": true
+    },
+    {
+      "concept": "05",
+      "html_sha256": "19ebba0f62e825bead1b4bd0893b929a2d2a87881a71fd3303b5d050c52e5b89",
+      "status": "PASS",
+      "render_scope": "1440×900/390×844 로컬이미지·키보드·본문건너뛰기",
+      "not_run": "200% 사용자후속/OS차단오프라인",
+      "product_acceptance": "진행 중",
+      "markdown_limit_explained": true
+    }
+  ]
+}

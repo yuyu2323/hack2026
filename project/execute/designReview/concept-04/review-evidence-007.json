@@ -1,0 +1,65 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-actual-result.png",
+      "sha256": "4939588aae0cb0238555f0ddb47fa79a385029cb253813fbdffc8f1e8cbd9bb4",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "첫 실제 AI의 분석 완료/실제 AI 배지,준수0%·판단가능100%·5/5·OFC 필요. 생성 이미지 출처와 현재 질문 유지."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-photo-grounding.png",
+      "sha256": "8a2517ce4fc708c126b35dd4a3e18c211cb3ad56e19fca46e6292f8f2b476123",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "기준v1 개선 필요·사진1 구체 관찰·개선 행동. 상단/중단 라벨 가림을 구분하며 사진1로 이동하는 근거 표시."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-applied-criteria.png",
+      "sha256": "f156ca345b85fccc114a692f6b40cf7713aff9678100b9f126dc5f31c26c9ab2",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "가격 숫자/뒤쪽 재고의 사진 판독 한계와 적용5기준 수준·v1·본문.매대qa04 라벨 기준 포함."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-reference-comparison.png",
+      "sha256": "87ac6f0322720e7c83e93575b3b8651f98ed37fe9e89a0853abc9a7a8bcde1d1",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "QA04 스낵Reference v1 전체 이미지·캡션·생성 출처·차이 있음/구체 비교. 원본 비율을 유지함."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-guideline-versions.png",
+      "sha256": "02f49779ee9d809c8e9bce0e73f660eae155176141583e38f68c5d84de409ed8",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "현재v2/새본문·시각과 버전2 이력/변경 사유. 버전1은 제목과 시각만 일부 보여 원본 본문 보존 시각 확인은 대기."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-reference-v2.png",
+      "sha256": "939fcc5106afc698d14fc1a0b4e26764f2f8529597d868193cdf7e5290acf45a",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "교체된 스낵 이미지가 새 갤러리 카드에 보임.해당 QA04 캡션/버전/상태는 아래에 있어 추가 구간 요청.상단 다른QA01/02 v2와 혼동하지 않음."
+    }
+  ]
+}

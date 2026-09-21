@@ -1,0 +1,55 @@
+{
+  "phase": "HMR root 재사용 수정 이후. 실제 화면 캡처 대기.",
+  "created_at": "2026-09-21T10:44:04.822770+00:00",
+  "files": [
+    {
+      "path": "web-concepts-05/src/app/App.tsx",
+      "sha256": "8c0d0e49eaa050a29a6d0639652b3cad54009141658b7aba226d286f1f2d0481"
+    },
+    {
+      "path": "web-concepts-05/src/main.tsx",
+      "sha256": "3c8b68d7b51e786abdde01a9654fb39c000ef210449cb8131fdd6afcff9ea15f"
+    },
+    {
+      "path": "web-concepts-05/src/ofc-admin/Business.tsx",
+      "sha256": "d48fbaf26e2ac9aa5d5888f8fb3771b8fe8273b0cdab0ffa4eab46f5b5191538"
+    },
+    {
+      "path": "web-concepts-05/src/platform-admin/Platform.tsx",
+      "sha256": "81f5c8c56b26fa0810aa07bde4778d7445a9791075f41e31ea31ef1f8d0b71ff"
+    },
+    {
+      "path": "web-concepts-05/src/shared/business.tsx",
+      "sha256": "a6f4bdf67a0e076365b49e6fd9c536b28637a0b37c78ab7711fbb3b2defac9d6"
+    },
+    {
+      "path": "web-concepts-05/src/shared/policy.ts",
+      "sha256": "893e813ec07afbd449eee389cbb7c4357fae507a7a324fb9e59b7ecd6219532f"
+    },
+    {
+      "path": "web-concepts-05/src/shared/ui.tsx",
+      "sha256": "553f9bdd51f562c4d97cd59057efdcf8e28e55ff5abf06cfa2a8f8b8222d3111"
+    },
+    {
+      "path": "web-concepts-05/src/store-owner/Owner.tsx",
+      "sha256": "e8478fa6236cde1d47751fe8b076502e7d67084b00fa23e0745b6bebba09f4de"
+    },
+    {
+      "path": "web-concepts-05/src/styles.css",
+      "sha256": "615fa6aa399ab5b818db0b3758abfe7c3490acccf000063dda477bfb72dca64e"
+    },
+    {
+      "path": "execute/design/concept-05/acceptance.md",
+      "sha256": "2c3e5aa7ceb6bc18d3a8e9b878e9407b1e7a39cc26e5a24abc828a633e36f4f5"
+    },
+    {
+      "path": "execute/design/concept-05/brief.md",
+      "sha256": "df918c5bacf7e74a9287e295a37d12cd5e5f21db4531b5fdf39d1a81b0e0c1a1"
+    },
+    {
+      "path": "execute/design/concept-05/design-spec.md",
+      "sha256": "20174c0b198fdde1f33ab59a60e0a918c936d9e631c0356f5f45d33de6c0313c"
+    }
+  ],
+  "limitation": "현 시점 파일 hash 기록이며 이전 캡처의 정확한 빌드 hash를 소급 확정하지 않는다. 최종 root 실행 기록과 대조 필요."
+}

@@ -1,0 +1,135 @@
+{
+  "status": "BOUNDED_VISUAL_PASS",
+  "scope": "새 핵심10장만 직접검수; 전체시안 재검수/완료 아님",
+  "reviewed_at": "2026-09-21T12:55:56.671060+00:00",
+  "images": [
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-qa01-mapped-photo.png",
+      "sha256": "765736a1b1b373d526df1ec72fd4555c9505e70e525ade3cf0a3cd6731e18f4e",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "finding": "허용된 QA점주 첫 결과: 스낵 원본과 실제AI 답변을 나란히 표시. 사진·생성 출처/실제AI 출처 구분."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-qa01-disabled-session.png",
+      "sha256": "00b908b88d2dbc17a0bd371cd094bc0fa5c395e1f63c3b6b1dd292b2640ae255",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "finding": "비활성화 후 로그인 화면으로 복귀, ID/비밀번호 필드는 비어 있고 이전 사진/질문/평가 본문 없음."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-qa01-mapping-ended.png",
+      "sha256": "e5b01516e18c92069d210c178439ece583cbb5925f28dc2eaac9ecfdd644eb98",
+      "decoded_size": [
+        1280,
+        800
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "finding": "매핑 종료 후 기록 없음 오류/요청번호/재조회. 이전 사진·질문·평가 제거."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-qa01-role-denied.png",
+      "sha256": "ac2ed8d0b104ecb4e464c6b22d63cb2f991ae1b9a19483bb1a8026e0c42c9d96",
+      "decoded_size": [
+        1280,
+        800
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "finding": "OFC 메뉴로 바뀌고 옛 점주 경로는 접근권한 없음·내 업무 이동 표시. 이전 영업 본문 없음."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-qa01-ofc-claim-refresh-fixed.png",
+      "sha256": "c85666d3c9bf7e7b79a97ddc769f4271f15a5b1e76f3e36f5eb14f2ffed69780",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "finding": "F01 최종 정상: 관리목록 총1건, 후보 총0건, 저장성공·페이지상태 확인. 관리행 이름은 화면상단 일부 잘려 전체행 증거로 쓰지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-qa01-audit-before-after.png",
+      "sha256": "46bdfb67268c5917f28ee09eceb5569bc66bae55b609fe607fe4070ef7040084",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "finding": "감사 시각/actor·대상/행동·사유/succeeded·펼친 변경 전(role ofc/v6 등) 확인. 변경 후는 화면밖이므로 양쪽 전체 시각검수로 세지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-retry-success-applied.png",
+      "sha256": "126128d0e4606d21d15f2925ab226aa3e17c58ba036b8bdd830172020d51b8ea",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "finding": "시도1 기술실패/AI_UNAVAILABLE/미반영과 시도2 분석완료/반영됨, 성공상태 재처리불가 안내를 한 화면에서 확인."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-owner-resolved-notification.png",
+      "sha256": "c0765d839d8cca487df47b047d82397b460aec98a029a19b06ccf3107034a5e1",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "finding": "owner.north의 해결상태·담당OFC·해결내용·관련사진 링크·comment이력 확인. 하단status_change 이력은 일부만 보임."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-catalog-inactive.png",
+      "sha256": "937b6e1fa5e041ed6dd01618f6dff5159deabcc8448d9a990a0a7143a5e3891b",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "finding": "기준정보 저장성공/사유입력 폼·영향0/연결0/세션0·신규업무 제한 안내. 변경 대상 비활성행은 화면밖이므로 상태배지 증거 아님."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-owner-active-notice.png",
+      "sha256": "aa13c3af39b5ac667913dc0c8bc3194776578bccc6688d0eda63a4b8f3234712",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "finding": "점주홈 상단에 QA01 유효 공지와 기존 시연 공지가 표시됨. 사진제출CTA/필터/KPI가 가려지지 않음."
+    }
+  ],
+  "excluded": [
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-qa01-ofc-claimed.png",
+      "sha256": "80271b4943f7ed7801e65d16d57fe835096305776f1dea76c2b3e7033ba099a4",
+      "viewed_this_round": false,
+      "reason": "root가 로딩 포착본으로 제외 지시; 최종 claim-refresh-fixed만 정상 완료 증거로 사용"
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-qa01-ofc-claimed-fixed.png",
+      "sha256": "80271b4943f7ed7801e65d16d57fe835096305776f1dea76c2b3e7033ba099a4",
+      "viewed_this_round": false,
+      "reason": "root가 로딩 포착본으로 제외 지시; 최종 claim-refresh-fixed만 정상 완료 증거로 사용"
+    }
+  ],
+  "new_product_defects": [],
+  "source_evidence": "review-source-005.json",
+  "functional_evidence": "../../workHitory/integration-concept-01/browser.md",
+  "independent_operations_evidence": "../../workHitory/integration-concept-01/independent-operations-review.md"
+}

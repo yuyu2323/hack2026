@@ -1,0 +1,235 @@
+{
+  "review": "DR02-001",
+  "recorded_at": "2026-09-21T09:53:14.373108+00:00",
+  "capture_source_correspondence": "root 확인 대기; 현 시점 소스와 캡처 hash를 각각 기록",
+  "files": [
+    {
+      "path": "web-concepts-02/src/app/main.tsx",
+      "sha256": "517107e7b6c61643b15144de3608b009439e056a3e8026ac2063a34c2c3d876b"
+    },
+    {
+      "path": "web-concepts-02/src/app/style.css",
+      "sha256": "1481749b2c4e96b0694487292418cebc57ae82ac6ab440729491da004018c9ed"
+    },
+    {
+      "path": "web-concepts-02/src/ofc-admin/Analytics.tsx",
+      "sha256": "77f5d4471e507da41d5f45ad0175672a6b23a276614fef87ec0a1d078e07753c"
+    },
+    {
+      "path": "web-concepts-02/src/ofc-admin/Business.tsx",
+      "sha256": "b5f3784ac7aac1b497a2054f2253635ca21fd46bdb6fa8e52440fce98d74fe81"
+    },
+    {
+      "path": "web-concepts-02/src/ofc-admin/Standards.tsx",
+      "sha256": "00e859012271f4b96fb458a646b19760f1f3e1b9bdcca263fa249c3a40714837"
+    },
+    {
+      "path": "web-concepts-02/src/platform-admin/Operations.tsx",
+      "sha256": "fae49e3b78e9ae9894ff73b731a2e99ec1883f489e14952289a49af97554f4d2"
+    },
+    {
+      "path": "web-concepts-02/src/shared/JobStatus.tsx",
+      "sha256": "d40fac549ab22bdd7e7cb6a5e68d33193d2da843ebbe3dd6e501f3d2b41eaeaa"
+    },
+    {
+      "path": "web-concepts-02/src/shared/core.tsx",
+      "sha256": "d8af807a19a0624e1d28d76cec4fb39a1bb01450535ddb0c2ce7d0a97abca851"
+    },
+    {
+      "path": "web-concepts-02/src/shared/issues.tsx",
+      "sha256": "30e655e0dc53ff4a705ce7302f56c166204f675a8e6df4e7d0b9df34d0427a88"
+    },
+    {
+      "path": "web-concepts-02/src/shared/photos.tsx",
+      "sha256": "6139a15da0350b4624f46e1d7f84e5bac2908af85d8c15a93753605abba9d541"
+    },
+    {
+      "path": "web-concepts-02/src/store-owner/Owner.tsx",
+      "sha256": "aaefb5d60aa276a5e7b084b0d554da377fb4802b7455f873f4f00ad601eac258"
+    },
+    {
+      "path": "web-concepts-02/package.json",
+      "sha256": "ae8039b49acf0461768affb9b0dbe87acf670b04172515813d5b286290e033c7"
+    },
+    {
+      "path": "execute/design/concept-02/acceptance.md",
+      "sha256": "b216d5d601eed3f8687df3d10fc8354b5a00746baea67d7d170b47187c3011f9"
+    },
+    {
+      "path": "execute/design/concept-02/brief.md",
+      "sha256": "e1cb01789f5eb582ae552adbed9239d25f0904dd4f3e4523f86196c080e8f341"
+    },
+    {
+      "path": "execute/design/concept-02/design-spec.md",
+      "sha256": "dc0534c5279158d4180d755e5efbf0681771627dbf147194e48ecde1d2a11724"
+    },
+    {
+      "path": "docs/03-requirements.md",
+      "sha256": "33f781c903af39a5a871009e6af686e0d3176014c1b6973eab9c0c8860eb2aaa"
+    },
+    {
+      "path": "docs/04-screens.md",
+      "sha256": "79863714a687810d085673605e3472abbd28b25083d495cab4d6ff4cb70481dc"
+    },
+    {
+      "path": "docs/05-database.md",
+      "sha256": "7726d4e21d0e1b9c07757bdebca07bde200b3a82bdb63a9d8a68d6a92e4b2554"
+    },
+    {
+      "path": "docs/06-api.md",
+      "sha256": "7957ccb4ca7206c1b3665b5a92523b12639b47a7596e3964c2c0b2c0d4e76a72"
+    },
+    {
+      "path": "docs/07-ai-processing.md",
+      "sha256": "7a8251591727ea69331c8223a84681d09598b8ea862495a5e29ea8637e8eca30"
+    },
+    {
+      "path": "docs/08-data.md",
+      "sha256": "88bc9a78c97db1936d6a60a92ad518d272af2ef3a0dcdee2a7c121f004dfcdeb"
+    },
+    {
+      "path": "docs/09-validation.md",
+      "sha256": "c55a6e81d5ebdeb10583efcd52e3b6b17c90fa75615dd44382f23c9dcef36a01"
+    },
+    {
+      "path": "docs/10-execution.md",
+      "sha256": "07efb75ecec157749d622b6ac27744339e55216e7a56a61bb698df6fc9873d57"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-analytics-empty.png",
+      "sha256": "1ae309378c618f47146e7b5a99954407e884c397e7558b9e14caeac59e94597b",
+      "pixels": [
+        1425,
+        1878
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-guideline-versions.png",
+      "sha256": "8bd59faed7d8280af2d25ab761eaa87a8467b8bc44e3ce3ac4fb60e5030ba050",
+      "pixels": [
+        1425,
+        1848
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-ofc-photo-evidence.png",
+      "sha256": "092e0881e4766447da4ffef58f437cc1a3aaa3ece947feaf39454e7c793bbc2e",
+      "pixels": [
+        1425,
+        4387
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-ofc-priority-board.png",
+      "sha256": "af9e22e8bb57d8c3cb1a8c4efc890cefcddbcc0ad1ac6456a48e216d8dfd19d4",
+      "pixels": [
+        1425,
+        2506
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-ofc-resolved-action.png",
+      "sha256": "6d241a5008c73d5bbbb86d55228e88e34e448649fc9a95ef7fd385f50633f3bd",
+      "pixels": [
+        1425,
+        1789
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-operations.png",
+      "sha256": "3ef3a843aee1e459e9e03a12f2350eb8f3e4840ca02349613062929adf2ae7b6",
+      "pixels": [
+        1425,
+        1763
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-reference-preview.png",
+      "sha256": "890e45415be0593c79fb7b8c93e4b29169a6529570e3c23b2a16ca3d7d959e50",
+      "pixels": [
+        1425,
+        891
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-reference-version-history.png",
+      "sha256": "cc94afb32dc8689b520dd82c4df6d1ea4718a88513654d6df6f08fa8f931496f",
+      "pixels": [
+        1425,
+        2198
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-retry-preserved-attempt.png",
+      "sha256": "4b3ccb7ee34c65d4daac5abd2c4c75eac786b6da5e03d92b158c1ba559ba147c",
+      "pixels": [
+        1425,
+        1525
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-analysis-delayed.png",
+      "sha256": "5d7a45f9b0c83376dd771de95f8a33f98d96300a1916e1a3353f71f2876e694e",
+      "pixels": [
+        375,
+        812
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-before-after-comparison.png",
+      "sha256": "1b8ded21abb9b5af600ed7e952e1f1604452a8feae17a74a50f4793845009600",
+      "pixels": [
+        375,
+        2576
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-original-snapshot-preserved.png",
+      "sha256": "5105023436ec006935b4c89d219f6b04391a74a875b2cf61e90a0930b50a7c12",
+      "pixels": [
+        375,
+        6450
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-owner-resolved-notification.png",
+      "sha256": "e094f62183e188bdb2392a2b55cff26b6d00e0addc2c9559589b1dde9c46efb5",
+      "pixels": [
+        375,
+        1543
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-real-ai-resubmission.png",
+      "sha256": "d8d7832b39f54b6eea79982ff5ddb5f5b257ac4bce59a9a23c12d96149bff5d9",
+      "pixels": [
+        375,
+        6409
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-real-ai-result.png",
+      "sha256": "e408fffebd3fa5dda0dce361f013a776c125fecd35cec84b1af6da5dc9c0b7a1",
+      "pixels": [
+        375,
+        6460
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-submit.png",
+      "sha256": "ab80bc0d396ce49e672c7186fb216596454b243723e048d902ca61de7bc5fd90",
+      "pixels": [
+        375,
+        2052
+      ]
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-technical-failure.png",
+      "sha256": "b573b85c803cfc644c87d4588395131da062101ebd4f073d25bfcad9c26490b7",
+      "pixels": [
+        375,
+        3823
+      ]
+    }
+  ]
+}

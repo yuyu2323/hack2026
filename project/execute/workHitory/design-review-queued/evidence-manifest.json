@@ -1,0 +1,402 @@
+{
+  "reviewed_at": "2026-09-21T13:19:36.617124+00:00",
+  "total_images": 29,
+  "images": [
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-mobile390-long-queued.png",
+      "sha256": "236fc39e25ee1e90fae777a1052ddb454278d1b117259c6a07448a168fdc9e23",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "대기632초·지연/이력 안내, 명시적인 Mock 합성 질문과 생성 사진. 평가 점수 없음."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-mobile390-api-outage.png",
+      "sha256": "be13011391a3d7f33c689cb3ccdd3730943e81bb5ef581ecc89b8fd36068bfd3",
+      "decoded_size": [
+        390,
+        844
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "요청 오류와 다시 조회 버튼. 분석 실패나 0점으로 바뀌지 않으며 점주 shell 유지."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-mobile390-api-recovered.png",
+      "sha256": "44229ac6437231df69e56b593645ea07851e2ad2ed4f59262f9e5ae3664d669a",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "같은 사진·합성 질문·대기1267초로 복귀, 통신 오류 제거."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-mobile390-queue-timeout.png",
+      "sha256": "a80831d3fe433ac5bf9f66b347c13a2a34944e42432b175c59ee1b81643cd432",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "QUEUE_TIMEOUT·분석을 완료하지 못했다는 기술 실패와 운영자 확인 안내. 결과 점수 없음."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-reference-number-fixed.png",
+      "sha256": "a6c62076fa12ea453a24f781d5c13c97fd44b0340463867ef45af8cd5decc419",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "OFF_SCREEN",
+      "finding": "OFC 문의 하단·연결 이력·기준 accordion까지만 보이며 Reference 사진과 번호는 화면 밖. root의 번호1/2/3 기능 확인과 구분; D02-004 시각 해소 근거로 사용할 수 없음."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-unknown-result-final.png",
+      "sha256": "bbd1470a14f8221440f042590bf19030864d2ff66b28825285fba0f845b55169",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "실제 어두운 사진·질문과 준수율—/판단가능률0%/표본0·5, 계산불가 이유 및 요약. unknown을 준수0%나 기술 실패로 표시하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-comparison-versions-final.png",
+      "sha256": "570b9431c5a042934b2ad53c506254b1384f965212cad67a8fd8e6a58af8d870",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기준 차이 경고·이전/현재 버전 및 pass→unknown 비교불가가 읽힘. qa02_labels 전체는 화면 아래이며 desktop 전체행 근거를 함께 사용."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-desktop1440-comparison-dates-final.png",
+      "sha256": "78ae7d3fcc2832fdd5570c67ae4852e158f17ddd96fcfb4988069558d8c8d991",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "전후2026-09-21 18:30/19:05 KST, 적용 기준4/5, 양쪽 사진 상단이 구분됨. 전체 사진은 화면 아래까지 이어짐."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-desktop1440-comparison-versions-final.png",
+      "sha256": "787e6fa3b62dfebd514b86347f28b3d907d54533defaa834d5ee287f07c9eb0f",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "5개 기준 전체 버전·판정·비교불가와 경고 확인. qa02_labels는 이전 미적용→현재v2이며 v1→v2로 기록하지 않음. 이전100/100·현재—/0 구분."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-desktop1440-regional-home.png",
+      "sha256": "8ae4514c5599a0da7b938e6bc501698de9c409e322bbe552b12b71da14e0826d",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "지역 north3개매장 범위와 필터/요약 아래 검토·조치·변화의3단계 업무 lane이 첫 viewport에 보임. 카드 전체 내용까지 확인한 것은 아님."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-desktop1440-hq-home-final.png",
+      "sha256": "36711e9171d4d718c050c3a49d02adef18c6fb433e52f90253012f7c49a6e6e9",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "본사 전체6매장 범위와 동일3단계 업무 lane. 01 표/03 사진/04 단계/05 탐색과 구별되는 첫 화면 구조 확인."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-audit-role-restored-after.png",
+      "sha256": "bc35d99d19392e0651cd83f4296ea64f2010c02d5fbc2c154070b5c2410e5930",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "accounts.update succeeded의 수행자·시각·사유와 before OFC/지역/매장→after 점주/지역null/매장0·버전6→7 모두 보임. 비밀번호 없음; ended_mapping_ids 하단 전체는 화면 밖."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-retry-success-preserved-final.png",
+      "sha256": "107e50f3d57bccb606cbb5c05205d83e006542fa61f238dc1180b8d1023033b8",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "실제 첫 작업의 시도1 AI_UNAVAILABLE 실패·미반영과 시도2 성공·반영, 각 시각이 함께 보임. 화면 위쪽 성공 재처리 제한 안내 전체는 확인하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-long-queued.png",
+      "sha256": "7c935e15d136577b625209ff7b6342d2d659d770389ebc434b8004dd9476a733",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "분석 대기632초·순서 대기·추가 지연/이력 안내. 사진은 아래쪽에 이어짐."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-api-outage.png",
+      "sha256": "a86d12c5296d5e7aa8b99c903d1a484e73620fd55e0ae7cdb43a55a399fd3da6",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기존 queued 정보 위에 요청 오류·상태 다시 확인을 표시. 연결 오류와 작업 상태가 구별됨."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-api-recovered.png",
+      "sha256": "b6ba4ce37096a99c6b25277c213a86f7cdc72bceed2c0a09325cca6265d9aa5b",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기존 분석 대기1268초·사진으로 복귀하고 오류 제거."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-queue-timeout.png",
+      "sha256": "c9a7cf66ce4e65eb2d302c58a48bc2a7ded0c65fb83e74795907aee911863406",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기술 실패1271초·QUEUE_TIMEOUT·운영자 복구 안내, 제출 사진 보존·평가 점수 없음."
+    },
+    {
+      "file": "execute/designReview/concept-03/evidence/vp-mobile390-long-queued.png",
+      "sha256": "c4a46fc59cbbd4e1b5daa68e8689fe648677ec13e53b8d938d0bdc8e4020861b",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "사진1·Mock 합성 질문·분석 대기632초/시도0·지연/이력과 재조회 안내."
+    },
+    {
+      "file": "execute/designReview/concept-03/evidence/vp-mobile390-api-outage.png",
+      "sha256": "91a0048d9dbb9bc9b688429fa87cc4449f252d15ecadc603a58db0e8b3899cf9",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "접속정보 확인 오류와 빈 로그인 폼이 함께 보임. root 기록상 같은 상세 URL에서 새 로그인 없이 복귀했으며 세션 만료로 단정하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-03/evidence/vp-mobile390-api-recovered.png",
+      "sha256": "2ad94f10283216ec8ea86afdcae0a0ff260cde9efc8c190d9be57ef6d009905a",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "원래 사진·질문·분석 대기1268초/시도0로 복귀. 로그인 폼·오류 제거."
+    },
+    {
+      "file": "execute/designReview/concept-03/evidence/vp-mobile390-queue-timeout.png",
+      "sha256": "07a9e7e13bf05e7fdda09e039f4c94afe95af11c7108f80e5a6d715aedcbccf0",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "대기 시간 초과·분석 실패1271초/시도1, 운영자 복구와 별도 사진 제출 안내. 평가 점수 없음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-long-queued.png",
+      "sha256": "eb1851c205b56bd5d95727d2669a99bbd59455c43d86216cae45286d72f02e10",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "사진1·Mock 합성 질문·대기632초·추가 지연/이력 안내와 기준 accordion. 하단 메뉴가 대기 설명을 가리지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-api-outage.png",
+      "sha256": "b0f0873eaff5f6144c35fae49c68658d01cf8d77a8f3723cac35eb61dd07a50c",
+      "decoded_size": [
+        390,
+        844
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "요청 오류·상태 다시 확인만 표시하며 shell도 보이지 않음. 기술 판정 실패나 0점으로 표현하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-api-recovered.png",
+      "sha256": "f64e1c928675b83bf51b8283bae2c0758206d8adb6075a7ba914c2cd4041f78e",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기존 사진·질문·대기1268초 및 메뉴로 복귀, 오류 제거."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-queue-timeout.png",
+      "sha256": "cf104ba7b0db52c8c7ea935e999f07fb6269e2f36650a53da886758a0d4bbfd6",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기술 실패·대기 시간 초과·운영자 복구 요청을 표시하고 진열 판정과 별개라고 안내. 평가 점수 없음."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-long-queued.png",
+      "sha256": "00547acb05f3d30cffb2e2b6122b481f0e9e327392a000052be126c31cbf3612",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "대기632초·지연/이력 안내, 명시적인 Mock 합성 질문. 새 AI 결과와 구분."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-api-outage.png",
+      "sha256": "6cc9063981b7389650791bd10fe82150a798bf2a66df6be9f19e1a99ab69b37a",
+      "decoded_size": [
+        390,
+        844
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "요청 오류·다시 조회 버튼, 점주 shell/시연 공지 유지. 결과나 점수 없음."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-api-recovered.png",
+      "sha256": "d46109c26a84ca72b33b551eb3ab0709a3a62d22ea1ce0eb36288c1a134230c8",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "같은 분석 대기1269초·Mock 질문으로 복귀하고 오류 제거."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-queue-timeout.png",
+      "sha256": "05b7bb3ea49a357b568d9415a07629dc98455ec46a2b37e580778e3a41dcf5a8",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기술 실패·QUEUE_TIMEOUT·운영자 복구 및 평가 점수에 포함하지 않는다는 설명. 결과 점수 없음."
+    }
+  ],
+  "input_records": [
+    {
+      "file": "execute/workHitory/queued-browser/browser.md",
+      "sha256": "641e28f0feac63eb73bb8a8666923ff16a0179d16576aac2f5ec6f46c60e51f9"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/independent-review.md",
+      "sha256": "c7539cacae534784757e0c0e489633dc154f72a192b467b35afea89a8785dd2c"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/independent-metadata.json",
+      "sha256": "9a26d925a58d6dca6e2de8e4c29fa1d9a010aa463a311b1691cc425a3835f937"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/queued-initial.json",
+      "sha256": "97c3a67b3ff23e2348c43338a6bde6854d10c7dedfbc55e3fdd710654802d687"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/api-outage.json",
+      "sha256": "b76463a32dc26bb0924f4dd13f2a6d2f9d3eb200695073bf9dbe999405c8a60b"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/api-recovery.json",
+      "sha256": "e49d067502ccf237389f9612cdd0a7931abc3c23153ab37635720d30891b951a"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/worker-restored.json",
+      "sha256": "665e12187b25f202cf86851ab99cc60790af17706d3e579f6be92884ba9ca74d"
+    },
+    {
+      "file": "execute/workHitory/integration-concept-01/browser.md",
+      "sha256": "2463e847e4d55d6489ef52bacb9779d730eeeb68f397c83aa4a82801a5f6bcb5"
+    },
+    {
+      "file": "execute/workHitory/integration-concept-02/browser.md",
+      "sha256": "04eba6b76596ae26bda92c3d0ae92a4eccba0643f98a486d01209f5df8bdfc76"
+    },
+    {
+      "file": "execute/workHitory/input-boundary/browser.md",
+      "sha256": "f64142fc65168c33cebeb9cd12d5dba0aa29c3ca72361b236446bd671c859a87",
+      "use": "기능 기록만 대조; 입력 PNG 독립 검수 미포함"
+    },
+    {
+      "file": "execute/workHitory/input-boundary/browser-evidence.json",
+      "sha256": "aaf4b9ec2ccb22b96b2683b8b30b2516facea6f382cbbe7b544d2c526e53be3c",
+      "use": "기능 기록만 대조; 입력 PNG 독립 검수 미포함"
+    }
+  ]
+}

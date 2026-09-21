@@ -1,0 +1,25 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-03/evidence/vp-mobile390-owner-resolved-fixed.png",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "sha256": "f894cfead02daa1a5f30dcd5b6beacf2abe032d946c4b76f6ab0d2e32f680a07",
+      "observation": "OFC 조치 이력·해결 내용과 ‘조치가 완료되었습니다.’, 담당/후속 제출 안내. 이전 대기 문구 제거 확인."
+    },
+    {
+      "file": "execute/designReview/concept-03/evidence/vp-mobile390-long-question.png",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "sha256": "e9bbed24bd8f54c275ee53680a1f7f806ee591aceda4b709fe7dfc1abb05ad1c",
+      "observation": "2000/2000자 질문과 필드 내부 스크롤·초점 테두리, 제출 버튼. 전체 가로 잘림 없음; 초과 입력 차단 동작 자체는 캡처만으로 판정하지 않음."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-resubmit-preview.png",
+      "sha256": "cc49ead3d22b2532aae981cb3c89c72fe33fa5aa40f915f4b96ff834c912f343",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "개선후 beverage-after-01.png 원본비율/2077KiB·사진제어·132자 질문/주황초점/제출버튼이 단열로 읽힘. 이전매장/분류 고정은 현재구간 밖."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-child-processing.png",
+      "sha256": "0188156d62209b1dbbc01b83a22a523cfbda54a0e4449571b91fdd5af90b541b",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "동일 노을공원점음료 재제출의22초 분석중·상태재조회·개선후 질문이 보이며 기존첫결과와시각/질문이구별됨."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-child-delayed.png",
+      "sha256": "4330e57f1b840ec56cda1ec8692734f9714be5f584bd31266f8aa00ee80fed6d",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "재제출56초 분석중에서 추가시간·나중에이력으로확인 안내를 표시. 결과율/기술실패로오인할표현없음."
+    }
+  ]
+}

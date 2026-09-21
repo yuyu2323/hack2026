@@ -1,0 +1,55 @@
+{
+  "status": "FAIL",
+  "started_at": "2026-09-21T12:45:07.267835+00:00",
+  "concept": 1,
+  "scope": "localhost Vite 프록시 독립 HTTP 세션; CSRF/login/logout 외에는 GET만 사용; AI·Browser·업무 쓰기 없음",
+  "checks": [],
+  "http": [],
+  "sessions": [
+    {
+      "login_id": "owner.north",
+      "csrf_status": null,
+      "login_status": null,
+      "logout_status": null
+    }
+  ],
+  "metadata_evidence": "execute/workHitory/integration-concept-01/independent-ai-metadata-20260921T124354Z.json",
+  "metadata_sha256": "f151e0c63502cc88c5cdbffafcaf7b45fbfc9824afad1b94a9343556b2797533",
+  "targets": {
+    "submission_ids": [
+      "17f959e5-831a-4ff7-842d-22575e6cfad5",
+      "2b0e717c-c161-4caa-8d1e-f1b7c9c88106"
+    ],
+    "media": [
+      {
+        "media_id": "0171b8b1-4db8-48db-9862-a8e4e1134413",
+        "sha256": "4f64e9411cdfd00b516de703b7e628717b004c6dbec637b94655ee579ab7167d",
+        "kind": "submission"
+      },
+      {
+        "media_id": "d1069dbb-96de-405d-8d7d-1cfff3950ee8",
+        "sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+        "kind": "reference"
+      },
+      {
+        "media_id": "b647e638-af64-52d8-b64f-14a71eb9433e",
+        "sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+        "kind": "reference"
+      },
+      {
+        "media_id": "117bb4d5-cbb7-45b6-9bee-3774d5556299",
+        "sha256": "04973a4a52064da0da41b6cf40c1e8a5a752cc6fbeb9722ba0196d8ca3592c0d",
+        "kind": "submission"
+      },
+      {
+        "media_id": "02efef4c-8e5a-47cc-903d-cbcd8e2679d8",
+        "sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa",
+        "kind": "reference"
+      }
+    ],
+    "regional_allowed_baseline": "3fdb0cf3-61da-4008-84c1-79e2a58cde05"
+  },
+  "failure_type": "ConnectError",
+  "failure_detail": "자격값·본문 보호를 위해 예외 원문과 traceback은 기록하지 않는다.",
+  "finished_at": "2026-09-21T12:45:07.307137+00:00"
+}

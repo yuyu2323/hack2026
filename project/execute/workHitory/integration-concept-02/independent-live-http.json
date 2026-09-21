@@ -1,0 +1,61 @@
+{
+  "status": "FAIL",
+  "started_at": "2026-09-21T12:45:07.267764+00:00",
+  "concept": 2,
+  "scope": "localhost Vite 프록시 독립 HTTP 세션; CSRF/login/logout 외에는 GET만 사용; AI·Browser·업무 쓰기 없음",
+  "checks": [],
+  "http": [],
+  "sessions": [
+    {
+      "login_id": "owner.north",
+      "csrf_status": null,
+      "login_status": null,
+      "logout_status": null
+    }
+  ],
+  "metadata_evidence": "execute/workHitory/integration-concept-02/independent-ai-metadata-20260921T124410Z.json",
+  "metadata_sha256": "0d3dc02fd70ff4b9895b45e42a33b505eff0c3a788f7594f58d8d1daa1a6100f",
+  "targets": {
+    "submission_ids": [
+      "8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "e9fd4f27-0d3e-42a1-9e58-9c255f49d703"
+    ],
+    "media": [
+      {
+        "media_id": "004af8bc-f527-4e4a-b96f-c51fdbf1c21e",
+        "sha256": "86d21c85c15d0328e6942a82c7fe0d797d1dbc4584bb320fab4bd80e7e7f4329",
+        "kind": "submission"
+      },
+      {
+        "media_id": "d41bca4d-e500-5971-acae-fcefd2ef7f1e",
+        "sha256": "283ab88714aef8521bdb47b1dd79a2afed388fd38b3f9bd1712575271802ea2a",
+        "kind": "reference"
+      },
+      {
+        "media_id": "16d4c243-3905-569f-85e7-65514805b594",
+        "sha256": "63c02dac9d0410a8e2b6a03b6668d5b3070baebd76f452cefecbef47964bb5aa",
+        "kind": "reference"
+      },
+      {
+        "media_id": "70f39641-2f28-422c-8995-bc00c0bd06c9",
+        "sha256": "26f62fc402a8ae76e160b7c63d24432c14534e3a3656bc6e317ad8fe7b9d155f",
+        "kind": "submission"
+      },
+      {
+        "media_id": "2799edaf-d709-4f29-ad3e-c2991efbf745",
+        "sha256": "9723404dbd7ca09170f2a2253736518bbcb260f45b5b3ee389dafddf057433a6",
+        "kind": "submission"
+      },
+      {
+        "media_id": "96d2b776-1666-4614-bd8a-cf8f203b2602",
+        "sha256": "283ab88714aef8521bdb47b1dd79a2afed388fd38b3f9bd1712575271802ea2a",
+        "kind": "reference"
+      }
+    ],
+    "regional_allowed_baseline": "3fdb0cf3-61da-4008-84c1-79e2a58cde05"
+  },
+  "failure_type": "ConnectError",
+  "failure_detail": "자격값·본문 보호를 위해 예외 원문과 traceback은 기록하지 않는다.",
+  "finished_at": "2026-09-21T12:45:07.307136+00:00"
+}

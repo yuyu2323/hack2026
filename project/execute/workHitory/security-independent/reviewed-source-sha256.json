@@ -1,0 +1,186 @@
+[
+  {
+    "path": "../.github/workflows/security.yml",
+    "sha256": "0d8afd94429516502f737a6bfd202f80099f489f1657acf5b76f45b42b9dc06d"
+  },
+  {
+    "path": "../.github/workflows/validation.yml",
+    "sha256": "a7faf7ef022c8f765ef5bb1e9191856f695227c1a2075f746e273395f8f38ff1"
+  },
+  {
+    "path": ".githooks/pre-commit",
+    "sha256": "4d0d069f9b4b8c6177b7e6aa1ae2000abd2b93fc5c04b480418ccb865c5b57a1"
+  },
+  {
+    "path": ".githooks/pre-push",
+    "sha256": "e70cc787ba3ddb23e44f2fc848e907f8b9a3b859973bd4444e64d5e72b896da5"
+  },
+  {
+    "path": ".gitleaks.toml",
+    "sha256": "ae4ac4582fa2c01b2c595411941e36b9a187047b9ae281c9d98dc3efa0e79901"
+  },
+  {
+    "path": "ai-service/app/__init__.py",
+    "sha256": "e35d57805a23d10f2310a9a99fd8268ce714c12d249353a77260d9c13b0458e7"
+  },
+  {
+    "path": "ai-service/app/adapters/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "ai-service/app/adapters/codex.py",
+    "sha256": "5d083df76d8f36bec843b6cfc174a009b203b21ec634fcfd236e28dddef7bf2f"
+  },
+  {
+    "path": "ai-service/app/config.py",
+    "sha256": "a28079f3f068952d9cd282a0a9438a24d52d67b91be2b588ab344370bc07d313"
+  },
+  {
+    "path": "ai-service/app/main.py",
+    "sha256": "fc79882ea6903dfea052a3de197e8e663b7099e11e5830ba018aac0874e3a0c1"
+  },
+  {
+    "path": "ai-service/app/services/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "ai-service/app/services/images.py",
+    "sha256": "483ef41f1f26b76d6f925bc21add114031b2afb33886fd5af12b2143721d0c94"
+  },
+  {
+    "path": "ai-service/app/smoke.py",
+    "sha256": "199cc76cbe8998cf7b20727f3db54a591a90ab0c18ec03acff4aeba7779715b6"
+  },
+  {
+    "path": "scripts/install_security.py",
+    "sha256": "e36307449cdd6208e6d42edc43551192bcdf5e3981da0d00917ebb54a592bc49"
+  },
+  {
+    "path": "scripts/local_runtime.py",
+    "sha256": "c44449b78cffc0bd31d678f1d98f4ffda89c113165b901dabf65d01b1a6d08d4"
+  },
+  {
+    "path": "scripts/preflight.py",
+    "sha256": "ff817755bd508bedca3f1edaf2405dbcd24731523663afa6ddeac9dd76228ac5"
+  },
+  {
+    "path": "scripts/security_guard.py",
+    "sha256": "2c00a45b315f030c14215885cea6f5a86c9036d6ec98591b9d73fa609d1022e3"
+  },
+  {
+    "path": "scripts/services.py",
+    "sha256": "60269b1e074735e77036613f1dee8258a56299dccecd97bf7af999049055cdcf"
+  },
+  {
+    "path": "server/accounts/models.py",
+    "sha256": "f67da00ab7ec09e291f23cc51a7b52c7dab62cb6dc65833fad2cf687ce3a82f9"
+  },
+  {
+    "path": "server/accounts/router.py",
+    "sha256": "1f4951a132b7f2794ec3dad8993a83c73a89cd2ff55383e93bd1730f31ba00e4"
+  },
+  {
+    "path": "server/accounts/schemas.py",
+    "sha256": "31000650ea826260a4f632b698613d3e27237ed209a604e6d31ece2b15df158a"
+  },
+  {
+    "path": "server/accounts/service.py",
+    "sha256": "935da03f534bd83e8b8a93d6bae4416f1cf67400e6fd9a226542795ae8efac28"
+  },
+  {
+    "path": "server/analysis_jobs/models.py",
+    "sha256": "cd4b19802f3f47a2374807f95740ab50428e4a6d232c8b6c8628780f8a2f9127"
+  },
+  {
+    "path": "server/analysis_jobs/service.py",
+    "sha256": "4aa00073aa5e766d422646b8167738f673491c316aa4df4bd067df509fdf06f4"
+  },
+  {
+    "path": "server/analysis_jobs/worker.py",
+    "sha256": "390fde2d1f4a4706d73897a384dce0ed38683bc29f19ef8e6912dcd603e53424"
+  },
+  {
+    "path": "server/core/auth.py",
+    "sha256": "020a221b5f8942dcbcfaa706714e1b69d0be60be81d955896357663b44be4ddd"
+  },
+  {
+    "path": "server/core/base.py",
+    "sha256": "7f19cd6bc3d473b5be98086790247846c3b44dbd3cd535c29552322cca789061"
+  },
+  {
+    "path": "server/core/config.py",
+    "sha256": "789674ad0c28a534209a3b2ea8ef131e954788860b81e4674000313b37dd29ed"
+  },
+  {
+    "path": "server/core/db.py",
+    "sha256": "7176351b9066b741db5303a8508ebfc6aa62f369cf93d057fdb7d8d957edfc03"
+  },
+  {
+    "path": "server/core/errors.py",
+    "sha256": "309b645e6a3a7015d072d4ffdd456f911724f25eb266845bbd7faec67e39f9cb"
+  },
+  {
+    "path": "server/core/model_helpers.py",
+    "sha256": "f25f63adf0d3c1ccb392a047635da3b22ca953acea2725bc02c28d85e58ba7b6"
+  },
+  {
+    "path": "server/core/models.py",
+    "sha256": "0761b827fb747469b7cf4f3c9a5c43ef6ccba9f69fa04003035937eb146b3e10"
+  },
+  {
+    "path": "server/core/permissions.py",
+    "sha256": "3d184189198e6e2cdd8bb67040a8ce9e5025b6b933f09e6fdc28b01098454df3"
+  },
+  {
+    "path": "server/core/security.py",
+    "sha256": "2210763baee641ba7902e9efc4569fadd787872cdca7cf2969a80e597ecf1f9a"
+  },
+  {
+    "path": "server/core/serialization.py",
+    "sha256": "9104f65b2e09e0c1d528231f15ef71348efcce0836d42c10f2853bf22925c326"
+  },
+  {
+    "path": "server/main.py",
+    "sha256": "3e7493e1f7b27f9dfa10f533c47b819817d7ffe39cc97713e0b0b64fa83806a7"
+  },
+  {
+    "path": "server/operations/models.py",
+    "sha256": "d57bfa7d48dce4048e7aa5d60031b6835564dcf6913a039d8208bfdf1f921d31"
+  },
+  {
+    "path": "server/operations/router.py",
+    "sha256": "aec6e1fcbdddda6e2eca9b3f680438a2581fdbae81d3a6309315976f5f7b7d0f"
+  },
+  {
+    "path": "server/operations/schemas.py",
+    "sha256": "943419b187a81967b0d864ea4f85e5758650148635fb507a74e00ecef0a4597f"
+  },
+  {
+    "path": "server/operations/service.py",
+    "sha256": "e5eeccd2c10f047bb730ab4602691f69bc724e3ca80001ad1b91d53171dd7e50"
+  },
+  {
+    "path": "server/stores/models.py",
+    "sha256": "0ede26671408a532bff453e4d9c80aa70afe00762f42bec5805e7c5fd4f58a6b"
+  },
+  {
+    "path": "server/stores/router.py",
+    "sha256": "5b236b300be20d8be50587eaf15717665a75af604a83bb46affdd480324deea9"
+  },
+  {
+    "path": "server/stores/schemas.py",
+    "sha256": "b60599698ae06b8b5f302dd1e66f47c829e8ec6d4498afb96215c8a705bd70fe"
+  },
+  {
+    "path": "server/stores/service.py",
+    "sha256": "e4b80e3d685cf516d08030413f3228a1ee5f7a7e2c9c4d2763ea6004ce50a7bf"
+  },
+  {
+    "path": "server/tests/test_security_final_review.py",
+    "sha256": "6586e628455d255cadedba4de338715638372a18e203fbf273dca24914ca34d6"
+  },
+  {
+    "path": "tests/security/test_merge_history.py",
+    "sha256": "8d14eda9175112da1e9407e4690d3a2004512d91521637413ffab59f9da76578"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "reason": "탭4에서 탭5로 이동한 뒤 viewport 재지정 전 캡처",
+  "actual": {
+    "width": 1280,
+    "height": 720,
+    "client": 1265,
+    "scroll": 1265
+  },
+  "files": [
+    "vp-desktop1440-account-audit.png",
+    "vp-desktop1440-operator-expired-before-retry.png",
+    "vp-desktop1440-operator-retry-running.png"
+  ],
+  "file_name_dimensions_are_not_measurements": true,
+  "success_capture_viewport": {
+    "width": 1440,
+    "height": 900
+  }
+}

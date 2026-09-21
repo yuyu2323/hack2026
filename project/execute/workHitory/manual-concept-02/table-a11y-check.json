@@ -1,0 +1,53 @@
+{
+  "status": "STATIC_PASS; 실제 키보드 검수 대기",
+  "id": "D-MAN02-01",
+  "before_sha256": "e648f314a009d83bf60b7c552eb34935f5682f5bfeff394bc62bee572d359ee4",
+  "html_sha256": "6065e1fa38470d33f81a17ac56050e8962d3615e5b0166bed3e071ca79229887",
+  "regions": [
+    {
+      "class": "table-wrap",
+      "role": "region",
+      "aria-label": "시연 계정과 확인 범위 표",
+      "tabindex": "0"
+    },
+    {
+      "class": "table-wrap",
+      "role": "region",
+      "aria-label": "역할별 시작 경로와 메뉴 표",
+      "tabindex": "0"
+    },
+    {
+      "class": "table-wrap",
+      "role": "region",
+      "aria-label": "분석 결과 표시와 읽는 방법 표",
+      "tabindex": "0"
+    },
+    {
+      "class": "table-wrap",
+      "role": "region",
+      "aria-label": "플랫폼 운영 메뉴와 확인 사항 표",
+      "tabindex": "0"
+    },
+    {
+      "class": "table-wrap",
+      "role": "region",
+      "aria-label": "화면 상태별 대응 방법 표",
+      "tabindex": "0"
+    },
+    {
+      "class": "table-wrap",
+      "role": "region",
+      "aria-label": "시안02 실제 AI 검증 실측 표",
+      "tabindex": "0"
+    },
+    {
+      "class": "table-wrap",
+      "role": "region",
+      "aria-label": "다섯 시안 정보 배치 비교 표",
+      "tabindex": "0"
+    }
+  ],
+  "focus_rule": ".table-wrap:focus-visible{outline:3px solid #b85424;outline-offset:4px}",
+  "other_content_unchanged": true,
+  "browser": "NOT_RUN"
+}

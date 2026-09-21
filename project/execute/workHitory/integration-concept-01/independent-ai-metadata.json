@@ -1,0 +1,12 @@
+{
+  "status": "FAIL",
+  "started_at": "2026-09-21T12:43:06.461543+00:00",
+  "concept": 1,
+  "checks": [],
+  "submissions": [],
+  "reference_changes": [],
+  "scope": "PostgreSQL READ ONLY·보호 파일 읽기; 본문/비밀/이미지 바이트 출력 없음; AI·Browser·업무 쓰기 없음",
+  "failure_type": "OperationalError",
+  "failure_detail": "자격값/본문 보호를 위해 예외 원문과 traceback은 저장하지 않는다.",
+  "finished_at": "2026-09-21T12:43:06.527081+00:00"
+}

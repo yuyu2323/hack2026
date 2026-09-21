@@ -1,0 +1,38 @@
+[
+  {
+    "path": ".local",
+    "exists": true,
+    "mode": "0o700",
+    "owner_only": true
+  },
+  {
+    "path": ".local/runtime.env",
+    "exists": true,
+    "mode": "0o600",
+    "owner_only": true
+  },
+  {
+    "path": ".local/postgres-password",
+    "exists": true,
+    "mode": "0o600",
+    "owner_only": true
+  },
+  {
+    "path": ".local/demo-credentials",
+    "exists": true,
+    "mode": "0o600",
+    "owner_only": true
+  },
+  {
+    "path": ".local/logs",
+    "exists": true,
+    "mode": "0o700",
+    "owner_only": true
+  },
+  {
+    "path": ".local/pids",
+    "exists": true,
+    "mode": "0o700",
+    "owner_only": true
+  }
+]

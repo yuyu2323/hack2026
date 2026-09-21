@@ -1,0 +1,32 @@
+[
+  {
+    "manual": "deliverables/manuals/concept-01/index.html",
+    "images": 8,
+    "missing_links": []
+  },
+  {
+    "manual": "deliverables/manuals/concept-02/index.html",
+    "images": 7,
+    "missing_links": []
+  },
+  {
+    "manual": "deliverables/manuals/concept-03/index.html",
+    "images": 10,
+    "missing_links": []
+  },
+  {
+    "manual": "deliverables/manuals/concept-04/index.html",
+    "images": 10,
+    "missing_links": []
+  },
+  {
+    "manual": "deliverables/manuals/concept-05/index.html",
+    "images": 12,
+    "missing_links": []
+  },
+  {
+    "manual": "deliverables/manuals/index.html",
+    "images": 0,
+    "missing_links": []
+  }
+]

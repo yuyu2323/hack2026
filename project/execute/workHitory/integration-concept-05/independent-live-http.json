@@ -1,0 +1,271 @@
+{
+  "status": "PASS",
+  "started_at": "2026-09-21T12:09:05.447881+00:00",
+  "scope": "독립 실제 HTTP·Vite5177; 별도 CSRF/login/logout 세션만 사용; 브라우저와 별도",
+  "target": {
+    "first_submission_id": "3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+    "child_submission_id": "b0dbd6a2-3b6c-4442-8b57-902448539127",
+    "issue_id": "c4ecb6f5-d284-42f4-bf90-d641e71097e3",
+    "photo_id": "b4b0b665-3ec5-4f45-80b0-6281e46aaa78",
+    "media_id": "3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5",
+    "expected_original_sha256": "86d21c85c15d0328e6942a82c7fe0d797d1dbc4584bb320fab4bd80e7e7f4329"
+  },
+  "checks": [
+    {
+      "check": "owner.south:expected_role",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.south:/api/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "status": "PASS"
+    },
+    {
+      "check": "owner_detail_matches_stored_media_snapshot",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.south:/api/submissions/b0dbd6a2-3b6c-4442-8b57-902448539127",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.south:/api/issues/c4ecb6f5-d284-42f4-bf90-d641e71097e3",
+      "status": "PASS"
+    },
+    {
+      "check": "owner_issue_is_child_issue",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.south:/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.south:/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.south:logout",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:expected_role",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/submissions/b0dbd6a2-3b6c-4442-8b57-902448539127",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/issues/c4ecb6f5-d284-42f4-bf90-d641e71097e3",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:logout",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.north:expected_role",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.north:/api/submissions/e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.north:/api/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.north:/api/issues/c4ecb6f5-d284-42f4-bf90-d641e71097e3",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.north:/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.north:/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.north:logout",
+      "status": "PASS"
+    }
+  ],
+  "http": [
+    {
+      "login_id": "owner.south",
+      "method": "GET",
+      "path": "/api/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.south",
+      "method": "GET",
+      "path": "/api/submissions/b0dbd6a2-3b6c-4442-8b57-902448539127",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.south",
+      "method": "GET",
+      "path": "/api/issues/c4ecb6f5-d284-42f4-bf90-d641e71097e3",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.south",
+      "method": "GET",
+      "path": "/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "86d21c85c15d0328e6942a82c7fe0d797d1dbc4584bb320fab4bd80e7e7f4329",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.south",
+      "method": "GET",
+      "path": "/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/submissions/b0dbd6a2-3b6c-4442-8b57-902448539127",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/issues/c4ecb6f5-d284-42f4-bf90-d641e71097e3",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.north",
+      "method": "GET",
+      "path": "/api/submissions/e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.north",
+      "method": "GET",
+      "path": "/api/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.north",
+      "method": "GET",
+      "path": "/api/issues/c4ecb6f5-d284-42f4-bf90-d641e71097e3",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.north",
+      "method": "GET",
+      "path": "/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.north",
+      "method": "GET",
+      "path": "/api/media/3111f4ec-d4d5-4f14-9bf8-7ecd2552f9f5?variant=thumbnail",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    }
+  ],
+  "sessions": [
+    {
+      "login_id": "owner.south",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    },
+    {
+      "login_id": "operator.demo",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    },
+    {
+      "login_id": "regional.north",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    }
+  ],
+  "finished_at": "2026-09-21T12:09:05.719369+00:00"
+}

@@ -1,0 +1,131 @@
+{
+  "test_id": "AT-10-EARLY",
+  "source_kind": "real_ai",
+  "image_source_kind": "ai_generated_demo",
+  "started_at": "2026-09-21T08:55:18.641196+00:00",
+  "status": "PASS",
+  "input": {
+    "schema_version": "1.0",
+    "job_id": "72364334-791f-5254-99fa-9dc3f2b1b7d8",
+    "attempt_id": "26b65716-43cf-5a94-847c-301a6a828a2e",
+    "submission_id": "caab060a-da0f-59aa-a53a-cf70a91ade33",
+    "question": "가운데 선반의 빈 공간과 앞줄 정렬을 어떻게 개선하면 좋을까요? Reference와 비교해 주세요.",
+    "guidelines": [
+      {
+        "guideline_id": "a41db7ec-0214-5307-b3b5-b2cab91b4c15",
+        "version_id": "c95d1ad0-566f-5813-8ec1-a05295786e0e",
+        "version": 1,
+        "level": "CATEGORY",
+        "rule_key": "facing",
+        "text": "같은 구역의 상품 앞면을 선반 앞 가장자리와 평행한 일정한 앞줄로 정렬한다."
+      },
+      {
+        "guideline_id": "c1bc7304-fe5d-58fc-b45b-278a0496c7cc",
+        "version_id": "f0fe51d7-efd3-5536-a901-1ae889054b48",
+        "version": 1,
+        "level": "CATEGORY",
+        "rule_key": "shelf_gap",
+        "text": "상품 구역 안에 넓은 빈 공간을 두지 않고 상품 사이 간격을 일정하게 유지한다."
+      }
+    ],
+    "photos": [
+      {
+        "photo_id": "3090cf9c-91f8-5e9b-875e-b34282be9e46",
+        "position": 1,
+        "mime_type": "image/png",
+        "sha256": "8e72ae4f11c60a58b8ab0b0fb03e307082945bac56aa44c28d60a7983b61c3b7"
+      }
+    ],
+    "references": [
+      {
+        "photo_id": "3ace9934-13c3-5135-86a8-71305b0c9df1",
+        "position": 1,
+        "mime_type": "image/png",
+        "sha256": "a96648449ff2fc1d5266965669cd44ee051539d6db565795e8c2587d0550f986",
+        "reference_id": "2e9efa75-c1e6-5d1a-b686-f6a3c3ed04ef",
+        "caption": "앞줄과 간격이 정리된 가상 음료 매대 Reference"
+      }
+    ],
+    "previous_review": null
+  },
+  "transport": "actual_local_http",
+  "model_configured": "gpt-6-astra",
+  "http_status": 200,
+  "response": {
+    "schema_version": "1.0",
+    "job_id": "72364334-791f-5254-99fa-9dc3f2b1b7d8",
+    "attempt_id": "26b65716-43cf-5a94-847c-301a6a828a2e",
+    "submission_id": "caab060a-da0f-59aa-a53a-cf70a91ade33",
+    "result": {
+      "schema_version": "1.0",
+      "question_answer": "가운데 선반은 초록색 캔과 은색 캔 사이의 넓은 빈 공간을 줄이고, 뒤로 물러난 캔을 앞으로 당겨 앞줄을 맞추면 좋겠습니다. Reference처럼 초록색은 왼쪽, 은색은 오른쪽으로 묶어 두고, 각 구역의 캔 간격과 선반 앞 가장자리까지의 거리를 일정하게 조정하세요.",
+      "summary": "가운데 선반에서 넓은 중앙 공백과 고르지 않은 앞줄이 확인되어 두 기준 모두 개선이 필요합니다.",
+      "overall_confidence": "high",
+      "criteria": [
+        {
+          "guideline_id": "a41db7ec-0214-5307-b3b5-b2cab91b4c15",
+          "version_id": "c95d1ad0-566f-5813-8ec1-a05295786e0e",
+          "version": 1,
+          "rule_key": "facing",
+          "verdict": "fail",
+          "reason": "가운데 선반의 캔들이 선반 앞 가장자리에서 서로 다른 거리로 놓여 앞줄이 일정하지 않습니다.",
+          "evidence": [
+            {
+              "photo_position": 1,
+              "observation": "가운데 선반의 초록색 캔은 오른쪽으로 갈수록 앞줄이 뒤로 물러나 있으며, 은색 캔도 중앙 쪽과 오른쪽의 앞줄 위치가 다릅니다."
+            }
+          ],
+          "actions": [
+            "뒤로 물러난 초록색·은색 캔을 앞으로 당겨, 각 캔의 앞면이 선반 앞 가장자리와 평행한 한 줄을 이루도록 맞추세요."
+          ]
+        },
+        {
+          "guideline_id": "c1bc7304-fe5d-58fc-b45b-278a0496c7cc",
+          "version_id": "f0fe51d7-efd3-5536-a901-1ae889054b48",
+          "version": 1,
+          "rule_key": "shelf_gap",
+          "verdict": "fail",
+          "reason": "가운데 선반 중앙에 넓은 빈 공간이 있고 상품 사이 간격이 일정하지 않습니다.",
+          "evidence": [
+            {
+              "photo_position": 1,
+              "observation": "가운데 선반의 초록색 캔 묶음과 은색 캔 묶음 사이에 선반 바닥이 넓게 드러나 있습니다."
+            }
+          ],
+          "actions": [
+            "가운데 선반에서 보이는 뒤쪽 캔을 빈 앞자리로 옮기고, 초록색과 은색 구역을 유지하면서 중앙 공백을 줄이세요.",
+            "재배치한 캔 사이 간격을 일정하게 맞추세요."
+          ]
+        }
+      ],
+      "reference_comparisons": [
+        {
+          "reference_id": "2e9efa75-c1e6-5d1a-b686-f6a3c3ed04ef",
+          "verdict": "different",
+          "photo_positions": [
+            1
+          ],
+          "observation": "Reference의 가운데 선반은 초록색 캔과 은색 캔이 중앙의 넓은 공백 없이 이어지고 앞줄도 고르게 정렬되어 있습니다. 제출 사진은 같은 색상 구역 배치를 보이지만 중앙 공백이 넓고 캔의 앞뒤 위치가 불규칙합니다."
+        }
+      ],
+      "limitations": [],
+      "ofc_review_required": false,
+      "follow_up_comparison": null
+    },
+    "model": "gpt-6-astra",
+    "prompt_version": "storeloop-review-v1",
+    "cli_version": "codex-cli 0.154.0",
+    "duration_ms": 35762
+  },
+  "metrics": {
+    "compliance_rate": 0.0,
+    "assessable_rate": 100.0,
+    "needs_ofc_review": false,
+    "pass_count": 0,
+    "fail_count": 2,
+    "unknown_count": 0
+  },
+  "http_elapsed_ms": 36089,
+  "within_30_second_target": false,
+  "browser_latency_measured": false
+}

@@ -1,0 +1,11 @@
+# DR02-001 독립 최종 디자인 검수
+- 담당 contract_ai / 상태 RUNNING
+- 입력: docs00→01→02, 03~10 최신 계약, DS02-001 v1, PD-003, MEDIA-CLARIFY-1
+- 독립성: 시안02 디자인/프론트 구현/기능 인수에 참여하지 않은 검수자. 기존 AI/worker 구현 경력은 있으나 이 검수의 대상은 화면이다.
+- 소유: execute/designReview/concept-02/review-001.md, 해당 검수 체크리스트·이력. 소스 변경은 root/작성자 요청만.
+- 공유 브라우저/로그인/DB 변경 금지. root가 실제 캡처하고 검수자는 이미지와 소스를 대조한다.
+- [ ] 계약·디자인·소스 버전/hash와 캡처 크기 기록
+- [ ] 390 모바일·1440 desktop 실제 PNG 직접 확인
+- [ ] 항목별 PASS/FAIL/BLOCKED/NOT_RUN과 재현·수정 요청
+- [ ] 부족 상태/키보드/viewport 캡처 root 요청
+- [ ] 수정 후 실제 캡처 재검수 및 최종 인계

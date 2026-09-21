@@ -1,0 +1,25 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-first-result.png",
+      "sha256": "5c33d5714980449fabc6db52dcb9c304a81ac2ef903f99c93f3c9113c3f13db5",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "검수 제외:375×812 화면이 흰색이며 우측 스크롤바 외의 결과본문이 전혀 보이지 않음. root에 paint/로드 완료 재촬영 요청. actualAI 성공 JSON을 화면 표시 PASS로 대체하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-owner-question.png",
+      "sha256": "a5ea2883b3b1d11b29a4105505fb43aed5c8f73107f886cbdd690ee48f7cce69",
+      "decoded_size": [
+        390,
+        844
+      ],
+      "format": "JPEG",
+      "observation": "노을공원점 음료 점주 문의의 제목/본문·확인대기·원본사진/평가/기준보기·조치이력 없음이 읽힘. 생성 사진/Mock 시연안내 및 점주 상단업무탭 유지."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "phase": "S-O05 날짜·적용 기준 버전 보완 독립 소스 확인 이후. 실제 새 캡처/최종 시각 판정 대기.",
+  "created_at": "2026-09-21T10:58:29.667230+00:00",
+  "files": [
+    {
+      "path": "web-concepts-05/src/app/App.tsx",
+      "sha256": "8c0d0e49eaa050a29a6d0639652b3cad54009141658b7aba226d286f1f2d0481"
+    },
+    {
+      "path": "web-concepts-05/src/main.tsx",
+      "sha256": "3c8b68d7b51e786abdde01a9654fb39c000ef210449cb8131fdd6afcff9ea15f"
+    },
+    {
+      "path": "web-concepts-05/src/ofc-admin/Business.tsx",
+      "sha256": "d48fbaf26e2ac9aa5d5888f8fb3771b8fe8273b0cdab0ffa4eab46f5b5191538"
+    },
+    {
+      "path": "web-concepts-05/src/platform-admin/Platform.tsx",
+      "sha256": "81f5c8c56b26fa0810aa07bde4778d7445a9791075f41e31ea31ef1f8d0b71ff"
+    },
+    {
+      "path": "web-concepts-05/src/shared/business.tsx",
+      "sha256": "25e4096855a4b49d2ec3fdab5937b25667600b288b0d7f42331a197c1b0bf6fa"
+    },
+    {
+      "path": "web-concepts-05/src/shared/policy.ts",
+      "sha256": "893e813ec07afbd449eee389cbb7c4357fae507a7a324fb9e59b7ecd6219532f"
+    },
+    {
+      "path": "web-concepts-05/src/shared/ui.tsx",
+      "sha256": "553f9bdd51f562c4d97cd59057efdcf8e28e55ff5abf06cfa2a8f8b8222d3111"
+    },
+    {
+      "path": "web-concepts-05/src/store-owner/Owner.tsx",
+      "sha256": "e8478fa6236cde1d47751fe8b076502e7d67084b00fa23e0745b6bebba09f4de"
+    },
+    {
+      "path": "web-concepts-05/src/styles.css",
+      "sha256": "615fa6aa399ab5b818db0b3758abfe7c3490acccf000063dda477bfb72dca64e"
+    }
+  ]
+}

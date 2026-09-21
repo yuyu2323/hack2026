@@ -1,0 +1,7 @@
+{
+  "change_id": "DS03-DOC-001",
+  "spec_sha256": "e3d9fb3e19474d237eacdb5a1f0e13828d3bf8cb19e0ab29bf7208d7ff30f55d",
+  "acceptance_before_sha256": "a6a80f1a003e9f935bafc5bdc83893fb1815458f3ba215ee8aa7e41903c8a937",
+  "acceptance_after_sha256": "a6a80f1a003e9f935bafc5bdc83893fb1815458f3ba215ee8aa7e41903c8a937",
+  "acceptance_unchanged": true
+}

@@ -1,0 +1,45 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-child-result.png",
+      "sha256": "012887de0b4de34f005afaab0e1b88c2e66c6eb08bfde9f843c02a1ce7580349",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "실제 AI 분석·준수100/판단가능100/5개판단·질문답·높은신뢰·OFC확인 분리. 이전사진직접부재/기록기반비교·가격추정안함 한계가읽힘."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-comparison-top.png",
+      "sha256": "f9ed89a97c7cbe51ae96dc24abec2c0d98d2dbdf749bc84641d1b94ddae46c73",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "점주모바일 비교상단의 적용기준차이주의·이전일시2026년9월21일20:52·준수60/판단가능100 및이전사진상부 확인.사진전체는아래."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-comparison-change.png",
+      "sha256": "cc4c8c809f538688ef2cd830bda2abb4a9a0881f6f4b5949f12c3995c17f5ce2",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "개선후20:59·100/100와after전체사진/생성배지·원본보기,기준변화표이전버전/판정이읽힘."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-comparison-right.png",
+      "sha256": "b8425bcc04b6b0709e3de502ccaac45c98525415c509d1aa6ab411b66ec86333",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "이름있는기준별변화표의초점/가로스크롤과qa05_labels v1→v2 일부가읽힘.아직중간스크롤이라현재판정/변화오른쪽열은잘림.마지막열추가촬영요청.하단기록기반비교/변경기준직접비교제외주의확인."
+    }
+  ]
+}

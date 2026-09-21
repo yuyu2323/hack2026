@@ -1,0 +1,25 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-comparison-right-fixed.png",
+      "sha256": "cab58cf508e0ca75a183df420b2ce2acac6d29164da480938ea839934f01f96c",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "비교표를 끝까지 가로 이동한 정상 구간. 현재 기준 버전/판정/변화가 모두 읽히고 QA05 v2 비교불가, facing/shelf_gap 개선됨, 나머지 변화없음을 구분한다. 주황 초점과 내부 스크롤은 유지된다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-owner-resolved.png",
+      "sha256": "38b340f7062c6dd7e900d170064699fee0582e0582c1eab6d53f785b181f10d7",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "점주에게 해결 상태·해결 내용·원본 근거 이동과 OFC 조치 이력을 읽기전용으로 제공한다. 과거 기록을 덮어쓰거나 대기 문구를 남기지 않는다."
+    }
+  ]
+}

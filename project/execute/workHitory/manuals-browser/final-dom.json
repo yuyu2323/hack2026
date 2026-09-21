@@ -1,0 +1,72 @@
+[
+  {
+    "documentWidth": 1425,
+    "headerMeta": "rgb(225, 237, 239)",
+    "height": 900,
+    "images": 8,
+    "runtime": true,
+    "url": "http://127.0.0.1:8088/deliverables/manuals/concept-01/index.html",
+    "width": 1440,
+    "skip": {
+      "hash": "#content",
+      "text": "http://127.0.0.1:5173",
+      "withinMain": true
+    }
+  },
+  {
+    "documentWidth": 1425,
+    "headerMeta": null,
+    "height": 900,
+    "images": 7,
+    "runtime": true,
+    "url": "http://127.0.0.1:8088/deliverables/manuals/concept-02/index.html",
+    "width": 1440,
+    "skip": {
+      "hash": "#start",
+      "text": "http://127.0.0.1:5174",
+      "withinMain": true
+    }
+  },
+  {
+    "documentWidth": 1425,
+    "headerMeta": "rgb(225, 237, 239)",
+    "height": 900,
+    "images": 10,
+    "runtime": true,
+    "url": "http://127.0.0.1:8088/deliverables/manuals/concept-03/index.html",
+    "width": 1440,
+    "skip": {
+      "hash": "#content",
+      "text": "http://127.0.0.1:5175",
+      "withinMain": true
+    }
+  },
+  {
+    "documentWidth": 1425,
+    "headerMeta": "rgb(225, 237, 239)",
+    "height": 900,
+    "images": 10,
+    "runtime": true,
+    "url": "http://127.0.0.1:8088/deliverables/manuals/concept-04/index.html",
+    "width": 1440,
+    "skip": {
+      "hash": "#content",
+      "text": "http://127.0.0.1:5176",
+      "withinMain": true
+    }
+  },
+  {
+    "documentWidth": 1425,
+    "headerMeta": "rgb(225, 237, 239)",
+    "height": 900,
+    "images": 12,
+    "runtime": true,
+    "url": "http://127.0.0.1:8088/deliverables/manuals/concept-05/index.html",
+    "width": 1440,
+    "skip": {
+      "hash": "#content",
+      "text": "http://127.0.0.1:5177",
+      "withinMain": true
+    }
+  }
+]

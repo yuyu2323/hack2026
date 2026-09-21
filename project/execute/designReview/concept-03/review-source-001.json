@@ -1,0 +1,46 @@
+{
+  "phase": "사전 검수; 최종 동결/캡처 대응 아님",
+  "created_at": "2026-09-21T10:02:01.084013+00:00",
+  "files": [
+    {
+      "path": "web-concepts-03/src/app/main.tsx",
+      "sha256": "14563bb69420623e073fbc2ac286a031e213fab3655acbb258d4a97bfff85d6e"
+    },
+    {
+      "path": "web-concepts-03/src/app/style.css",
+      "sha256": "dcb81c3f6fcf678fef0af042e670c0bba3acbfd627fab8b4a75d56bb39176f11"
+    },
+    {
+      "path": "web-concepts-03/src/ofc-admin/pages.tsx",
+      "sha256": "31383d5f00c5904281644dd2b0293be7fd8a15ec60371cab7b998f0878247898"
+    },
+    {
+      "path": "web-concepts-03/src/platform-admin/pages.tsx",
+      "sha256": "3ffbc7efae757612226950c5ba1e860483c580f38d0e9541cec1f153735d9461"
+    },
+    {
+      "path": "web-concepts-03/src/shared/policy.ts",
+      "sha256": "dcb8a4db6784937a5ff02486bee7b89d9e684851358523498eb55392c9efe156"
+    },
+    {
+      "path": "web-concepts-03/src/shared/ui.tsx",
+      "sha256": "a6773070bbd769ee16b5b7c99dd10faca0ec908b44872ee346bea07e9146f322"
+    },
+    {
+      "path": "web-concepts-03/src/store-owner/pages.tsx",
+      "sha256": "565a7381858c233581ad54e8f3f462be9ab23d00b5633c3caa6b6d2fde235038"
+    },
+    {
+      "path": "execute/design/concept-03/acceptance.md",
+      "sha256": "a6a80f1a003e9f935bafc5bdc83893fb1815458f3ba215ee8aa7e41903c8a937"
+    },
+    {
+      "path": "execute/design/concept-03/brief.md",
+      "sha256": "ded19780fa8142fed51bd0f6808a17544f4610331c25518751dfe30dfce8e330"
+    },
+    {
+      "path": "execute/design/concept-03/design-spec.md",
+      "sha256": "30892729a8b3d76dbbd7b85543f3954cb6a5522468731b3f7cc2a3bb3fa2475f"
+    }
+  ]
+}

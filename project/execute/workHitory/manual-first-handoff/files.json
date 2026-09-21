@@ -1,0 +1,26 @@
+[
+  {
+    "path": "deliverables/manuals/index.html",
+    "sha256": "d25b5bb4e25f271ec69fe262babff5d747d5be22b5814a4332cf1f0d6313239a"
+  },
+  {
+    "path": "deliverables/manuals/concept-01/index.html",
+    "sha256": "c5133143a3f97f87d7d337b8b6fc2e625a8b19df056a50520a509208404ef445"
+  },
+  {
+    "path": "deliverables/manuals/concept-02/index.html",
+    "sha256": "b1803bb717d41615e7bcbd2e933eea3540c7b7f01cb44f9e114b2754a13f9dd9"
+  },
+  {
+    "path": "deliverables/manuals/concept-03/index.html",
+    "sha256": "610ff58bfb09971c52321604bd09c7793bb0bb57565b19e0d70f7fb82b73cd38"
+  },
+  {
+    "path": "deliverables/manuals/concept-04/index.html",
+    "sha256": "3b55e56f71c31664643b0f31f40bb43b9d724a09ba91c4a5b65f0027802b6ef8"
+  },
+  {
+    "path": "deliverables/manuals/concept-05/index.html",
+    "sha256": "86a4f05c36c2c05ee4eef46f5013f43824f1261440edcc0918e2ef5f6543ad3f"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "status": "REVIEW_COMPLETE",
+  "ai_metadata": {
+    "path": "execute/workHitory/integration-concept-02/independent-ai-metadata-20260921T124410Z.json",
+    "checks": 70,
+    "sha256": "0d3dc02fd70ff4b9895b45e42a33b505eff0c3a788f7594f58d8d1daa1a6100f"
+  },
+  "http": {
+    "path": "execute/workHitory/integration-concept-02/independent-live-http-20260921T124627Z.json",
+    "checks": 56,
+    "get_count": 46,
+    "sha256": "c2a88bbc49ccb352a4f2fc807b7f27ab67128023a195216c7ed260a198df19e5"
+  },
+  "new_model_calls": 0,
+  "business_writes": 0,
+  "browser_used": false
+}

@@ -1,0 +1,22 @@
+{
+  "change_id": "D04-V01",
+  "path": "web-concepts-04/src/shared/style.css",
+  "before_sha256": "dab99b8edcda16e1978c0cdb6252fdfdc55e988eb06643c33d02936315e3b475",
+  "after_sha256": "f90459d7f0ce94db525951973b0ceca1573fee983676801e6ec9ecff08892bf7",
+  "scope": "CSS 제어행 줄바꿈 및 모바일 버튼 최소 너비 44px",
+  "build_artifacts": [
+    {
+      "path": "web-concepts-04/dist/assets/index-Dbe_430Q.css",
+      "sha256": "83d30fe702505c00c2f87cb7cdaf55592725c66c3df3a5841c0a73f82765dde4"
+    },
+    {
+      "path": "web-concepts-04/dist/assets/index-Baxmq-8-.js",
+      "sha256": "878699d574a249452efb61c7773de53dc8fb875b1d01a3defebdc6ecc122d25b"
+    }
+  ],
+  "verification": {
+    "focused_tests": "2 PASS, 4 skipped",
+    "build": "PASS",
+    "actual_viewport": "NOT_RUN — root 재촬영 대기"
+  }
+}

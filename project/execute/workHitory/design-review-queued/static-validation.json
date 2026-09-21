@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-21T13:21:51.362459+00:00",
+  "image_count": 29,
+  "in_scope_visual_pass": 28,
+  "off_screen": 1,
+  "unique_paths": 29,
+  "image_hash_size_format_check": "PASS",
+  "report_links": "PASS",
+  "reports": [
+    {
+      "file": "execute/workHitory/design-review-queued/review-001.md",
+      "sha256": "5aa558c1de8fa1a169a083ea3f318af01e4be9ce301b84084b6662d4ceea62fc"
+    },
+    {
+      "file": "execute/checkList/design-review-queued/review-001.md",
+      "sha256": "27ee94d3c4ea6bb24b3c4366da74282f932fd5d944fed25081280ef6c59a55ae"
+    },
+    {
+      "file": "execute/workHitory/frontend-comparison/pending-visual-evidence.md",
+      "sha256": "e8a9e661731b5d3c409b76a48f05f463b0c2c67ddaa1b16a4d5b3a6188034c94"
+    }
+  ],
+  "limitations": "실행 테스트/Browser/DB/모델 호출 없음. 전체 시안 완료가 아닌 이번 증거 및 문서 검증."
+}

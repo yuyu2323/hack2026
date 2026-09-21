@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-09-21T13:02:20.482919+00:00",
+  "checks": [
+    {
+      "check": "read_only",
+      "status": "PASS"
+    },
+    {
+      "check": "2d4ea8b1-116c-430e-8e06-e80ba477484b:inactive_without_content_revision",
+      "status": "PASS"
+    },
+    {
+      "check": "2d4ea8b1-116c-430e-8e06-e80ba477484b:deactivation_audit",
+      "status": "PASS"
+    },
+    {
+      "check": "2089bf7c-3836-441c-9d00-7a32eb6a0436:inactive_without_content_revision",
+      "status": "PASS"
+    },
+    {
+      "check": "2089bf7c-3836-441c-9d00-7a32eb6a0436:deactivation_audit",
+      "status": "PASS"
+    },
+    {
+      "check": "d422d014-58d6-4d90-ae76-d4502709dad7:inactive_without_content_revision",
+      "status": "PASS"
+    },
+    {
+      "check": "d422d014-58d6-4d90-ae76-d4502709dad7:deactivation_audit",
+      "status": "PASS"
+    },
+    {
+      "check": "category_v2_remains_active",
+      "status": "PASS"
+    },
+    {
+      "check": "announcement_v2_inactive_expected_title",
+      "status": "PASS"
+    },
+    {
+      "check": "announcement_published_before_registration",
+      "status": "PASS"
+    },
+    {
+      "check": "announcement_creation_then_deactivation_audit",
+      "status": "PASS"
+    },
+    {
+      "check": "8259ce47-90ce-4a85-8496-8ed27edeb375:unchanged_after_cleanup",
+      "status": "PASS"
+    },
+    {
+      "check": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9:unchanged_after_cleanup",
+      "status": "PASS"
+    },
+    {
+      "check": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703:unchanged_after_cleanup",
+      "status": "PASS"
+    }
+  ],
+  "scope": "후속 정리 READ ONLY; Browser 재실행 없음",
+  "rules": {
+    "upper": [
+      {
+        "id": "2d4ea8b1-116c-430e-8e06-e80ba477484b",
+        "level": "HQ",
+        "is_active": false,
+        "content_version": 1,
+        "state_version": 2,
+        "audits": [
+          {
+            "id": "c4355f0d-d96d-46b4-9e68-3676123b11ee",
+            "action": "guideline.create",
+            "created_at": "2026-09-21T21:57:10.182308+09:00",
+            "outcome": "succeeded",
+            "reason_present": true,
+            "request_id_present": true,
+            "before": {},
+            "after": {
+              "version": 1
+            }
+          },
+          {
+            "id": "a298a62b-368c-4106-9c16-923ec2304649",
+            "action": "guideline.update",
+            "created_at": "2026-09-21T22:00:03.974221+09:00",
+            "outcome": "succeeded",
+            "reason_present": true,
+            "request_id_present": true,
+            "before": {
+              "version": 1,
+              "is_active": true
+            },
+            "after": {
+              "version": 1,
+              "is_active": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "2089bf7c-3836-441c-9d00-7a32eb6a0436",
+        "level": "REGION",
+        "is_active": false,
+        "content_version": 1,
+        "state_version": 2,
+        "audits": [
+          {
+            "id": "1105a4ff-6761-4a16-a359-1a0a2b425df1",
+            "action": "guideline.create",
+            "created_at": "2026-09-21T21:57:25.190770+09:00",
+            "outcome": "succeeded",
+            "reason_present": true,
+            "request_id_present": true,
+            "before": {},
+            "after": {
+              "version": 1
+            }
+          },
+          {
+            "id": "6bfe5026-8c72-41f5-b304-707d0c03d9a8",
+            "action": "guideline.update",
+            "created_at": "2026-09-21T22:00:13.625751+09:00",
+            "outcome": "succeeded",
+            "reason_present": true,
+            "request_id_present": true,
+            "before": {
+              "version": 1,
+              "is_active": true
+            },
+            "after": {
+              "version": 1,
+              "is_active": false
+            }
+          }
+        ]
+      },
+      {
+        "id": "d422d014-58d6-4d90-ae76-d4502709dad7",
+        "level": "STORE",
+        "is_active": false,
+        "content_version": 1,
+        "state_version": 2,
+        "audits": [
+          {
+            "id": "3a460762-5d08-4829-87b4-cc4dfdc069aa",
+            "action": "guideline.create",
+            "created_at": "2026-09-21T21:57:35.995513+09:00",
+            "outcome": "succeeded",
+            "reason_present": true,
+            "request_id_present": true,
+            "before": {},
+            "after": {
+              "version": 1
+            }
+          },
+          {
+            "id": "8a285780-344c-4295-9831-170f2b5a4a38",
+            "action": "guideline.update",
+            "created_at": "2026-09-21T22:00:24.474989+09:00",
+            "outcome": "succeeded",
+            "reason_present": true,
+            "request_id_present": true,
+            "before": {
+              "version": 1,
+              "is_active": true
+            },
+            "after": {
+              "version": 1,
+              "is_active": false
+            }
+          }
+        ]
+      }
+    ],
+    "category": {
+      "id": "871e8d30-b380-4050-b81a-1594f4c1eac1",
+      "is_active": true,
+      "content_version": 2
+    }
+  },
+  "announcement": {
+    "id": "8364b4a5-9704-4fa1-b5e7-300fad961aed",
+    "version": 2,
+    "is_active": false,
+    "starts_at": "2026-09-21T21:57:00+09:00",
+    "ends_at": null,
+    "created_at": "2026-09-21T21:58:07.237468+09:00",
+    "audits": [
+      {
+        "id": "bee14e9e-42e4-42d0-97b7-83282a1372d1",
+        "action": "announcements.create",
+        "created_at": "2026-09-21T21:58:07.238297+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {},
+        "after": {
+          "ends_at": null,
+          "version": 1,
+          "is_active": true,
+          "starts_at": "2026-09-21T12:57:00Z"
+        }
+      },
+      {
+        "id": "7afc5004-98f7-4244-936c-46b4e3df45e9",
+        "action": "announcements.update",
+        "created_at": "2026-09-21T21:58:48.226122+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "ends_at": null,
+          "version": 1,
+          "is_active": true,
+          "starts_at": "2026-09-21T12:57:00Z"
+        },
+        "after": {
+          "ends_at": null,
+          "version": 2,
+          "is_active": false,
+          "starts_at": "2026-09-21T12:57:00Z"
+        }
+      }
+    ]
+  },
+  "past_records": [
+    {
+      "submission_id": "8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "snapshot_sha256": "23c2609844cb17fb887fb9d07917cf88ec08b76bae7a63824c5c4dfda029e65c",
+      "result_sha256": "a18d48e3d7c3320cadc2cb5c8ac2a613780ca59fb0c552b19f3e1dcbe38625b7",
+      "unchanged": true
+    },
+    {
+      "submission_id": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "snapshot_sha256": "e61cc99e9ef4915c3d13d4d9027f326ea51ff65bf00b3939cba3db4893d6fbb5",
+      "result_sha256": "ebe161afa146d16e9b287e4190f33aa82e073f42f9d93b037f827d06ff6a4f4b",
+      "unchanged": true
+    },
+    {
+      "submission_id": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703",
+      "snapshot_sha256": "479c9c85ae8a6ced1267ed9a9d2b8ea2c5a718d099eda70f02fd150a487a6b1b",
+      "result_sha256": "3d058bc073878de2d0816de93e12d4a13c0605bfa4adb29c8f19bf6dcbf92c89",
+      "unchanged": true
+    }
+  ]
+}

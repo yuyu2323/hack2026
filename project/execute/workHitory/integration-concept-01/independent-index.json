@@ -1,0 +1,35 @@
+{
+  "status": "REVIEW_COMPLETE",
+  "ai_metadata": {
+    "path": "execute/workHitory/integration-concept-01/independent-ai-metadata-20260921T124354Z.json",
+    "checks": 53,
+    "sha256": "f151e0c63502cc88c5cdbffafcaf7b45fbfc9824afad1b94a9343556b2797533"
+  },
+  "http": {
+    "path": "execute/workHitory/integration-concept-01/independent-live-http-20260921T124615Z.json",
+    "checks": 46,
+    "get_count": 37,
+    "sha256": "346df75ce4c215ab207e6b1cb5a4659901c2522d7176c80e55a593954b7d86b2"
+  },
+  "new_model_calls": 0,
+  "business_writes": 0,
+  "browser_used": false,
+  "subsequent_root_export": {
+    "sha256": "8a36fa0d3242f78ab03319e487fdbbfc6448bb0a86ebf3f3cfc4516dad5de4c0",
+    "row_count": 3,
+    "original_pair_compared_fields_unchanged": true,
+    "comparison_fields": [
+      "job_id",
+      "review_id",
+      "snapshot_sha256",
+      "model_ms",
+      "photos",
+      "criteria",
+      "references",
+      "attempt states/applied"
+    ],
+    "added_fixture_submission_id": "e3488415-6745-56a8-be69-7d3010521033",
+    "fixture_review_evidence": "execute/workHitory/integration-concept-01/independent-operations-review.md",
+    "note": "최초53개DB/46개HTTP대상은first/child2건 그대로;재처리행은별도22개메타검수"
+  }
+}

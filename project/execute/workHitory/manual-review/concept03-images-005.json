@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "scope": "03 실제 이미지 6장 바이트·alt·캡션 독립 검증; 앞선 직접 시각 검수한 화면 내용과 대조. Browser 렌더 미실행.",
+  "html_sha256": "1853ac096fc57b7ef7c09dfcb2d78c649d37616dde5acc997a3052bc68286976",
+  "local_links": 35,
+  "broken_links": [],
+  "images": [
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-mobile390-first-preview.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-mobile390-first-preview.png",
+      "sha256": "37af61bb8eb585bcfac0361a981a5a039bf9ba52a7e7d9a3070cdef2b371b6d7",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true,
+      "caption": "점주 · 모바일 제출 · 390×844 viewport. 선택 목록은 아래 사진 번호·파일명·미리보기로 확인합니다. 사진을 추가하거나 삭제하고, 아래 점주 질문을 입력한 뒤 사진 제출하기를 누릅니다."
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-mobile390-first-processing.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-mobile390-first-processing.png",
+      "sha256": "84a2a0bb72dd6f9de65d51290adfe59d754baa834c15cc016f6885870d9e3e13",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true,
+      "caption": "점주 · 첫 실제 제출 처리 중 · 390×844 viewport. 접수 후 결과를 기다리는 화면입니다. 상태를 다시 확인할 수 있고 이력에서 다시 열 수 있습니다. 아직 준수 판정이나 실제 AI 완료 결과가 표시된 화면은 아닙니다."
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-desktop1440-photo-dashboard-fixed.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-desktop1440-photo-dashboard-fixed.png",
+      "sha256": "54c9b0a67517d9013156ce6d4cf3e430fdf3b1d4e386dab1dba1f5986404d197",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true,
+      "caption": "본사 · 사진 관제 · 1440×900 viewport. 최근 사진이 먼저 보이며 집계와 매장별 상태는 하단 지표·매장 현황으로 이어집니다. 사진을 선택하면 관찰 근거와 후속 조치를 확인할 수 있습니다."
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-mobile390-unknown-mock.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-mobile390-unknown-mock.png",
+      "sha256": "0bb55796b9d250419e1f3979728024d305bf0b81f48834c23d30edc750d1f204",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true,
+      "caption": "점주 · 판단 불가 예시 · 390×844 viewport. 이 화면은 Mock 과거 평가입니다. 판단 가능한 기준이 없어 준수율은 대시로 표시되고 판단 가능률은0%입니다. 실제 신규 AI 실패 또는 진열 위반0%라는 뜻이 아닙니다."
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-mobile390-technical-failure.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-mobile390-technical-failure.png",
+      "sha256": "6d2222cf580defe892f28191fc8397972f95c93f1f79a3f459461a04004e67a8",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true,
+      "caption": "점주 · 기술 실패 예시 · 390×844 viewport. 준비된 시드 실패 사례로 복구 안내를 확인한 화면입니다. 기준별 판단 불가와 구별하며 새 실제 AI 제출의 실패 기록으로 소개하지 않습니다. 운영자에게 복구를 요청하거나 새로운 현장 사진을 별도로 제출할 수 있습니다."
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-mobile390-empty-history.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-mobile390-empty-history.png",
+      "sha256": "bfc30f7df9f3028b5d408b49ab835006e7ff21a3b4fd4d2900209d29ba619265",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true,
+      "caption": "점주 · 빈 이력 · 390×844 viewport. 현재 범위와 기간에 사진이 없는 상태입니다. 필터를 확인하거나 초기화해 다른 범위를 찾아보세요. 제출 없음은 위반 판정이 아닙니다."
+    }
+  ]
+}

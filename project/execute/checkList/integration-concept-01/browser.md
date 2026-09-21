@@ -1,0 +1,11 @@
+# 시안 01 독립 기능 인수
+- 담당: root (작성/디자인 담당 product_design과 분리)
+- 상태: RUNNING, .local/test-media + storeloop_test, 실제 AI 순차 실행.
+- [x] E01 4단계 기준·Reference 등록 후 실제 첫 평가
+- [x] E02 실제 재제출·비교·관리자 조치·알림
+- [x] E03 기준/Reference 변경과 과거 보존
+- [x] E04 권한·매핑·비활성 즉시 반영
+- [x] E05 실패 복구와 시도 보존
+- [ ] E06 입력·빈·판단불가·실패 경계
+- [x] E07 분석·알림·공지
+- [ ] E08 preview·매뉴얼·viewport·키보드·콘솔

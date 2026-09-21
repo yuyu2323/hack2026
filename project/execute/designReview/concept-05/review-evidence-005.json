@@ -1,0 +1,95 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-hq-dashboard.png",
+      "sha256": "a2aa98a94b34c264d24e6a2e16962804175228f132e5589b469c5545f2a09287",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "왼쪽 범위 탐색·UTC 조회일/AsiaSeoul 표시시간·조건 적용/초기화/주소복사와 오른쪽 매장 비교 행렬. 본사6매장·성공31/Mock20·미제출—를 분리. 상단 브랜드/탭은 스크롤 밖이므로 별도 기준 화면과 함께 대조."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-guidelines-four-levels.png",
+      "sha256": "3565e152b0049eaa3b59826ec4f0397af853b78933eaff10eaae3d58052f76b1",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "가로 영업 업무탭과 좌측 기준 탐색/우측 내용 버전 편집. QA05 CATEGORY v1 선택·제목/본문/사유가 읽힘. 파일명과 달리 다른 모든4단계 항목은 현재 viewport 밖이므로 이 사진만으로 모두 확인하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-reference-preview.png",
+      "sha256": "12a9115b22efe52495a6cf40b2875f0e5756d9bc795d3d476acb6f790a333801",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "HQ Reference 관리 탐색목록과 등록 미리보기. QA05 노을공원점 음료 이미지 contain/파일명/크기·삭제/설명; 과거 QA04 v2활성·v1비활성 목록 사진도 보임."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-owner-home.png",
+      "sha256": "b6227e1deb8aa55cf116d9d1840bbf781f6338a3abcc159440138b337a9ea6c4",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "owner.south 이력 탐색 시작·가로 업무탭·접힌 범위 탐색·대표 사진점검 행동·상태 필터/이력 카드가 단열로 읽힘. 생성사진/Mock 시연 안내를 분리."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-invalid-photo.png",
+      "sha256": "f91922236f85d0dbad27ce00a6b28e4d086fa5677d2b3e3d38d5c564c2b3ecd0",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "JPEG/PNG 형식 오류를 파일 입력 아래에 표시하고 이미 선택한 정상 사진 미리보기/파일정보를 유지. 초안 매장/분류 미선택은 오류 사진과 구별."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-upload-preview.png",
+      "sha256": "dc631bfa3c7a26bdb71626644f16cd92304484647d0cc2e065ce8b939cb4c34e",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "단열 사진 비율·파일명/2251KiB·앞으로/삭제와 음료분류/질문 초안 확인. 제어행이 카드 밖으로 넘치지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-long-question.png",
+      "sha256": "bc206bcd07ebcbd4ef74d76725061a0fae81747180c60aec13717ca39ba47d98",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "2000/2000자·textarea 주황 초점과 내부 스크롤·사진/제출버튼·AsiaSeoul footer가 읽힘. 전체 파일경계 인수로 확대해석하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-processing.png",
+      "sha256": "80679e3d9d71c2e6925963d585179b2ada930325b20d9e1a3252413f3f86e5c9",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "실제 노을공원점 음료 제출은26초 분석 중·상태 재확인·합성 질문/사진을 표시하며 아직 결과율을 제시하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile390-processing-delayed.png",
+      "sha256": "2337fec95b76cc6b59d68530e15c17a15168bb4d9baa7f751d9e658d391a709d",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "60초 분석 중에 추가시간 안내·화면을 나가도 이력에서 확인 가능함·명시 상태재조회 표시. 기술실패/평가값으로 바꾸지 않음."
+    }
+  ]
+}

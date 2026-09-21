@@ -1,0 +1,26 @@
+{
+  "status": "PARTIAL",
+  "scope": "1440 요청 첫2개 화면 독립 직접 시각 검수. 전체 디자인 완료 아님",
+  "items": [
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-hq-dashboard.png",
+      "sha256": "215a7c33d86b8f5f363a2b0f1dd2dd406108a02a63c011a4e822127d69730f9e",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "본사 첫 화면. 넓은 미해결 조치 대표 행동, 접힌 조회 조건과 하단5탭을 확인. 고정 좌측 메뉴/사진 contact sheet/3단계 board와 구별됨."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-guidelines-four-levels.png",
+      "sha256": "c3b6937a9e7b182951fcdd6908958534de44c9678b0a9ac167f8684d18322105",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "새 기준 펼침과 조회 조건, 매대·매장 v1 활성 카드/내용/변경 이력 링크 확인. 지역·전사는 아래 일부만 보여4단계 전체를 이 이미지 하나로 입증하지 않음."
+    }
+  ]
+}

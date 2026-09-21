@@ -1,0 +1,36 @@
+{
+  "method": "독립 실제 HTTP 세션·Vite proxy·CSRF 로그인; 브라우저 세션 추출 없음",
+  "browser_direct_navigation": "ERR_BLOCKED_BY_CLIENT, 브라우저 직접 API 확인은 대체 주장하지 않음",
+  "role": "operator",
+  "checks": [
+    {
+      "path": "/api/submissions/46e985b6-58cd-4376-b035-cd5f0e38c600",
+      "status": 403,
+      "expected": 403,
+      "content_type": "application/json",
+      "business_body_absent": true
+    },
+    {
+      "path": "/api/media/eda3bee3-5e6f-415d-b5b2-175caeac1989",
+      "status": 403,
+      "expected": 403,
+      "content_type": "application/json",
+      "business_body_absent": true
+    },
+    {
+      "path": "/api/media/eda3bee3-5e6f-415d-b5b2-175caeac1989?variant=thumbnail",
+      "status": 403,
+      "expected": 403,
+      "content_type": "application/json",
+      "business_body_absent": true
+    },
+    {
+      "path": "/api/notifications",
+      "status": 403,
+      "expected": 403,
+      "content_type": "application/json",
+      "business_body_absent": true
+    }
+  ],
+  "status": "PASS"
+}

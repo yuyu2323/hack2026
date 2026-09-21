@@ -1,0 +1,16 @@
+{
+  "scope": "D04-V01/V02 최종CSS/build 독립 hash 검토; 실제 시각 미포함",
+  "css_sha256": "39aa39df901859e909297e0e91751715c5bebb764aaebd017a7b0625cb235e99",
+  "build": [
+    {
+      "path": "web-concepts-04/dist/assets/index-DDJ-Szex.css",
+      "sha256": "8876c952ff7119a6c52d47a4875f926aa164f9a9d297bf699c472585a84e5f33",
+      "matches": true
+    },
+    {
+      "path": "web-concepts-04/dist/assets/index-kzD7dODT.js",
+      "sha256": "878699d574a249452efb61c7773de53dc8fb875b1d01a3defebdc6ecc122d25b",
+      "matches": true
+    }
+  ]
+}

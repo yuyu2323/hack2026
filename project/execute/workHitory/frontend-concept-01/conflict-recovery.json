@@ -1,0 +1,95 @@
+{
+  "id": "F01-INPUT-RECOVERY-001",
+  "status": "REVIEW_FROZEN",
+  "red": [
+    "기준409 후 사용자본문이 다른사람본문으로 교체됨",
+    "Reference409 명시 재저장에도 r1/state_version1 재송신",
+    "실제App CSRF403에서 store query removed 이벤트1회 및 권한거부 오분류"
+  ],
+  "green": {
+    "new_regressions": 3,
+    "all_ui_tests": 20,
+    "ui_files": 6,
+    "typescript": "PASS",
+    "vite_build": "PASS",
+    "independent_regressions": 2,
+    "independent_author_recheck": "contract_ai: 기존 원본2개 그대로 실행 PASS"
+  },
+  "browser": "root 실제 기준409/Reference409/CSRF 초안 보존 및 명시 저장 PASS. 추가 경합은 독립 actual App 회귀2개로 검증; 새 Browser/모델 호출 없음.",
+  "files": [
+    {
+      "path": "web-concepts-01/src/ofc-admin/Standards.tsx",
+      "sha256": "90621820e15c7fce656b19a9d2c9c2dc23796509bc13c5cc6c34ff51bead7888",
+      "bytes": 12669
+    },
+    {
+      "path": "web-concepts-01/src/main.tsx",
+      "sha256": "34a43683bdd5e8ee61378317c3dd6565bdbbec64522e25e5f897c6e07a46a0e6",
+      "bytes": 848
+    },
+    {
+      "path": "web-concepts-01/src/app/query-client.ts",
+      "sha256": "03817eef4c2164ae9a4f406eae82df1d87a3bb381cdd8fdff26f89a22b09b933",
+      "bytes": 684
+    },
+    {
+      "path": "web-concepts-01/src/shared/ui.tsx",
+      "sha256": "c8df60b9510582d62d25acf9a5679e94010443f99ae99b42f2113bd55f4d7a92",
+      "bytes": 9643
+    },
+    {
+      "path": "web-concepts-01/tests/conflict-recovery.test.tsx",
+      "sha256": "6cc22bfdb1fd0cdced0532c258fe4c1755fbf0143779e48b5faaff4b155b955a",
+      "bytes": 6120
+    },
+    {
+      "path": "web-concepts-01/tests/csrf-recovery.test.tsx",
+      "sha256": "f9b84aa95170aff67bb991d711b7756beaedf7ac40c2e237f44fd17f897b26ab",
+      "bytes": 3293
+    },
+    {
+      "path": "execute/workHitory/input-boundary/independent-recovery01-edge.test.tsx",
+      "sha256": "97f9f3eb7954ed216f38ce7d161832f312f995d7cdeb21b92804042b723ea97e",
+      "bytes": 4375
+    },
+    {
+      "path": "execute/workHitory/input-boundary/independent-recovery01-vitest.config.ts",
+      "sha256": "cae68c967d8863f84bc41133cb5f9cafc1edf27c2797ed107c1f8373904937d3",
+      "bytes": 259
+    },
+    {
+      "path": "web-concepts-01/dist/assets/Analytics-DGuhfwm5.js",
+      "sha256": "6fa349096295ee04d24efd2e37d19678335b5ded34b5b39449c930bf8ba903c9",
+      "bytes": 382544
+    },
+    {
+      "path": "web-concepts-01/dist/assets/index-CD0OqGlq.css",
+      "sha256": "86fac5f46d62146e541b962f5fe4d51ae9ac642f10a2196e9e4f35d3faa94920",
+      "bytes": 15943
+    },
+    {
+      "path": "web-concepts-01/dist/assets/index-hnJ_xClo.js",
+      "sha256": "db6c925fa937b962caa6805710bfd26110ed8fa007034ebda6f971ec877d878f",
+      "bytes": 378691
+    },
+    {
+      "path": "web-concepts-01/dist/index.html",
+      "sha256": "b1074d37714a4770000a5d1115f17b6103681f4f362976a46c1ced215f932f18",
+      "bytes": 418
+    }
+  ],
+  "independent_findings": [
+    {
+      "id": "R01-01",
+      "red": "A 최신 조회 대기 중 B 편집 뒤 A의 늦은 응답이 B 저장 대상을 A로 교체",
+      "fix": "요청 세대와 편집 선택/취소/unmount 무효화로 늦은 응답 폐기",
+      "status": "PASS"
+    },
+    {
+      "id": "R01-02",
+      "red": "직접 최신 조회403이 인증 처리 경로를 우회하여 업무 캐시가 남음",
+      "fix": "공통 handleAuthError 연결과 로컬 접근 오류 상태로 기존 편집/업무 데이터 비움 및 명시 재조회",
+      "status": "PASS"
+    }
+  ]
+}

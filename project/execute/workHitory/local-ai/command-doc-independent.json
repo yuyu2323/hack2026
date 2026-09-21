@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "scope": "독립 문서·구현 대조; 실제 서비스/DB/AI/브라우저 실행 없음",
+  "documents": [
+    {
+      "path": "README.md",
+      "sha256": "6e8ef437f1f7bd4b35e15b4a23fede2924c375a697d77bd67cf6c90f110bb707",
+      "matches_author_frozen": true
+    },
+    {
+      "path": "docs/09-validation.md",
+      "sha256": "e7fbb0a1c2f65f563f7242c06e314a5ff6b4e056892ef2b3e415b6b5edc9bb69",
+      "matches_author_frozen": true
+    },
+    {
+      "path": "docs/10-execution.md",
+      "sha256": "5d5589cc5eedb92e34f532e93451dec56e0ce002aa3620b37e78d406f4d921d2",
+      "matches_author_frozen": true
+    },
+    {
+      "path": "docs/00-vision.md",
+      "sha256": "5af95148ae9a8c7076e28533de62e2b3bf7a733a2de2337bd17cb96c051446d9",
+      "matches_recorded_original": true
+    },
+    {
+      "path": "docs/01-architecture.md",
+      "sha256": "88529f2558a9aae516dea5ab6f846ffc4ee14b5da57ce6fd5a9e8ce2a07202a5",
+      "matches_recorded_original": true
+    },
+    {
+      "path": "docs/02-development-orchestration.md",
+      "sha256": "5031ce7df323a57ac71093341da5cd6d5e465e1160705c99a99edbe2b31e2ce9",
+      "matches_recorded_original": true
+    }
+  ],
+  "required_sections_2_to_6_match": true,
+  "section_normalization": [
+    "raw"
+  ],
+  "source_sha256": {
+    "scripts/services.py": "27feb4df4f4bad8fb4d79ea2e5a076928baf4b90568ef08440fe157e12a83ac7",
+    "scripts/browser_test_runtime.py": "653fe8a2015f13c4f97c38eef6b2e4487902c664fb94e6361870bd040d845696",
+    "scripts/preflight.py": "ff817755bd508bedca3f1edaf2405dbcd24731523663afa6ddeac9dd76228ac5",
+    "setup.sh": "2faba680bfcef93786bd650540b5681a336a5fcea705aca12dd3581a7c58c36d",
+    "verify.sh": "ca74c2f903efc9296b6852f2549b887c569666b5cb101d3c1421c8054d1e7a0c",
+    "server/tests/conftest.py": "a8acb0767b09b71b27ecc3879117c4a102444f03aefbc0ffb1161b6693268296",
+    "server/tests/test_analysis_jobs.py": "117fb4fee9bf386ecaa297faf6b713ddc9b9b2114643dfcf8bbe1ab9f18e7612",
+    "server/analysis_jobs/worker.py": "390fde2d1f4a4706d73897a384dce0ed38683bc29f19ef8e6912dcd603e53424",
+    "ai-service/app/smoke.py": "199cc76cbe8998cf7b20727f3db54a591a90ab0c18ec03acff4aeba7779715b6"
+  }
+}

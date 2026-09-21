@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "scope": "비교자료 로컬링크 검사,최종시각인수 아님",
+  "sha256": "4570f87d043cc4213cf114141c19ec9760e3db03825b58f45626e1f5b764ef12",
+  "links": [
+    {
+      "label": "진행 기록",
+      "target": "../execute/designReview/concept-01/review-001.md",
+      "exists": true
+    },
+    {
+      "label": "진행 기록",
+      "target": "../execute/designReview/concept-02/review-001.md",
+      "exists": true
+    },
+    {
+      "label": "진행 기록",
+      "target": "../execute/designReview/concept-03/review-001.md",
+      "exists": true
+    },
+    {
+      "label": "진행 기록",
+      "target": "../execute/designReview/concept-04/review-001.md",
+      "exists": true
+    },
+    {
+      "label": "진행 기록",
+      "target": "../execute/designReview/concept-05/review-001.md",
+      "exists": true
+    },
+    {
+      "label": "전체 실행 안내",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "label": "02 사용 설명서 초안",
+      "target": "manuals/concept-02/index.html",
+      "exists": true
+    },
+    {
+      "label": "01 관제 데스크 사용 설명서 초안",
+      "target": "manuals/concept-01/index.html",
+      "exists": true
+    },
+    {
+      "label": "03 사진과 근거 사용 설명서 초안",
+      "target": "manuals/concept-03/index.html",
+      "exists": true
+    },
+    {
+      "label": "04 현장 포켓 사용 설명서 초안",
+      "target": "manuals/concept-04/index.html",
+      "exists": true
+    },
+    {
+      "label": "05 탐색과 비교 사용 설명서 초안",
+      "target": "manuals/concept-05/index.html",
+      "exists": true
+    },
+    {
+      "label": "독립 매뉴얼 검토",
+      "target": "../execute/workHitory/manual-review/review-001.md",
+      "exists": true
+    },
+    {
+      "label": "01 실제 실행",
+      "target": "../execute/workHitory/integration-concept-01/actual-ai.json",
+      "exists": true
+    },
+    {
+      "label": "01 브라우저 기록",
+      "target": "../execute/workHitory/integration-concept-01/browser.md",
+      "exists": true
+    },
+    {
+      "label": "실제 실행 기록",
+      "target": "../execute/workHitory/integration-concept-02/actual-ai.json",
+      "exists": true
+    },
+    {
+      "label": "표시시간 기록",
+      "target": "../execute/designReview/concept-02/evidence/browser-latency-third.json",
+      "exists": true
+    },
+    {
+      "label": "03 실제 실행",
+      "target": "../execute/workHitory/integration-concept-03/actual-ai.json",
+      "exists": true
+    },
+    {
+      "label": "03 첫 화면 표시 측정",
+      "target": "../execute/designReview/concept-03/evidence/first-latency.json",
+      "exists": true
+    },
+    {
+      "label": "03 재제출 표시 관찰",
+      "target": "../execute/designReview/concept-03/evidence/child-latency.json",
+      "exists": true
+    },
+    {
+      "label": "04 실제 실행",
+      "target": "../execute/workHitory/integration-concept-04/actual-ai.json",
+      "exists": true
+    },
+    {
+      "label": "04 브라우저 기록",
+      "target": "../execute/workHitory/integration-concept-04/browser.md",
+      "exists": true
+    },
+    {
+      "label": "05 실제 실행",
+      "target": "../execute/workHitory/integration-concept-05/actual-ai.json",
+      "exists": true
+    },
+    {
+      "label": "05 표시 관찰",
+      "target": "../execute/designReview/concept-05/evidence/latency-first.json",
+      "exists": true
+    },
+    {
+      "label": "시안 선택 기록",
+      "target": "../execute/question/frontend-selection/select-concept.md",
+      "exists": true
+    }
+  ]
+}

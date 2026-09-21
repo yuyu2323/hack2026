@@ -1,0 +1,171 @@
+{
+  "phase": "Reference 번호 및 HMR root 재사용 수정 이후. Reference 번호 새 캡처 대기.",
+  "created_at": "2026-09-21T10:44:04.818549+00:00",
+  "files": [
+    {
+      "path": "web-concepts-02/src/app/main.tsx",
+      "sha256": "88e5ff5ef0295f38c0d8804f31b71ea3360160b03be64a12768e8d162e683957"
+    },
+    {
+      "path": "web-concepts-02/src/app/style.css",
+      "sha256": "1d57b1965da4123d7bb423d340e0f75e7db40284069f8d3b53b1df24299b6fd1"
+    },
+    {
+      "path": "web-concepts-02/src/ofc-admin/Analytics.tsx",
+      "sha256": "77f5d4471e507da41d5f45ad0175672a6b23a276614fef87ec0a1d078e07753c"
+    },
+    {
+      "path": "web-concepts-02/src/ofc-admin/Business.tsx",
+      "sha256": "b5f3784ac7aac1b497a2054f2253635ca21fd46bdb6fa8e52440fce98d74fe81"
+    },
+    {
+      "path": "web-concepts-02/src/ofc-admin/Standards.tsx",
+      "sha256": "00e859012271f4b96fb458a646b19760f1f3e1b9bdcca263fa249c3a40714837"
+    },
+    {
+      "path": "web-concepts-02/src/platform-admin/Operations.tsx",
+      "sha256": "fae49e3b78e9ae9894ff73b731a2e99ec1883f489e14952289a49af97554f4d2"
+    },
+    {
+      "path": "web-concepts-02/src/shared/JobStatus.tsx",
+      "sha256": "d40fac549ab22bdd7e7cb6a5e68d33193d2da843ebbe3dd6e501f3d2b41eaeaa"
+    },
+    {
+      "path": "web-concepts-02/src/shared/core.tsx",
+      "sha256": "d8af807a19a0624e1d28d76cec4fb39a1bb01450535ddb0c2ce7d0a97abca851"
+    },
+    {
+      "path": "web-concepts-02/src/shared/issues.tsx",
+      "sha256": "30e655e0dc53ff4a705ce7302f56c166204f675a8e6df4e7d0b9df34d0427a88"
+    },
+    {
+      "path": "web-concepts-02/src/shared/photos.tsx",
+      "sha256": "6139a15da0350b4624f46e1d7f84e5bac2908af85d8c15a93753605abba9d541"
+    },
+    {
+      "path": "web-concepts-02/src/store-owner/Owner.tsx",
+      "sha256": "cdbf039ea4f05bc3601c6513245ca53576c40dacf9551a8e3489d97812d3185f"
+    },
+    {
+      "path": "execute/design/concept-02/acceptance.md",
+      "sha256": "b216d5d601eed3f8687df3d10fc8354b5a00746baea67d7d170b47187c3011f9"
+    },
+    {
+      "path": "execute/design/concept-02/brief.md",
+      "sha256": "e1cb01789f5eb582ae552adbed9239d25f0904dd4f3e4523f86196c080e8f341"
+    },
+    {
+      "path": "execute/design/concept-02/design-spec.md",
+      "sha256": "dc0534c5279158d4180d755e5efbf0681771627dbf147194e48ecde1d2a11724"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-analytics-empty.png",
+      "sha256": "1ae309378c618f47146e7b5a99954407e884c397e7558b9e14caeac59e94597b"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-guideline-versions.png",
+      "sha256": "8bd59faed7d8280af2d25ab761eaa87a8467b8bc44e3ce3ac4fb60e5030ba050"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-ofc-photo-evidence.png",
+      "sha256": "092e0881e4766447da4ffef58f437cc1a3aaa3ece947feaf39454e7c793bbc2e"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-ofc-priority-board.png",
+      "sha256": "af9e22e8bb57d8c3cb1a8c4efc890cefcddbcc0ad1ac6456a48e216d8dfd19d4"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-ofc-resolved-action.png",
+      "sha256": "6d241a5008c73d5bbbb86d55228e88e34e448649fc9a95ef7fd385f50633f3bd"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-operations.png",
+      "sha256": "3ef3a843aee1e459e9e03a12f2350eb8f3e4840ca02349613062929adf2ae7b6"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-reference-preview.png",
+      "sha256": "890e45415be0593c79fb7b8c93e4b29169a6529570e3c23b2a16ca3d7d959e50"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-reference-version-history.png",
+      "sha256": "cc94afb32dc8689b520dd82c4df6d1ea4718a88513654d6df6f08fa8f931496f"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/desktop-retry-preserved-attempt.png",
+      "sha256": "4b3ccb7ee34c65d4daac5abd2c4c75eac786b6da5e03d92b158c1ba559ba147c"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-analysis-delayed.png",
+      "sha256": "5d7a45f9b0c83376dd771de95f8a33f98d96300a1916e1a3353f71f2876e694e"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-before-after-comparison.png",
+      "sha256": "1b8ded21abb9b5af600ed7e952e1f1604452a8feae17a74a50f4793845009600"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-original-snapshot-preserved.png",
+      "sha256": "5105023436ec006935b4c89d219f6b04391a74a875b2cf61e90a0930b50a7c12"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-owner-resolved-notification.png",
+      "sha256": "e094f62183e188bdb2392a2b55cff26b6d00e0addc2c9559589b1dde9c46efb5"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-real-ai-resubmission.png",
+      "sha256": "d8d7832b39f54b6eea79982ff5ddb5f5b257ac4bce59a9a23c12d96149bff5d9"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-real-ai-result.png",
+      "sha256": "e408fffebd3fa5dda0dce361f013a776c125fecd35cec84b1af6da5dc9c0b7a1"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-submit.png",
+      "sha256": "ab80bc0d396ce49e672c7186fb216596454b243723e048d902ca61de7bc5fd90"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/mobile-technical-failure.png",
+      "sha256": "b573b85c803cfc644c87d4588395131da062101ebd4f073d25bfcad9c26490b7"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/vp-desktop-account-inactive.png",
+      "sha256": "e6bac3048415503294a3fa5343e535cf92916e6b1e177e7b0a67df532ba77ff2"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/vp-desktop-audit.png",
+      "sha256": "e06047f712dffd94a255f8aae1e33cea7151bfccb320e8f134c4f5083c585a26"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/vp-mobile-account-revoked.png",
+      "sha256": "4ea00118941301adf47b879427e6bdd49731604eb6607b7e353817398f864c72"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/vp-mobile-mapping-revoked.png",
+      "sha256": "7bc7e6f5c5ad5c0b0c93c0ecf2f306d2e5cd99757f08d81394bb22eda0f1b2f0"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/vp-mobile-qa-owner-home.png",
+      "sha256": "d69d31c08010e8fd650be89e123644cb89fcf4d63c81870c2dbbbb3f6c4b5941"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/vp-mobile360-new-snapshot.png",
+      "sha256": "f5afc975f474e763e77232588a0e37c5a4331143ff137bcaa08922380b37c081"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/vp-mobile360-preview-keyboard.png",
+      "sha256": "ecf33bf60023187dd2f2b8639d588ba0e15dbaa330a17113560c00d7bfb45d85"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/vp-mobile360-real-unknown-metrics.png",
+      "sha256": "ecf19e95ac536b05bc05475f4e3f22a34cac579a6e73312681dfa914f5805053"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/vp-mobile360-real-unknown-top.png",
+      "sha256": "3d6d232a8a8e42ef933a88b26e76e5a86ec3cd8546058848b6b951e391ed6be7"
+    },
+    {
+      "path": "execute/designReview/concept-02/evidence/vp-mobile360-submit.png",
+      "sha256": "67e477a6c800152913e4b6cf711e8e76354a854b5247df937ed02c4bdd87f8aa"
+    }
+  ],
+  "limitation": "현 시점 파일 hash 기록이며 이전 캡처의 정확한 빌드 hash를 소급 확정하지 않는다. 최종 root 실행 기록과 대조 필요."
+}

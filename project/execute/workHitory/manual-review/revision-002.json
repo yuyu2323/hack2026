@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-21T10:15:44.555353+00:00",
+  "status": "CONTENT_FIXES_VERIFIED; 화면/Browser 최종검수 대기",
+  "files": [
+    {
+      "concept": "01",
+      "sha256": "dfc64434637c4c0451f68f9df522959081ff38817ce77d1e8d3e73bdc3e91394"
+    },
+    {
+      "concept": "03",
+      "sha256": "600499d49641dd64fb07a244c2b98590c90245c7be2b936607e0ddee40d39d67"
+    },
+    {
+      "concept": "04",
+      "sha256": "d4a7b3a0c0c2bc406c274b779bd319bd37b16552ea79852203a0881882f8286b"
+    },
+    {
+      "concept": "05",
+      "sha256": "4f737528bf03682fc5e4ff51ac8a08c2d2a98afaa4b503967e2bc779f505ef25"
+    }
+  ]
+}

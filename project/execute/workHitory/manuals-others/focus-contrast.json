@@ -1,0 +1,15 @@
+{
+  "scope": "MR-004 수학적 대비 검증. 실제 키보드/문서 브라우저 검수는 root 후속.",
+  "header_background": "#173c48",
+  "header_focus": "#f4d486",
+  "header_ratio": 8.224,
+  "body_focus": "#176ac6",
+  "body_ratio_on_white": 5.366,
+  "files": [
+    "deliverables/manuals/concept-01/index.html",
+    "deliverables/manuals/concept-03/index.html",
+    "deliverables/manuals/concept-04/index.html",
+    "deliverables/manuals/concept-05/index.html"
+  ],
+  "status": "PASS"
+}

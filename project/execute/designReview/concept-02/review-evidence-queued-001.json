@@ -1,0 +1,250 @@
+{
+  "status": "BOUNDED_VISUAL_PASS_WITH_OFFSCREEN_LIMIT",
+  "reviewed_at": "2026-09-21T13:19:36.617124+00:00",
+  "reviewer": "contract_ai",
+  "scope": "신규 제공 viewport만 직접 열람. Browser·DB·서비스·AI 호출·공유 소스 수정 없음. 전체 시안 완료 판정 아님.",
+  "viewport_basis": "root 실제 측정 390×844/client375 및 02 desktop1440×900/client1425. 저장 이미지 치수와 구별.",
+  "source_hash_basis": "검수 시점 현재 소스의 식별용 hash이며 각 과거 캡처가 이 빌드라고 소급 확정하지 않는다.",
+  "images": [
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-reference-number-fixed.png",
+      "sha256": "a6c62076fa12ea453a24f781d5c13c97fd44b0340463867ef45af8cd5decc419",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "OFF_SCREEN",
+      "finding": "OFC 문의 하단·연결 이력·기준 accordion까지만 보이며 Reference 사진과 번호는 화면 밖. root의 번호1/2/3 기능 확인과 구분; D02-004 시각 해소 근거로 사용할 수 없음."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-unknown-result-final.png",
+      "sha256": "bbd1470a14f8221440f042590bf19030864d2ff66b28825285fba0f845b55169",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "실제 어두운 사진·질문과 준수율—/판단가능률0%/표본0·5, 계산불가 이유 및 요약. unknown을 준수0%나 기술 실패로 표시하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-comparison-versions-final.png",
+      "sha256": "570b9431c5a042934b2ad53c506254b1384f965212cad67a8fd8e6a58af8d870",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기준 차이 경고·이전/현재 버전 및 pass→unknown 비교불가가 읽힘. qa02_labels 전체는 화면 아래이며 desktop 전체행 근거를 함께 사용."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-desktop1440-comparison-dates-final.png",
+      "sha256": "78ae7d3fcc2832fdd5570c67ae4852e158f17ddd96fcfb4988069558d8c8d991",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "전후2026-09-21 18:30/19:05 KST, 적용 기준4/5, 양쪽 사진 상단이 구분됨. 전체 사진은 화면 아래까지 이어짐."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-desktop1440-comparison-versions-final.png",
+      "sha256": "787e6fa3b62dfebd514b86347f28b3d907d54533defaa834d5ee287f07c9eb0f",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "5개 기준 전체 버전·판정·비교불가와 경고 확인. qa02_labels는 이전 미적용→현재v2이며 v1→v2로 기록하지 않음. 이전100/100·현재—/0 구분."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-desktop1440-regional-home.png",
+      "sha256": "8ae4514c5599a0da7b938e6bc501698de9c409e322bbe552b12b71da14e0826d",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "지역 north3개매장 범위와 필터/요약 아래 검토·조치·변화의3단계 업무 lane이 첫 viewport에 보임. 카드 전체 내용까지 확인한 것은 아님."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-desktop1440-hq-home-final.png",
+      "sha256": "36711e9171d4d718c050c3a49d02adef18c6fb433e52f90253012f7c49a6e6e9",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "본사 전체6매장 범위와 동일3단계 업무 lane. 01 표/03 사진/04 단계/05 탐색과 구별되는 첫 화면 구조 확인."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-audit-role-restored-after.png",
+      "sha256": "bc35d99d19392e0651cd83f4296ea64f2010c02d5fbc2c154070b5c2410e5930",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "accounts.update succeeded의 수행자·시각·사유와 before OFC/지역/매장→after 점주/지역null/매장0·버전6→7 모두 보임. 비밀번호 없음; ended_mapping_ids 하단 전체는 화면 밖."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-retry-success-preserved-final.png",
+      "sha256": "107e50f3d57bccb606cbb5c05205d83e006542fa61f238dc1180b8d1023033b8",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "실제 첫 작업의 시도1 AI_UNAVAILABLE 실패·미반영과 시도2 성공·반영, 각 시각이 함께 보임. 화면 위쪽 성공 재처리 제한 안내 전체는 확인하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-long-queued.png",
+      "sha256": "7c935e15d136577b625209ff7b6342d2d659d770389ebc434b8004dd9476a733",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "분석 대기632초·순서 대기·추가 지연/이력 안내. 사진은 아래쪽에 이어짐."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-api-outage.png",
+      "sha256": "a86d12c5296d5e7aa8b99c903d1a484e73620fd55e0ae7cdb43a55a399fd3da6",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기존 queued 정보 위에 요청 오류·상태 다시 확인을 표시. 연결 오류와 작업 상태가 구별됨."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-api-recovered.png",
+      "sha256": "b6ba4ce37096a99c6b25277c213a86f7cdc72bceed2c0a09325cca6265d9aa5b",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기존 분석 대기1268초·사진으로 복귀하고 오류 제거."
+    },
+    {
+      "file": "execute/designReview/concept-02/evidence/vp-mobile390-queue-timeout.png",
+      "sha256": "c9a7cf66ce4e65eb2d302c58a48bc2a7ded0c65fb83e74795907aee911863406",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기술 실패1271초·QUEUE_TIMEOUT·운영자 복구 안내, 제출 사진 보존·평가 점수 없음."
+    }
+  ],
+  "current_source_hashes": [
+    {
+      "file": "web-concepts-02/src/app/main.tsx",
+      "sha256": "88e5ff5ef0295f38c0d8804f31b71ea3360160b03be64a12768e8d162e683957"
+    },
+    {
+      "file": "web-concepts-02/src/app/style.css",
+      "sha256": "1d57b1965da4123d7bb423d340e0f75e7db40284069f8d3b53b1df24299b6fd1"
+    },
+    {
+      "file": "web-concepts-02/src/ofc-admin/Analytics.tsx",
+      "sha256": "77f5d4471e507da41d5f45ad0175672a6b23a276614fef87ec0a1d078e07753c"
+    },
+    {
+      "file": "web-concepts-02/src/ofc-admin/Business.tsx",
+      "sha256": "b5f3784ac7aac1b497a2054f2253635ca21fd46bdb6fa8e52440fce98d74fe81"
+    },
+    {
+      "file": "web-concepts-02/src/ofc-admin/Standards.tsx",
+      "sha256": "00e859012271f4b96fb458a646b19760f1f3e1b9bdcca263fa249c3a40714837"
+    },
+    {
+      "file": "web-concepts-02/src/platform-admin/Operations.tsx",
+      "sha256": "fae49e3b78e9ae9894ff73b731a2e99ec1883f489e14952289a49af97554f4d2"
+    },
+    {
+      "file": "web-concepts-02/src/shared/JobStatus.tsx",
+      "sha256": "d40fac549ab22bdd7e7cb6a5e68d33193d2da843ebbe3dd6e501f3d2b41eaeaa"
+    },
+    {
+      "file": "web-concepts-02/src/shared/core.tsx",
+      "sha256": "d8af807a19a0624e1d28d76cec4fb39a1bb01450535ddb0c2ce7d0a97abca851"
+    },
+    {
+      "file": "web-concepts-02/src/shared/issues.tsx",
+      "sha256": "30e655e0dc53ff4a705ce7302f56c166204f675a8e6df4e7d0b9df34d0427a88"
+    },
+    {
+      "file": "web-concepts-02/src/shared/photos.tsx",
+      "sha256": "6139a15da0350b4624f46e1d7f84e5bac2908af85d8c15a93753605abba9d541"
+    },
+    {
+      "file": "web-concepts-02/src/store-owner/Owner.tsx",
+      "sha256": "acfcdf981e383f9a9bc31c28b826007aff9b0902cfa9bd0208efc4a40c4df8c0"
+    }
+  ],
+  "input_records": [
+    {
+      "file": "execute/workHitory/queued-browser/browser.md",
+      "sha256": "641e28f0feac63eb73bb8a8666923ff16a0179d16576aac2f5ec6f46c60e51f9"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/independent-review.md",
+      "sha256": "c7539cacae534784757e0c0e489633dc154f72a192b467b35afea89a8785dd2c"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/independent-metadata.json",
+      "sha256": "9a26d925a58d6dca6e2de8e4c29fa1d9a010aa463a311b1691cc425a3835f937"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/queued-initial.json",
+      "sha256": "97c3a67b3ff23e2348c43338a6bde6854d10c7dedfbc55e3fdd710654802d687"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/api-outage.json",
+      "sha256": "b76463a32dc26bb0924f4dd13f2a6d2f9d3eb200695073bf9dbe999405c8a60b"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/api-recovery.json",
+      "sha256": "e49d067502ccf237389f9612cdd0a7931abc3c23153ab37635720d30891b951a"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/worker-restored.json",
+      "sha256": "665e12187b25f202cf86851ab99cc60790af17706d3e579f6be92884ba9ca74d"
+    },
+    {
+      "file": "execute/workHitory/integration-concept-01/browser.md",
+      "sha256": "2463e847e4d55d6489ef52bacb9779d730eeeb68f397c83aa4a82801a5f6bcb5"
+    },
+    {
+      "file": "execute/workHitory/integration-concept-02/browser.md",
+      "sha256": "04eba6b76596ae26bda92c3d0ae92a4eccba0643f98a486d01209f5df8bdfc76"
+    }
+  ]
+}

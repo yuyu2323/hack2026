@@ -1,0 +1,70 @@
+{
+  "phase": "사전 검수; 최종 동결/캡처 대응 아님",
+  "created_at": "2026-09-21T10:02:01.079526+00:00",
+  "files": [
+    {
+      "path": "web-concepts-01/src/app/App.tsx",
+      "sha256": "bbd79a939a46b4c8d361361d16aaf1d9c2201932e1bb5c6d38e5e7382b4cb814"
+    },
+    {
+      "path": "web-concepts-01/src/app/session.tsx",
+      "sha256": "87905a704b410f205fab1ddd54c1433f61d599de54af05b0d6cdffd3f71e4ecc"
+    },
+    {
+      "path": "web-concepts-01/src/main.tsx",
+      "sha256": "c9b74f385f68b465f2694fd0807907ef64e76f3af7fd7f7ed45a07592c397026"
+    },
+    {
+      "path": "web-concepts-01/src/ofc-admin/Analytics.tsx",
+      "sha256": "07909d3427c27c5c3e5ab9e965a98c31d00512e1dce1f162b4bd4adc869044d0"
+    },
+    {
+      "path": "web-concepts-01/src/ofc-admin/Dashboard.tsx",
+      "sha256": "8ca35d6feffdb7fb3c672d47dc6dd9007c5f2b4875e3fffb1d23cb6679f5a05e"
+    },
+    {
+      "path": "web-concepts-01/src/ofc-admin/Standards.tsx",
+      "sha256": "dd670a08ba3af206fb68ac64ddfca6cabe1e497dc1cb90bf2b673000cb1c02db"
+    },
+    {
+      "path": "web-concepts-01/src/platform-admin/Operations.tsx",
+      "sha256": "0854316da4bb0d19c112157901c55e0a58882a4b1b50c4b745ec22ed7b8a1dfd"
+    },
+    {
+      "path": "web-concepts-01/src/shared/business.tsx",
+      "sha256": "0912a753021828720e96247eca11863725e95641b219fa2e4c5fdb0263b610b4"
+    },
+    {
+      "path": "web-concepts-01/src/shared/data.ts",
+      "sha256": "1e3649421b079de4b5cbe74608db67d9648e26beed8160c8bc3544619c2d0cdf"
+    },
+    {
+      "path": "web-concepts-01/src/shared/policy.ts",
+      "sha256": "1b8e0d73b559b15006dfcc663cb5bef9647c6359b57917a9116c711ef7f70253"
+    },
+    {
+      "path": "web-concepts-01/src/shared/ui.tsx",
+      "sha256": "fc8fde887fd03331827a2c8e6ffe911173dec0c69f1f2d1fca47390ceeb632ce"
+    },
+    {
+      "path": "web-concepts-01/src/store-owner/Submit.tsx",
+      "sha256": "0530195e86ddd50a4805590c05615559eb4457d9cba1ca91f165f3527fb10a95"
+    },
+    {
+      "path": "web-concepts-01/src/styles.css",
+      "sha256": "99d3c3924486a842d5e290f234d0dd1afff65c8458a28543dafef1a20965be32"
+    },
+    {
+      "path": "execute/design/concept-01/acceptance.md",
+      "sha256": "96d01c9ecfeec32cd01ccd95be9ec6fc81c489dea656eea359828d88ba52332b"
+    },
+    {
+      "path": "execute/design/concept-01/brief.md",
+      "sha256": "319d749b3fdf968b5c791077229358cf9a84b540ae3e60c5627acd12d54fa38c"
+    },
+    {
+      "path": "execute/design/concept-01/design-spec.md",
+      "sha256": "d176970ccbe7403961b93f25e855a9d411049f35840ae84ff38ce2d8cdc54a88"
+    }
+  ]
+}

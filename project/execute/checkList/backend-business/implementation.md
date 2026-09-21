@@ -1,0 +1,14 @@
+# 영업 업무·작업자·분석 통합
+- 담당: root
+- 상태: RUNNING (업무 구현·자기검증 완료, 독립 검토 대기)
+- 입력: 03~10 v1 상세 계약; 05/06 CONTRACT-DATA-1.0a 및 최종 등록부
+- 소유 경로: server/main.py, server/{guidelines,submissions,reviews,dashboard,issues,notifications,analytics}/{schemas,service,router}.py, server/seed/, 해당 테스트. analysis_jobs/service·worker는 contract_ai, 각 models.py는 contract_data 소유.
+- 공유 전제: core.get_db/require_roles/require_csrf/get_current_account/require_store_access 인터페이스, packages/review_contract 출력검증, 단일 DB migration.
+- [x] 기본 API 앱과 안전 오류 처리, 영업 범위/파일 보호 공통 경계
+- [x] RED: 업로드·기준·snapshot·미디어/운영자 차단
+- [x] GREEN: 기준/Reference/제출/상세/비교/이슈/알림
+- [x] RED/GREEN: 점유·재처리·기한·늦은 결과·원자 저장/PostgreSQL (contract_ai 증거)
+- [ ] 관제·추이·상관·리포트의 필터·분모·결측 테스트
+- [x] worker 실제 AI 경로, 이미지/질문/기준/Reference 연결
+- [x] 합성 시드·재실행·생성 이미지 연결
+- [ ] 독립 검토·실패 재현·수정·재검증

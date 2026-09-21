@@ -1,0 +1,26 @@
+{
+  "change_ids": [
+    "D04-V01",
+    "D04-V02"
+  ],
+  "path": "web-concepts-04/src/shared/style.css",
+  "before_D04_V02_sha256": "f90459d7f0ce94db525951973b0ceca1573fee983676801e6ec9ecff08892bf7",
+  "after_sha256": "39aa39df901859e909297e0e91751715c5bebb764aaebd017a7b0625cb235e99",
+  "scope": "사진 제어행 wrap/44px 및 상세 사진 sticky 제거",
+  "build_artifacts": [
+    {
+      "path": "web-concepts-04/dist/assets/index-DDJ-Szex.css",
+      "sha256": "8876c952ff7119a6c52d47a4875f926aa164f9a9d297bf699c472585a84e5f33"
+    },
+    {
+      "path": "web-concepts-04/dist/assets/index-kzD7dODT.js",
+      "sha256": "878699d574a249452efb61c7773de53dc8fb875b1d01a3defebdc6ecc122d25b"
+    }
+  ],
+  "verification": {
+    "D04_V01_submission_tests": "2 PASS, 4 skipped",
+    "D04_V02_detail_tests": "2 PASS, 4 skipped",
+    "build": "PASS",
+    "actual_viewport": "NOT_RUN — root 재촬영 대기"
+  }
+}

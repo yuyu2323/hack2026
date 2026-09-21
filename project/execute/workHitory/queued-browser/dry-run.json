@@ -1,0 +1,32 @@
+{
+  "fixture_version": "queued-browser-20260921-v1",
+  "database_alias": "test",
+  "mode": "dry-run",
+  "account": "owner.north",
+  "ids": {
+    "submission": "2f9b333f-8a43-5df0-841d-f1c66b213ab3",
+    "photo": "7aeec764-913c-5492-907a-87c00f082c31",
+    "context": "670260b7-ebee-5138-bb33-b4dc18f4bcff",
+    "job": "0d50701f-c61b-5c48-80ea-1df7ca4d2cb4",
+    "audit": "48dbbd19-8225-5e78-9615-aa72653ce8c3"
+  },
+  "ai_calls": 0,
+  "read_only": true,
+  "other_active_job_count": 0,
+  "status": "ready",
+  "insert_count": 0,
+  "planned_insert_count": 5,
+  "submission_source_kind": "seed_demo",
+  "is_fixture": true,
+  "queued_at": "2026-09-21T12:31:40.884550+00:00",
+  "queue_deadline_at": "2026-09-21T12:34:40.884550+00:00",
+  "snapshot_sha256": "7a09aa3f289e307a825a20921522ed3d030004c01e7a5289e9efc4d0cf7ee7e8",
+  "expected_after_worker_restart": "failed / QUEUE_TIMEOUT / attempt expired; 해당 fixture의 AI 호출 없음",
+  "urls": [
+    "http://127.0.0.1:5173/store-owner/submissions/2f9b333f-8a43-5df0-841d-f1c66b213ab3",
+    "http://127.0.0.1:5174/store-owner/submissions/2f9b333f-8a43-5df0-841d-f1c66b213ab3",
+    "http://127.0.0.1:5175/store-owner/submissions/2f9b333f-8a43-5df0-841d-f1c66b213ab3",
+    "http://127.0.0.1:5176/store-owner/submissions/2f9b333f-8a43-5df0-841d-f1c66b213ab3",
+    "http://127.0.0.1:5177/store-owner/submissions/2f9b333f-8a43-5df0-841d-f1c66b213ab3"
+  ]
+}

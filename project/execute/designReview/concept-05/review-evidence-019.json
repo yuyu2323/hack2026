@@ -1,0 +1,75 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile360-mock-unknown.png",
+      "sha256": "9e1ec36760fdb5467aea0fb1b69c2eef4e0fc11ba60b43aeb0da83f0f12a5f69",
+      "decoded_size": [
+        345,
+        767
+      ],
+      "format": "JPEG",
+      "observation": "Mock 과거평가·실제AI 아님을 명시하고 준수율—/판단가능0%/0·4와 계산불가 이유·낮은신뢰/OFC확인을 구분한다.360 단열에서 본문이 읽힌다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile360-technical-failure.png",
+      "sha256": "742e10e165ca8aa2249db9fcff2600f175d544b8faee811ed8b03a273431d135",
+      "decoded_size": [
+        345,
+        767
+      ],
+      "format": "JPEG",
+      "observation": "AI_UNAVAILABLE 기술실패와 운영 복구 안내·상태 재조회·제출 질문/사진을 표시한다. 기술실패를 평가 점수로 계산하지 않음을 명시한다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile360-owner-empty.png",
+      "sha256": "8bdb59f6cbe86236c2435932c1684d3b07a9ecfbb53eb6eff82c190fa218ff53",
+      "decoded_size": [
+        345,
+        767
+      ],
+      "format": "JPEG",
+      "observation": "파일명empty와 달리 실제구간은 owner.south 상단메뉴·QA05/공통공지·접힌 탐색·대표행동·상태필터까지이며 빈 이력 결과는 아래로 보이지 않는다. 이 이미지로 빈 상태를 확인하지 않는다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-mobile360-owner-notice.png",
+      "sha256": "f95da062f6370975ffad703a91668d5be0189bdf11f3606a078efdd01f3492f0",
+      "decoded_size": [
+        345,
+        767
+      ],
+      "format": "JPEG",
+      "observation": "파일명notice와 달리 공지 아래로 스크롤된 이력이다. 접힌 탐색·상태필터·child100/100/생성사진·원본결과/이전이후비교·미해결0을 읽을 수 있다. 공지 본문은 앞선owner-empty에서 확인했다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1280x800-operator-home.png",
+      "sha256": "4b99f7f428d01d077d3cd5e7c70f7ce06ff3f27472fee8556af81eedaf7c79c3",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "observation": "정상1280×800 운영 화면. QA05/공통공지가 표시되고 계정연결누락/실제작업과Mock장애가 두열로 읽힌다. 저장1265×791로 앞선높이720과구분한다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-notice-saved.png",
+      "sha256": "5c891b9ffabfca66b7cd6e7e3248e9387da67d95529e7ddbaa9cb3a65d33b3b8",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "QA05 공지 제목/본문·종류·현지 게시시작/종료선택·활성·사유입력·게시미리보기 폼을 읽을 수 있다. 현재 사유는 초기화된 빈값이므로 저장에 사용한 사유는 root실행기록으로 대조한다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-operator-business-denied.png",
+      "sha256": "bea89485f22bbf79897169f0a9d1908fa18a9f2cb86f836f736eb12e502a2dd6",
+      "decoded_size": [
+        1440,
+        900
+      ],
+      "format": "JPEG",
+      "observation": "운영자의 영업 경로에서 업무본문 없이 접근불가·시작화면 이동만 표시한다. API403 보조증거와 분리한 실제 화면이다."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "F01-SCOPE-001",
+  "status": "REVIEW_FROZEN",
+  "red": {
+    "expansion": "stores query removed, refresh label 1, late response not rendered",
+    "contraction": "old store link remains despite query removal",
+    "role_menu": "PASS before fix"
+  },
+  "green": {
+    "new_scope_tests": 3,
+    "full_ui_tests": 17,
+    "ui_files": 4,
+    "build": "PASS tsc/vite"
+  },
+  "files": [
+    {
+      "path": "web-concepts-01/src/app/App.tsx",
+      "bytes": 11010,
+      "sha256": "e55dbb559225e077012bc3d276832950a25289d11f835fc6c16c1a5b755401d4"
+    },
+    {
+      "path": "web-concepts-01/tests/session-scope.test.tsx",
+      "bytes": 5613,
+      "sha256": "4eee53f9c0e7aea28d5444c613f7b4316c60402967c5e93bfa4b689d54736c9c"
+    },
+    {
+      "path": "web-concepts-01/dist/assets/Analytics-DJDlkHPw.js",
+      "bytes": 382544,
+      "sha256": "a41f602958b30cf3555e27aa3045ba83826b704c3404a39cfac13905f0cba76e"
+    },
+    {
+      "path": "web-concepts-01/dist/assets/index-CD0OqGlq.css",
+      "bytes": 15943,
+      "sha256": "86fac5f46d62146e541b962f5fe4d51ae9ac642f10a2196e9e4f35d3faa94920"
+    },
+    {
+      "path": "web-concepts-01/dist/assets/index-ftBsmUQZ.js",
+      "bytes": 377210,
+      "sha256": "18b5db72972364f5fcfa5a54b62c2a66d2f19840e6b400d7a41891f209f3bf6e"
+    },
+    {
+      "path": "web-concepts-01/dist/index.html",
+      "bytes": 418,
+      "sha256": "e2a9937c25fcf6a8db15293c3ab40050ebcdc2ecf98f89af652d81c47d343543"
+    }
+  ],
+  "other_concepts": "02/03/04/05 src read-only search: no TanStack Query removeQueries/resetQueries/invalidateQueries/QueryClient pattern",
+  "browser": "root 재검증 대기"
+}

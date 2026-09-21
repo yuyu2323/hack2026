@@ -1,0 +1,117 @@
+{
+  "temp_root": "/private/tmp/storeloop-runtime-repro-8co_xiv7",
+  "checks": [
+    {
+      "name": "source_copy_without_secrets",
+      "status": "PASS"
+    },
+    {
+      "name": "documented_preflight",
+      "status": "PASS",
+      "versions": [
+        "Python: 3.13.3",
+        "Node: 26.4.0",
+        "npm: 11.17.0",
+        "PostgreSQL: 16.10.0",
+        "Codex CLI: 0.154.0"
+      ]
+    },
+    {
+      "name": "prepare_private_files_and_replay_preservation",
+      "status": "PASS"
+    },
+    {
+      "name": "new_separate_venvs_with_reused_dependencies",
+      "status": "PASS"
+    },
+    {
+      "name": "new_postgres_cluster_and_databases",
+      "status": "PASS"
+    },
+    {
+      "name": "migration_seed_and_idempotent_replay",
+      "status": "PASS",
+      "first_created": 584,
+      "replay_created": 0
+    },
+    {
+      "name": "isolated_ai_api_worker_started",
+      "status": "PASS"
+    },
+    {
+      "name": "owned_start_replay_reuses_same_pid",
+      "status": "PASS"
+    },
+    {
+      "name": "vite_spa_proxy_and_five_roles_http",
+      "status": "PASS",
+      "statuses": {
+        "store_owner": 200,
+        "ofc": 200,
+        "regional": 200,
+        "hq": 200,
+        "platform_operator": 200
+      }
+    },
+    {
+      "name": "no_real_ai_request",
+      "status": "PASS"
+    },
+    {
+      "name": "owned_stop_preserves_unrelated_process",
+      "status": "PASS",
+      "owned_count": 4
+    },
+    {
+      "name": "stop_replay",
+      "status": "PASS"
+    },
+    {
+      "name": "temporary_postgres_stopped",
+      "status": "PASS"
+    }
+  ],
+  "not_run": [
+    "문서 setup/start 전체: 고정 포트와 현재 QA가 충돌",
+    "pip/npm/Gitleaks 신규 설치: 외부 전송 금지, 기존 의존성 읽기 재사용",
+    "Git 훅 설치: Git 변경 범위 제외",
+    "실제 모델 분석/브라우저 클릭: 이번 검증 범위 제외"
+  ],
+  "source_hashes": {
+    "setup.sh": "2faba680bfcef93786bd650540b5681a336a5fcea705aca12dd3581a7c58c36d",
+    "start.sh": "93f03d8c939e70997a501a5e3d2dbded881f78319139e8df3872cc77a2a33a00",
+    "stop.sh": "90dc078658ecddb0a78baaddf67ff395b4304a4b5f4dc8b7fb7deabd4ec10b0b",
+    "scripts/local_runtime.py": "c44449b78cffc0bd31d678f1d98f4ffda89c113165b901dabf65d01b1a6d08d4",
+    "scripts/services.py": "27feb4df4f4bad8fb4d79ea2e5a076928baf4b90568ef08440fe157e12a83ac7",
+    "scripts/worker_entry.py": "fe2dae14bea6db60b8b99cfebdde18ddee54b2a818f6765de0128311546cd9ae"
+  },
+  "ports": {
+    "postgres": 60537,
+    "api": 60538,
+    "ai": 60539,
+    "vite": 60540
+  },
+  "owned_process_checks": [
+    {
+      "name": "ai",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python -m uvicorn app.main:app --app-dir /private/tmp/storeloop-runtime-repro-8co_xiv7/ai-service --host 127.0.0.1 --port 60539 --no-access-log",
+      "recognized": true
+    },
+    {
+      "name": "api",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python -m uvicorn server.main:app --app-dir /private/tmp/storeloop-runtime-repro-8co_xiv7 --host 127.0.0.1 --port 60538 --no-access-log",
+      "recognized": true
+    },
+    {
+      "name": "worker",
+      "command": "/Library/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /private/tmp/storeloop-runtime-repro-8co_xiv7/scripts/worker_entry.py",
+      "recognized": true
+    }
+  ],
+  "status": "PASS_WITH_NOT_RUN",
+  "cleanup_verified": {
+    "remaining_processes": 0,
+    "removed_owned_temp_directories": 3,
+    "temporary_secrets_removed": true
+  }
+}

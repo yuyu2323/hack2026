@@ -1,0 +1,297 @@
+{
+  "reviewer": "contract_data",
+  "reviewed_at": "2026-09-21T12:37:03.919270+00:00",
+  "status": "REVIEW_COMPLETE_WITH_OPEN_FINDING",
+  "method": "root Browser 캡처 22장 직접 시각검수. Browser 조작 없음. HTML/이미지 변경 없음.",
+  "counts": {
+    "images": 22,
+    "concepts": 5
+  },
+  "images": [
+    {
+      "path": "execute/designReview/manuals/evidence/concept-01-desktop1440-evidence.png",
+      "sha256": "eb3edea02f0692d0985147cb6ab119fa837922382737a59727b86267f8373b7e",
+      "bytes": 83394,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "D-MAN-H01: 상단 작성일·역할 문구 저대비가 직접 보인다.",
+        "현재 캡처에 보이는 이미지와 캡션에 깨짐·겹침·의미 불일치를 관측하지 않았다. 화면 경계 밖 내용은 판정하지 않는다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-01-desktop1440-runtime-final.png",
+      "sha256": "c3a529dfea2a4e446f7c051bafe03f8916affd4bb77ea9cac844db386428934d",
+      "bytes": 96101,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "D-MAN-H01: 상단 작성일·역할 문구 저대비가 직접 보인다.",
+        "본문 건너뛰기 링크 초점이 선명하며 Node 22.12 이상·npm 10 이상 문구가 보인다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-01-desktop1440-top.png",
+      "sha256": "734248634a236b2931bcec2b58e0fd3341b636c703f4093d55fe127692f6efb8",
+      "bytes": 91793,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "D-MAN-H01: 상단 작성일·역할 문구 저대비가 직접 보인다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-01-mobile390-image.png",
+      "sha256": "ee2b51b642df8f5df8f686c52c301f7cecf3329b32d887a609291c2f98402170",
+      "bytes": 34555,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "현재 캡처에 보이는 이미지와 캡션에 깨짐·겹침·의미 불일치를 관측하지 않았다. 화면 경계 밖 내용은 판정하지 않는다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-01-mobile390-table.png",
+      "sha256": "b3993299b5fa94971e8163b86b39d722fb5c1a099ae4fdaf59d441094838c3cb",
+      "bytes": 42295,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "파란 초점 테두리와 표 내부 가로 스크롤바가 보인다. 좌측 일부 내용은 가로 이동 상태로 잘려 있으며 문서 자체 넘침과 구분한다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-02-desktop1440-recovery.png",
+      "sha256": "e984835cf8a94a8e1d4e47f6d0cbd4e368f94c3f642fc9f97526c2558ee76a8c",
+      "bytes": 102328,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "보이는 제목·본문·표와 이미지에 잘림·겹침·깨짐을 관측하지 않았다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-02-desktop1440-top.png",
+      "sha256": "0c930d319c1c98cd6504d17838cb954708eaad79695e10bba7aa24738d3ca256",
+      "bytes": 88921,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "보이는 제목·본문·표와 이미지에 잘림·겹침·깨짐을 관측하지 않았다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-02-mobile390-image.png",
+      "sha256": "080dd1dbfa7126170d39bc38c7354a153f0b33a2b03490ebf813862f5279ad2d",
+      "bytes": 33486,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "현재 캡처에 보이는 이미지와 캡션에 깨짐·겹침·의미 불일치를 관측하지 않았다. 화면 경계 밖 내용은 판정하지 않는다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-02-mobile390-recovery.png",
+      "sha256": "0c347500288ecdee4ffbdf79685b208175cabcaba2facf8acfb83666c309de21",
+      "bytes": 34038,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "보이는 제목·본문·표와 이미지에 잘림·겹침·깨짐을 관측하지 않았다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-02-mobile390-table-fixed.png",
+      "sha256": "75ab16185816b6774c995bd2b10e8831ea1c548ff77418ea0c5693b3160c13b7",
+      "bytes": 37370,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "주황색 초점 테두리와 세 열이 보이며 글자 누락은 없다. 로그인 ID의 단어 중간 줄바꿈은 가독성 보완 사항이다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-03-desktop1440-evidence.png",
+      "sha256": "25355fc5c9bc46ee732bc4ecf997090621e257be21d871337f068529674e400e",
+      "bytes": 96636,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "D-MAN-H01: 상단 작성일·역할 문구 저대비가 직접 보인다.",
+        "현재 캡처에 보이는 이미지와 캡션에 깨짐·겹침·의미 불일치를 관측하지 않았다. 화면 경계 밖 내용은 판정하지 않는다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-03-desktop1440-top.png",
+      "sha256": "e774dd92f6702b2b093e4356057ca17b30c8d7929d83d984a86d30f9206310ea",
+      "bytes": 92777,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "D-MAN-H01: 상단 작성일·역할 문구 저대비가 직접 보인다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-03-mobile390-image.png",
+      "sha256": "a00f1d2b0f5c1f7594987168ce48fe495223ae2cfb00063da35a028d6ffba552",
+      "bytes": 45884,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "현재 캡처에 보이는 이미지와 캡션에 깨짐·겹침·의미 불일치를 관측하지 않았다. 화면 경계 밖 내용은 판정하지 않는다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-03-mobile390-table.png",
+      "sha256": "cdc1aa7206c2547d6c154b1699f031cea687ef6803c159b12385c41f0a9c606a",
+      "bytes": 42267,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "파란 초점 테두리와 표 내부 가로 스크롤바가 보인다. 좌측 일부 내용은 가로 이동 상태로 잘려 있으며 문서 자체 넘침과 구분한다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-04-desktop1440-evidence.png",
+      "sha256": "4a220ea341c680c5a779b111daa0000733611e42fa0912490e015595aae5eb3d",
+      "bytes": 84340,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "D-MAN-H01: 상단 작성일·역할 문구 저대비가 직접 보인다.",
+        "현재 캡처에 보이는 이미지와 캡션에 깨짐·겹침·의미 불일치를 관측하지 않았다. 화면 경계 밖 내용은 판정하지 않는다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-04-desktop1440-top.png",
+      "sha256": "dff76d244d946a3d4f41c2f005b26abfc8ee7d04b6ed7cd17f27ce5e15725f12",
+      "bytes": 94592,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "D-MAN-H01: 상단 작성일·역할 문구 저대비가 직접 보인다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-04-mobile390-image.png",
+      "sha256": "8acecd84d9945ce6bedeac1087024078678c731041b0aebc7a173accc55eb62c",
+      "bytes": 33103,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "현재 캡처에 보이는 이미지와 캡션에 깨짐·겹침·의미 불일치를 관측하지 않았다. 화면 경계 밖 내용은 판정하지 않는다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-04-mobile390-table.png",
+      "sha256": "fa3f451c58fd275aa483d82de1257b4b292de4353fcd25e9b7abe709ce77e171",
+      "bytes": 42251,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "파란 초점 테두리와 표 내부 가로 스크롤바가 보인다. 좌측 일부 내용은 가로 이동 상태로 잘려 있으며 문서 자체 넘침과 구분한다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-05-desktop1440-evidence.png",
+      "sha256": "2e2807fbf57e3d7efb7936c97a50535290004f6783c7d11e7f0df3adf25cbfab",
+      "bytes": 82297,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "D-MAN-H01: 상단 작성일·역할 문구 저대비가 직접 보인다.",
+        "현재 캡처에 보이는 이미지와 캡션에 깨짐·겹침·의미 불일치를 관측하지 않았다. 화면 경계 밖 내용은 판정하지 않는다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-05-desktop1440-top.png",
+      "sha256": "dd9f7a63774f9d242688f1f2312e1378e714c206d1b194d200d39c076b35bc00",
+      "bytes": 93551,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "D-MAN-H01: 상단 작성일·역할 문구 저대비가 직접 보인다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-05-mobile390-image.png",
+      "sha256": "2d9c24d5f39a83083f38a61739e1e3b0c2752a7ee4b3aa5c2c3edb14bfc9dcb2",
+      "bytes": 41649,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "현재 캡처에 보이는 이미지와 캡션에 깨짐·겹침·의미 불일치를 관측하지 않았다. 화면 경계 밖 내용은 판정하지 않는다."
+      ]
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/concept-05-mobile390-table.png",
+      "sha256": "77648c5f2ef536c94c6889051115479fbaca7e4256dd9e6b1438a7d640fe18ad",
+      "bytes": 42245,
+      "width": 65536,
+      "height": 4292542531,
+      "inspection": "직접 view_image",
+      "observations": [
+        "파란 초점 테두리와 표 내부 가로 스크롤바가 보인다. 좌측 일부 내용은 가로 이동 상태로 잘려 있으며 문서 자체 넘침과 구분한다."
+      ]
+    }
+  ],
+  "finding": {
+    "id": "D-MAN-H01",
+    "concepts": [
+      "01",
+      "03",
+      "04",
+      "05"
+    ],
+    "status": "OPEN_PENDING_NEW_RENDER",
+    "description": "상단 날짜·역할 설명의 낮은 대비",
+    "css_foreground": "#516977",
+    "css_background": "#173c48",
+    "calculated_contrast_ratio": 2.0474,
+    "source_of_colors": "직접 읽은 01 HTML CSS와 contract_ai 전달값, 네 시안 PNG에서 동일 증상 직접 확인"
+  },
+  "nonblocking_observation": {
+    "id": "OBS-MAN02-01",
+    "description": "모바일 계정 표의 로그인 ID 단어 중간 줄바꿈",
+    "suggestion": "로그인 ID에 nowrap 적용하고 열폭을 확보하거나 표 내부 스크롤을 유지한다. 글자 누락은 없어 차단 결함으로 판정하지 않는다."
+  },
+  "root_observation_reference": {
+    "path": "execute/workHitory/manuals-browser/mobile-dom.json",
+    "sha256": "c1771b98d6a78d576863f345194f5a27b12da936c93ed23e7b33d681a1f2f8c9",
+    "independent_reexecution": false
+  },
+  "not_run": [
+    "200% 확대(사용자 후속 진행 선택)",
+    "Browser 직접 조작 및 키보드 동작 재실행",
+    "PNG 밖 전 구간의 시각 검수",
+    "인쇄·OS 네트워크 차단",
+    "상단 대비 수정 후 최신 PNG 재검수"
+  ],
+  "scope_notes": [
+    "1440/390은 root가 요청한 viewport 이름이다. 실제 PNG는 데스크톱1425×891/모바일375×812이다.",
+    "01/03 초기 상단 캡처는 CMD 문구 변경 전이므로 문구 정합 판정에 사용하지 않는다.",
+    "추가01 runtime-final에서 최신 Node/npm 문구와 건너뛰기 초점은 확인했으나 저대비 문구는 여전히 보인다.",
+    "모바일에 축소 삽입된 데스크톱 사진의 미세 문구는 원본 보기 링크로 확인하는 구성이다. 새 탭 링크의 실제 동작은 이번 독립 검수에서 실행하지 않았다."
+  ]
+}

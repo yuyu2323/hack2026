@@ -1,0 +1,804 @@
+{
+  "started_at": "2026-09-21T11:43:26.443865+00:00",
+  "status": "PARTIALLY_INVALIDATED",
+  "scope": "독립 READ ONLY DB 메타데이터·Vite 경유 HTTP; 브라우저 E04와 별도",
+  "checks": [
+    {
+      "check": "database_transaction_read_only",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:snapshot_digest",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:success_and_real_ai",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:applied_attempt",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:result_schema_references",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:derived_metrics",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:reference:457b506e-2f2d-47b9-8186-73546e7cea3d:snapshot_media_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:reference:49f59d6a-0eba-52b8-a2d1-35e8e90cd445:snapshot_media_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:reference:f6fd391a-4c23-58e0-8c68-df0e91c95e3c:snapshot_media_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:guideline:de112485-8042-5336-b7a8-57b40e969262:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:guideline:056ab33b-63de-5fc5-aa75-937e73894198:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:guideline:b3d4c8b8-83aa-5bc0-8f02-3417d4bf65fa:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:guideline:57e05ed0-6fde-4d45-8db1-5499d63ac525:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:guideline:5bc6824b-9294-5676-a822-b49d76870feb:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:snapshot_digest",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:success_and_real_ai",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:applied_attempt",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:result_schema_references",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:derived_metrics",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:reference:ebad3a74-99da-48c8-9851-eb3ae50f72ca:snapshot_media_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:reference:49f59d6a-0eba-52b8-a2d1-35e8e90cd445:snapshot_media_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:reference:f6fd391a-4c23-58e0-8c68-df0e91c95e3c:snapshot_media_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:guideline:de112485-8042-5336-b7a8-57b40e969262:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:guideline:056ab33b-63de-5fc5-aa75-937e73894198:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:guideline:b3d4c8b8-83aa-5bc0-8f02-3417d4bf65fa:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:guideline:057502fb-c0f9-4397-b651-72ac5b1cad9c:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:guideline:5bc6824b-9294-5676-a822-b49d76870feb:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:snapshot_digest",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:success_and_real_ai",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:applied_attempt",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:result_schema_references",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:derived_metrics",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:reference:f6fd391a-4c23-58e0-8c68-df0e91c95e3c:snapshot_media_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:guideline:de112485-8042-5336-b7a8-57b40e969262:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:guideline:056ab33b-63de-5fc5-aa75-937e73894198:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:guideline:b3d4c8b8-83aa-5bc0-8f02-3417d4bf65fa:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8:guideline:fb70d0a7-9396-513b-be54-5db749683c6c:immutable_version",
+      "status": "PASS"
+    },
+    {
+      "check": "child_parent_submission",
+      "status": "PASS"
+    },
+    {
+      "check": "previous_review_exact_parent",
+      "status": "PASS"
+    },
+    {
+      "check": "qa04_labels_v1_to_v2",
+      "status": "PASS"
+    },
+    {
+      "check": "qa04_category_precedence",
+      "status": "PASS"
+    },
+    {
+      "check": "reference_v1_v2_hash_replacement",
+      "status": "PASS"
+    },
+    {
+      "check": "retry_first_failure_preserved_second_applied",
+      "status": "PASS"
+    },
+    {
+      "check": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba:matches_recorded_snapshot_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "80d35004-ef2b-4d18-8618-f2199b6878a2:matches_recorded_snapshot_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "live_scope_setup",
+      "status": "PASS"
+    },
+    {
+      "check": "http:operator.demo:/api/submissions/e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "status": "PASS"
+    },
+    {
+      "check": "http:operator.demo:/api/media/59a2ea42-4ee5-455f-80df-ce9db1c964af",
+      "status": "PASS"
+    },
+    {
+      "check": "http:operator.demo:/api/media/59a2ea42-4ee5-455f-80df-ce9db1c964af?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "http:operator.demo:/api/notifications",
+      "status": "PASS"
+    },
+    {
+      "check": "logout:operator.demo",
+      "status": "PASS"
+    },
+    {
+      "check": "http:owner.north:/api/submissions/e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "status": "PASS"
+    },
+    {
+      "check": "http:owner.north:/api/submissions/80d35004-ef2b-4d18-8618-f2199b6878a2",
+      "status": "PASS"
+    },
+    {
+      "check": "http:owner.north:/api/submissions/c87f228c-59a9-5f67-9a5b-fb750f4d5685",
+      "status": "PASS"
+    },
+    {
+      "check": "http:owner.north:/api/media/bc090f8a-1ed2-41f4-bfb3-c2abae13baba",
+      "status": "PASS"
+    },
+    {
+      "check": "http:owner.north:/api/media/fc6f6bec-9f6d-4573-bb45-21debf9fe666",
+      "status": "PASS"
+    },
+    {
+      "check": "http:owner.north:/api/submissions/80d35004-ef2b-4d18-8618-f2199b6878a2/comparison",
+      "status": "PASS"
+    },
+    {
+      "check": "http_comparison_changed_rule_unavailable",
+      "status": "PASS"
+    },
+    {
+      "check": "logout:owner.north",
+      "status": "PASS"
+    },
+    {
+      "check": "http:regional.south:/api/submissions/c87f228c-59a9-5f67-9a5b-fb750f4d5685",
+      "status": "PASS"
+    },
+    {
+      "check": "http:regional.south:/api/submissions/e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "status": "PASS"
+    },
+    {
+      "check": "http:regional.south:/api/media/59a2ea42-4ee5-455f-80df-ce9db1c964af",
+      "status": "PASS"
+    },
+    {
+      "check": "http:regional.south:/api/media/59a2ea42-4ee5-455f-80df-ce9db1c964af?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "logout:regional.south",
+      "status": "PASS"
+    }
+  ],
+  "submissions": [
+    {
+      "submission_id": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "parent_submission_id": null,
+      "job_id": "5ad3342d-0a8b-40d5-a3f9-4cb4dbde42b2",
+      "review_id": "a6ec0539-7b6c-48ce-a193-1e296c11446c",
+      "job_status": "succeeded",
+      "current_attempt_id": "0e3435a1-d021-401e-a2a1-522861fee5a1",
+      "review_attempt_id": "0e3435a1-d021-401e-a2a1-522861fee5a1",
+      "review_source_kind": "real_ai",
+      "snapshot_sha256": "61410b3e2a2f025ffff4fe4d0c41353131d072aef442ce49c7c6572bb47075c0",
+      "result_sha256": "3b6d6f8fe24d3bec643beafb5032e547c84548716ead620d8e82f3c14eceb255",
+      "submitted_at": "2026-09-21T20:20:14.571160+09:00",
+      "counts": {
+        "photos": 1,
+        "guidelines": 5,
+        "references": 3
+      },
+      "guidelines": [
+        {
+          "guideline_id": "f18fba2e-722f-5bf7-95eb-1adbe4fe0d19",
+          "version_id": "de112485-8042-5336-b7a8-57b40e969262",
+          "version": 1,
+          "rule_key": "category_grouping",
+          "level": "CATEGORY"
+        },
+        {
+          "guideline_id": "2e50e2bb-1666-5111-8369-e2745558adf8",
+          "version_id": "056ab33b-63de-5fc5-aa75-937e73894198",
+          "version": 1,
+          "rule_key": "facing",
+          "level": "REGION"
+        },
+        {
+          "guideline_id": "0cb0f81a-0e58-5466-9063-21ed0dfaa40a",
+          "version_id": "b3d4c8b8-83aa-5bc0-8f02-3417d4bf65fa",
+          "version": 1,
+          "rule_key": "label_visibility",
+          "level": "HQ"
+        },
+        {
+          "guideline_id": "afbd87b3-2b1e-487a-827a-25a2ea0eb8c9",
+          "version_id": "57e05ed0-6fde-4d45-8db1-5499d63ac525",
+          "version": 1,
+          "rule_key": "qa04_labels",
+          "level": "CATEGORY"
+        },
+        {
+          "guideline_id": "4da308d4-7cf5-5164-ad07-ba1129f7e64a",
+          "version_id": "5bc6824b-9294-5676-a822-b49d76870feb",
+          "version": 1,
+          "rule_key": "shelf_gap",
+          "level": "STORE"
+        }
+      ],
+      "qa04_candidates": [
+        {
+          "guideline_id": "3cd24e5c-c191-4e71-955e-5b8f53f7d765",
+          "version_id": "29c516ee-ab51-4830-9efb-2454fd66f7b0",
+          "version": 1,
+          "rule_key": "qa04_labels",
+          "level": "HQ",
+          "selected": false
+        },
+        {
+          "guideline_id": "fdbd9805-09fc-4b0b-899a-34c39a9c45ed",
+          "version_id": "68cb2f3d-70e1-4a67-89df-ab308bcd7afe",
+          "version": 1,
+          "rule_key": "qa04_labels",
+          "level": "REGION",
+          "selected": false
+        },
+        {
+          "guideline_id": "3e65241f-65eb-443a-9987-5b95ab72980b",
+          "version_id": "d4baeec8-b34e-4b78-b48c-e09ffac568fb",
+          "version": 1,
+          "rule_key": "qa04_labels",
+          "level": "STORE",
+          "selected": false
+        },
+        {
+          "guideline_id": "afbd87b3-2b1e-487a-827a-25a2ea0eb8c9",
+          "version_id": "57e05ed0-6fde-4d45-8db1-5499d63ac525",
+          "version": 1,
+          "rule_key": "qa04_labels",
+          "level": "CATEGORY",
+          "selected": true
+        }
+      ],
+      "photos": [
+        {
+          "photo_id": "59a2ea42-4ee5-455f-80df-ce9db1c964af",
+          "position": 1,
+          "sha256": "4f64e9411cdfd00b516de703b7e628717b004c6dbec637b94655ee579ab7167d"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "457b506e-2f2d-47b9-8186-73546e7cea3d",
+          "lineage_id": "457b506e-2f2d-47b9-8186-73546e7cea3d",
+          "version": 1,
+          "active_now": false,
+          "photo_id": "bc090f8a-1ed2-41f4-bfb3-c2abae13baba",
+          "snapshot_sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+          "media_sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f"
+        },
+        {
+          "reference_id": "49f59d6a-0eba-52b8-a2d1-35e8e90cd445",
+          "lineage_id": "49f59d6a-0eba-52b8-a2d1-35e8e90cd445",
+          "version": 1,
+          "active_now": true,
+          "photo_id": "0cd2b6d5-6860-55c3-861d-92d1afa51b63",
+          "snapshot_sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa",
+          "media_sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa"
+        },
+        {
+          "reference_id": "f6fd391a-4c23-58e0-8c68-df0e91c95e3c",
+          "lineage_id": "f6fd391a-4c23-58e0-8c68-df0e91c95e3c",
+          "version": 1,
+          "active_now": true,
+          "photo_id": "b647e638-af64-52d8-b64f-14a71eb9433e",
+          "snapshot_sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+          "media_sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f"
+        }
+      ],
+      "is_fixture": false,
+      "attempts": [
+        {
+          "attempt_id": "0e3435a1-d021-401e-a2a1-522861fee5a1",
+          "number": 1,
+          "status": "succeeded",
+          "error_code": null,
+          "result_applied": true
+        }
+      ]
+    },
+    {
+      "submission_id": "80d35004-ef2b-4d18-8618-f2199b6878a2",
+      "parent_submission_id": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "job_id": "2ea61607-3810-4e29-b055-851126ae3425",
+      "review_id": "bb7d33cd-26e6-4fe5-bc33-03eb51df4cd7",
+      "job_status": "succeeded",
+      "current_attempt_id": "e4e40473-d071-4e56-b913-76652b2d02ea",
+      "review_attempt_id": "e4e40473-d071-4e56-b913-76652b2d02ea",
+      "review_source_kind": "real_ai",
+      "snapshot_sha256": "e45196c29fa44299151e2260b74aa88026cd713382759c0b444f4335baec2290",
+      "result_sha256": "e58b759fe144d478eec6cd1a0c489257a6baf28b24d9a36a17a252f92b15b0c4",
+      "submitted_at": "2026-09-21T20:24:01.285062+09:00",
+      "counts": {
+        "photos": 1,
+        "guidelines": 5,
+        "references": 3
+      },
+      "guidelines": [
+        {
+          "guideline_id": "f18fba2e-722f-5bf7-95eb-1adbe4fe0d19",
+          "version_id": "de112485-8042-5336-b7a8-57b40e969262",
+          "version": 1,
+          "rule_key": "category_grouping",
+          "level": "CATEGORY"
+        },
+        {
+          "guideline_id": "2e50e2bb-1666-5111-8369-e2745558adf8",
+          "version_id": "056ab33b-63de-5fc5-aa75-937e73894198",
+          "version": 1,
+          "rule_key": "facing",
+          "level": "REGION"
+        },
+        {
+          "guideline_id": "0cb0f81a-0e58-5466-9063-21ed0dfaa40a",
+          "version_id": "b3d4c8b8-83aa-5bc0-8f02-3417d4bf65fa",
+          "version": 1,
+          "rule_key": "label_visibility",
+          "level": "HQ"
+        },
+        {
+          "guideline_id": "afbd87b3-2b1e-487a-827a-25a2ea0eb8c9",
+          "version_id": "057502fb-c0f9-4397-b651-72ac5b1cad9c",
+          "version": 2,
+          "rule_key": "qa04_labels",
+          "level": "CATEGORY"
+        },
+        {
+          "guideline_id": "4da308d4-7cf5-5164-ad07-ba1129f7e64a",
+          "version_id": "5bc6824b-9294-5676-a822-b49d76870feb",
+          "version": 1,
+          "rule_key": "shelf_gap",
+          "level": "STORE"
+        }
+      ],
+      "qa04_candidates": [
+        {
+          "guideline_id": "3cd24e5c-c191-4e71-955e-5b8f53f7d765",
+          "version_id": "29c516ee-ab51-4830-9efb-2454fd66f7b0",
+          "version": 1,
+          "rule_key": "qa04_labels",
+          "level": "HQ",
+          "selected": false
+        },
+        {
+          "guideline_id": "fdbd9805-09fc-4b0b-899a-34c39a9c45ed",
+          "version_id": "68cb2f3d-70e1-4a67-89df-ab308bcd7afe",
+          "version": 1,
+          "rule_key": "qa04_labels",
+          "level": "REGION",
+          "selected": false
+        },
+        {
+          "guideline_id": "3e65241f-65eb-443a-9987-5b95ab72980b",
+          "version_id": "d4baeec8-b34e-4b78-b48c-e09ffac568fb",
+          "version": 1,
+          "rule_key": "qa04_labels",
+          "level": "STORE",
+          "selected": false
+        },
+        {
+          "guideline_id": "afbd87b3-2b1e-487a-827a-25a2ea0eb8c9",
+          "version_id": "057502fb-c0f9-4397-b651-72ac5b1cad9c",
+          "version": 2,
+          "rule_key": "qa04_labels",
+          "level": "CATEGORY",
+          "selected": true
+        }
+      ],
+      "photos": [
+        {
+          "photo_id": "ecbfaeca-3522-4a87-bbe2-3c5cb7e5c973",
+          "position": 1,
+          "sha256": "04973a4a52064da0da41b6cf40c1e8a5a752cc6fbeb9722ba0196d8ca3592c0d"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "ebad3a74-99da-48c8-9851-eb3ae50f72ca",
+          "lineage_id": "457b506e-2f2d-47b9-8186-73546e7cea3d",
+          "version": 2,
+          "active_now": true,
+          "photo_id": "fc6f6bec-9f6d-4573-bb45-21debf9fe666",
+          "snapshot_sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa",
+          "media_sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa"
+        },
+        {
+          "reference_id": "49f59d6a-0eba-52b8-a2d1-35e8e90cd445",
+          "lineage_id": "49f59d6a-0eba-52b8-a2d1-35e8e90cd445",
+          "version": 1,
+          "active_now": true,
+          "photo_id": "0cd2b6d5-6860-55c3-861d-92d1afa51b63",
+          "snapshot_sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa",
+          "media_sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa"
+        },
+        {
+          "reference_id": "f6fd391a-4c23-58e0-8c68-df0e91c95e3c",
+          "lineage_id": "f6fd391a-4c23-58e0-8c68-df0e91c95e3c",
+          "version": 1,
+          "active_now": true,
+          "photo_id": "b647e638-af64-52d8-b64f-14a71eb9433e",
+          "snapshot_sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+          "media_sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f"
+        }
+      ],
+      "is_fixture": false,
+      "attempts": [
+        {
+          "attempt_id": "e4e40473-d071-4e56-b913-76652b2d02ea",
+          "number": 1,
+          "status": "succeeded",
+          "error_code": null,
+          "result_applied": true
+        }
+      ]
+    },
+    {
+      "submission_id": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8",
+      "parent_submission_id": null,
+      "job_id": "667d69ab-2eca-565b-b5d7-7b2736b2b57c",
+      "review_id": "217af351-61fa-4e47-a306-7c1e3bf51e12",
+      "job_status": "succeeded",
+      "current_attempt_id": "7c2d9f2a-65b2-45e8-9eaf-f4f02774d50a",
+      "review_attempt_id": "7c2d9f2a-65b2-45e8-9eaf-f4f02774d50a",
+      "review_source_kind": "real_ai",
+      "snapshot_sha256": "95a2be8f2be2b41fe1a2980c7b31848478ee802087015af6a6aace8f15c86487",
+      "result_sha256": "da18f3f0f93a85f8f7c75e32d8ef0534205b914c7a88fe60cf25828c0be36156",
+      "submitted_at": "2026-09-10T09:00:00+09:00",
+      "counts": {
+        "photos": 1,
+        "guidelines": 4,
+        "references": 1
+      },
+      "guidelines": [
+        {
+          "guideline_id": "f18fba2e-722f-5bf7-95eb-1adbe4fe0d19",
+          "version_id": "de112485-8042-5336-b7a8-57b40e969262",
+          "version": 1,
+          "rule_key": "category_grouping",
+          "level": "CATEGORY"
+        },
+        {
+          "guideline_id": "2e50e2bb-1666-5111-8369-e2745558adf8",
+          "version_id": "056ab33b-63de-5fc5-aa75-937e73894198",
+          "version": 1,
+          "rule_key": "facing",
+          "level": "REGION"
+        },
+        {
+          "guideline_id": "0cb0f81a-0e58-5466-9063-21ed0dfaa40a",
+          "version_id": "b3d4c8b8-83aa-5bc0-8f02-3417d4bf65fa",
+          "version": 1,
+          "rule_key": "label_visibility",
+          "level": "HQ"
+        },
+        {
+          "guideline_id": "54604ae2-28d6-5c45-ba1f-911d10873963",
+          "version_id": "fb70d0a7-9396-513b-be54-5db749683c6c",
+          "version": 1,
+          "rule_key": "shelf_gap",
+          "level": "STORE"
+        }
+      ],
+      "qa04_candidates": [],
+      "photos": [
+        {
+          "photo_id": "82f1665f-28a1-54e2-b1f8-3059c8e93ab0",
+          "position": 1,
+          "sha256": "4f64e9411cdfd00b516de703b7e628717b004c6dbec637b94655ee579ab7167d"
+        }
+      ],
+      "references": [
+        {
+          "reference_id": "f6fd391a-4c23-58e0-8c68-df0e91c95e3c",
+          "lineage_id": "f6fd391a-4c23-58e0-8c68-df0e91c95e3c",
+          "version": 1,
+          "active_now": true,
+          "photo_id": "b647e638-af64-52d8-b64f-14a71eb9433e",
+          "snapshot_sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+          "media_sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f"
+        }
+      ],
+      "is_fixture": true,
+      "attempts": [
+        {
+          "attempt_id": "31657b64-1e9e-5281-86ca-dd60956812c8",
+          "number": 1,
+          "status": "failed",
+          "error_code": "AI_UNAVAILABLE",
+          "result_applied": false
+        },
+        {
+          "attempt_id": "7c2d9f2a-65b2-45e8-9eaf-f4f02774d50a",
+          "number": 2,
+          "status": "succeeded",
+          "error_code": null,
+          "result_applied": true
+        }
+      ]
+    }
+  ],
+  "http": [
+    {
+      "role": "operator.demo",
+      "method": "GET",
+      "path": "/api/submissions/e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "status": 403,
+      "expected": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "role": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/59a2ea42-4ee5-455f-80df-ce9db1c964af",
+      "status": 403,
+      "expected": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "role": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/59a2ea42-4ee5-455f-80df-ce9db1c964af?variant=thumbnail",
+      "status": 403,
+      "expected": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "role": "operator.demo",
+      "method": "GET",
+      "path": "/api/notifications",
+      "status": 403,
+      "expected": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "role": "owner.north",
+      "method": "GET",
+      "path": "/api/submissions/e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "status": 200,
+      "expected": 200,
+      "result": "PASS"
+    },
+    {
+      "role": "owner.north",
+      "method": "GET",
+      "path": "/api/submissions/80d35004-ef2b-4d18-8618-f2199b6878a2",
+      "status": 200,
+      "expected": 200,
+      "result": "PASS"
+    },
+    {
+      "role": "owner.north",
+      "method": "GET",
+      "path": "/api/submissions/c87f228c-59a9-5f67-9a5b-fb750f4d5685",
+      "status": 404,
+      "expected": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "role": "owner.north",
+      "method": "GET",
+      "path": "/api/media/bc090f8a-1ed2-41f4-bfb3-c2abae13baba",
+      "status": 200,
+      "expected": 200,
+      "sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+      "result": "PASS"
+    },
+    {
+      "role": "owner.north",
+      "method": "GET",
+      "path": "/api/media/fc6f6bec-9f6d-4573-bb45-21debf9fe666",
+      "status": 200,
+      "expected": 200,
+      "sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa",
+      "result": "PASS"
+    },
+    {
+      "role": "owner.north",
+      "method": "GET",
+      "path": "/api/submissions/80d35004-ef2b-4d18-8618-f2199b6878a2/comparison",
+      "status": 200,
+      "expected": 200,
+      "result": "PASS"
+    },
+    {
+      "role": "regional.south",
+      "method": "GET",
+      "path": "/api/submissions/c87f228c-59a9-5f67-9a5b-fb750f4d5685",
+      "status": 200,
+      "expected": 200,
+      "result": "PASS"
+    },
+    {
+      "role": "regional.south",
+      "method": "GET",
+      "path": "/api/submissions/e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+      "status": 404,
+      "expected": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "role": "regional.south",
+      "method": "GET",
+      "path": "/api/media/59a2ea42-4ee5-455f-80df-ce9db1c964af",
+      "status": 404,
+      "expected": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "role": "regional.south",
+      "method": "GET",
+      "path": "/api/media/59a2ea42-4ee5-455f-80df-ce9db1c964af?variant=thumbnail",
+      "status": 404,
+      "expected": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    }
+  ],
+  "sessions": [
+    {
+      "login_id": "operator.demo",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    },
+    {
+      "login_id": "owner.north",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    },
+    {
+      "login_id": "regional.south",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    }
+  ],
+  "retry_job_submission_id": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8",
+  "reference_changes": [
+    {
+      "lineage_id": "457b506e-2f2d-47b9-8186-73546e7cea3d",
+      "before": {
+        "reference_id": "457b506e-2f2d-47b9-8186-73546e7cea3d",
+        "lineage_id": "457b506e-2f2d-47b9-8186-73546e7cea3d",
+        "version": 1,
+        "active_now": false,
+        "photo_id": "bc090f8a-1ed2-41f4-bfb3-c2abae13baba",
+        "snapshot_sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+        "media_sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f"
+      },
+      "after": {
+        "reference_id": "ebad3a74-99da-48c8-9851-eb3ae50f72ca",
+        "lineage_id": "457b506e-2f2d-47b9-8186-73546e7cea3d",
+        "version": 2,
+        "active_now": true,
+        "photo_id": "fc6f6bec-9f6d-4573-bb45-21debf9fe666",
+        "snapshot_sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa",
+        "media_sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa"
+      }
+    }
+  ],
+  "scope_target_ids": {
+    "north_submission": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+    "north_photo": "59a2ea42-4ee5-455f-80df-ce9db1c964af",
+    "south_submission": "c87f228c-59a9-5f67-9a5b-fb750f4d5685",
+    "south_photo": "bfd7c74a-734b-5fb9-bf03-3c1736c1bdf9"
+  },
+  "southern_seed_photo_shared_with_north": true,
+  "finished_at": "2026-09-21T11:43:26.788223+00:00",
+  "correction_reason": "북부 media 요청에 SubmissionPhoto ID를 사용해 존재하지 않는 경로404를 관찰했다. 해당 미디어 권한 증거는 무효이며 실제 media_id 정상200 대조 후 재검사한다. DB/상세/Reference hash 관찰은 유지한다."
+}

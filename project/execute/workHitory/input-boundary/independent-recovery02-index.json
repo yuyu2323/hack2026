@@ -1,0 +1,62 @@
+{
+  "status": "REVIEW_COMPLETE_PASS",
+  "reviewer": "contract_ai",
+  "reviewed_at": "2026-09-21T13:24:35.840120+00:00",
+  "scope": "C02-RECOVERY-001 소스·합성 회귀, 제품코드/Browser/DB/모델 조작 없음",
+  "checks": [
+    {
+      "command": "npm run test --workspace @storeloop/concept-02 -- tests/input-recovery.test.tsx",
+      "exit_code": 0,
+      "tests_passed": 3
+    },
+    {
+      "command": "npm run test:client",
+      "exit_code": 0,
+      "tests_passed": 2
+    },
+    {
+      "command": "npx vitest run --config web-concepts-02/vite.config.ts --root . execute/workHitory/input-boundary/independent-recovery02-edge.test.tsx",
+      "exit_code": 0,
+      "tests_passed": 3
+    }
+  ],
+  "independent_test_count": 8,
+  "files": [
+    {
+      "file": "web-concepts-02/src/shared/core.tsx",
+      "sha256": "6f7cd9dde9f62662529fc697bd595d4138e399a93c2055cae3a83cbdde393a07"
+    },
+    {
+      "file": "web-concepts-02/src/ofc-admin/Standards.tsx",
+      "sha256": "71157178fe9b51c54f870a8843c1e92d5e6a266b3bd39ea995ffcc2f81bac3df"
+    },
+    {
+      "file": "web-concepts-02/tests/input-recovery.test.tsx",
+      "sha256": "1142d54826d3531d9a04498cf6dff46b9800f612709e177eb3aded965ec91661"
+    },
+    {
+      "file": "web-concepts-02/src/app/main.tsx",
+      "sha256": "88e5ff5ef0295f38c0d8804f31b71ea3360160b03be64a12768e8d162e683957"
+    },
+    {
+      "file": "web-concepts-02/src/store-owner/Owner.tsx",
+      "sha256": "acfcdf981e383f9a9bc31c28b826007aff9b0902cfa9bd0208efc4a40c4df8c0"
+    },
+    {
+      "file": "packages/api-client/src/index.ts",
+      "sha256": "36dc430aef90d335c59c8c367f5182a4bcc086ca8cb6357c854f29faf74815a1"
+    },
+    {
+      "file": "packages/api-client/tests/client.test.ts",
+      "sha256": "8a68385a1d71bc38c62244dba13d870f0e5b76101a4a2722710111a369cf4760"
+    },
+    {
+      "file": "execute/workHitory/frontend-concept-02/implementation.md",
+      "sha256": "3861267aa41405c1bcc5e45835ae42597f6554b5e599213c004cc57c4fbe812b"
+    },
+    {
+      "file": "execute/workHitory/input-boundary/independent-recovery02-edge.test.tsx",
+      "sha256": "74e0dbc984c730f549c1607e23d2e1bf3dbec66788e530a8ec5a2d8bf9ff4213"
+    }
+  ]
+}

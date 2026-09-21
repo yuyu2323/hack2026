@@ -1,0 +1,97 @@
+[
+  {
+    "concept": 2,
+    "submission_id": "8259ce47-90ce-4a85-8496-8ed27edeb375",
+    "parent_submission_id": null,
+    "job_id": "54c02f3b-4c31-473e-9e8a-d30cf7757515",
+    "review_id": "f4ca799c-0461-4c8c-8c90-7db76ae99943",
+    "status": "succeeded",
+    "source_kind": "real_ai",
+    "model": "gpt-6-astra",
+    "model_ms": 51710,
+    "prompt_version": "storeloop-review-v1",
+    "schema_version": "1.0",
+    "snapshot_sha256": "23c2609844cb17fb887fb9d07917cf88ec08b76bae7a63824c5c4dfda029e65c",
+    "submitted_at": "2026-09-21T18:24:51.531080+09:00",
+    "submit_to_db_result_ms": 295934,
+    "photos": 1,
+    "criteria": 4,
+    "references": 2,
+    "attempts": [
+      {
+        "number": 1,
+        "status": "failed",
+        "error_code": "AI_UNAVAILABLE",
+        "result_applied": false,
+        "queue_ms": 1580,
+        "run_ms": 80
+      },
+      {
+        "number": 2,
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queue_ms": 36,
+        "run_ms": 52009
+      }
+    ]
+  },
+  {
+    "concept": 2,
+    "submission_id": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+    "parent_submission_id": "8259ce47-90ce-4a85-8496-8ed27edeb375",
+    "job_id": "03ab3423-19df-4604-9c79-04787d80f0c3",
+    "review_id": "e67ad1a8-99d6-4c41-a9ce-9d4f5ed8de6d",
+    "status": "succeeded",
+    "source_kind": "real_ai",
+    "model": "gpt-6-astra",
+    "model_ms": 47049,
+    "prompt_version": "storeloop-review-v1",
+    "schema_version": "1.0",
+    "snapshot_sha256": "e61cc99e9ef4915c3d13d4d9027f326ea51ff65bf00b3939cba3db4893d6fbb5",
+    "submitted_at": "2026-09-21T18:30:59.969461+09:00",
+    "submit_to_db_result_ms": 47060,
+    "photos": 1,
+    "criteria": 4,
+    "references": 2,
+    "attempts": [
+      {
+        "number": 1,
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queue_ms": 1738,
+        "run_ms": 45190
+      }
+    ]
+  },
+  {
+    "concept": 2,
+    "submission_id": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703",
+    "parent_submission_id": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+    "job_id": "2ff8dbc4-b3de-4f25-a498-688d95237eb1",
+    "review_id": "3759dfeb-e2cb-4a05-a891-92628ff31c91",
+    "status": "succeeded",
+    "source_kind": "real_ai",
+    "model": "gpt-6-astra",
+    "model_ms": 92888,
+    "prompt_version": "storeloop-review-v1",
+    "schema_version": "1.0",
+    "snapshot_sha256": "479c9c85ae8a6ced1267ed9a9d2b8ea2c5a718d099eda70f02fd150a487a6b1b",
+    "submitted_at": "2026-09-21T19:05:51.800925+09:00",
+    "submit_to_db_result_ms": 94166,
+    "photos": 1,
+    "criteria": 5,
+    "references": 3,
+    "attempts": [
+      {
+        "number": 1,
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queue_ms": 961,
+        "run_ms": 93064
+      }
+    ]
+  }
+]

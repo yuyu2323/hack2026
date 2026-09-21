@@ -1,0 +1,21 @@
+{
+  "scope": "D03-V01/F03-VERSION REVIEW 수정 소스·회귀",
+  "files": [
+    {
+      "path": "web-concepts-03/src/ofc-admin/pages.tsx",
+      "sha256": "b84659879754af42b7cfc81d65e27e2fd9e555e93e58bf2f4bdc0e11db329f84"
+    },
+    {
+      "path": "web-concepts-03/src/app/style.css",
+      "sha256": "c729424652f0ed435a7c6a1220e4ef1105e4e22ab5c913a658007c0edd3d5f25"
+    },
+    {
+      "path": "web-concepts-03/tests/dashboard-display.test.ts",
+      "sha256": "fef5a70a171c00d973e9bd43749e703d9f72596fa5f41219ac2ede33a6d0b932"
+    },
+    {
+      "path": "web-concepts-03/tests/recovery.test.ts",
+      "sha256": "5b5c662ab64def6c7aaef3c9f77fb889ab172a7eb415606fbf6c7b2fa01a07e6"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "TEXT_LINK_PASS",
+  "checked_at": "2026-09-21T13:28:54.779450+00:00",
+  "before_html_sha256": "041fd4389a260967d4d6a30f3432e98005e012bb4e951688ab7b63ab4095db9d",
+  "html_sha256": "b1803bb717d41615e7bcbd2e933eea3540c7b7f01cb44f9e114b2754a13f9dd9",
+  "before_comparison_sha256": "4570f87d043cc4213cf114141c19ec9760e3db03825b58f45626e1f5b764ef12",
+  "comparison_sha256": "dafe190446ed4dd902d8022f87305372322835ba7de8e77e3f34c842c85c8c83",
+  "css_unchanged": true,
+  "figures_unchanged": true,
+  "images_unchanged": 7,
+  "local_paths_checked": 23,
+  "errors": [],
+  "new_browser_render": "NOT_RUN; 본문만 수정. 이전 지정 viewport 렌더 PASS는 별도 기록 유지",
+  "not_run": [
+    "실제200% 사용자 후속",
+    "OS 네트워크 차단 오프라인",
+    "인쇄",
+    "잔여 제품검수"
+  ],
+  "scope": "사용자 매뉴얼 우선 지시. 추가 검수 확대 없음.",
+  "comparison_finalized_at": "2026-09-21T13:29:46.829742+00:00",
+  "known_recovery01_findings": "기존2회귀 PASS로 해소; 추가 검수 확대 없음"
+}

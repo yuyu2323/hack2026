@@ -1,0 +1,47 @@
+{
+  "scope": "운영/권한 화면 직접 검수. 운영3장 파일명1440은 실제 CSS1280×720으로 root가 정정. 원본 보존.",
+  "files": [
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-desktop1440-operator-expired-before-retry.png",
+      "width": 1265,
+      "height": 712,
+      "sha256": "c718765bc395e959211617f144d307535956b2107051aed8c41037f0d9187044",
+      "observation": "Mock 장애 사례/기술 실패·대기 시간 초과와 사유 입력 복구 안내. 실제 CSS1280×720"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-desktop1440-operator-retry-running.png",
+      "width": 1265,
+      "height": 712,
+      "sha256": "dc60f0995869a54e779cf8b6660def6f0db0946751733676986b7906bb5033db",
+      "observation": "Mock 장애 사례의 시도1 expired 보존과 시도2 분석 중, 현재 상태 재처리 불가. 실제 CSS1280×720"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-desktop1440-account-audit.png",
+      "width": 1265,
+      "height": 712,
+      "sha256": "dbd824b3db5b91beb529c8b367cb0d43138bd547dbf22999e94a918497574b69",
+      "observation": "계정 변경 수행자·시각·사유·결과와 요약 펼침. 요약 내용은 접힘. 실제 CSS1280×720"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-desktop1440-deactivated-session-login.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "0cc922d4083efc202cbc88b52b194025afef1b42d31cc14868bb0bbe404226c6",
+      "observation": "계정 비활성 후 로그인으로 복귀하고 이전 업무 본문 없음. ID 입력 키보드 초점 표시"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-desktop1440-role-changed.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "010eb3e22f538c8b46d74c36d326817b8ded9e1bdd6e8e4ebae03a0708c0b200",
+      "observation": "동일 합성계정의 OFC 역할 메뉴와 이전 점주 경로 접근 불가. 업무 본문 없음"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-desktop1440-mapping-revoked.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "0852cd2b1705fef0c3f9089e2b5298fbe29ee20bc1714c89d5f8e5050e013e1f",
+      "observation": "점주 매핑 해제 후 사진과 근거 본문 없이 범위 접근 오류·요청번호·재조회 제공"
+    }
+  ]
+}

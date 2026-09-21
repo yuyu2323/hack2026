@@ -1,0 +1,10 @@
+[
+  {
+    "path": "web-concepts-05/src/shared/business.tsx",
+    "sha256": "25e4096855a4b49d2ec3fdab5937b25667600b288b0d7f42331a197c1b0bf6fa"
+  },
+  {
+    "path": "web-concepts-05/tests/comparison-version.test.ts",
+    "sha256": "6d52f454a8ad1ff2ba2a64a65bc11e0f8ee4cc556edc066e2c8526f2fc815a89"
+  }
+]

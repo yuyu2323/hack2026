@@ -1,0 +1,95 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1280-unknown.png",
+      "sha256": "e6c485d479970a6708bfcc0afb5e1138203554269818c16ad5928d17970b774d",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "observation": "과거 공유된 실제 AI 어두운 음료 사진: 분석 완료·실제AI·준수—/판단가능0%·0/5·낮음·계산불가 이유. 이번04 신규 호출로 중복 집계하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1280-technical-failure.png",
+      "sha256": "f4b6a41374b80d5faa95ba3c550b8b2e3de36862d25b71fa8846cd5aab12033d",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "observation": "기술실패·AI연결실패·운영복구요청을 진열판정과 별개로 설명. 숫자점수/정상평가로 위장하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1280-no-criteria-reference.png",
+      "sha256": "d8e506988144f541151c272f2ce6cdd62671c7f1306c763777e93a1ef3045962",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "observation": "당시 기준과비교Reference없음을 별도 설명하고 적용기준없음/OFC확인·Reference없음을 표시. 과거 경계사례."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1280-comparison.png",
+      "sha256": "d5f11015e58780a97eb03603d8bb39c6747877504e6ab414411b9808d5b667a4",
+      "decoded_size": [
+        1265,
+        791
+      ],
+      "format": "JPEG",
+      "observation": "지역관리자1280에서도 이전/이후KST일시·적용5기준·0→100 비교를 두열로 제공. 제목초점과고정하단탐색."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-regional-scope-notice.png",
+      "sha256": "29044bfbe85ff845a80f0b6e17ea76580611b5def33429ab24bc0e36758f1767",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "regional.north 역할·소속지역·3매장/미해결12 범위와 QA04 공지배너. 본사6/기존OFC2 범위와 구분."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-outside-region-denied.png",
+      "sha256": "ac7b5be10439e08f42c6003d2ee724f4222f01a7e53f2e083d1bd4d8fc06346b",
+      "decoded_size": [
+        1440,
+        900
+      ],
+      "format": "JPEG",
+      "observation": "지역범위밖 기록은 본문/사진없이 대상없음·요청번호·재조회. 제목 초점."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-operator-business-denied.png",
+      "sha256": "1545861f2191ce2ef6ca1dc632965ed04a8f4ff853894cb4a7c04de07abf0243",
+      "decoded_size": [
+        1440,
+        900
+      ],
+      "format": "JPEG",
+      "observation": "운영자의 영업경로는 업무본문없이 접근불가·시작화면 이동만 제공."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-retry-success-applied.png",
+      "sha256": "4fb09e20a31b47661b70ea46980641700d82a5f65f93c07ae95957a684093e2d",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "첫실패/미반영 보존과 둘째성공·시작/종료/처리기한·결과반영완료가 모두 보임."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-catalog-inactive.png",
+      "sha256": "8e13d61333766524d9d2aea7862ee799fac4e32618e5e9f27278860d5fed3df8",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "분류 비활성 선택·변경 사유·저장 피드백 및 다른 기존분류 활성목록. 현재 수정대상 이름은 위로 잘려 있어 파일명만으로 특정하지 않음."
+    }
+  ]
+}

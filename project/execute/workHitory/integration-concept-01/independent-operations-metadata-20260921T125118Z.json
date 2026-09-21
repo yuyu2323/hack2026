@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "started_at": "2026-09-21T12:51:18.252775+00:00",
+  "checks": [
+    {
+      "check": "database_read_only",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_two_attempts",
+      "status": "PASS"
+    },
+    {
+      "check": "known_success_attempt_applied_once",
+      "status": "PASS"
+    },
+    {
+      "check": "known_seed_job_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "original_failure_preserved_exact_seed_fields",
+      "status": "PASS"
+    },
+    {
+      "check": "snapshot_sha256_matches_content",
+      "status": "PASS"
+    },
+    {
+      "check": "strict_ai_input_schema",
+      "status": "PASS"
+    },
+    {
+      "check": "strict_output_and_exact_guideline_reference_contract",
+      "status": "PASS"
+    },
+    {
+      "check": "derived_metrics_match_storage",
+      "status": "PASS"
+    },
+    {
+      "check": "photo_links_and_hash_metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "reference_media_hash_metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "normalized_criteria_match_result",
+      "status": "PASS"
+    },
+    {
+      "check": "retry_audit_failure_to_queued_attempt2",
+      "status": "PASS"
+    },
+    {
+      "check": "nonnegative_times_and_acceptance_deadline",
+      "status": "PASS"
+    },
+    {
+      "check": "review_job_attempt_status_consistency",
+      "status": "PASS"
+    }
+  ],
+  "scope": "READ ONLY 지정 메타데이터; DB/서비스 변경·HTTP·새 AI 호출·본문/비밀 출력 없음",
+  "retry": {
+    "job_id": "c5d22c4e-7a26-5961-a04f-79ba8e12e745",
+    "submission_id": "e3488415-6745-56a8-be69-7d3010521033",
+    "review_id": "4b9a1331-abc5-4e17-9c12-350123e6c09d",
+    "is_fixture": true,
+    "submission_source_kind": "seed_demo",
+    "result_source_kind": "real_ai",
+    "model": "gpt-6-astra",
+    "prompt_version": "storeloop-review-v1",
+    "schema_version": "1.0",
+    "snapshot_sha256": "3e438fda1ea1a520e1ad65be3cc516c1af0723b5e54d1558eb3af819ea62059c",
+    "result_sha256": "54a58b67fdc40edeea729f1a54794ee6894262ba0f9929b2283961f2bf5d305b",
+    "input_count": {
+      "photos": 1,
+      "guidelines": 4,
+      "references": 1
+    },
+    "output_count": {
+      "criteria": 4,
+      "references": 1
+    },
+    "review_created_at": "2026-09-21T21:48:27.625642+09:00",
+    "model_ms": 44971,
+    "metrics": {
+      "compliance_rate": 25.0,
+      "assessable_rate": 100.0,
+      "needs_ofc_review": false,
+      "pass_count": 1,
+      "fail_count": 3,
+      "unknown_count": 0
+    },
+    "retry_audits": [
+      {
+        "id": "09198450-9eb1-494e-ae1b-c74ebe222e65",
+        "action": "analysis_job.retry",
+        "target_type": "analysis_job",
+        "target_id": "c5d22c4e-7a26-5961-a04f-79ba8e12e745",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T21:47:40.740916+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "status": "failed",
+          "current_attempt_id": "b432cd96-a1ec-5284-b42a-51b2e9180157",
+          "enqueue_generation": 1
+        },
+        "after": {
+          "status": "queued",
+          "current_attempt_id": "6f336626-ae76-446a-84a7-024f8908ac5c",
+          "enqueue_generation": 2
+        }
+      }
+    ],
+    "attempts": [
+      {
+        "id": "b432cd96-a1ec-5284-b42a-51b2e9180157",
+        "number": 1,
+        "status": "failed",
+        "error_code": "AI_UNAVAILABLE",
+        "result_applied": false,
+        "queued_at": "2026-09-09T09:00:00+09:00",
+        "started_at": "2026-09-09T09:00:01+09:00",
+        "finished_at": "2026-09-09T09:00:12+09:00",
+        "queue_ms": 1000,
+        "run_ms": 11000
+      },
+      {
+        "id": "6f336626-ae76-446a-84a7-024f8908ac5c",
+        "number": 2,
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queued_at": "2026-09-21T21:47:40.737604+09:00",
+        "started_at": "2026-09-21T21:47:42.433903+09:00",
+        "finished_at": "2026-09-21T21:48:27.624558+09:00",
+        "queue_ms": 1696,
+        "run_ms": 45191
+      }
+    ]
+  },
+  "timing": {
+    "queue_ms": 1696,
+    "run_ms": 45191,
+    "model_ms": 44971,
+    "run_minus_model_ms": 220,
+    "classification": "CONSISTENT_ORDER",
+    "model_clock": "adapter monotonic: 사진 준비/CLI/출력 검증",
+    "worker_clock": "UTC wall-clock",
+    "excluded_from_normal_first_submission_latency": true,
+    "model_under_30_seconds": false
+  },
+  "account_review": "NOT_RUN: root 최종 복원 완료 대기",
+  "finished_at": "2026-09-21T12:51:18.284093+00:00"
+}

@@ -1,0 +1,55 @@
+{
+  "scope": "직접 독립 시각 검수; D04-V01 해소",
+  "items": [
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile360-upload-fixed.png",
+      "sha256": "c3c1b03a272e518d4e1f5026a1e9a9ccc021988924885103d5d5734ad29e85be",
+      "decoded_size": [
+        345,
+        767
+      ],
+      "format": "JPEG",
+      "observation": "수정 후 사진 카드 안에서 앞/뒤44px 버튼과 삭제 버튼이 두 줄로 배치됨. 돌출 해소; 이후 단계 버튼은 현재캡처 하단 밖."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-upload-fixed.png",
+      "sha256": "e69e04f64ba419e1b445e019fd2bfe572c29b1aa6088faa614779827a05d5d1e",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "390에서도 제어행 줄바꿈·카드내부 배치·파일정보/원본비율 유지. D04-V01 시각 수정 PASS."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-unmapped-empty-fixed.png",
+      "sha256": "24b15f85139935bc21612856396f4298d7540b6a4f702589345bff46e9da76e9",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "정상375×812 viewport로 재촬영됨.매핑없는 QA계정/연결매장 빈박스 상단 확인. 안내본문은하단이라 전체문구까지검수했다고 하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile360-inactive-session.png",
+      "sha256": "fcfab20f420e7f0bd15a125ac4bdb22c31207508d82bb7145c72809467128e8a",
+      "decoded_size": [
+        360,
+        800
+      ],
+      "format": "JPEG",
+      "observation": "계정 비활성 후 로그인으로 복귀하며 이전 사진·질문·평가 제거. 인증입력은 빈값."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile360-mapping-revoked.png",
+      "sha256": "87cb3337c5724a71d85c97e85f651b3d502cb10d70c8efe9f4960b667535b5fb",
+      "decoded_size": [
+        360,
+        800
+      ],
+      "format": "JPEG",
+      "observation": "매핑 철회 후 대상없음/요청번호/재조회만 표시. 기존 사진·질문·평가 없음,route 제목 초점 확인."
+    }
+  ]
+}

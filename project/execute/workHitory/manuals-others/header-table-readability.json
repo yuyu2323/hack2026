@@ -1,0 +1,54 @@
+{
+  "id": "D-MAN-H01",
+  "status": "REVIEW",
+  "selectors": {
+    "screen_header": "header .compact{color:#e1edef}",
+    "table_identifiers": ".table code{white-space:nowrap;overflow-wrap:normal;word-break:normal}",
+    "print": "@media print: header p,header small,header a,header .compact{color:#000}"
+  },
+  "contrast": {
+    "before": 2.047,
+    "after": 9.886,
+    "required": 4.5
+  },
+  "manuals": [
+    {
+      "concept": "01",
+      "path": "deliverables/manuals/concept-01/index.html",
+      "before_sha256": "0cfbe1080751dfb0ba4f814ca12f1740cb06aa80b012074f6232d10490b3fb6b",
+      "sha256": "e5b3af6c65377f46ddb444cf676b49f018272132baa79d900890bcc1a5575e28",
+      "bytes": 43195,
+      "html_body_and_images_unchanged": true,
+      "assets": 8
+    },
+    {
+      "concept": "03",
+      "path": "deliverables/manuals/concept-03/index.html",
+      "before_sha256": "cf6e3931375293dffe07eda430a68bb0a674b18b1e861910502bbedb708ebe71",
+      "sha256": "714e3ec218d5a7f258bcc88ff8854070d2c22207966cd1f1b3414ae722c607ec",
+      "bytes": 47594,
+      "html_body_and_images_unchanged": true,
+      "assets": 10
+    },
+    {
+      "concept": "04",
+      "path": "deliverables/manuals/concept-04/index.html",
+      "before_sha256": "8ce49fb7117c8703ef57600b135671176c7012676627b407e459be5278971ef5",
+      "sha256": "a35e2ba8813ce74129335fcdbc4aaa8d55e68d4f0c96b512a6923a3ff6a9c282",
+      "bytes": 47707,
+      "html_body_and_images_unchanged": true,
+      "assets": 10
+    },
+    {
+      "concept": "05",
+      "path": "deliverables/manuals/concept-05/index.html",
+      "before_sha256": "75b8f36f0ea54a9984586838547583ab2fbd285d4e913c7a1ac510999da6f65b",
+      "sha256": "611648aa6f28f4891eb7c221191d72c449b978001980efc38089910e3b4c34e5",
+      "bytes": 51798,
+      "html_body_and_images_unchanged": true,
+      "assets": 12
+    }
+  ],
+  "browser_render": "root 및 contract_data 검수 진행 중",
+  "zoom_200": "NOT_RUN — 사용자 후속 검수"
+}

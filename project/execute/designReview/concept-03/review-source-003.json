@@ -1,0 +1,38 @@
+{
+  "phase": "최초 실제화면/D03-V01 발견",
+  "created_at": "2026-09-21T10:33:39.861344+00:00",
+  "files": [
+    {
+      "path": "web-concepts-03/src/app/main.tsx",
+      "sha256": "b7da27168790bd246b67165a3f674c8e0f3f164e5d503b29b2bf9c969260bebf"
+    },
+    {
+      "path": "web-concepts-03/src/app/style.css",
+      "sha256": "bb5b45aa043264ee8ab36e3181bc3b5e708ab77280f0869a5f3911a0a6ca0170"
+    },
+    {
+      "path": "web-concepts-03/src/ofc-admin/pages.tsx",
+      "sha256": "31383d5f00c5904281644dd2b0293be7fd8a15ec60371cab7b998f0878247898"
+    },
+    {
+      "path": "web-concepts-03/src/platform-admin/pages.tsx",
+      "sha256": "3ffbc7efae757612226950c5ba1e860483c580f38d0e9541cec1f153735d9461"
+    },
+    {
+      "path": "web-concepts-03/src/shared/policy.ts",
+      "sha256": "53bba22afe9bd8be0ae598b3a58e0d0ea40e3a11c2e8d7acff8cf283c81d4339"
+    },
+    {
+      "path": "web-concepts-03/src/shared/ui.tsx",
+      "sha256": "0abeb2c94d60f6f843cadf8a912c31617a612b1ab8d785d93ce0431044507c41"
+    },
+    {
+      "path": "web-concepts-03/src/store-owner/pages.tsx",
+      "sha256": "281df31459222a2441f2dc6e83a40061fd237dc5be2701e895e8ec0f5005a9e0"
+    },
+    {
+      "path": "execute/designReview/concept-03/evidence/vp-desktop1440-ofc-photo-dashboard.png",
+      "sha256": "79bfe6b508cc4d636aa6cca3ac07ef44e326655b697ec5995cbbfdc4653a02c8"
+    }
+  ]
+}

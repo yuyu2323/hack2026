@@ -1,0 +1,32 @@
+{
+  "id": "D-MAN-H01",
+  "status": "SOURCE_PASS; 최종 렌더는 contract_data 담당",
+  "contrast_ratio": 9.886,
+  "required_ratio": 4.5,
+  "rows": [
+    {
+      "concept": "01",
+      "sha256": "e5b3af6c65377f46ddb444cf676b49f018272132baa79d900890bcc1a5575e28",
+      "only_approved_three_css_changes": true,
+      "source_status": "PASS"
+    },
+    {
+      "concept": "03",
+      "sha256": "714e3ec218d5a7f258bcc88ff8854070d2c22207966cd1f1b3414ae722c607ec",
+      "only_approved_three_css_changes": true,
+      "source_status": "PASS"
+    },
+    {
+      "concept": "04",
+      "sha256": "a35e2ba8813ce74129335fcdbc4aaa8d55e68d4f0c96b512a6923a3ff6a9c282",
+      "only_approved_three_css_changes": true,
+      "source_status": "PASS"
+    },
+    {
+      "concept": "05",
+      "sha256": "611648aa6f28f4891eb7c221191d72c449b978001980efc38089910e3b4c34e5",
+      "only_approved_three_css_changes": true,
+      "source_status": "PASS"
+    }
+  ]
+}

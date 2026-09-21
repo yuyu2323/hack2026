@@ -1,0 +1,150 @@
+{
+  "status": "BOUNDED_VISUAL_PASS",
+  "reviewed_at": "2026-09-21T13:19:36.617124+00:00",
+  "reviewer": "contract_ai",
+  "scope": "신규 제공 viewport만 직접 열람. Browser·DB·서비스·AI 호출·공유 소스 수정 없음. 전체 시안 완료 판정 아님.",
+  "viewport_basis": "root 실제 측정 390×844/client375 및 02 desktop1440×900/client1425. 저장 이미지 치수와 구별.",
+  "source_hash_basis": "검수 시점 현재 소스의 식별용 hash이며 각 과거 캡처가 이 빌드라고 소급 확정하지 않는다.",
+  "images": [
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-mobile390-long-queued.png",
+      "sha256": "236fc39e25ee1e90fae777a1052ddb454278d1b117259c6a07448a168fdc9e23",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "대기632초·지연/이력 안내, 명시적인 Mock 합성 질문과 생성 사진. 평가 점수 없음."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-mobile390-api-outage.png",
+      "sha256": "be13011391a3d7f33c689cb3ccdd3730943e81bb5ef581ecc89b8fd36068bfd3",
+      "decoded_size": [
+        390,
+        844
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "요청 오류와 다시 조회 버튼. 분석 실패나 0점으로 바뀌지 않으며 점주 shell 유지."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-mobile390-api-recovered.png",
+      "sha256": "44229ac6437231df69e56b593645ea07851e2ad2ed4f59262f9e5ae3664d669a",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "같은 사진·합성 질문·대기1267초로 복귀, 통신 오류 제거."
+    },
+    {
+      "file": "execute/designReview/concept-01/evidence/vp-mobile390-queue-timeout.png",
+      "sha256": "a80831d3fe433ac5bf9f66b347c13a2a34944e42432b175c59ee1b81643cd432",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "QUEUE_TIMEOUT·분석을 완료하지 못했다는 기술 실패와 운영자 확인 안내. 결과 점수 없음."
+    }
+  ],
+  "current_source_hashes": [
+    {
+      "file": "web-concepts-01/src/app/App.tsx",
+      "sha256": "e55dbb559225e077012bc3d276832950a25289d11f835fc6c16c1a5b755401d4"
+    },
+    {
+      "file": "web-concepts-01/src/app/session.tsx",
+      "sha256": "87905a704b410f205fab1ddd54c1433f61d599de54af05b0d6cdffd3f71e4ecc"
+    },
+    {
+      "file": "web-concepts-01/src/main.tsx",
+      "sha256": "361727534e2148289d8567c130e61a439bc36c92ca314aa6792720ca1dce7cd6"
+    },
+    {
+      "file": "web-concepts-01/src/ofc-admin/Analytics.tsx",
+      "sha256": "9fc7db939ccaae54c173b77c5895753a3301f7212360ff6c9e988ba1525fa2eb"
+    },
+    {
+      "file": "web-concepts-01/src/ofc-admin/Dashboard.tsx",
+      "sha256": "8ca35d6feffdb7fb3c672d47dc6dd9007c5f2b4875e3fffb1d23cb6679f5a05e"
+    },
+    {
+      "file": "web-concepts-01/src/ofc-admin/Standards.tsx",
+      "sha256": "64f11bbac3b7465a3b839ae5dbb56ea2ca6341690f26da802086f38e432ade43"
+    },
+    {
+      "file": "web-concepts-01/src/platform-admin/Operations.tsx",
+      "sha256": "0854316da4bb0d19c112157901c55e0a58882a4b1b50c4b745ec22ed7b8a1dfd"
+    },
+    {
+      "file": "web-concepts-01/src/shared/business.tsx",
+      "sha256": "22c5fd712f81879c8ee5ebdaa4a2473aa4d00596e023c99d9af61b89e3dcda4b"
+    },
+    {
+      "file": "web-concepts-01/src/shared/data.ts",
+      "sha256": "61b0aaef1fcdff67b2a279227fb77201c32f9f9d73020c0bb15bee9e42dd9dd3"
+    },
+    {
+      "file": "web-concepts-01/src/shared/policy.ts",
+      "sha256": "1b8e0d73b559b15006dfcc663cb5bef9647c6359b57917a9116c711ef7f70253"
+    },
+    {
+      "file": "web-concepts-01/src/shared/ui.tsx",
+      "sha256": "fc8fde887fd03331827a2c8e6ffe911173dec0c69f1f2d1fca47390ceeb632ce"
+    },
+    {
+      "file": "web-concepts-01/src/store-owner/Submit.tsx",
+      "sha256": "0530195e86ddd50a4805590c05615559eb4457d9cba1ca91f165f3527fb10a95"
+    },
+    {
+      "file": "web-concepts-01/src/styles.css",
+      "sha256": "0c1044a461cba5cafd678bb689fadb44a9a92d1ece4ded09a0df1cbb32e8c6fe"
+    }
+  ],
+  "input_records": [
+    {
+      "file": "execute/workHitory/queued-browser/browser.md",
+      "sha256": "641e28f0feac63eb73bb8a8666923ff16a0179d16576aac2f5ec6f46c60e51f9"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/independent-review.md",
+      "sha256": "c7539cacae534784757e0c0e489633dc154f72a192b467b35afea89a8785dd2c"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/independent-metadata.json",
+      "sha256": "9a26d925a58d6dca6e2de8e4c29fa1d9a010aa463a311b1691cc425a3835f937"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/queued-initial.json",
+      "sha256": "97c3a67b3ff23e2348c43338a6bde6854d10c7dedfbc55e3fdd710654802d687"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/api-outage.json",
+      "sha256": "b76463a32dc26bb0924f4dd13f2a6d2f9d3eb200695073bf9dbe999405c8a60b"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/api-recovery.json",
+      "sha256": "e49d067502ccf237389f9612cdd0a7931abc3c23153ab37635720d30891b951a"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/worker-restored.json",
+      "sha256": "665e12187b25f202cf86851ab99cc60790af17706d3e579f6be92884ba9ca74d"
+    },
+    {
+      "file": "execute/workHitory/integration-concept-01/browser.md",
+      "sha256": "2463e847e4d55d6489ef52bacb9779d730eeeb68f397c83aa4a82801a5f6bcb5"
+    },
+    {
+      "file": "execute/workHitory/integration-concept-02/browser.md",
+      "sha256": "04eba6b76596ae26bda92c3d0ae92a4eccba0643f98a486d01209f5df8bdfc76"
+    }
+  ]
+}

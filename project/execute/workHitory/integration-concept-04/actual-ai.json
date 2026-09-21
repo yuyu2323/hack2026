@@ -1,0 +1,100 @@
+[
+  {
+    "concept": 4,
+    "submission_id": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+    "parent_submission_id": null,
+    "job_id": "5ad3342d-0a8b-40d5-a3f9-4cb4dbde42b2",
+    "review_id": "a6ec0539-7b6c-48ce-a193-1e296c11446c",
+    "status": "succeeded",
+    "is_fixture": false,
+    "source_kind": "real_ai",
+    "model": "gpt-6-astra",
+    "model_ms": 70973,
+    "prompt_version": "storeloop-review-v1",
+    "schema_version": "1.0",
+    "snapshot_sha256": "61410b3e2a2f025ffff4fe4d0c41353131d072aef442ce49c7c6572bb47075c0",
+    "submitted_at": "2026-09-21T20:20:14.571160+09:00",
+    "submit_to_db_result_ms": 72692,
+    "photos": 1,
+    "criteria": 5,
+    "references": 3,
+    "attempts": [
+      {
+        "number": 1,
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queue_ms": 1449,
+        "run_ms": 71107
+      }
+    ]
+  },
+  {
+    "concept": 4,
+    "submission_id": "80d35004-ef2b-4d18-8618-f2199b6878a2",
+    "parent_submission_id": "e447d4e9-54c0-4c85-a0d6-20597b92d0ba",
+    "job_id": "2ea61607-3810-4e29-b055-851126ae3425",
+    "review_id": "bb7d33cd-26e6-4fe5-bc33-03eb51df4cd7",
+    "status": "succeeded",
+    "is_fixture": false,
+    "source_kind": "real_ai",
+    "model": "gpt-6-astra",
+    "model_ms": 64762,
+    "prompt_version": "storeloop-review-v1",
+    "schema_version": "1.0",
+    "snapshot_sha256": "e45196c29fa44299151e2260b74aa88026cd713382759c0b444f4335baec2290",
+    "submitted_at": "2026-09-21T20:24:01.285062+09:00",
+    "submit_to_db_result_ms": 65635,
+    "photos": 1,
+    "criteria": 5,
+    "references": 3,
+    "attempts": [
+      {
+        "number": 1,
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queue_ms": 574,
+        "run_ms": 64928
+      }
+    ]
+  },
+  {
+    "concept": 4,
+    "submission_id": "a24ff9dd-8389-5d8b-9234-0d4cfa98e9d8",
+    "parent_submission_id": null,
+    "job_id": "667d69ab-2eca-565b-b5d7-7b2736b2b57c",
+    "review_id": "217af351-61fa-4e47-a306-7c1e3bf51e12",
+    "status": "succeeded",
+    "is_fixture": true,
+    "source_kind": "real_ai",
+    "model": "gpt-6-astra",
+    "model_ms": 47432,
+    "prompt_version": "storeloop-review-v1",
+    "schema_version": "1.0",
+    "snapshot_sha256": "95a2be8f2be2b41fe1a2980c7b31848478ee802087015af6a6aace8f15c86487",
+    "submitted_at": "2026-09-10T09:00:00+09:00",
+    "submit_to_db_result_ms": 992362652,
+    "photos": 1,
+    "criteria": 4,
+    "references": 1,
+    "attempts": [
+      {
+        "number": 1,
+        "status": "failed",
+        "error_code": "AI_UNAVAILABLE",
+        "result_applied": false,
+        "queue_ms": 1000,
+        "run_ms": 11000
+      },
+      {
+        "number": 2,
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queue_ms": 1897,
+        "run_ms": 47540
+      }
+    ]
+  }
+]

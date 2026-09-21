@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "path_guard_count": 1087,
+  "full_scan_before_resolution": 1084,
+  "false_positive_files": 1,
+  "resolved_files": 1,
+  "changed_since_setup_rescanned": 22,
+  "security_regression_tests": 11,
+  "scanner_rules_changed": false
+}

@@ -1,0 +1,125 @@
+{
+  "scope": "독립 직접 시각 검수; D04-V02 포함",
+  "items": [
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-guideline-history.png",
+      "sha256": "5c1c82781d8f8904e33cca6efe5a3dc8760eca9939a1c8901d746d3e65a638b5",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "v2 본문/사유·v1 버전/시각/사유가 동시에 표시. v1 본문 일부는 고정 하단 탐색에 가려져 기존 snapshot 전체본문 증거와 함께 대조."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-reference-v2-metadata.png",
+      "sha256": "a67c5b4d5cef40025793ac95e25df0d0987667c670cdb95a3909704471b40452",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "QA04 스낵Reference v2 캡션·실제 사진·생성 배지·활성·시각을 확인."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-reference-old-metadata.png",
+      "sha256": "f26ca6e5471181140bfa506e53edaca5000d745cea0360dff7d4614cbbcb4301",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "QA04 v2 활성과 v1 비활성의 서로 다른 사진·캡션·version·시각이 나란히 보임."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-change-confirm.png",
+      "sha256": "cd6765acab56c83308559c5213d010e4305786c4b476f54da9f554afac0905ef",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "비활성 사유·적용 영향/과거 보존·입력으로 돌아가기·최종 비활성화 단계를 구별."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-ofc-filtered.png",
+      "sha256": "9faa7ee62347931a2dd1fdd55273c1968c00d790ce853c068d5fd260d5d51db2",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "OFC 봄빛역점/스낵 필터 적용·미해결4·제출4·대표 조치 이동.같은 조건 후속 결과 확인."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-ofc-result.png",
+      "sha256": "7527a7a107842030ef80d8c58c831ea92506a149cb4d285cef5db77bf71b0553",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "OFC 봄빛역점 스낵 child 원본 사진·100/100·5/5·OFC필요·실제AI를 분할로 확인."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-ofc-evidence.png",
+      "sha256": "fa62096fc242ea1d4a4b0e7aa298b81b63824fd60f8cc71cd718a4c745b5f315",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "오른쪽 기준별사진1 근거/준수와 대응. 왼쪽 sticky 사진/캡션이 질문 본문을 가리는 D04-V02 결함 증거; 정상 매뉴얼 예시 제외."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-resolved-history.png",
+      "sha256": "0793c5a23f6c8880684471b88bc8e6ff724b8ce63e35b4c90bf567a13c5ce105",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "해결 상태·담당·우선순위·사유·코멘트/해결 이력·저장 피드백. 기존AI평가와 조치를 구분."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-analytics-mock.png",
+      "sha256": "5eeaa9444390d2f8fa486047853c88da5064c765469fde0a0bcabaecc94252ad",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "주별표·준수null/판단가능0·Mock 수,상관 -0.0147/n6 및 결측1/판단불가3 제외·산점도."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-analytics-insufficient.png",
+      "sha256": "769de5196a67ce5a8e5260ffd12a9b49a380baea593662aea9e20e35c17ee6df",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "기간자료 없음·상관—/n0·3개미만표본 설명·결측/판단불가0. null을0상관으로 표시하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-notifications.png",
+      "sha256": "5279f35ec09d571675a45a2836405e27d176507ece51d0fbbaee56a82c5c2923",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "현장 조치/분석 알림과 내용 확인/읽음 표시,이미 읽은 항목에는 읽음 버튼 없음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-owner-resolved.png",
+      "sha256": "8a4f2774d0467c5cfff2ec1d84594412b765b9b2aafc62cbe11ac654733dfa64",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "점주에게 담당·해결 내용·사진근거 이동·조치이력을 읽기전용으로 표시."
+    }
+  ]
+}

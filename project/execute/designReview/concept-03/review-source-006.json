@@ -1,0 +1,34 @@
+{
+  "phase": "D03-V02 및 F03-UPLOAD 수정 이후 최신 소스 스냅샷. 최종 캡처/빌드 대응은 별도 검수.",
+  "checked_at": "2026-09-21T10:49:52.307951+00:00",
+  "files": [
+    {
+      "path": "web-concepts-03/src/app/main.tsx",
+      "sha256": "b7da27168790bd246b67165a3f674c8e0f3f164e5d503b29b2bf9c969260bebf"
+    },
+    {
+      "path": "web-concepts-03/src/app/style.css",
+      "sha256": "c729424652f0ed435a7c6a1220e4ef1105e4e22ab5c913a658007c0edd3d5f25"
+    },
+    {
+      "path": "web-concepts-03/src/ofc-admin/pages.tsx",
+      "sha256": "9959129826414b3e4a46387430a6214fd636118aeb278160af472add75035d5b"
+    },
+    {
+      "path": "web-concepts-03/src/platform-admin/pages.tsx",
+      "sha256": "3ffbc7efae757612226950c5ba1e860483c580f38d0e9541cec1f153735d9461"
+    },
+    {
+      "path": "web-concepts-03/src/shared/policy.ts",
+      "sha256": "53bba22afe9bd8be0ae598b3a58e0d0ea40e3a11c2e8d7acff8cf283c81d4339"
+    },
+    {
+      "path": "web-concepts-03/src/shared/ui.tsx",
+      "sha256": "0abeb2c94d60f6f843cadf8a912c31617a612b1ab8d785d93ce0431044507c41"
+    },
+    {
+      "path": "web-concepts-03/src/store-owner/pages.tsx",
+      "sha256": "5f7ba258107f474f09b72afca12c21f8bc7ee9850853895ab2236dbdfeec8546"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "source_hashes_preserved": {
+    "source_before": 216,
+    "source_after": 216
+  },
+  "all_other_report_fields_unchanged": true,
+  "original_sha256": "4ca142d87c6a72fe74ad418b9d5714a8b08098ff6278c2899324452eb91c890d",
+  "current_sha256": "eb74299d32c7b8ec4d34ca1942c05480ca18df26e279b9f2b01e1ced79d71fcb"
+}

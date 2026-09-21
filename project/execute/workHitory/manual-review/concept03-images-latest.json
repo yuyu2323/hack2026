@@ -1,0 +1,90 @@
+{
+  "concept": "03",
+  "status": "PASS",
+  "scope": "원본/복사/manifest·alt·캡션과 정적 링크 검사. 사진 직접 시각 검수 기록과 별도로 사용하며 Browser 문서 렌더를 대신하지 않는다.",
+  "html_sha256": "ab756a47babf1f66dc94b0b4bcc3e904b1aa2ff09c96ba85a26148d6f52ce672",
+  "images": [
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-mobile390-first-preview.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-mobile390-first-preview.png",
+      "sha256": "37af61bb8eb585bcfac0361a981a5a039bf9ba52a7e7d9a3070cdef2b371b6d7",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-mobile390-first-actual-result.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-mobile390-first-actual-result.png",
+      "sha256": "8a8ea3ffe823d6ca3082be4212b1aca134563cd789666fb3de8dbe9a855ef1b7",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-mobile360-child-actual-result.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-mobile360-child-actual-result.png",
+      "sha256": "f1c8c503312c310fe79e853be466befa86740ed73f02ebd73e7ac2ce56a8859f",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-desktop1440-comparison-dates-fixed.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-desktop1440-comparison-dates-fixed.png",
+      "sha256": "ac0843bdc5801746254ed06ae8b64c3899471a31083d7223dec9103954a010a0",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-desktop1440-comparison-versions-fixed.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-desktop1440-comparison-versions-fixed.png",
+      "sha256": "37bc4ce8f27b73b0d93022a13c17570b30fd8735252794fc73eaba9b0fdf2e97",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-desktop1440-operator-retry-success.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-desktop1440-operator-retry-success.png",
+      "sha256": "01a4111843d87ee850b637fb6f4178d91c624df22c2757af53c4fdbc6cf10f2d",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-desktop1440-reference-versions.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-desktop1440-reference-versions.png",
+      "sha256": "31de57dbb62fdeaee6b751de796d83a986d8065a59f4ec2224b0b3898b796f59",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-desktop1440-photo-dashboard-fixed.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-desktop1440-photo-dashboard-fixed.png",
+      "sha256": "54c9b0a67517d9013156ce6d4cf3e430fdf3b1d4e386dab1dba1f5986404d197",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-mobile390-unknown-mock.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-mobile390-unknown-mock.png",
+      "sha256": "0bb55796b9d250419e1f3979728024d305bf0b81f48834c23d30edc750d1f204",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    },
+    {
+      "source": "execute/designReview/concept-03/evidence/vp-mobile390-technical-failure.png",
+      "asset": "deliverables/manuals/concept-03/assets/vp-mobile390-technical-failure.png",
+      "sha256": "6d2222cf580defe892f28191fc8397972f95c93f1f79a3f459461a04004e67a8",
+      "copy_and_hash_equal": true,
+      "alt_equal": true,
+      "caption_equal": true
+    }
+  ],
+  "local_links": 49,
+  "broken_links": []
+}

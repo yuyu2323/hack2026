@@ -1,0 +1,76 @@
+{
+  "database": "storeloop",
+  "managed_services": [
+    {
+      "name": "ai",
+      "pid": 75927,
+      "alive": true
+    },
+    {
+      "name": "api",
+      "pid": 75938,
+      "alive": true
+    },
+    {
+      "name": "concept-01",
+      "pid": 75967,
+      "alive": true
+    },
+    {
+      "name": "concept-02",
+      "pid": 75970,
+      "alive": true
+    },
+    {
+      "name": "concept-03",
+      "pid": 75974,
+      "alive": true
+    },
+    {
+      "name": "concept-04",
+      "pid": 75979,
+      "alive": true
+    },
+    {
+      "name": "concept-05",
+      "pid": 76014,
+      "alive": true
+    },
+    {
+      "name": "worker",
+      "pid": 75966,
+      "alive": true
+    }
+  ],
+  "http": [
+    {
+      "port": 8000,
+      "status": 200
+    },
+    {
+      "port": 8010,
+      "status": 200
+    },
+    {
+      "port": 5173,
+      "status": 200
+    },
+    {
+      "port": 5174,
+      "status": 200
+    },
+    {
+      "port": 5175,
+      "status": 200
+    },
+    {
+      "port": 5176,
+      "status": 200
+    },
+    {
+      "port": 5177,
+      "status": 200
+    }
+  ],
+  "additional_model_calls": 0
+}

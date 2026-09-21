@@ -1,0 +1,71 @@
+{
+  "phase": "필터 연속 변경 및 분석 이름 표시 수정 이후. 실제 추가 브라우저 재검증 대기.",
+  "created_at": "2026-09-21T10:44:04.809655+00:00",
+  "files": [
+    {
+      "path": "web-concepts-01/src/app/App.tsx",
+      "sha256": "bbd79a939a46b4c8d361361d16aaf1d9c2201932e1bb5c6d38e5e7382b4cb814"
+    },
+    {
+      "path": "web-concepts-01/src/app/session.tsx",
+      "sha256": "87905a704b410f205fab1ddd54c1433f61d599de54af05b0d6cdffd3f71e4ecc"
+    },
+    {
+      "path": "web-concepts-01/src/main.tsx",
+      "sha256": "361727534e2148289d8567c130e61a439bc36c92ca314aa6792720ca1dce7cd6"
+    },
+    {
+      "path": "web-concepts-01/src/ofc-admin/Analytics.tsx",
+      "sha256": "9fc7db939ccaae54c173b77c5895753a3301f7212360ff6c9e988ba1525fa2eb"
+    },
+    {
+      "path": "web-concepts-01/src/ofc-admin/Dashboard.tsx",
+      "sha256": "8ca35d6feffdb7fb3c672d47dc6dd9007c5f2b4875e3fffb1d23cb6679f5a05e"
+    },
+    {
+      "path": "web-concepts-01/src/ofc-admin/Standards.tsx",
+      "sha256": "64f11bbac3b7465a3b839ae5dbb56ea2ca6341690f26da802086f38e432ade43"
+    },
+    {
+      "path": "web-concepts-01/src/platform-admin/Operations.tsx",
+      "sha256": "0854316da4bb0d19c112157901c55e0a58882a4b1b50c4b745ec22ed7b8a1dfd"
+    },
+    {
+      "path": "web-concepts-01/src/shared/business.tsx",
+      "sha256": "22c5fd712f81879c8ee5ebdaa4a2473aa4d00596e023c99d9af61b89e3dcda4b"
+    },
+    {
+      "path": "web-concepts-01/src/shared/data.ts",
+      "sha256": "61b0aaef1fcdff67b2a279227fb77201c32f9f9d73020c0bb15bee9e42dd9dd3"
+    },
+    {
+      "path": "web-concepts-01/src/shared/policy.ts",
+      "sha256": "1b8e0d73b559b15006dfcc663cb5bef9647c6359b57917a9116c711ef7f70253"
+    },
+    {
+      "path": "web-concepts-01/src/shared/ui.tsx",
+      "sha256": "fc8fde887fd03331827a2c8e6ffe911173dec0c69f1f2d1fca47390ceeb632ce"
+    },
+    {
+      "path": "web-concepts-01/src/store-owner/Submit.tsx",
+      "sha256": "0530195e86ddd50a4805590c05615559eb4457d9cba1ca91f165f3527fb10a95"
+    },
+    {
+      "path": "web-concepts-01/src/styles.css",
+      "sha256": "0c1044a461cba5cafd678bb689fadb44a9a92d1ece4ded09a0df1cbb32e8c6fe"
+    },
+    {
+      "path": "execute/designReview/concept-01/evidence/vp-mobile390-owner-home.png",
+      "sha256": "b08e6bd0ce146ad5884314c59af56123c1a2f8a3d411798039aa31d33407df64"
+    },
+    {
+      "path": "execute/designReview/concept-01/evidence/vp-desktop1440-hq-dashboard.png",
+      "sha256": "b442ce9fc079211cfcd6be50eb327a58197a598abf5ae7c48380f9250363998e"
+    },
+    {
+      "path": "execute/designReview/concept-01/evidence/vp-desktop1440-category-v1.png",
+      "sha256": "13fe9c99389aae8a865a1ee47df6408cbb6372144cf653cdf2bacb10c22b969d"
+    }
+  ],
+  "limitation": "현 시점 파일 hash 기록이며 이전 캡처의 정확한 빌드 hash를 소급 확정하지 않는다. 최종 root 실행 기록과 대조 필요."
+}

@@ -1,0 +1,528 @@
+{
+  "status": "FAIL",
+  "started_at": "2026-09-21T12:45:26.808724+00:00",
+  "concept": 1,
+  "scope": "localhost Vite 프록시 독립 HTTP 세션; CSRF/login/logout 외에는 GET만 사용; AI·Browser·업무 쓰기 없음",
+  "checks": [
+    {
+      "check": "owner.north:expected_role",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/submissions/17f959e5-831a-4ff7-842d-22575e6cfad5",
+      "status": "PASS"
+    },
+    {
+      "check": "17f959e5-831a-4ff7-842d-22575e6cfad5:owner_snapshot_and_media",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/submissions/2b0e717c-c161-4caa-8d1e-f1b7c9c88106",
+      "status": "PASS"
+    },
+    {
+      "check": "2b0e717c-c161-4caa-8d1e-f1b7c9c88106:owner_snapshot_and_media",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/b647e638-af64-52d8-b64f-14a71eb9433e",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/b647e638-af64-52d8-b64f-14a71eb9433e?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/117bb4d5-cbb7-45b6-9bee-3774d5556299",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/117bb4d5-cbb7-45b6-9bee-3774d5556299?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/02efef4c-8e5a-47cc-903d-cbcd8e2679d8",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:/api/media/02efef4c-8e5a-47cc-903d-cbcd8e2679d8?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "owner_all_real_media_baselines_pass",
+      "status": "PASS"
+    },
+    {
+      "check": "owner.north:logout",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:expected_role",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/submissions/17f959e5-831a-4ff7-842d-22575e6cfad5",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/submissions/2b0e717c-c161-4caa-8d1e-f1b7c9c88106",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/b647e638-af64-52d8-b64f-14a71eb9433e",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/b647e638-af64-52d8-b64f-14a71eb9433e?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/117bb4d5-cbb7-45b6-9bee-3774d5556299",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/117bb4d5-cbb7-45b6-9bee-3774d5556299?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/02efef4c-8e5a-47cc-903d-cbcd8e2679d8",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:/api/media/02efef4c-8e5a-47cc-903d-cbcd8e2679d8?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "operator.demo:logout",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:expected_role",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/submissions/17f959e5-831a-4ff7-842d-22575e6cfad5",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/submissions/2b0e717c-c161-4caa-8d1e-f1b7c9c88106",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8?variant=thumbnail",
+      "status": "PASS"
+    },
+    {
+      "check": "regional.south:logout",
+      "status": "PASS"
+    }
+  ],
+  "http": [
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/submissions/17f959e5-831a-4ff7-842d-22575e6cfad5",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/submissions/2b0e717c-c161-4caa-8d1e-f1b7c9c88106",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "4f64e9411cdfd00b516de703b7e628717b004c6dbec637b94655ee579ab7167d",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/b647e638-af64-52d8-b64f-14a71eb9433e",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/b647e638-af64-52d8-b64f-14a71eb9433e?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/117bb4d5-cbb7-45b6-9bee-3774d5556299",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "04973a4a52064da0da41b6cf40c1e8a5a752cc6fbeb9722ba0196d8ca3592c0d",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/117bb4d5-cbb7-45b6-9bee-3774d5556299?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/02efef4c-8e5a-47cc-903d-cbcd8e2679d8",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/png",
+      "sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa",
+      "result": "PASS"
+    },
+    {
+      "login_id": "owner.north",
+      "method": "GET",
+      "path": "/api/media/02efef4c-8e5a-47cc-903d-cbcd8e2679d8?variant=thumbnail",
+      "expected_status": 200,
+      "status": 200,
+      "content_type": "image/jpeg",
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/submissions/17f959e5-831a-4ff7-842d-22575e6cfad5",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/submissions/2b0e717c-c161-4caa-8d1e-f1b7c9c88106",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/b647e638-af64-52d8-b64f-14a71eb9433e",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/b647e638-af64-52d8-b64f-14a71eb9433e?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/117bb4d5-cbb7-45b6-9bee-3774d5556299",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/117bb4d5-cbb7-45b6-9bee-3774d5556299?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/02efef4c-8e5a-47cc-903d-cbcd8e2679d8",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "operator.demo",
+      "method": "GET",
+      "path": "/api/media/02efef4c-8e5a-47cc-903d-cbcd8e2679d8?variant=thumbnail",
+      "expected_status": 403,
+      "status": 403,
+      "error_code": "FORBIDDEN",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/submissions/3fdb0cf3-61da-4008-84c1-79e2a58cde05",
+      "expected_status": 200,
+      "status": 200,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/submissions/17f959e5-831a-4ff7-842d-22575e6cfad5",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/submissions/2b0e717c-c161-4caa-8d1e-f1b7c9c88106",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/0171b8b1-4db8-48db-9862-a8e4e1134413?variant=thumbnail",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    },
+    {
+      "login_id": "regional.south",
+      "method": "GET",
+      "path": "/api/media/d1069dbb-96de-405d-8d7d-1cfff3950ee8?variant=thumbnail",
+      "expected_status": 404,
+      "status": 404,
+      "error_code": "NOT_FOUND",
+      "business_body_absent": true,
+      "result": "PASS"
+    }
+  ],
+  "sessions": [
+    {
+      "login_id": "owner.north",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    },
+    {
+      "login_id": "operator.demo",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    },
+    {
+      "login_id": "regional.south",
+      "csrf_status": 200,
+      "login_status": 200,
+      "logout_status": 204
+    }
+  ],
+  "metadata_evidence": "execute/workHitory/integration-concept-01/independent-ai-metadata-20260921T124354Z.json",
+  "metadata_sha256": "f151e0c63502cc88c5cdbffafcaf7b45fbfc9824afad1b94a9343556b2797533",
+  "targets": {
+    "submission_ids": [
+      "17f959e5-831a-4ff7-842d-22575e6cfad5",
+      "2b0e717c-c161-4caa-8d1e-f1b7c9c88106"
+    ],
+    "media": [
+      {
+        "media_id": "0171b8b1-4db8-48db-9862-a8e4e1134413",
+        "sha256": "4f64e9411cdfd00b516de703b7e628717b004c6dbec637b94655ee579ab7167d",
+        "kind": "submission"
+      },
+      {
+        "media_id": "d1069dbb-96de-405d-8d7d-1cfff3950ee8",
+        "sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+        "kind": "reference"
+      },
+      {
+        "media_id": "b647e638-af64-52d8-b64f-14a71eb9433e",
+        "sha256": "8458f5510458ede7ef6e2173e5584a182a77dea321f3e9d83eb96e35a1954c8f",
+        "kind": "reference"
+      },
+      {
+        "media_id": "117bb4d5-cbb7-45b6-9bee-3774d5556299",
+        "sha256": "04973a4a52064da0da41b6cf40c1e8a5a752cc6fbeb9722ba0196d8ca3592c0d",
+        "kind": "submission"
+      },
+      {
+        "media_id": "02efef4c-8e5a-47cc-903d-cbcd8e2679d8",
+        "sha256": "15708f4baec41748dc579a017cd2479b044f2a45efc88ee9578b69dd744b63fa",
+        "kind": "reference"
+      }
+    ],
+    "regional_allowed_baseline": "3fdb0cf3-61da-4008-84c1-79e2a58cde05"
+  },
+  "failure_type": "UnicodeDecodeError",
+  "failure_detail": "자격값·본문 보호를 위해 예외 원문과 traceback은 기록하지 않는다.",
+  "finished_at": "2026-09-21T12:45:27.244342+00:00"
+}

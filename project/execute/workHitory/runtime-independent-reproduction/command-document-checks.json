@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "scope": "문서 해시·링크·명령 구문·종료 예시 격리 double; 현재 서비스/DB/실제 AI 실행 아님",
+  "checks": [
+    {
+      "name": "docs/00-vision.md",
+      "status": "UNCHANGED",
+      "sha256": "5af95148ae9a8c7076e28533de62e2b3bf7a733a2de2337bd17cb96c051446d9"
+    },
+    {
+      "name": "docs/01-architecture.md",
+      "status": "UNCHANGED",
+      "sha256": "88529f2558a9aae516dea5ab6f846ffc4ee14b5da57ce6fd5a9e8ce2a07202a5"
+    },
+    {
+      "name": "docs/02-development-orchestration.md",
+      "status": "UNCHANGED",
+      "sha256": "5031ce7df323a57ac71093341da5cd6d5e465e1160705c99a99edbe2b31e2ce9"
+    },
+    {
+      "name": "docs09_sections2to6",
+      "status": "UNCHANGED",
+      "sha256": "cffa2418d4574816d4132ed62efeeacab1eba6f9b23bc9c303c1260d1668ab97"
+    },
+    {
+      "name": "relative_links_and_anchors",
+      "status": "PASS",
+      "count": 39
+    },
+    {
+      "name": "shell_syntax_only",
+      "status": "PASS",
+      "blocks": 9
+    },
+    {
+      "name": "stop_example_already_exited",
+      "status": "PASS",
+      "db_stop_requested": true,
+      "scope": "isolated doubles only"
+    },
+    {
+      "name": "stop_example_wait_then_exit",
+      "status": "PASS",
+      "db_stop_requested": true,
+      "scope": "isolated doubles only"
+    },
+    {
+      "name": "stop_example_timeout",
+      "status": "PASS",
+      "db_stop_requested": false,
+      "scope": "isolated doubles only"
+    }
+  ],
+  "document_sha256": {
+    "README.md": "6e8ef437f1f7bd4b35e15b4a23fede2924c375a697d77bd67cf6c90f110bb707",
+    "docs/09-validation.md": "e7fbb0a1c2f65f563f7242c06e314a5ff6b4e056892ef2b3e415b6b5edc9bb69",
+    "docs/10-execution.md": "5d5589cc5eedb92e34f532e93451dec56e0ce002aa3620b37e78d406f4d921d2"
+  }
+}

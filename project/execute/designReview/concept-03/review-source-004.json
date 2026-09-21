@@ -1,0 +1,33 @@
+{
+  "scope": "D03-V01 수정 소스 및 새 본사 첫 viewport 확인. DS03-01 PASS, 전체 검수 진행 중.",
+  "checked_at": "2026-09-21T10:39:38.105077+00:00",
+  "files": [
+    {
+      "path": "web-concepts-03/src/ofc-admin/pages.tsx",
+      "sha256": "b84659879754af42b7cfc81d65e27e2fd9e555e93e58bf2f4bdc0e11db329f84"
+    },
+    {
+      "path": "web-concepts-03/src/app/style.css",
+      "sha256": "c729424652f0ed435a7c6a1220e4ef1105e4e22ab5c913a658007c0edd3d5f25"
+    },
+    {
+      "path": "web-concepts-03/tests/dashboard-display.test.ts",
+      "sha256": "fef5a70a171c00d973e9bd43749e703d9f72596fa5f41219ac2ede33a6d0b932"
+    },
+    {
+      "path": "web-concepts-03/tests/recovery.test.ts",
+      "sha256": "5b5c662ab64def6c7aaef3c9f77fb889ab172a7eb415606fbf6c7b2fa01a07e6"
+    },
+    {
+      "path": "execute/workHitory/frontend-integration-dashboard/concept-03.md",
+      "sha256": "746d451ac66cc6633de8290532b6eba8b6327dca8ae700439f8056c96ce6ec95"
+    }
+  ],
+  "evidence": {
+    "path": "execute/designReview/concept-03/evidence/vp-desktop1440-photo-dashboard-fixed.png",
+    "sha256": "54c9b0a67517d9013156ce6d4cf3e430fdf3b1d4e386dab1dba1f5986404d197",
+    "pixel_width": 1425,
+    "pixel_height": 891,
+    "visual_result": "D03-V01 / DS03-01 PASS; 전체 검수 진행 중"
+  }
+}

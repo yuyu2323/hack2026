@@ -1,0 +1,66 @@
+{
+  "status": "REVIEW_COMPLETE",
+  "audited_at": "2026-09-21T12:40:58.045245+00:00",
+  "source_files": [
+    {
+      "path": "execute/checkList/integration-concept-01/browser.md",
+      "sha256": "6d3e195e9789f28a978bfa0913714177aafed2edcc0679d4d50b89e5ef2361e7"
+    },
+    {
+      "path": "execute/workHitory/integration-concept-01/browser.md",
+      "sha256": "a28b08ad96a9a2f878f367b2cf253f054c258a034c1f70d31ea9af92aae4502e"
+    },
+    {
+      "path": "execute/checkList/integration-concept-02/browser.md",
+      "sha256": "5166fe1b98dfe2a1188898d749e3a917ab5e11cf72d95f407e3ce714312c79c6"
+    },
+    {
+      "path": "execute/workHitory/integration-concept-02/browser.md",
+      "sha256": "8987ae98db12cef84692aedc9be20b3fa47a312f554abfda782289c4bbf45b0a"
+    },
+    {
+      "path": "execute/checkList/integration-concept-03/browser.md",
+      "sha256": "5cfcc66086c0ba922947bfc97cace67a74571dab7c0ff08bada79cd31860c502"
+    },
+    {
+      "path": "execute/workHitory/integration-concept-03/browser.md",
+      "sha256": "6a127734548e423ceacd676fad6a99fd693581b14c7ff635fdabe1bdccbff69e"
+    },
+    {
+      "path": "docs/09-validation.md",
+      "sha256": "e7fbb0a1c2f65f563f7242c06e314a5ff6b4e056892ef2b3e415b6b5edc9bb69"
+    },
+    {
+      "path": "execute/workHitory/integration-concept-03/operator-live-http.json",
+      "sha256": "d4a2c2f22041cd64a0f66008d15a4c73d55a8bdb0d3296e3a141d68d29f4005f"
+    },
+    {
+      "path": "execute/workHitory/manuals-browser/render.md",
+      "sha256": "41e75fbf919e2a12c69a283252e0e79b190eccb0436f7a28f241370b8a9b8b55"
+    }
+  ],
+  "not_modified": [
+    "execute/checkList/integration-concept-01/browser.md",
+    "execute/checkList/integration-concept-02/browser.md",
+    "execute/checkList/integration-concept-03/browser.md"
+  ],
+  "completion_ahead_of_checklist": {
+    "01": [
+      "E01",
+      "E03"
+    ],
+    "02": [
+      "E02",
+      "E03"
+    ],
+    "03": [
+      "E04"
+    ]
+  },
+  "limitations": [
+    "02의4기준입력수는4단계UI등록근거가아님",
+    "E06/E07/E08부분완료를전체PASS로승격하지않음",
+    "200%사용자후행NOT_RUN",
+    "독립디자인정상PNG보완은기능재실행과구분"
+  ]
+}

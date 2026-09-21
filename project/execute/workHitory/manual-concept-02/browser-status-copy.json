@@ -1,0 +1,23 @@
+{
+  "status": "REVIEW",
+  "before_sha256": "50421f5b5e5fab2f074af7f0537d36354998c325ffba86684fa2533d7ddfa9b3",
+  "html_sha256": "041fd4389a260967d4d6a30f3432e98005e012bb4e951688ab7b63ab4095db9d",
+  "css_and_figures_unchanged": true,
+  "images_unchanged": 7,
+  "local_paths_checked": 22,
+  "errors": [],
+  "authority": "execute/workHitory/manuals-browser/independent-recheck.md",
+  "confirmed": [
+    "1440x900",
+    "390x844",
+    "7개 로컬 이미지",
+    "표 초점·식별자",
+    "본문 건너뛰기"
+  ],
+  "not_run": [
+    "200% 사용자 후속",
+    "OS 네트워크 차단 오프라인",
+    "인쇄"
+  ],
+  "product_acceptance": "진행 중"
+}

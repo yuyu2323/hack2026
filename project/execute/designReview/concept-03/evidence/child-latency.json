@@ -1,0 +1,12 @@
+{
+  "submission_id": "dfc9189b-e833-4500-bc37-c0f4976f0625",
+  "started_at": "2026-09-21T10:48:43.955Z",
+  "browser_first_observed_ms": 70687,
+  "last_pending_observed_ms": 66443,
+  "observation_window_ms": 4244,
+  "target_30s": false,
+  "viewport": {
+    "width": 360,
+    "height": 800
+  }
+}

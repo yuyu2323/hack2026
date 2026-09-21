@@ -1,0 +1,500 @@
+{
+  "status": "FAIL",
+  "started_at": "2026-09-21T12:59:32.582702+00:00",
+  "checks": [
+    {
+      "check": "baseline_three_real_ai_records",
+      "status": "PASS"
+    },
+    {
+      "check": "database_read_only",
+      "status": "PASS"
+    },
+    {
+      "check": "three_requested_upper_rules_active",
+      "status": "PASS"
+    },
+    {
+      "check": "current_four_levels_present_once",
+      "status": "PASS"
+    },
+    {
+      "check": "current_category_v2_is_only_winner",
+      "status": "PASS"
+    },
+    {
+      "check": "8259ce47-90ce-4a85-8496-8ed27edeb375:snapshot_unchanged_from_baseline",
+      "status": "PASS"
+    },
+    {
+      "check": "8259ce47-90ce-4a85-8496-8ed27edeb375:result_unchanged_from_baseline",
+      "status": "PASS"
+    },
+    {
+      "check": "8259ce47-90ce-4a85-8496-8ed27edeb375:upper_rules_created_after_real_ai",
+      "status": "PASS"
+    },
+    {
+      "check": "8259ce47-90ce-4a85-8496-8ed27edeb375:new_upper_rules_absent_from_old_snapshot",
+      "status": "PASS"
+    },
+    {
+      "check": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9:snapshot_unchanged_from_baseline",
+      "status": "PASS"
+    },
+    {
+      "check": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9:result_unchanged_from_baseline",
+      "status": "PASS"
+    },
+    {
+      "check": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9:upper_rules_created_after_real_ai",
+      "status": "PASS"
+    },
+    {
+      "check": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9:new_upper_rules_absent_from_old_snapshot",
+      "status": "PASS"
+    },
+    {
+      "check": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703:snapshot_unchanged_from_baseline",
+      "status": "PASS"
+    },
+    {
+      "check": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703:result_unchanged_from_baseline",
+      "status": "PASS"
+    },
+    {
+      "check": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703:upper_rules_created_after_real_ai",
+      "status": "PASS"
+    },
+    {
+      "check": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703:new_upper_rules_absent_from_old_snapshot",
+      "status": "PASS"
+    },
+    {
+      "check": "account_active_owner_null_region_unmapped",
+      "status": "PASS"
+    },
+    {
+      "check": "account_audit_latest_matches_version_and_current_state",
+      "status": "PASS"
+    },
+    {
+      "check": "ofc_claim_once_then_owner_restore_ends_mapping",
+      "status": "PASS"
+    },
+    {
+      "check": "all_account_mapping_ends_have_audit",
+      "status": "PASS"
+    },
+    {
+      "check": "account_and_claim_audit_reason_request",
+      "status": "PASS"
+    },
+    {
+      "check": "category_v2_renamed_inactive",
+      "status": "FAIL"
+    },
+    {
+      "check": "category_create_v1_update_v2_audit",
+      "status": "PASS"
+    },
+    {
+      "check": "no_pending_orm_writes",
+      "status": "PASS"
+    }
+  ],
+  "scope": "현재 시점 READ ONLY resolve 및 기존 기록 비교; DB/API/AI/Browser 변경 없음",
+  "baseline": {
+    "path": "execute/workHitory/integration-concept-02/independent-ai-metadata-20260921T124410Z.json",
+    "sha256": "0d3dc02fd70ff4b9895b45e42a33b505eff0c3a788f7594f58d8d1daa1a6100f"
+  },
+  "current_resolution": {
+    "ephemeral_only": true,
+    "store_id": "e4ef147d-b64e-5b66-b686-d2314f2a225a",
+    "category_id": "d1b2e38e-cfc2-564b-a183-45b23eb82eaa",
+    "created_at": "2026-09-21T12:59:32.615329+00:00",
+    "persisted": false,
+    "candidates": [
+      {
+        "guideline_id": "871e8d30-b380-4050-b81a-1594f4c1eac1",
+        "version_id": "bf0785aa-b531-4cc1-9ef4-516cf972bda7",
+        "version": 2,
+        "level": "CATEGORY",
+        "rule_key": "qa02_labels",
+        "selected": true,
+        "selection_reason": "가장 구체적인 적용 기준"
+      },
+      {
+        "guideline_id": "2d4ea8b1-116c-430e-8e06-e80ba477484b",
+        "version_id": "f3f244e7-79cf-408b-b22a-020f7c6a5845",
+        "version": 1,
+        "level": "HQ",
+        "rule_key": "qa02_labels",
+        "selected": false,
+        "selection_reason": "상위 우선순위의 같은 rule_key 기준 적용"
+      },
+      {
+        "guideline_id": "2089bf7c-3836-441c-9d00-7a32eb6a0436",
+        "version_id": "89240794-5f0b-4b32-94a0-479a931e3fac",
+        "version": 1,
+        "level": "REGION",
+        "rule_key": "qa02_labels",
+        "selected": false,
+        "selection_reason": "상위 우선순위의 같은 rule_key 기준 적용"
+      },
+      {
+        "guideline_id": "d422d014-58d6-4d90-ae76-d4502709dad7",
+        "version_id": "281e4d18-2434-4883-a713-214924731ac8",
+        "version": 1,
+        "level": "STORE",
+        "rule_key": "qa02_labels",
+        "selected": false,
+        "selection_reason": "상위 우선순위의 같은 rule_key 기준 적용"
+      }
+    ],
+    "effective": [
+      {
+        "guideline_id": "871e8d30-b380-4050-b81a-1594f4c1eac1",
+        "version_id": "bf0785aa-b531-4cc1-9ef4-516cf972bda7",
+        "version": 2,
+        "level": "CATEGORY",
+        "rule_key": "qa02_labels"
+      }
+    ],
+    "upper_created_at": {
+      "HQ": "2026-09-21T21:57:10.178864+09:00",
+      "REGION": "2026-09-21T21:57:25.188436+09:00",
+      "STORE": "2026-09-21T21:57:35.994028+09:00"
+    }
+  },
+  "past_records": [
+    {
+      "submission_id": "8259ce47-90ce-4a85-8496-8ed27edeb375",
+      "submitted_at": "2026-09-21T18:24:51.531080+09:00",
+      "review_created_at": "2026-09-21T18:29:47.468061+09:00",
+      "snapshot_sha256": "23c2609844cb17fb887fb9d07917cf88ec08b76bae7a63824c5c4dfda029e65c",
+      "result_sha256": "a18d48e3d7c3320cadc2cb5c8ac2a613780ca59fb0c552b19f3e1dcbe38625b7",
+      "qa02_saved_candidates": [],
+      "unchanged": true
+    },
+    {
+      "submission_id": "bca082c1-56fe-4bd4-9c0f-9b7ce1ed0ee9",
+      "submitted_at": "2026-09-21T18:30:59.969461+09:00",
+      "review_created_at": "2026-09-21T18:31:47.031492+09:00",
+      "snapshot_sha256": "e61cc99e9ef4915c3d13d4d9027f326ea51ff65bf00b3939cba3db4893d6fbb5",
+      "result_sha256": "ebe161afa146d16e9b287e4190f33aa82e073f42f9d93b037f827d06ff6a4f4b",
+      "qa02_saved_candidates": [],
+      "unchanged": true
+    },
+    {
+      "submission_id": "e9fd4f27-0d3e-42a1-9e58-9c255f49d703",
+      "submitted_at": "2026-09-21T19:05:51.800925+09:00",
+      "review_created_at": "2026-09-21T19:07:25.968778+09:00",
+      "snapshot_sha256": "479c9c85ae8a6ced1267ed9a9d2b8ea2c5a718d099eda70f02fd150a487a6b1b",
+      "result_sha256": "3d058bc073878de2d0816de93e12d4a13c0605bfa4adb29c8f19bf6dcbf92c89",
+      "qa02_saved_candidates": [
+        {
+          "guideline_id": "871e8d30-b380-4050-b81a-1594f4c1eac1",
+          "level": "CATEGORY",
+          "version": 2,
+          "selected": true
+        }
+      ],
+      "unchanged": true
+    }
+  ],
+  "account": {
+    "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+    "version": 7,
+    "role": "store_owner",
+    "is_active": true,
+    "region_id": null,
+    "active_owner_mapping_count": 0,
+    "active_ofc_mapping_count": 0,
+    "mapping_history": [
+      {
+        "kind": "owner",
+        "id": "fe69086f-fc57-4b58-9044-3bede668eac7",
+        "store_id": "e4ef147d-b64e-5b66-b686-d2314f2a225a",
+        "created_at": "2026-09-21T18:54:18.672380+09:00",
+        "ended_at": "2026-09-21T19:00:45.148282+09:00"
+      },
+      {
+        "kind": "ofc",
+        "id": "731e73ed-dcec-47fb-9c06-c4e384826fb5",
+        "store_id": "f5fac988-e4d2-52e7-96a4-1635781bb6da",
+        "created_at": "2026-09-21T21:56:11.039401+09:00",
+        "ended_at": "2026-09-21T21:56:22.017292+09:00"
+      }
+    ],
+    "audits": [
+      {
+        "id": "e4d6e9c3-7b53-4e9c-8ada-1d6149ade3e7",
+        "action": "accounts.create",
+        "target_id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T18:53:53.716482+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {},
+        "after": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 1,
+          "is_active": true,
+          "region_id": null,
+          "store_ids": []
+        }
+      },
+      {
+        "id": "9734a82e-63cc-469a-9179-2fccb4326d29",
+        "action": "accounts.mappings",
+        "target_id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T18:54:18.673367+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 1,
+          "is_active": true,
+          "region_id": null,
+          "store_ids": []
+        },
+        "after": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 2,
+          "is_active": true,
+          "region_id": null,
+          "store_ids": [
+            "e4ef147d-b64e-5b66-b686-d2314f2a225a"
+          ],
+          "ended_mapping_ids": []
+        }
+      },
+      {
+        "id": "5d1c00ba-297a-4192-8a02-aa68670d70b1",
+        "action": "accounts.update",
+        "target_id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T18:56:51.820751+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 2,
+          "is_active": true,
+          "region_id": null,
+          "store_ids": [
+            "e4ef147d-b64e-5b66-b686-d2314f2a225a"
+          ]
+        },
+        "after": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 3,
+          "is_active": false,
+          "region_id": null,
+          "store_ids": [
+            "e4ef147d-b64e-5b66-b686-d2314f2a225a"
+          ],
+          "ended_mapping_ids": []
+        }
+      },
+      {
+        "id": "ad1ef6ad-19ba-4c27-819c-daaab4ca2191",
+        "action": "accounts.update",
+        "target_id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T18:58:00.829506+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 3,
+          "is_active": false,
+          "region_id": null,
+          "store_ids": [
+            "e4ef147d-b64e-5b66-b686-d2314f2a225a"
+          ]
+        },
+        "after": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 4,
+          "is_active": true,
+          "region_id": null,
+          "store_ids": [
+            "e4ef147d-b64e-5b66-b686-d2314f2a225a"
+          ],
+          "ended_mapping_ids": []
+        }
+      },
+      {
+        "id": "cf62db3b-e552-4d23-bdf9-246ef4e9b223",
+        "action": "accounts.mappings",
+        "target_id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T19:00:45.151165+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 4,
+          "is_active": true,
+          "region_id": null,
+          "store_ids": [
+            "e4ef147d-b64e-5b66-b686-d2314f2a225a"
+          ]
+        },
+        "after": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 5,
+          "is_active": true,
+          "region_id": null,
+          "store_ids": [],
+          "ended_mapping_ids": [
+            "fe69086f-fc57-4b58-9044-3bede668eac7"
+          ]
+        }
+      },
+      {
+        "id": "4c3c182e-64de-42a5-a29f-83b92fe68776",
+        "action": "accounts.update",
+        "target_id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T21:55:52.679415+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 5,
+          "is_active": true,
+          "region_id": null,
+          "store_ids": []
+        },
+        "after": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "ofc",
+          "version": 6,
+          "is_active": true,
+          "region_id": "2ab890c7-c074-55a1-82c5-6434f747f237",
+          "store_ids": [],
+          "ended_mapping_ids": []
+        }
+      },
+      {
+        "id": "9e2ad5b8-06fe-4600-b4d5-0a298cb57f8c",
+        "action": "accounts.update",
+        "target_id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T21:56:22.018662+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "ofc",
+          "version": 6,
+          "is_active": true,
+          "region_id": "2ab890c7-c074-55a1-82c5-6434f747f237",
+          "store_ids": [
+            "f5fac988-e4d2-52e7-96a4-1635781bb6da"
+          ]
+        },
+        "after": {
+          "id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+          "role": "store_owner",
+          "version": 7,
+          "is_active": true,
+          "region_id": null,
+          "store_ids": [],
+          "ended_mapping_ids": [
+            "731e73ed-dcec-47fb-9c06-c4e384826fb5"
+          ]
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "bff5c09d-1bd3-443d-9a4a-f281f78a34ec",
+        "action": "stores.claim",
+        "target_id": "f5fac988-e4d2-52e7-96a4-1635781bb6da",
+        "actor_id": "22b4defd-15bf-478c-a23e-613fcf4134eb",
+        "created_at": "2026-09-21T21:56:11.038720+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "ofc_id": null
+        },
+        "after": {
+          "ofc_id": "22b4defd-15bf-478c-a23e-613fcf4134eb"
+        }
+      }
+    ]
+  },
+  "category": {
+    "id": "4f49fc31-ad68-4f63-8bec-0dc9cac0c69d",
+    "code": "qa02_test_category",
+    "version": 2,
+    "is_active": false,
+    "expected_name_matches": false,
+    "audits": [
+      {
+        "id": "5e8d2c17-0fea-44f7-8ae8-7af00b509ffa",
+        "action": "categories.create",
+        "target_id": "4f49fc31-ad68-4f63-8bec-0dc9cac0c69d",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T21:57:00.385767+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {},
+        "after": {
+          "id": "4f49fc31-ad68-4f63-8bec-0dc9cac0c69d",
+          "code": "qa02_test_category",
+          "version": 1,
+          "is_active": true
+        }
+      },
+      {
+        "id": "db9eddc3-33ee-4762-b848-5af8a3bc4c53",
+        "action": "categories.update",
+        "target_id": "4f49fc31-ad68-4f63-8bec-0dc9cac0c69d",
+        "actor_id": "0077c897-9bbe-5727-ab1e-f4e80e5f8682",
+        "created_at": "2026-09-21T21:57:16.819124+09:00",
+        "outcome": "succeeded",
+        "reason_present": true,
+        "request_id_present": true,
+        "before": {
+          "id": "4f49fc31-ad68-4f63-8bec-0dc9cac0c69d",
+          "code": "qa02_test_category",
+          "version": 1,
+          "is_active": true
+        },
+        "after": {
+          "id": "4f49fc31-ad68-4f63-8bec-0dc9cac0c69d",
+          "code": "qa02_test_category",
+          "version": 2,
+          "is_active": false,
+          "ended_mapping_ids": []
+        }
+      }
+    ]
+  },
+  "finished_at": "2026-09-21T12:59:32.625401+00:00"
+}

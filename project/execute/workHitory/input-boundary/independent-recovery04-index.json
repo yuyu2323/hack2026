@@ -1,0 +1,35 @@
+{
+  "status": "REVIEW_COMPLETE_PASS",
+  "reviewer": "contract_ai",
+  "reviewed_at": "2026-09-21T13:27:08.790536+00:00",
+  "scope": "새 ReferenceRevisionForm의 초안 보존/정확 저장대상/권한오류 소스 검토. Browser·DB·모델·제품수정 없음",
+  "checks": [
+    {
+      "command": "npm run test --workspace @storeloop/concept-04 -- tests/reference-conflict.test.tsx",
+      "tests_passed": 2,
+      "exit_code": 0
+    }
+  ],
+  "files": [
+    {
+      "file": "web-concepts-04/src/ofc-admin/Standards.tsx",
+      "sha256": "301b666a59314b3c7248ff14aebbfc800d43bc6ac71770b5a50c930d05fa0315"
+    },
+    {
+      "file": "web-concepts-04/src/shared/data.tsx",
+      "sha256": "7fa5b6a09cb726986a61f93d6f1fe9ddb62c358c233e6b91936b6a8bd428bbe6"
+    },
+    {
+      "file": "web-concepts-04/src/shared/ui.tsx",
+      "sha256": "b742bede192ed71728d8dca6e4f43af06867ed5d4f4e4e63df83bb1b3cc1e9fe"
+    },
+    {
+      "file": "web-concepts-04/tests/reference-conflict.test.tsx",
+      "sha256": "e03c0c9aa4dddaf1c78e1e5a7836a6ca1cf4f9472c8489d967973d5cde4a8d93"
+    },
+    {
+      "file": "execute/workHitory/frontend-concept-04/reference-conflict.md",
+      "sha256": "087dbd7b2ee65e7e9b5bb9237069f5660284f029856577d4c7e713614e7551e4"
+    }
+  ]
+}

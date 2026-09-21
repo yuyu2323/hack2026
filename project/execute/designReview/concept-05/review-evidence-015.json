@@ -1,0 +1,35 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1280-unmapped-empty.png",
+      "sha256": "2b008f6b228ad788d013a43fe42721c2207f33e1738daf3448d67665f442f4da",
+      "decoded_size": [
+        1265,
+        712
+      ],
+      "format": "JPEG",
+      "observation": "연결 범위의 이력이0건이며 선택 기간 사진 없음/미제출을 미준수로 계산하지 않음을 안내한다. 이전/다음은 비활성이다. 현재 화면은 미연결 전용안내가 아니라 빈 이력 표현임을 구별한다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1280-role-denied.png",
+      "sha256": "d73df02b543ab2e108e52d85c87d73d44cd7aed4ecf90a74ab1b20fc06cf0cb8",
+      "decoded_size": [
+        1280,
+        720
+      ],
+      "format": "JPEG",
+      "observation": "역할 변경 후 허용되지 않는 화면은 영업본문 없이 접근 불가/시작화면 이동만 표시한다.1280×720 증거다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1280-ofc-claim.png",
+      "sha256": "4a2b209f47c543d7989f3170ecc16bd264bd36aa80d0b26b8fbd04164896e5e7",
+      "decoded_size": [
+        1265,
+        712
+      ],
+      "format": "JPEG",
+      "observation": "같은 지역 미배정 매장 등록 사유·담당으로 등록 성공·등록할 후보 없음과 새봄로점 담당1행이 함께 보인다. 표시명 QA05 권한 검증 점주는 계정 이름이며 실제 역할을 이름만으로 단정하지 않는다."
+    }
+  ]
+}

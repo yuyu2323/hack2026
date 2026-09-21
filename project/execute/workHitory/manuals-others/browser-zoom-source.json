@@ -1,0 +1,33 @@
+{
+  "scope": "설치된 앱 번들 읽기 전용 소스 검토, 실행/IPC/GUI 조작 없음",
+  "bundle_id": "com.openai.codex",
+  "app_version": "26.915.31945",
+  "build": "9922",
+  "archive_path": "/Applications/ChatGPT.app/Contents/Resources/app.asar",
+  "files": [
+    {
+      "archive_member": ".vite/build/main-DUHZj4_w.js",
+      "bytes": 3895399,
+      "sha256": "9e8a3bd79c817064f28693ca26aa1378895e07ab2108c78c42d0ea20dac9d66e",
+      "confirmed_identifiers": {
+        "CmdOrCtrl+Plus": 1,
+        "runFocusedVisiblePageCommand": 2,
+        "step-window-zoom": 1,
+        "setZoomFactor": 1
+      }
+    },
+    {
+      "archive_member": "webview/assets/tab-content-06f66038d12c.js",
+      "bytes": 272020,
+      "sha256": "862fa65d4b5a0bae2bcb4c139f10a352df4856ac3e36ccef7eae68d75fc1482d",
+      "confirmed_identifiers": {
+        "thread.browser.options": 3,
+        "thread.browser.zoom": 4,
+        "thread.browser.zoomPercent": 2,
+        "browserSidebar.zoomBanner.zoomIn": 2,
+        "browser-sidebar-zoom-banner": 1
+      }
+    }
+  ],
+  "runtime_result": "NOT_RUN — root 실제 UI 수행 대상"
+}

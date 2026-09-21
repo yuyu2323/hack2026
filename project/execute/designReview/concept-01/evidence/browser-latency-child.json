@@ -1,0 +1,9 @@
+{
+  "submission_id": "2b0e717c-c161-4caa-8d1e-f1b7c9c88106",
+  "submit_to_observed_visible_ms": 69336,
+  "method": "제출 click부터 완료 텍스트 최초 확인까지; 50.5초 이후 다른 검사 중 관찰 간격이 있어 상한으로 보고",
+  "viewport": {
+    "width": 360,
+    "height": 800
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "phase": "S-O05 날짜·적용 기준 버전 보완 독립 소스 확인 이후. 실제 새 캡처/최종 시각 판정 대기.",
+  "created_at": "2026-09-21T10:58:29.658060+00:00",
+  "files": [
+    {
+      "path": "web-concepts-02/src/app/main.tsx",
+      "sha256": "88e5ff5ef0295f38c0d8804f31b71ea3360160b03be64a12768e8d162e683957"
+    },
+    {
+      "path": "web-concepts-02/src/app/style.css",
+      "sha256": "1d57b1965da4123d7bb423d340e0f75e7db40284069f8d3b53b1df24299b6fd1"
+    },
+    {
+      "path": "web-concepts-02/src/ofc-admin/Analytics.tsx",
+      "sha256": "77f5d4471e507da41d5f45ad0175672a6b23a276614fef87ec0a1d078e07753c"
+    },
+    {
+      "path": "web-concepts-02/src/ofc-admin/Business.tsx",
+      "sha256": "b5f3784ac7aac1b497a2054f2253635ca21fd46bdb6fa8e52440fce98d74fe81"
+    },
+    {
+      "path": "web-concepts-02/src/ofc-admin/Standards.tsx",
+      "sha256": "00e859012271f4b96fb458a646b19760f1f3e1b9bdcca263fa249c3a40714837"
+    },
+    {
+      "path": "web-concepts-02/src/platform-admin/Operations.tsx",
+      "sha256": "fae49e3b78e9ae9894ff73b731a2e99ec1883f489e14952289a49af97554f4d2"
+    },
+    {
+      "path": "web-concepts-02/src/shared/JobStatus.tsx",
+      "sha256": "d40fac549ab22bdd7e7cb6a5e68d33193d2da843ebbe3dd6e501f3d2b41eaeaa"
+    },
+    {
+      "path": "web-concepts-02/src/shared/core.tsx",
+      "sha256": "d8af807a19a0624e1d28d76cec4fb39a1bb01450535ddb0c2ce7d0a97abca851"
+    },
+    {
+      "path": "web-concepts-02/src/shared/issues.tsx",
+      "sha256": "30e655e0dc53ff4a705ce7302f56c166204f675a8e6df4e7d0b9df34d0427a88"
+    },
+    {
+      "path": "web-concepts-02/src/shared/photos.tsx",
+      "sha256": "6139a15da0350b4624f46e1d7f84e5bac2908af85d8c15a93753605abba9d541"
+    },
+    {
+      "path": "web-concepts-02/src/store-owner/Owner.tsx",
+      "sha256": "acfcdf981e383f9a9bc31c28b826007aff9b0902cfa9bd0208efc4a40c4df8c0"
+    }
+  ]
+}

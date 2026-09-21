@@ -1,0 +1,75 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-retry-before.png",
+      "sha256": "4c79c4d62d05bc51391e5ec6b8f2e3860e6b8a258a8e9995d8ad23d08c1fae23",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "Mock 장애사례의 실패/AI_UNAVAILABLE와 첫시도 실패·미반영 보존. 영업본문 없음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-retry-running.png",
+      "sha256": "089faec79547fa8fc4b0abb8cd752095ae62ec92dc2b19842ecaa223bbc9330d",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "파일명 running과 달리 실제 화면은 대기 중(queued). 첫실패 보존+둘째대기/미시작/미반영이며 현재작업 이전 시작/종료시각은—로 초기화."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-retry-success.png",
+      "sha256": "197a45955b52372ce8a19806e2567697e90e8b319cf1717b50f543570442b5a7",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "작업 분석 완료·새 시작/종료 시각과 첫실패 보존. 두번째 성공시도 결과반영은화면아래여서이이미지로는확인하지않음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-audit-expanded.png",
+      "sha256": "37424f40d917d7ef31096651f48e66d5dd66a1e32ba40ee4815f4d60850645c3",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "펼친 감사에 actor·대상·시각·사유·성공·역할OFC→점주/version6→7 및 전후요약 표시. 본문사진/평가/비밀 없음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-desktop1440-announcements.png",
+      "sha256": "ef648bb87cec83c439d71a5358bfc0a04df741e4b688c00efa81b95fe5a77c76",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "QA04 공지 제목/본문·연도KST게시시각·종료없음·활성·수정 진입이 읽힘."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-role-changed.png",
+      "sha256": "a94c9496918b434500d53b71ada8d618fcc111c35c27e4e37720acdd9d21eb0c",
+      "decoded_size": [
+        390,
+        844
+      ],
+      "format": "JPEG",
+      "observation": "현재 역할에서 허용되지 않는 이전 화면의 내용 대신 접근불가·시작화면 이동만 제공."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-ofc-claim.png",
+      "sha256": "47ff09e92f825abf3c542d46d42a2bab9c3ff2d56317755b8e324b51da3edd5f",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "observation": "QA합성계정의OFC역할·푸른언덕점담당표시 및 같은지역미배정후보설명. 후보등록실제동작은root기록대조대기."
+    }
+  ]
+}

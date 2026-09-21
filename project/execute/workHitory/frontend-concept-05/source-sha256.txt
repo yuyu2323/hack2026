@@ -1,0 +1,11 @@
+8c0d0e49eaa050a29a6d0639652b3cad54009141658b7aba226d286f1f2d0481  web-concepts-05/src/app/App.tsx
+05d6ee4eee17261ade658dd4c205bd275306db418eb3816a01fa41602f8c59e7  web-concepts-05/src/main.tsx
+d48fbaf26e2ac9aa5d5888f8fb3771b8fe8273b0cdab0ffa4eab46f5b5191538  web-concepts-05/src/ofc-admin/Business.tsx
+81f5c8c56b26fa0810aa07bde4778d7445a9791075f41e31ea31ef1f8d0b71ff  web-concepts-05/src/platform-admin/Platform.tsx
+a6f4bdf67a0e076365b49e6fd9c536b28637a0b37c78ab7711fbb3b2defac9d6  web-concepts-05/src/shared/business.tsx
+893e813ec07afbd449eee389cbb7c4357fae507a7a324fb9e59b7ecd6219532f  web-concepts-05/src/shared/policy.ts
+553f9bdd51f562c4d97cd59057efdcf8e28e55ff5abf06cfa2a8f8b8222d3111  web-concepts-05/src/shared/ui.tsx
+e8478fa6236cde1d47751fe8b076502e7d67084b00fa23e0745b6bebba09f4de  web-concepts-05/src/store-owner/Owner.tsx
+4ce695f5d6c3bf93f2bbce7e9d0d9de0f4ca64670af28e28ca96eaf266ca6062  web-concepts-05/src/styles.css
+55f2dbaa6a4dff738936fcd66792aa9cc3b8e5b5bffd45ef9f13be408ac7ac41  web-concepts-05/tests/policy.test.ts
+a17a8d3f9a619c0bb89c4c5398dce9c9238f4f95610f4302411588a0d3c161db  web-concepts-05/tests/ui.test.ts

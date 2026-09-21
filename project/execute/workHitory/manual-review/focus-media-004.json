@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "scope": "MR-004 수정 소스 및 MEDIA-CLARIFY-2 문구 독립 확인; Browser 렌더 미실행",
+  "header_contrast": 8.224,
+  "body_on_white_contrast": 5.366,
+  "files": [
+    {
+      "concept": "01",
+      "sha256": "71c95f5a781f45a0532d25bcf37cc54f68f94225817bd0c706d1edb3d0a53db8",
+      "header_override": true,
+      "body_focus_retained": true,
+      "reference_scope_text": true
+    },
+    {
+      "concept": "03",
+      "sha256": "98fe6f9a6669dc2c7c059f4121853024e34c44112bfad511873d884654585784",
+      "header_override": true,
+      "body_focus_retained": true,
+      "reference_scope_text": true
+    },
+    {
+      "concept": "04",
+      "sha256": "d88f778c997fbc2177b313ac0ed9b3fc848c696013e70145bba5a0a4740b17ff",
+      "header_override": true,
+      "body_focus_retained": true,
+      "reference_scope_text": true
+    },
+    {
+      "concept": "05",
+      "sha256": "52db8d70f6b1a1af4a43207d2ba0af5ef8777af3f833ef799c74fea71b8a73d6",
+      "header_override": true,
+      "body_focus_retained": true,
+      "reference_scope_text": true
+    }
+  ]
+}

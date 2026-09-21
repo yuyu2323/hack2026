@@ -1,0 +1,45 @@
+{
+  "status": "COMPLETE_WITH_USER_APPROVED_DEFERRED_VALIDATION",
+  "user_decision": "남은 검수는 후행으로 넘기고 목표 마무리",
+  "manual_html_files": 6,
+  "concepts": 5,
+  "manual_screenshots": 47,
+  "managed_services": [
+    {
+      "name": "ai",
+      "alive": true
+    },
+    {
+      "name": "api",
+      "alive": true
+    },
+    {
+      "name": "concept-01",
+      "alive": true
+    },
+    {
+      "name": "concept-02",
+      "alive": true
+    },
+    {
+      "name": "concept-03",
+      "alive": true
+    },
+    {
+      "name": "concept-04",
+      "alive": true
+    },
+    {
+      "name": "concept-05",
+      "alive": true
+    },
+    {
+      "name": "worker",
+      "alive": true
+    }
+  ],
+  "additional_ai_calls_during_minimal_handoff": 0,
+  "deferred": "design-evidence-reconciliation.md and requirements-evidence.md",
+  "full_original_G4_pass": false,
+  "remote_push_or_deployment": false
+}

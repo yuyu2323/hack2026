@@ -1,0 +1,35 @@
+{
+  "scope": "독립 직접 시각 검수",
+  "items": [
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-retry-running.png",
+      "sha256": "278d7a3acd6c8403da05690c4c8e9e455143e83083d99f14741d3513013bbfa9",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "실제 분석 중인 둘째 시도의 시작/결과수용·점유 기한·오류없음/미반영과 첫 AI_UNAVAILABLE 실패/미반영을 함께 보존한다. 대기·처리중·성공은 재처리 불가 안내가 있다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-retry-success.png",
+      "sha256": "f990b69ecee9489c6cde7123b03b07a51f1b1ddd4650c135bc34b2abd7fa2643",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "운영자 전용 작업 상세에서 분석 완료와 첫 실패 보존,둘째 완료/종료시각을 보여 준다. 둘째 결과 반영 값은 하단 밖이므로 이 파일만으로 시각 확인하지 않는다."
+    },
+    {
+      "file": "execute/designReview/concept-05/evidence/vp-desktop1440-catalog-inactive.png",
+      "sha256": "ea8906c983074c13ca86302f5637b5502db2d0134d395d637b48c0f9f25dcbbc",
+      "decoded_size": [
+        1425,
+        891
+      ],
+      "format": "JPEG",
+      "observation": "QA05 검증 완료 분류가 비활성으로 선택되고 변경 사유·신규업무 제한/과거기록 보존·저장 성공·연결/매장/세션 영향0을 읽을 수 있다."
+    }
+  ]
+}

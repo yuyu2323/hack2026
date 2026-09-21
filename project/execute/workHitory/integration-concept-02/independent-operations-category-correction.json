@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-09-21T13:00:22.627955+00:00",
+  "read_only": true,
+  "category_id": "4f49fc31-ad68-4f63-8bec-0dc9cac0c69d",
+  "version": 2,
+  "is_active": false,
+  "expected_name_matches_ignoring_whitespace": true,
+  "cause": "최초 검증기가 요청에 없는 공백 위치를 추가하여 완전 일치로 비교했다. 공백만 제거해 요청의 식별 이름과 비교한다.",
+  "status": "PASS"
+}

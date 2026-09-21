@@ -1,0 +1,57 @@
+{
+  "test_id": "AT-10-EARLY",
+  "source_kind": "real_ai",
+  "image_source_kind": "ai_generated_demo",
+  "started_at": "2026-09-21T08:54:09.046967+00:00",
+  "status": "FAIL",
+  "input": {
+    "schema_version": "1.0",
+    "job_id": "72364334-791f-5254-99fa-9dc3f2b1b7d8",
+    "attempt_id": "26b65716-43cf-5a94-847c-301a6a828a2e",
+    "submission_id": "caab060a-da0f-59aa-a53a-cf70a91ade33",
+    "question": "가운데 선반의 빈 공간과 앞줄 정렬을 어떻게 개선하면 좋을까요? Reference와 비교해 주세요.",
+    "guidelines": [
+      {
+        "guideline_id": "a41db7ec-0214-5307-b3b5-b2cab91b4c15",
+        "version_id": "c95d1ad0-566f-5813-8ec1-a05295786e0e",
+        "version": 1,
+        "level": "CATEGORY",
+        "rule_key": "facing",
+        "text": "같은 구역의 상품 앞면을 선반 앞 가장자리와 평행한 일정한 앞줄로 정렬한다."
+      },
+      {
+        "guideline_id": "c1bc7304-fe5d-58fc-b45b-278a0496c7cc",
+        "version_id": "f0fe51d7-efd3-5536-a901-1ae889054b48",
+        "version": 1,
+        "level": "CATEGORY",
+        "rule_key": "shelf_gap",
+        "text": "상품 구역 안에 넓은 빈 공간을 두지 않고 상품 사이 간격을 일정하게 유지한다."
+      }
+    ],
+    "photos": [
+      {
+        "photo_id": "3090cf9c-91f8-5e9b-875e-b34282be9e46",
+        "position": 1,
+        "mime_type": "image/png",
+        "sha256": "8e72ae4f11c60a58b8ab0b0fb03e307082945bac56aa44c28d60a7983b61c3b7"
+      }
+    ],
+    "references": [
+      {
+        "photo_id": "3ace9934-13c3-5135-86a8-71305b0c9df1",
+        "position": 1,
+        "mime_type": "image/png",
+        "sha256": "a96648449ff2fc1d5266965669cd44ee051539d6db565795e8c2587d0550f986",
+        "reference_id": "2e9efa75-c1e6-5d1a-b686-f6a3c3ed04ef",
+        "caption": "앞줄과 간격이 정리된 가상 음료 매대 Reference"
+      }
+    ],
+    "previous_review": null
+  },
+  "transport": "actual_local_http",
+  "model_configured": "gpt-6-astra",
+  "error_code": "HTTP_OR_VALIDATION_FAILURE",
+  "http_elapsed_ms": 32,
+  "within_30_second_target": false,
+  "browser_latency_measured": false
+}

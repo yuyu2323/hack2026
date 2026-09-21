@@ -1,0 +1,134 @@
+{
+  "status": "BOUNDED_VISUAL_PASS",
+  "reviewed_at": "2026-09-21T13:19:36.617124+00:00",
+  "reviewer": "contract_ai",
+  "scope": "신규 제공 viewport만 직접 열람. Browser·DB·서비스·AI 호출·공유 소스 수정 없음. 전체 시안 완료 판정 아님.",
+  "viewport_basis": "root 실제 측정 390×844/client375 및 02 desktop1440×900/client1425. 저장 이미지 치수와 구별.",
+  "source_hash_basis": "검수 시점 현재 소스의 식별용 hash이며 각 과거 캡처가 이 빌드라고 소급 확정하지 않는다.",
+  "images": [
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-long-queued.png",
+      "sha256": "eb1851c205b56bd5d95727d2669a99bbd59455c43d86216cae45286d72f02e10",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "사진1·Mock 합성 질문·대기632초·추가 지연/이력 안내와 기준 accordion. 하단 메뉴가 대기 설명을 가리지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-api-outage.png",
+      "sha256": "b0f0873eaff5f6144c35fae49c68658d01cf8d77a8f3723cac35eb61dd07a50c",
+      "decoded_size": [
+        390,
+        844
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "요청 오류·상태 다시 확인만 표시하며 shell도 보이지 않음. 기술 판정 실패나 0점으로 표현하지 않음."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-api-recovered.png",
+      "sha256": "f64e1c928675b83bf51b8283bae2c0758206d8adb6075a7ba914c2cd4041f78e",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기존 사진·질문·대기1268초 및 메뉴로 복귀, 오류 제거."
+    },
+    {
+      "file": "execute/designReview/concept-04/evidence/vp-mobile390-queue-timeout.png",
+      "sha256": "cf104ba7b0db52c8c7ea935e999f07fb6269e2f36650a53da886758a0d4bbfd6",
+      "decoded_size": [
+        375,
+        812
+      ],
+      "format": "JPEG",
+      "viewed": true,
+      "visual_result": "PASS",
+      "finding": "기술 실패·대기 시간 초과·운영자 복구 요청을 표시하고 진열 판정과 별개라고 안내. 평가 점수 없음."
+    }
+  ],
+  "current_source_hashes": [
+    {
+      "file": "web-concepts-04/src/app/main.tsx",
+      "sha256": "99175aa93365def9035e92f5a6bdb017987d8e6a5f297f18161cd25fedfd71ce"
+    },
+    {
+      "file": "web-concepts-04/src/ofc-admin/Business.tsx",
+      "sha256": "d52064d9c13ce909faf5ebf3e74b0b0bf73733576d43e3770a3cfc3195ecdea7"
+    },
+    {
+      "file": "web-concepts-04/src/ofc-admin/Standards.tsx",
+      "sha256": "a638769b81f8dcafa2efaed38cd7bb36d4c52eae88ac2dfa2d2a0add704b5f1d"
+    },
+    {
+      "file": "web-concepts-04/src/platform-admin/Operations.tsx",
+      "sha256": "2b92d8ef61bc28d2d957efda6d2a1670cb6e97b0812c3508b5e38268232b532c"
+    },
+    {
+      "file": "web-concepts-04/src/shared/data.tsx",
+      "sha256": "7fa5b6a09cb726986a61f93d6f1fe9ddb62c358c233e6b91936b6a8bd428bbe6"
+    },
+    {
+      "file": "web-concepts-04/src/shared/rules.ts",
+      "sha256": "7a409af3b47ef683a73486ffaa9cace7fb0ea6552e17f34799b9627d8b7df29d"
+    },
+    {
+      "file": "web-concepts-04/src/shared/style.css",
+      "sha256": "39aa39df901859e909297e0e91751715c5bebb764aaebd017a7b0625cb235e99"
+    },
+    {
+      "file": "web-concepts-04/src/shared/ui.tsx",
+      "sha256": "b742bede192ed71728d8dca6e4f43af06867ed5d4f4e4e63df83bb1b3cc1e9fe"
+    },
+    {
+      "file": "web-concepts-04/src/store-owner/Owner.tsx",
+      "sha256": "1f9d7402f43cb91579a54e3e3c904ccdcc112dea406244dd1009316b50a4a8cc"
+    }
+  ],
+  "input_records": [
+    {
+      "file": "execute/workHitory/queued-browser/browser.md",
+      "sha256": "641e28f0feac63eb73bb8a8666923ff16a0179d16576aac2f5ec6f46c60e51f9"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/independent-review.md",
+      "sha256": "c7539cacae534784757e0c0e489633dc154f72a192b467b35afea89a8785dd2c"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/independent-metadata.json",
+      "sha256": "9a26d925a58d6dca6e2de8e4c29fa1d9a010aa463a311b1691cc425a3835f937"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/queued-initial.json",
+      "sha256": "97c3a67b3ff23e2348c43338a6bde6854d10c7dedfbc55e3fdd710654802d687"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/api-outage.json",
+      "sha256": "b76463a32dc26bb0924f4dd13f2a6d2f9d3eb200695073bf9dbe999405c8a60b"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/api-recovery.json",
+      "sha256": "e49d067502ccf237389f9612cdd0a7931abc3c23153ab37635720d30891b951a"
+    },
+    {
+      "file": "execute/workHitory/queued-browser/worker-restored.json",
+      "sha256": "665e12187b25f202cf86851ab99cc60790af17706d3e579f6be92884ba9ca74d"
+    },
+    {
+      "file": "execute/workHitory/integration-concept-01/browser.md",
+      "sha256": "2463e847e4d55d6489ef52bacb9779d730eeeb68f397c83aa4a82801a5f6bcb5"
+    },
+    {
+      "file": "execute/workHitory/integration-concept-02/browser.md",
+      "sha256": "04eba6b76596ae26bda92c3d0ae92a4eccba0643f98a486d01209f5df8bdfc76"
+    }
+  ]
+}

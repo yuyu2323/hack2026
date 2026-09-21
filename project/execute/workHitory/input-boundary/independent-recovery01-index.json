@@ -1,0 +1,39 @@
+{
+  "status": "REVIEW_COMPLETE_PASS",
+  "checked_at": "2026-09-21T13:29:46.829742+00:00",
+  "resolved": [
+    "R01-01",
+    "R01-02"
+  ],
+  "command": "npx vitest run --config execute/workHitory/input-boundary/independent-recovery01-vitest.config.ts",
+  "tests_passed": 2,
+  "exit_code": 0,
+  "new_tests_added_after_manual_priority_request": 0,
+  "previous_red": "independent-recovery01-red.json",
+  "files": [
+    {
+      "file": "web-concepts-01/src/ofc-admin/Standards.tsx",
+      "sha256": "90621820e15c7fce656b19a9d2c9c2dc23796509bc13c5cc6c34ff51bead7888"
+    },
+    {
+      "file": "web-concepts-01/src/app/query-client.ts",
+      "sha256": "03817eef4c2164ae9a4f406eae82df1d87a3bb381cdd8fdff26f89a22b09b933"
+    },
+    {
+      "file": "web-concepts-01/src/main.tsx",
+      "sha256": "34a43683bdd5e8ee61378317c3dd6565bdbbec64522e25e5f897c6e07a46a0e6"
+    },
+    {
+      "file": "web-concepts-01/src/shared/ui.tsx",
+      "sha256": "c8df60b9510582d62d25acf9a5679e94010443f99ae99b42f2113bd55f4d7a92"
+    },
+    {
+      "file": "execute/workHitory/input-boundary/independent-recovery01-edge.test.tsx",
+      "sha256": "97f9f3eb7954ed216f38ce7d161832f312f995d7cdeb21b92804042b723ea97e"
+    },
+    {
+      "file": "execute/workHitory/input-boundary/independent-recovery01-vitest.config.ts",
+      "sha256": "cae68c967d8863f84bc41133cb5f9cafc1edf27c2797ed107c1f8373904937d3"
+    }
+  ]
+}

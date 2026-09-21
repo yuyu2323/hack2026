@@ -1,0 +1,139 @@
+{
+  "status": "PASS_WITH_NOT_RUN",
+  "scope": "수정 후 10개 PNG의 상단/모바일 계정 표 독립 재판정",
+  "reviewer": "contract_data",
+  "reviewed_at": "2026-09-21T12:44:09.920714+00:00",
+  "images": [
+    {
+      "path": "execute/designReview/manuals/evidence/01-desktop1440-header-fixed.png",
+      "sha256": "4fdcb8fc5a9bd391aafdc9ce6f5a64ea71b96b957bb3d934c57d744caa05b2fd",
+      "bytes": 94578,
+      "width": 65536,
+      "height": 4292542531,
+      "direct_view_image": true,
+      "status": "PASS",
+      "observation": "상단 제목·설명 가독성 정상, 최신 Node/npm 표시 확인"
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/01-mobile390-table-identifier-fixed.png",
+      "sha256": "ca834d8bedfe67305093a05657546a262fb4f9ea604b0003f3f8d9b594a4d459",
+      "bytes": 40228,
+      "width": 65536,
+      "height": 4292542531,
+      "direct_view_image": true,
+      "status": "PASS",
+      "observation": "로그인 ID 중간 줄바꿈 없음, 본문/표 잘림·겹침 없음"
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/02-desktop1440-header-fixed.png",
+      "sha256": "7d5443336163867f66020799f9d1a5476a232fb417b789f1b4fe6b5aaf1702f0",
+      "bytes": 88875,
+      "width": 65536,
+      "height": 4292542531,
+      "direct_view_image": true,
+      "status": "PASS",
+      "observation": "상단 제목·설명 가독성 정상, 최신 Node/npm 표시 확인"
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/02-mobile390-table-identifier-fixed.png",
+      "sha256": "76199d303f338c4fbe1b5dc3814fa3f3ddab81d387393927a3a5d66d7d4f2179",
+      "bytes": 35307,
+      "width": 65536,
+      "height": 4292542531,
+      "direct_view_image": true,
+      "status": "PASS",
+      "observation": "로그인 ID 중간 줄바꿈 없음, 본문/표 잘림·겹침 없음"
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/03-desktop1440-header-fixed.png",
+      "sha256": "e43e9dd5c9debd4f36122e7457e331427d6f4b5b7b7f1b114e1bc5de4ca37554",
+      "bytes": 95513,
+      "width": 65536,
+      "height": 4292542531,
+      "direct_view_image": true,
+      "status": "PASS",
+      "observation": "상단 제목·설명 가독성 정상, 최신 Node/npm 표시 확인"
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/03-mobile390-table-identifier-fixed.png",
+      "sha256": "19ddf9edf08d6ab80485e35b9c7b655c335c52a91d0bb312ab584e82d08416bc",
+      "bytes": 39104,
+      "width": 65536,
+      "height": 4292542531,
+      "direct_view_image": true,
+      "status": "PASS",
+      "observation": "로그인 ID 중간 줄바꿈 없음, 본문/표 잘림·겹침 없음"
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/04-desktop1440-header-fixed.png",
+      "sha256": "bb11d75bee648d0f3cca75915c548ed77590d7ed483f87b87707263b9c72b95a",
+      "bytes": 96030,
+      "width": 65536,
+      "height": 4292542531,
+      "direct_view_image": true,
+      "status": "PASS",
+      "observation": "상단 제목·설명 가독성 정상, 최신 Node/npm 표시 확인"
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/04-mobile390-table-identifier-fixed.png",
+      "sha256": "e0b98867b58d87d08436ca9e20970da850b13228040a7900fddaaed2ff1fe5d6",
+      "bytes": 39174,
+      "width": 65536,
+      "height": 4292542531,
+      "direct_view_image": true,
+      "status": "PASS",
+      "observation": "로그인 ID 중간 줄바꿈 없음, 본문/표 잘림·겹침 없음"
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/05-desktop1440-header-fixed.png",
+      "sha256": "be43651c994d5d21500d0a5492a7cd650d7f0376e48ff25468111a66411403b6",
+      "bytes": 94885,
+      "width": 65536,
+      "height": 4292542531,
+      "direct_view_image": true,
+      "status": "PASS",
+      "observation": "상단 제목·설명 가독성 정상, 최신 Node/npm 표시 확인"
+    },
+    {
+      "path": "execute/designReview/manuals/evidence/05-mobile390-table-identifier-fixed.png",
+      "sha256": "c28a2a5fea309277c621a48f3c54b8111cf45e371ec58c5076d60e8c5064b025",
+      "bytes": 39191,
+      "width": 65536,
+      "height": 4292542531,
+      "direct_view_image": true,
+      "status": "PASS",
+      "observation": "로그인 ID 중간 줄바꿈 없음, 본문/표 잘림·겹침 없음"
+    }
+  ],
+  "resolved": [
+    {
+      "id": "D-MAN-H01",
+      "concepts": [
+        "01",
+        "03",
+        "04",
+        "05"
+      ],
+      "observation": "밝아진 날짜/역할 문구를 실제 PNG에서 읽을 수 있음",
+      "source_contrast_ratio": 9.8863
+    },
+    {
+      "id": "OBS-MAN02-01",
+      "author_tracking_id": "D-MAN02-02",
+      "observation": "02 모든 로그인 ID 중간 분할 해소; 나머지 4개도 ID 유지"
+    }
+  ],
+  "new_findings": [],
+  "root_dom_reference": {
+    "path": "execute/workHitory/manuals-browser/final-dom.json",
+    "sha256": "5f284872b3d9191acb370314d99618256dee81ed44357349480c3a7f92498d24",
+    "independent_reexecution": false
+  },
+  "not_run": [
+    "200% 확대: 사용자 후속 진행 선택 유지",
+    "직접 Browser/키보드 조작",
+    "인쇄/OS 네트워크 차단",
+    "Markdown 내장 뷰어 인수"
+  ],
+  "note": "현재 모바일 표 PNG는 비초점 상태다. 초점 검증은 이전 직접 관측과 root 별도 DOM/키보드 기록으로 구분한다. 이전 22장 관측 기록은 삭제하지 않는다."
+}

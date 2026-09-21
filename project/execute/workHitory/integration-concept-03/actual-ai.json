@@ -1,0 +1,100 @@
+[
+  {
+    "concept": 3,
+    "submission_id": "46e985b6-58cd-4376-b035-cd5f0e38c600",
+    "parent_submission_id": null,
+    "job_id": "95f264b4-5fa0-4d74-8b1d-68616d3a379b",
+    "review_id": "491873e3-8ef2-4b03-b709-44083dc5ce71",
+    "status": "succeeded",
+    "source_kind": "real_ai",
+    "model": "gpt-6-astra",
+    "model_ms": 96072,
+    "prompt_version": "storeloop-review-v1",
+    "schema_version": "1.0",
+    "snapshot_sha256": "31cf89afcfe7f33a7cf1355c35006365603a0895efa55c00dccc9e3b1e82a5d6",
+    "submitted_at": "2026-09-21T19:44:24.114596+09:00",
+    "submit_to_db_result_ms": 97227,
+    "photos": 1,
+    "criteria": 5,
+    "references": 2,
+    "attempts": [
+      {
+        "number": 1,
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queue_ms": 870,
+        "run_ms": 96214
+      }
+    ],
+    "is_fixture": false
+  },
+  {
+    "concept": 3,
+    "submission_id": "dfc9189b-e833-4500-bc37-c0f4976f0625",
+    "parent_submission_id": "46e985b6-58cd-4376-b035-cd5f0e38c600",
+    "job_id": "c898dcd0-3245-487d-af5c-1c0069d7e480",
+    "review_id": "3a7b1296-620b-4e28-b3bc-c95b0ba81f1b",
+    "status": "succeeded",
+    "source_kind": "real_ai",
+    "model": "gpt-6-astra",
+    "model_ms": 64730,
+    "prompt_version": "storeloop-review-v1",
+    "schema_version": "1.0",
+    "snapshot_sha256": "2a9a172cd283e31e729999c00664025fd5776fb73a242acb1c49c88d7aa1a31c",
+    "submitted_at": "2026-09-21T19:48:44.158833+09:00",
+    "submit_to_db_result_ms": 66783,
+    "photos": 1,
+    "criteria": 5,
+    "references": 2,
+    "attempts": [
+      {
+        "number": 1,
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queue_ms": 1803,
+        "run_ms": 64845
+      }
+    ],
+    "is_fixture": false
+  },
+  {
+    "concept": 3,
+    "submission_id": "1dd78a42-e241-52a9-b718-694b8faa0ea1",
+    "parent_submission_id": null,
+    "job_id": "330bc920-98f9-5bd4-b9ba-3c0e491fede6",
+    "review_id": "dc42c240-8e50-4b4a-831a-b72d387fbefc",
+    "status": "succeeded",
+    "source_kind": "real_ai",
+    "model": "gpt-6-astra",
+    "model_ms": 49195,
+    "prompt_version": "storeloop-review-v1",
+    "schema_version": "1.0",
+    "snapshot_sha256": "9bb818b326b1a4e132266c8c9936c0211ef46fae5146a2a26521a4d8435364b9",
+    "submitted_at": "2026-09-20T09:00:00+09:00",
+    "submit_to_db_result_ms": 125986642,
+    "photos": 1,
+    "criteria": 4,
+    "references": 2,
+    "attempts": [
+      {
+        "number": 1,
+        "status": "expired",
+        "error_code": "QUEUE_TIMEOUT",
+        "result_applied": false,
+        "queue_ms": null,
+        "run_ms": null
+      },
+      {
+        "number": 2,
+        "status": "succeeded",
+        "error_code": null,
+        "result_applied": true,
+        "queue_ms": 1862,
+        "run_ms": 49325
+      }
+    ],
+    "is_fixture": true
+  }
+]
