@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host 127.0.0.1 --port 5175 --strictPort",
+    "dev": "vite --host 127.0.0.1 --port 5183 --strictPort",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview --host 127.0.0.1 --port 5175 --strictPort",
+    "preview": "vite preview --host 127.0.0.1 --port 5183 --strictPort",
     "test": "node --import tsx --test tests/*.test.ts"
   },
   "dependencies": {

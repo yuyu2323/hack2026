@@ -131,17 +131,17 @@ def test_commit_failure_rolls_back_all_rows_and_retains_private_backup(legacy_se
 
 def test_cli_database_alias_rejects_external_or_wrong_database(monkeypatch):
     from scripts import repair_seed_fixtures as tool
-    values = {'DATABASE_URL':'postgresql+psycopg://storeloop@127.0.0.1:55432/storeloop',
-              'STORELOOP_TEST_DATABASE_URL':'postgresql+psycopg://storeloop@127.0.0.1:55432/storeloop_test'}
+    values = {'DATABASE_URL':'postgresql+psycopg://storeloop@127.0.0.1:55443/storeloop',
+              'STORELOOP_TEST_DATABASE_URL':'postgresql+psycopg://storeloop@127.0.0.1:55443/storeloop_test'}
     monkeypatch.setattr(tool, 'dotenv_values', lambda _:values)
     assert tool.local_database_url('demo') == values['DATABASE_URL']
     assert tool.local_database_url('test') == values['STORELOOP_TEST_DATABASE_URL']
     with pytest.raises(RepairConflict):
         tool.local_database_url('other')
-    for value in ['postgresql+psycopg://storeloop@example.invalid:55432/storeloop',
+    for value in ['postgresql+psycopg://storeloop@example.invalid:55443/storeloop',
                   'postgresql+psycopg://storeloop@127.0.0.1:5432/storeloop',
-                  'postgresql+psycopg://storeloop@127.0.0.1:55432/other',
-                  'postgresql+psycopg://storeloop@127.0.0.1:55432/storeloop?options=x',
+                  'postgresql+psycopg://storeloop@127.0.0.1:55443/other',
+                  'postgresql+psycopg://storeloop@127.0.0.1:55443/storeloop?options=x',
                   'sqlite:///irrelevant.db']:
         values['DATABASE_URL'] = value
         with pytest.raises(RepairConflict):

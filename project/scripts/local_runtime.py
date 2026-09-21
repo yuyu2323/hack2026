@@ -30,14 +30,15 @@ def prepare():
     password = password_file.read_text().strip()
     runtime_file = LOCAL / 'runtime.env'
     if not runtime_file.exists():
-        origins = [f'http://{host}:{port}' for host in ['127.0.0.1', 'localhost'] for port in range(5173, 5178)]
+        origins = [f'http://{host}:{port}' for host in ['127.0.0.1', 'localhost'] for port in [5183]]
         values = {
-            'DATABASE_URL': f'postgresql+psycopg://storeloop:{password}@127.0.0.1:55432/storeloop',
-            'STORELOOP_TEST_DATABASE_URL': f'postgresql+psycopg://storeloop:{password}@127.0.0.1:55432/storeloop_test',
+            'DATABASE_URL': f'postgresql+psycopg://storeloop:{password}@127.0.0.1:55443/storeloop',
+            'STORELOOP_TEST_DATABASE_URL': f'postgresql+psycopg://storeloop:{password}@127.0.0.1:55443/storeloop_test',
             'MEDIA_ROOT': str(LOCAL / 'media'),
-            'AI_SERVICE_URL': 'http://127.0.0.1:8010',
+            'AI_SERVICE_URL': 'http://127.0.0.1:8203',
             'AI_SERVICE_TOKEN': secrets.token_urlsafe(48),
             'SESSION_COOKIE_SECURE': 'false',
+            'SESSION_COOKIE_NAME': 'storeloop_concept_03_session',
             'ALLOWED_ORIGINS': json.dumps(origins),
             'CODEX_BIN': shutil.which('codex') or 'codex',
             'CODEX_MODEL': 'gpt-6-astra',
@@ -80,14 +81,14 @@ def database(action):
     if status.returncode:
         # 긴 한글 프로젝트 경로가 UNIX 소켓 경로 한도를 넘지 않게 한다.
         subprocess.run([ctl, '-D', str(data), '-l', str(LOCAL / 'logs/postgres.log'),
-                        '-o', '-h 127.0.0.1 -p 55432 -k /tmp', '-w', 'start'], check=True)
+                        '-o', '-h 127.0.0.1 -p 55443 -k /tmp', '-w', 'start'], check=True)
     env = dict(os.environ, PGPASSWORD=(LOCAL / 'postgres-password').read_text().strip())
-    command = [pg_binary('psql'), '-h', '127.0.0.1', '-p', '55432', '-U', 'storeloop', '-d', 'postgres', '-At']
+    command = [pg_binary('psql'), '-h', '127.0.0.1', '-p', '55443', '-U', 'storeloop', '-d', 'postgres', '-At']
     present = subprocess.check_output(command + ['-c', 'SELECT datname FROM pg_database'], env=env, text=True).splitlines()
     for name in ['storeloop', 'storeloop_test']:
         if name not in present:
             subprocess.run(command + ['-c', f'CREATE DATABASE {name}'], env=env, check=True)
-    print('전용 PostgreSQL 준비 완료: 127.0.0.1:55432 / storeloop, storeloop_test')
+    print('전용 PostgreSQL 준비 완료: 127.0.0.1:55443 / storeloop, storeloop_test')
 
 
 if __name__ == '__main__':

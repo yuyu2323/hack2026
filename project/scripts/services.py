@@ -60,11 +60,11 @@ def launch(name, command, marker, port=None, cwd=ROOT):
 def start(concepts, without_worker):
     prepare()
     # 하나라도 충돌하면 일부 서비스가 먼저 시작되어 서로 다른 DB가 섞이지 않게 한다.
-    for name, port in [('ai', 8010), ('api', 8000)] + [(f'concept-{number:02d}', 5172+number) for number in concepts]:
+    for name, port in [('ai', 8203), ('api', 8103)] + [(f'concept-{number:02d}', 5183) for number in concepts]:
         require_available_port(name, port)
-    launch('ai',[str(ROOT/'ai-service/.venv/bin/python'),'-m','uvicorn','app.main:app','--app-dir',str(ROOT/'ai-service'),'--host','127.0.0.1','--port','8010','--no-access-log'],'app.main:app',8010)
-    launch('api',[str(ROOT/'server/.venv/bin/python'),'-m','uvicorn','server.main:app','--app-dir',str(ROOT),'--host','127.0.0.1','--port','8000','--no-access-log'],'server.main:app',8000)
-    for port in (8010, 8000):
+    launch('ai',[str(ROOT/'ai-service/.venv/bin/python'),'-m','uvicorn','app.main:app','--app-dir',str(ROOT/'ai-service'),'--host','127.0.0.1','--port','8203','--no-access-log'],'app.main:app',8203)
+    launch('api',[str(ROOT/'server/.venv/bin/python'),'-m','uvicorn','server.main:app','--app-dir',str(ROOT),'--host','127.0.0.1','--port','8103','--no-access-log'],'server.main:app',8103)
+    for port in (8203, 8103):
         deadline = time.monotonic() + 15
         while not healthy(port) and time.monotonic() < deadline:
             time.sleep(0.2)
@@ -74,8 +74,8 @@ def start(concepts, without_worker):
         launch('worker',[str(ROOT/'server/.venv/bin/python'),str(ROOT/'scripts/worker_entry.py')],'worker_entry.py')
     for number in concepts:
         package = ROOT / f'web-concepts-{number:02d}'
-        launch(f'concept-{number:02d}',[shutil.which('node'),str(ROOT/'node_modules/vite/bin/vite.js'),'--host','127.0.0.1','--port',str(5172+number),'--strictPort'],f'--port {5172+number}',port=5172+number,cwd=package)
-        print(f'시안 {number:02d}: http://127.0.0.1:{5172+number}')
+        launch(f'concept-{number:02d}',[shutil.which('node'),str(ROOT/'node_modules/vite/bin/vite.js'),'--host','127.0.0.1','--port',str(5183),'--strictPort'],f'--port {5183}',port=5183,cwd=package)
+        print(f'시안 {number:02d}: http://127.0.0.1:{5183}')
 
 def stop():
     for path in sorted((LOCAL/'pids').glob('*.json')):
@@ -88,7 +88,7 @@ def stop():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('action', choices=['start','stop'])
-    parser.add_argument('--concept', type=int, choices=range(1,6), action='append')
+    parser.add_argument('--concept', type=int, choices=[3], action='append')
     parser.add_argument('--without-worker', action='store_true')
     args = parser.parse_args()
-    start(args.concept or [1], args.without_worker) if args.action == 'start' else stop()
+    start(args.concept or [3], args.without_worker) if args.action == 'start' else stop()
