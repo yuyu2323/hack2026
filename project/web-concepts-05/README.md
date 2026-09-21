@@ -4,7 +4,7 @@
 
 ## 실행
 
-프로젝트 루트의 `scripts/setup.sh`로 의존성과 로컬 설정을 준비하고, 공통 API·AI·worker를 실행한 뒤 사용한다. 상세 절차는 상위 README와 docs/10-execution.md를 따른다. 브라우저 요청은 `/api` 프록시를 통해 업무 API `127.0.0.1:8000`으로만 보낸다.
+프로젝트 루트의 `scripts/setup.sh`로 의존성과 로컬 설정을 준비하고, 공통 API·AI·worker를 실행한 뒤 사용한다. 상세 절차는 상위 README와 docs/10-execution.md를 따른다. 브라우저 요청은 `/api` 프록시를 통해 업무 API `127.0.0.1:8105`으로만 보낸다.
 
 ```sh
 npm run dev --workspace @storeloop/concept-05
@@ -13,7 +13,7 @@ npm run build --workspace @storeloop/concept-05
 npm run preview --workspace @storeloop/concept-05
 ```
 
-접속: `http://127.0.0.1:5177/`. dev와 preview를 동시에 같은 포트에서 실행하지 않는다. 각 명령은 한 앱 안에서 모든 역할을 제공한다. 로그인 자격은 런타임의 사용자 전용 로컬 파일을 사용하며 소스·문서에 실제 비밀번호를 넣지 않는다.
+접속: `http://127.0.0.1:5185/`. dev와 preview를 동시에 같은 포트에서 실행하지 않는다. 각 명령은 한 앱 안에서 모든 역할을 제공한다. 로그인 자격은 런타임의 사용자 전용 로컬 파일을 사용하며 소스·문서에 실제 비밀번호를 넣지 않는다.
 
 ## 업무 시작
 

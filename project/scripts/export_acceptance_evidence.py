@@ -44,7 +44,7 @@ def export(concept, submissions):
 
 if __name__ == '__main__':
     parser=argparse.ArgumentParser()
-    parser.add_argument('concept',type=int,choices=range(1,6))
+    parser.add_argument('concept',type=int,choices=[5])
     parser.add_argument('submissions',nargs='+',type=str)
     args=parser.parse_args()
     try:
