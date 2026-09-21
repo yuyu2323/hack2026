@@ -48,7 +48,7 @@ def prepare_input():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--url", default="http://127.0.0.1:8010")
+    parser.add_argument("--url", default="http://127.0.0.1:8201")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     settings = get_settings()

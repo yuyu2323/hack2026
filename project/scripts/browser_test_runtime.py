@@ -21,7 +21,7 @@ def main():
         subprocess.run([str(ROOT/'server/.venv/bin/alembic'),'-c','server/alembic.ini','upgrade','head'],cwd=ROOT,env=env,check=True)
         subprocess.run([python,'-m','server.seed'],cwd=ROOT,env=env,check=True)
     else:
-        command = [python,'-m','uvicorn','server.main:app','--host','127.0.0.1','--port','8000','--no-access-log'] if args.action == 'api' else [python,'-m','server.analysis_jobs.worker']
+        command = [python,'-m','uvicorn','server.main:app','--host','127.0.0.1','--port','8101','--no-access-log'] if args.action == 'api' else [python,'-m','server.analysis_jobs.worker']
         os.chdir(ROOT); os.execve(python, command, env)
 
 if __name__ == '__main__':

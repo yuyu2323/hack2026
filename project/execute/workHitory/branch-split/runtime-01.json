@@ -1,0 +1,37 @@
+{
+  "concept": 1,
+  "setup": "PASS",
+  "startup": "PASS",
+  "health": {
+    "api": 200,
+    "ai": 200
+  },
+  "roles": [
+    {
+      "role": "store_owner",
+      "html_route": 200,
+      "login": 200,
+      "authenticated_proxy": 200
+    },
+    {
+      "role": "hq",
+      "html_route": 200,
+      "login": 200,
+      "authenticated_proxy": 200
+    },
+    {
+      "role": "platform_operator",
+      "html_route": 200,
+      "login": 200,
+      "authenticated_proxy": 200
+    }
+  ],
+  "actual_ai": "NOT_RUN: branch packaging verification only",
+  "processes": [
+    "ai",
+    "api",
+    "concept-01",
+    "worker"
+  ],
+  "managed_services_stopped": true
+}

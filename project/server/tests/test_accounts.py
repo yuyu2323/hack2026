@@ -1,3 +1,4 @@
+from server.core.config import get_settings
 def test_login_has_pre_authentication_csrf_session(client):
     response = client.get('/api/auth/csrf')
     assert response.status_code == 200
@@ -8,9 +9,9 @@ def test_login_has_pre_authentication_csrf_session(client):
 def test_session_rotates_and_current_activation_is_checked(client,db,account_factory,login_as):
     account=account_factory()
     client.get('/api/auth/csrf')
-    old=client.cookies.get('storeloop_session')
+    old=client.cookies.get(get_settings().session_cookie_name)
     headers=login_as(account)
-    assert client.cookies.get('storeloop_session')!=old
+    assert client.cookies.get(get_settings().session_cookie_name)!=old
     assert client.get('/api/auth/me').status_code==200
     account.is_active=False;db.commit()
     assert client.get('/api/auth/me').status_code==401
