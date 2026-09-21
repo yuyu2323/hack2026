@@ -274,7 +274,7 @@ def local_database_url(alias):
     url = make_url(value)
     expected = 'storeloop' if alias == 'demo' else 'storeloop_test'
     if (url.drivername != 'postgresql+psycopg' or url.host not in ('127.0.0.1','localhost')
-            or url.port != 55432 or url.database != expected or url.username != 'storeloop' or url.query):
+            or url.port != 55444 or url.database != expected or url.username != 'storeloop' or url.query):
         raise RepairConflict('LOCAL_DATABASE_REQUIRED')
     return value
 

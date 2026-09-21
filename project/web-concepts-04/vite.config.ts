@@ -1,3 +1,3 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-export default defineConfig({plugins:[react()],server:{proxy:{'/api':'http://127.0.0.1:8000'}},preview:{port:5176,strictPort:true,host:'127.0.0.1',proxy:{'/api':'http://127.0.0.1:8000'}}});
+export default defineConfig({plugins:[react()],server:{proxy:{'/api':'http://127.0.0.1:8104'}},preview:{port:5184,strictPort:true,host:'127.0.0.1',proxy:{'/api':'http://127.0.0.1:8104'}}});
