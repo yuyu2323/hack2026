@@ -15,6 +15,7 @@ from server.core.db import SessionLocal
 from server.core.security import hash_password
 from server.core.models import *
 from server.submissions.media import normalize_image
+from server.submissions.storage import write_media
 from server.submissions.service import make_snapshot
 from server.guidelines.resolution import resolve_guidelines
 from packages.review_contract.validation import validate_result, derive_metrics
@@ -77,8 +78,8 @@ def _seed(db, created_files):
         db.add(row); db.flush(); counts['created'] += 1
         return row
 
-    credential_file = PROJECT_ROOT / '.local/demo-credentials'
-    credentials = json.loads(credential_file.read_text()) if credential_file.exists() else {}
+    credential_file = Path(os.environ.get('SEED_CREDENTIAL_FILE', str(PROJECT_ROOT / '.local/demo-credentials')))
+    credentials = json.loads(credential_file.read_text(encoding='utf-8')) if credential_file.exists() else {}
     accounts = {}
     regions = {code: add(Region, code, code=code, name=name) for code, name in [('north','가상 북부권'),('south','가상 남부권')]}
     specifications = [(role + '.' + area, role, area) for role in ('owner','ofc','regional') for area in ('north','south')]
@@ -95,7 +96,7 @@ def _seed(db, created_files):
                              is_active=login != 'owner.inactive', password_hash=hash_password(credentials[login]['password']))
     if not credential_file.exists():
         private_file(credential_file, json.dumps(credentials, ensure_ascii=False, indent=2).encode())
-    elif json.loads(credential_file.read_text()) != credentials:
+    elif json.loads(credential_file.read_text(encoding='utf-8')) != credentials:
         # 부분 설치를 복구할 때도 기존 계정 비밀번호는 바꾸지 않는다.
         temporary = credential_file.with_suffix('.new')
         private_file(temporary, json.dumps(credentials, ensure_ascii=False, indent=2).encode())
@@ -129,7 +130,7 @@ def _seed(db, created_files):
             add(GuidelineVersion, f'{code}-{revision}', guideline_id=rule.id, version=revision,
                 text=text if revision == current else '음료 앞줄 상품의 앞면을 일정하게 정렬한다.', change_reason='합성 시연 기준 '+str(revision),
                 created_by_id=hq.id, created_at=BASE - timedelta(days=65 if revision == 1 else 7))
-    manifest = json.loads((PROJECT_ROOT / 'scripts/seed/manifest.json').read_text())
+    manifest = json.loads((PROJECT_ROOT / 'scripts/seed/manifest.json').read_text(encoding='utf-8'))
     media = {}
     for image in manifest['images']:
         path = (PROJECT_ROOT / 'scripts/seed' / image['path']).resolve()
@@ -141,13 +142,8 @@ def _seed(db, created_files):
         normalized = normalize_image(raw, path.name, image['mime_type'])
         code = image['image_id']; key = ident('media_assets', code)
         original, thumb = f'{key}.png', f'{key}-thumbnail.jpg'
-        for filename, content in [(original, normalized['content']), (thumb, normalized['thumbnail'])]:
-            target = get_settings().media_root / filename
-            if target.exists():
-                if hashlib.sha256(target.read_bytes()).digest() != hashlib.sha256(content).digest():
-                    raise ValueError('SEED_CONFLICT: 보호 이미지 파일이 변경되었습니다.')
-            else:
-                private_file(target, content); created_files.append(target)
+        write_media(db, [(original, normalized['content']), (thumb, normalized['thumbnail'])],
+                    created_files, allow_existing=True)
         media[code] = add(MediaAsset, code, storage_key=original, thumbnail_key=thumb, uploaded_by_id=hq.id,
                           source_kind='ai_generated_demo', **{name: normalized[name] for name in ['sha256','mime_type','byte_size','width','height']})
         if image['purpose'] == 'reference':

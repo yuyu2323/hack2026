@@ -34,3 +34,4 @@
 
 # Vercel 연결 정보와 배포 산출물
 **/.vercel/
+project/public/

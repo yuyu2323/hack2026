@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Source, type Data } from "./core";
+import { prepareHostedPhoto } from "./hosted-photo";
+const hostedUploads = import.meta.env.VITE_HOSTED_UPLOAD_LIMIT === "true";
 export function PhotoPicker({
   files,
   set,
@@ -9,6 +11,7 @@ export function PhotoPicker({
   set: (files: File[]) => void;
   max?: number;
 }) {
+  const [busy, setBusy] = useState(false);
   const [error, setError] = useState(""),
     [urls, setUrls] = useState<string[]>([]);
   useEffect(() => {
@@ -26,7 +29,8 @@ export function PhotoPicker({
           type="file"
           accept="image/jpeg,image/png"
           multiple={max > 1}
-          onChange={(e) => {
+          disabled={busy}
+          onChange={async (e) => {
             const added = Array.from(e.target.files ?? []);
             e.target.value = "";
             if (files.length + added.length > max) {
@@ -44,7 +48,18 @@ export function PhotoPicker({
               return;
             }
             setError("");
-            set([...files, ...added]);
+            setBusy(true);
+            try {
+              const prepared: File[] = [];
+              for (const file of added) {
+                prepared.push(hostedUploads ? await prepareHostedPhoto(file, max) : file);
+              }
+              set([...files, ...prepared]);
+            } catch {
+              setError("사진을 처리할 수 없습니다. 크기를 줄이거나 다른 JPEG·PNG 사진을 선택해 주세요.");
+            } finally {
+              setBusy(false);
+            }
           }}
         />
       </label>
@@ -52,6 +67,8 @@ export function PhotoPicker({
         매대 전체와 상품 앞면이 보이도록 밝은 곳에서 촬영해 주세요. 선택
         순서대로 사진 번호가 정해집니다.
       </p>
+      {hostedUploads && <p className="hint">큰 사진은 업로드에 맞게 자동으로 줄입니다. 아래 미리보기가 전송됩니다.</p>}
+      {busy && <p role="status">사진을 준비하고 있습니다…</p>}
       {error && (
         <p role="alert" className="error-text">
           {error}
@@ -70,7 +87,7 @@ export function PhotoPicker({
                 type="button"
                 className="secondary"
                 aria-label={`사진 ${index + 1} 앞으로`}
-                disabled={index === 0}
+                disabled={busy || index === 0}
                 onClick={() => {
                   const next = [...files];
                   [next[index - 1], next[index]] = [
@@ -86,7 +103,7 @@ export function PhotoPicker({
                 type="button"
                 className="secondary"
                 aria-label={`사진 ${index + 1} 뒤로`}
-                disabled={index === files.length - 1}
+                disabled={busy || index === files.length - 1}
                 onClick={() => {
                   const next = [...files];
                   [next[index + 1], next[index]] = [
@@ -101,6 +118,7 @@ export function PhotoPicker({
               <button
                 type="button"
                 className="text-button"
+                disabled={busy}
                 onClick={() => set(files.filter((_, i) => i !== index))}
               >
                 삭제

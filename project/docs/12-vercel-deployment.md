@@ -1,5 +1,30 @@
 # 시안 02 Vercel 배포
 
+## 현재 배포: Vercel Python + Neon Free
+
+외부 유료 서버 없이 실행하도록 현재 배포는 Vercel FastAPI 함수와 Neon Free로 변경했다.
+아래 기존 Docker 프록시 절차는 외부 서버를 사용하던 이전 배포 방식의 참고다.
+현재 설정은 Root `project`, Framework `FastAPI`(vercel.json), Node 22,
+`npm ci`, `npm run build:vercel`, Output Directory override 없음이다.
+`BACKEND_ORIGIN`은 필요하지 않다. `index.py`가 업무 API를 제공하며 `public/`은 CDN으로 제공한다.
+
+Production 환경에 Neon이 연결한 `DATABASE_URL`, `DATABASE_URL_UNPOOLED`와 다음 값을 저장한다:
+`MEDIA_STORAGE=database`, `MEDIA_DATABASE_MAX_BYTES=209715200`,
+`VERCEL_REQUEST_ANALYSIS=true`, `AI_PROVIDER=openai`, `OPENAI_MODEL=gpt-4.1-mini`,
+`AI_REQUESTS_ENABLED=true`, `SESSION_COOKIE_SECURE=true`, `SESSION_COOKIE_NAME=storeloop_concept_02_session`.
+`OPENAI_API_KEY`와 신규 DB 시연 계정 생성에 쓸 24자 이상 `DEMO_PASSWORD`는 Secret으로 저장한다.
+기존 계정이 있으면 빌드 초기화는 비밀번호·시연 데이터를 변경하지 않는다.
+Origin은 Vercel이 제공한 `VERCEL_PROJECT_PRODUCTION_URL`을 사용하며 필요하면 `ALLOWED_ORIGINS`로 지정한다.
+
+인증된 제출·상태 조회·명시적 재처리에서 해당 분석 작업만 ASGI background task로 실행한다.
+외부 무한 루프 worker와 공개 AI 엔드포인트는 필요하지 않으며 기존 작업 소유권·lease·결과 검증은 유지한다.
+함수는 180초, AI는 120초 이내로 제한한다. 중단된 작업은 후속 인증 조회에서 만료 처리하며 유료 자동 재시도를 하지 않는다.
+사진은 권한 검사 후 DB에서 읽고, 200MiB 저장 상한을 적용한다. 무료 DB의 다른 테이블도 공간을 사용한다.
+Vercel 업로드 제한 때문에 배포 빌드에서는 브라우저가 사진을 축소하여 전체 3.5MiB 이하로 보낸다.
+실제 AI 호출은 프로모션 크레딧을 소비한다. 무료 자원 한도 초과 시 유료로 자동 전환하지 않고 사용을 중단하거나 자료를 정리한다.
+
+## 이전 외부 Docker 서버 배포 방식
+
 Vercel은 세 역할의 정적 프론트와 /api 프록시를 담당한다. 외부 Linux 서버의 기존 Docker Compose가 Python API·AI·worker·PostgreSQL·사진 볼륨을 실행한다. 서버와 API 주소는 아직 발급되지 않았으며 이 문서는 신규 배포 절차다. main은 변경하지 않는다.
 
 ## 1. 준비

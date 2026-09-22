@@ -115,10 +115,13 @@ def retry_job(db, account, job_id, reason, idempotency_key, request_id):
         raise
 
 
-def claim_next_job(db, worker_id, now=None):
+def claim_next_job(db, worker_id, now=None, *, job_id=None):
     now = now or utcnow()
     try:
-        job = db.scalar(select(AnalysisJob).where(AnalysisJob.status == 'queued', AnalysisJob.queue_deadline_at > now)
+        query = select(AnalysisJob).where(AnalysisJob.status == 'queued', AnalysisJob.queue_deadline_at > now)
+        if job_id is not None:
+            query = query.where(AnalysisJob.id == job_id)
+        job = db.scalar(query
                         .order_by(AnalysisJob.queued_at, AnalysisJob.id).with_for_update(skip_locked=True)
                         .limit(1).execution_options(populate_existing=True))
         if job is None:
@@ -185,14 +188,17 @@ def fail_attempt(db, claim, code, now=None):
         raise
 
 
-def sweep_expired(db, now=None):
+def sweep_expired(db, now=None, *, job_id=None):
     now = now or utcnow()
     try:
         # job→attempt 잠금 순서를 점유·성공 저장·재처리와 일치시킨다.
-        jobs = db.scalars(select(AnalysisJob).where(or_(
+        query = select(AnalysisJob).where(or_(
             (AnalysisJob.status == 'queued') & (AnalysisJob.queue_deadline_at <= now),
             (AnalysisJob.status == 'running') & AnalysisJob.current_attempt_id.in_(
                 select(AnalysisAttempt.id).where(AnalysisAttempt.status == 'running', AnalysisAttempt.lease_expires_at <= now))))
+        if job_id is not None:
+            query = query.where(AnalysisJob.id == job_id)
+        jobs = db.scalars(query
             .order_by(AnalysisJob.id).with_for_update(skip_locked=True).execution_options(populate_existing=True)).all()
         changed = 0
         for job in jobs:

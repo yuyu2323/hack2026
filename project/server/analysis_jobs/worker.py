@@ -19,7 +19,7 @@ from server.analysis_jobs import service
 from server.core.config import get_settings
 from server.core.db import SessionLocal, utcnow
 from server.submissions.models import MediaAsset, SubmissionPhoto
-from server.submissions.storage import protected_path
+from server.submissions.storage import read_media
 
 logger = logging.getLogger(__name__)
 
@@ -52,8 +52,7 @@ def load_request(db, claim):
                 media = db.get(MediaAsset, media_id)
                 if media is None or media.sha256 != meta.sha256 or media.mime_type != meta.mime_type:
                     raise ValueError('미디어 정보 불일치')
-                with protected_path(media).open('rb') as file:
-                    data = file.read(10 * 1024 * 1024 + 1)
+                data = read_media(db, media)
                 if len(data) != media.byte_size or hashlib.sha256(data).hexdigest() != meta.sha256:
                     raise ValueError('파일 hash 불일치')
                 images.append(data)

@@ -1,31 +1,30 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { deploymentConfig } from './config.mjs';
-
-test('잘못된 origin과 인증정보를 거부하며 입력 비밀을 오류에 노출하지 않는다', () => {
-  for (const value of [undefined, '', 'http://backend.example.com', 'https://backend.example.com/api',
-    'https://name:secret@backend.example.com', 'https://backend.example.com/?token=secret',
-    'https://backend.example.com/#secret', 'https://localhost', 'https://127.0.0.1']) {
-    assert.throws(() => deploymentConfig(value), error => !error.message.includes('secret') && error.message.includes('BACKEND_ORIGIN'));
+import { readFile } from 'node:fs/promises';
+const root = new URL('../../', import.meta.url);
+const config = JSON.parse(await readFile(new URL('vercel.json', root), 'utf8'));
+test('FastAPI 진입점과 분석 제한 시간', async () => {
+  assert.equal(config.framework, 'fastapi');
+  assert.ok(config.functions['index.py'].maxDuration >= 150);
+  assert.equal(config.buildCommand, 'npm run build:vercel');
+  assert.equal(config.outputDirectory, undefined);
+  const entry = await readFile(new URL('index.py', root), 'utf8');
+  assert.match(entry, /from server.main import app/);
+  assert.doesNotMatch(entry, /app.main|internal\/analyze/);
+});
+test('역할 화면만 SPA로 연결하고 API는 Python으로 처리', () => {
+  const sources = config.rewrites.map(row => row.source);
+  for (const path of ['/', '/login', '/forbidden', '/store-owner/:path*', '/ofc-admin/:path*', '/platform-admin/:path*']) assert.ok(sources.includes(path));
+  for (const row of config.rewrites) {
+    assert.equal(row.destination, '/index.html');
+    assert.ok(!row.source.startsWith('/api') && !row.source.startsWith('/internal'));
   }
 });
-test('API 경로와 캡처값을 고정 upstream으로 전달하고 모든 메서드를 허용한다', () => {
-  const api = deploymentConfig('https://backend.example.com/').routes[0];
-  for (const path of ['/api/auth/login', '/api/submissions', '/api/media/123']) {
-    assert.equal(path.replace(new RegExp(api.src), api.dest), 'https://backend.example.com' + path);
-  }
-  assert.equal(new RegExp(api.src).test('/apiary'), false);
-  assert.equal(new RegExp(api.src).test('/store-owner'), false);
-  assert.equal(api.methods, undefined);
-  assert.equal(api.headers['Vercel-CDN-Cache-Control'], 'no-store');
-});
-test('정적 파일 확인 후 누락된 asset은 404, 역할 화면은 SPA로 연결한다', () => {
-  const routes = deploymentConfig('https://backend.example.com').routes;
-  assert.deepEqual(routes[1], { handle: 'filesystem' });
-  assert.equal(routes[2].status, 404);
-  for (const path of ['/login', '/store-owner', '/ofc-admin/guidelines/123', '/platform-admin']) {
-    assert.equal(new RegExp(routes[2].src).test(path), false);
-    assert.equal(path.replace(new RegExp(routes[3].src), routes[3].dest), '/index.html');
-  }
-  assert.deepEqual(routes[3].methods, ['GET', 'HEAD']);
+test('비밀 파일은 제외하고 프론트 출력만 정적 복사', async () => {
+  const ignored = await readFile(new URL('.vercelignore', root), 'utf8');
+  for (const item of ['.local/', '**/.local/', '.env', '**/.env', '**/.venv/']) assert.ok(ignored.split(/\r?\n/).includes(item));
+  const build = await readFile(new URL('deploy/vercel/build.mjs', root), 'utf8');
+  assert.match(build, /web-concepts-02\/dist\//);
+  assert.match(build, /VERCEL_ENV === 'production'/);
+  assert.doesNotMatch(build, /BACKEND_ORIGIN/);
 });

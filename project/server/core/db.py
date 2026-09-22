@@ -16,7 +16,7 @@ def make_engine(url: str, **kwargs):
             connection.execute('PRAGMA foreign_keys=ON')
     return result
 
-engine = make_engine(get_settings().database_url)
+engine = make_engine(get_settings().database_url, pool_pre_ping=True)
 SessionLocal = sessionmaker(bind=engine, expire_on_commit=False)
 
 

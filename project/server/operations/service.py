@@ -211,18 +211,24 @@ def audit_dto(db,row):
 
 
 def service_dashboard(db):
+    from server.vercel_runtime import enabled, ai_settings
+    request_mode=enabled()
     now=utcnow();db.execute(select(1))
     services=[{'name':'api','status':'up','checked_at':scalar(now),'heartbeat_at':None,'last_success_at':None,'error_code':None,'is_fixture':False},
               {'name':'db','status':'up','checked_at':scalar(now),'heartbeat_at':None,'last_success_at':None,'error_code':None,'is_fixture':False}]
     try:
-        response=httpx.get(get_settings().ai_service_url+'/health',timeout=1.0,trust_env=False,headers={'Authorization':'Bearer '+get_settings().ai_service_token})
-        ai_up=response.is_success
+        if request_mode:
+            config=ai_settings()
+            ai_up=config.ai_requests_enabled and bool(config.openai_api_key.get_secret_value().strip())
+        else:
+            response=httpx.get(get_settings().ai_service_url+'/health',timeout=1.0,trust_env=False,headers={'Authorization':'Bearer '+get_settings().ai_service_token})
+            ai_up=response.is_success
     except httpx.HTTPError:ai_up=False
     services.append({'name':'ai','status':'up' if ai_up else 'down','checked_at':scalar(now),'heartbeat_at':None,'last_success_at':None,'error_code':None if ai_up else 'AI_UNAVAILABLE','is_fixture':False})
     status_rows=list(db.scalars(select(ServiceStatus)));heartbeat=None
     last_success=None;last_failure=None;last_error=None
     for row in status_rows:
-        if row.service_name not in ('api','db','ai'):
+        if row.service_name not in ('api','db','ai') and not (request_mode and row.service_name=='worker'):
             data=fields(row,['status','checked_at','heartbeat_at','last_success_at','error_code','is_fixture']);data['name']=row.service_name
             if row.service_name=='worker' and row.heartbeat_at and not row.is_fixture:
                 heartbeat=max(0,(now-as_utc(row.heartbeat_at)).total_seconds())
@@ -232,7 +238,7 @@ def service_dashboard(db):
             if row.last_success_at and (not last_success or as_utc(row.last_success_at)>as_utc(last_success)):last_success=row.last_success_at
             if row.last_failure_at and (not last_failure or as_utc(row.last_failure_at)>as_utc(last_failure)):last_failure=row.last_failure_at;last_error=row.error_code
     if not any(row['name']=='worker' for row in services):
-        services.append({'name':'worker','status':'unknown','checked_at':scalar(now),'heartbeat_at':None,'last_success_at':None,'error_code':None,'is_fixture':False})
+        services.append({'name':'worker','status':'up' if request_mode else 'unknown','checked_at':scalar(now),'heartbeat_at':None,'last_success_at':None,'error_code':None,'is_fixture':False})
     def counts(fixture):
         result=dict.fromkeys(('queued','running','succeeded','failed'),0)
         result.update(dict(db.execute(select(AnalysisJob.status,func.count()).where(AnalysisJob.is_fixture==fixture).group_by(AnalysisJob.status)).all()))

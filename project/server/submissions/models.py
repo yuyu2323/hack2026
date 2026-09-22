@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Integer, UniqueConstraint, CheckConstraint, Index
+from sqlalchemy import Column, String, Integer, UniqueConstraint, CheckConstraint, Index, LargeBinary
 from server.core.base import Base, IdentityMixin, CreatedMixin
 from server.core.model_helpers import fk, choices, JSON_DATA
 
@@ -40,3 +40,11 @@ class AnalysisContext(IdentityMixin, CreatedMixin, Base):
     schema_version = Column(String(16), nullable=False, default='1.0')
     snapshot = Column(JSON_DATA, nullable=False)
     snapshot_sha256 = Column(String(64), nullable=False)
+
+
+class MediaBlob(Base):
+    __tablename__ = 'media_blobs'
+    storage_key = Column(String(255), primary_key=True)
+    content = Column(LargeBinary, nullable=False)
+    byte_size = Column(Integer, nullable=False)
+    __table_args__ = (CheckConstraint('byte_size BETWEEN 1 AND 10485760'),)

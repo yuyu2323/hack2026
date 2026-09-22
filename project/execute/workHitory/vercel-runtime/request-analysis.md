@@ -1,0 +1,3 @@
+기존 claim/lease/complete 처리 재사용. 상시 worker 대신 인증된 생성·조회·재처리 응답의 ASGI background task가 지정 작업 하나만 처리한다. DB 세션은 모델 호출 전 닫는다.
+`n구현: 지정 job_id claim/sweep 선택 인수, BackgroundTasks 완료까지 ASGI 처리, 인프로세스 OpenAI 어댑터·이미지 재검증, 인증 후 생성/조회/운영 재처리 훅, 요청 방식 서비스 상태. 테스트: runtime+operations 17 passed / 1 skipped(기존 PostgreSQL 조건부), runtime 최신+database_media 13 passed. 실제 PostgreSQL 경쟁·배포 수명·유료 AI 검증은 미실행. 독립 사진 저장 검토: 권한·해시·길이·트랜잭션·quota advisory lock 확인, 차단 이슈 없음.
+배포 초기화 독립 검토: SQLite 임시 DB에서 신규 시드·재배포 계정/암호 해시 보존·임시 credential 삭제·preview 미초기화·필수 설정 실패·실패시 정리 테스트 추가. Vercel 설정 테스트는 외부 프록시 구성에서 FastAPI 동일 프로젝트 구성으로 갱신. 공식 Python 문서 전체 파일 번들 및 FastAPI public CDN/entrypoint/build override 확인. 원격 배포 테스트는 별도 필요.

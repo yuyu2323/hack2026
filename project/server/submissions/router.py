@@ -1,7 +1,6 @@
 from typing import Annotated, Literal
 from uuid import UUID
-from fastapi import APIRouter, Depends, Query, Header, Response, Form, File, UploadFile
-from fastapi.responses import FileResponse
+from fastapi import APIRouter, Depends, Query, Header, Response, Form, File, UploadFile, BackgroundTasks
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 from server.core.db import get_db
@@ -12,7 +11,7 @@ from server.analysis_jobs.models import AnalysisJob
 from server.reviews.models import ReviewResult
 from server.submissions import service
 from server.submissions.schemas import SubmissionCreate
-from server.submissions.storage import authorize_media, protected_path
+from server.submissions.storage import authorize_media, read_media
 from server.business_common import BusinessFilter, page, metadata_json
 
 router = APIRouter(prefix='/api', tags=['submissions'], dependencies=[Depends(require_csrf)])
@@ -20,8 +19,10 @@ DB = Annotated[Session, Depends(get_db)]
 USER = Annotated[Account, Depends(get_current_account)]
 
 @router.post('/submissions', status_code=202)
-def create(response: Response, db: DB, account: USER, metadata: str = Form(...), photos: list[UploadFile] = File(...), key: str | None = Header(None, alias='Idempotency-Key')):
+def create(background_tasks: BackgroundTasks, response: Response, db: DB, account: USER, metadata: str = Form(...), photos: list[UploadFile] = File(...), key: str | None = Header(None, alias='Idempotency-Key')):
     result, replayed = service.create_submission(db, account, metadata_json(metadata, SubmissionCreate), photos, key)
+    from server.vercel_runtime import schedule_analysis
+    schedule_analysis(background_tasks, result['job']['id'])
     if replayed:
         response.headers['Idempotency-Replayed'] = 'true'
     return result
@@ -49,17 +50,19 @@ def comparison(ident: UUID, db: DB, account: USER):
     return compare(db, account, ident)
 
 @router.get('/jobs/{ident}')
-def job(ident: UUID, db: DB, account: USER):
+def job(background_tasks: BackgroundTasks, ident: UUID, db: DB, account: USER):
     from server.core.permissions import require_business
     require_business(account)
     row = db.get(AnalysisJob, ident)
     if row is None:
         raise ApiError(404, 'NOT_FOUND', '작업을 찾을 수 없습니다.')
     service.get_submission(db, account, row.submission_id)
+    from server.vercel_runtime import schedule_analysis
+    schedule_analysis(background_tasks, row.id)
     return service.job_dto(db, row)
 
 @router.get('/media/{ident}')
 def media(ident: UUID, db: DB, account: USER, variant: Literal['original','thumbnail'] = 'original'):
     row = authorize_media(db, account, ident)
-    return FileResponse(protected_path(row, variant == 'thumbnail'), media_type='image/jpeg' if variant == 'thumbnail' else row.mime_type,
+    return Response(read_media(db, row, variant == 'thumbnail'), media_type='image/jpeg' if variant == 'thumbnail' else row.mime_type,
                         headers={'Cache-Control': 'private, no-store', 'X-Content-Type-Options': 'nosniff'})

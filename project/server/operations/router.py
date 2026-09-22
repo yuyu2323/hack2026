@@ -1,6 +1,6 @@
 import uuid
 from datetime import date,datetime,time,timedelta,timezone
-from fastapi import APIRouter,Depends,Query,Request,Response,Header
+from fastapi import APIRouter,Depends,Query,Request,Response,Header,BackgroundTasks
 from sqlalchemy import select,or_
 from sqlalchemy.orm import Session
 from server.core.auth import require_roles,require_csrf,get_current_account
@@ -90,17 +90,21 @@ def jobs(page:int=Query(1,ge=1),page_size:int=Query(20,ge=1,le=100),status:str|N
     return paginate(db,query.order_by(AnalysisJob.created_at.desc(),AnalysisJob.id),page,page_size,lambda row:service.operation_job(db,row))
 
 @router.get('/operations/jobs/{job_id}')
-def job(job_id:uuid.UUID,db:Session=Depends(get_db),account=operator):
+def job(job_id:uuid.UUID,background_tasks:BackgroundTasks,db:Session=Depends(get_db),account=operator):
     row=db.get(AnalysisJob,job_id)
     if not row:raise ApiError(404,'NOT_FOUND','대상을 찾을 수 없습니다.')
+    from server.vercel_runtime import schedule_analysis
+    schedule_analysis(background_tasks,row.id)
     result=service.operation_job(db,row)
     result['attempts']=[service.operation_attempt(v) for v in db.scalars(select(AnalysisAttempt).where(AnalysisAttempt.job_id==job_id).order_by(AnalysisAttempt.attempt_number))]
     return result
 
 @router.post('/operations/jobs/{job_id}/retry',status_code=202,dependencies=write)
-def retry(job_id:uuid.UUID,data:ReasonInput,request:Request,response:Response,idempotency_key:str=Header(...,min_length=16,max_length=128,pattern=r'^[A-Za-z0-9_.:-]+$'),db:Session=Depends(get_db),account=operator):
+def retry(job_id:uuid.UUID,data:ReasonInput,request:Request,response:Response,background_tasks:BackgroundTasks,idempotency_key:str=Header(...,min_length=16,max_length=128,pattern=r'^[A-Za-z0-9_.:-]+$'),db:Session=Depends(get_db),account=operator):
     from server.analysis_jobs.service import retry_job
     row,replayed=retry_job(db,account,job_id,data.reason,idempotency_key,request.state.request_id)
+    from server.vercel_runtime import schedule_analysis
+    schedule_analysis(background_tasks,row.id)
     if replayed:response.headers['Idempotency-Replayed']='true'
     return service.operation_job(db,row)
 

@@ -1,6 +1,15 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "framework": null,
+  "framework": "fastapi",
   "installCommand": "npm ci",
-  "buildCommand": "npm run build:vercel"
+  "buildCommand": "npm run build:vercel",
+  "functions": {"index.py": {"maxDuration": 180, "includeFiles": "{ai-service,packages}/**"}},
+  "rewrites": [
+    {"source": "/", "destination": "/index.html"},
+    {"source": "/login", "destination": "/index.html"},
+    {"source": "/forbidden", "destination": "/index.html"},
+    {"source": "/store-owner/:path*", "destination": "/index.html"},
+    {"source": "/ofc-admin/:path*", "destination": "/index.html"},
+    {"source": "/platform-admin/:path*", "destination": "/index.html"}
+  ]
 }
