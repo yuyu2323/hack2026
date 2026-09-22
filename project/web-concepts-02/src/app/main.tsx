@@ -22,6 +22,7 @@ import { Business } from "../ofc-admin/Business";
 import { Operations } from "../platform-admin/Operations";
 import { Issues, Notifications } from "../shared/issues";
 import "./style.css";
+import { hasDemoRoleTabs, loginWithDemoSessions, getInitialAccount, publicDemoAccess } from "../shared/demo-role";
 const ownerMenu = [
   ["", "오늘 할 일"],
   ["/submit", "사진 점검"],
@@ -55,8 +56,7 @@ export function App() {
     [epoch, setEpoch] = useState(0);
   useEffect(() => {
     let live = true;
-    api
-      .me()
+    getInitialAccount()
       .then((a) => {
         if (live) {
           setAccount(a);
@@ -191,6 +191,11 @@ export function App() {
           <span className="brand-caption">오늘 할 일</span>
         </Link>
         <div className="account-menu">
+          {hasDemoRoleTabs(account) && <nav aria-label="역할별 새 탭">
+            <a href="/store-owner" target="_blank" rel="noopener noreferrer">점주 화면</a>{" · "}
+            <a href="/ofc-admin" target="_blank" rel="noopener noreferrer">영업 화면</a>{" · "}
+            <a href="/platform-admin" target="_blank" rel="noopener noreferrer">운영자 화면</a>
+          </nav>}
           <span>
             {account.display_name}{" "}
             <Badge tone="light">{roles[account.role]}</Badge>
@@ -211,6 +216,7 @@ export function App() {
           </button>
         </div>
       </header>
+      {publicDemoAccess && account.demo_public_access_enabled && <p className="demo-public-banner" role="note">공개 시연 · 시연 데이터 사용 · 관리 기능 제한</p>}
       <nav className="primary-nav" aria-label="주요 업무">
         <div>
           {menu.map(([suffix, label]) => (
@@ -322,7 +328,7 @@ function Login({
             onSubmit={(e) => {
               e.preventDefault();
               void m.run(
-                () => api.login(id, password),
+                () => loginWithDemoSessions(id, password),
                 (result) => {
                   setPassword("");
                   onLogin(result.account);

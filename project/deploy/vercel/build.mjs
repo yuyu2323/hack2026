@@ -9,7 +9,10 @@ try {
   await rm(output, { recursive: true, force: true });
   const npmArgs = process.env.npm_execpath ? [process.env.npm_execpath, 'run', 'build'] : ['run', 'build'];
   const build = spawnSync(process.env.npm_execpath ? process.execPath : 'npm', npmArgs, {
-    cwd: root, stdio: 'inherit', env: { ...process.env, VITE_HOSTED_UPLOAD_LIMIT: 'true' },
+    cwd: root, stdio: 'inherit', env: { ...process.env, VITE_HOSTED_UPLOAD_LIMIT: 'true',
+      VITE_DEMO_MULTI_ROLE_ENABLED: process.env.DEMO_MULTI_ROLE_ENABLED === 'true' ? 'true' : 'false',
+      VITE_DEMO_PUBLIC_ACCESS_ENABLED: process.env.DEMO_PUBLIC_ACCESS_ENABLED === 'true' ? 'true' : 'false',
+    },
   });
   if (build.error || build.status !== 0) throw new Error('프론트 빌드에 실패했습니다. 위 빌드 오류를 확인하세요.');
   await mkdir(output, { recursive: true });

@@ -94,6 +94,8 @@ def retry_job(db, account, job_id, reason, idempotency_key, request_id):
             raise ApiError(404, 'NOT_FOUND', '분석 작업을 찾을 수 없습니다.')
         if job.status != 'failed':
             raise ApiError(409, 'JOB_NOT_RETRYABLE', '실패한 분석 작업만 재처리할 수 있습니다.')
+        from server.analysis_jobs.quota import consume_public_analysis
+        consume_public_analysis(db)
         now = utcnow()
         previous = {'status': job.status, 'current_attempt_id': job.current_attempt_id, 'enqueue_generation': job.enqueue_generation}
         attempt = AnalysisAttempt(id=uuid4(), job_id=job.id, attempt_number=_next_number(db, job),

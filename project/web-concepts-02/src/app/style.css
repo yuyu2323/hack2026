@@ -1566,3 +1566,5 @@ summary:focus-visible,
     flex-wrap: wrap;
   }
 }
+
+.demo-public-banner { margin: 0; padding: .65rem 1rem; text-align: center; background: #fff3d6; color: #664700; font-size: .85rem; }

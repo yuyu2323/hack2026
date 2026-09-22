@@ -2,6 +2,12 @@ from sqlalchemy import Column, String, Integer, Boolean, DateTime, Uuid, Foreign
 from server.core.base import Base, IdentityMixin, CreatedMixin, utcnow
 from server.core.model_helpers import fk, choices
 
+class DailyAnalysisUsage(Base):
+    __tablename__ = 'daily_analysis_usage'
+    day = Column(String(10), primary_key=True)
+    used = Column(Integer, nullable=False)
+    __table_args__ = (CheckConstraint('used BETWEEN 1 AND 20'),)
+
 class AnalysisJob(IdentityMixin, CreatedMixin, Base):
     __tablename__ = 'analysis_jobs'
     submission_id = fk('submissions', unique=True)

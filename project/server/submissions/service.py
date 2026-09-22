@@ -93,6 +93,8 @@ def create_submission(db, account, data, uploads, key):
         return submission_accepted(db, item), True
     paths = []
     try:
+        from server.analysis_jobs.quota import consume_public_analysis
+        consume_public_analysis(db)
         item = Submission(id=uuid4(), store_id=store.id, category_id=category.id, submitted_by_id=account.id,
                           question=data.question, parent_submission_id=data.parent_submission_id)
         db.add(item)

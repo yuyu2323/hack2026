@@ -6,7 +6,7 @@
 아래 기존 Docker 프록시 절차는 외부 서버를 사용하던 이전 배포 방식의 참고다.
 현재 설정은 Root `project`, Framework `FastAPI`(vercel.json), Node 22,
 `npm ci`, `npm run build:vercel`, Output Directory override 없음이다.
-`BACKEND_ORIGIN`은 필요하지 않다. `index.py`가 업무 API를 제공하며 `public/`은 CDN으로 제공한다.
+`BACKEND_ORIGIN`은 필요하지 않다. `index.py`가 업무 API와 빌드된 `public/` 정적 파일을 제공한다.
 
 Production 환경에 Neon이 연결한 `DATABASE_URL`, `DATABASE_URL_UNPOOLED`와 다음 값을 저장한다:
 `MEDIA_STORAGE=database`, `MEDIA_DATABASE_MAX_BYTES=209715200`,
@@ -22,6 +22,22 @@ Origin은 Vercel이 제공한 `VERCEL_PROJECT_PRODUCTION_URL`을 사용하며 �
 사진은 권한 검사 후 DB에서 읽고, 200MiB 저장 상한을 적용한다. 무료 DB의 다른 테이블도 공간을 사용한다.
 Vercel 업로드 제한 때문에 배포 빌드에서는 브라우저가 사진을 축소하여 전체 3.5MiB 이하로 보낸다.
 실제 AI 호출은 프로모션 크레딧을 소비한다. 무료 자원 한도 초과 시 유료로 자동 전환하지 않고 사용을 중단하거나 자료를 정리한다.
+
+## 공개 시연과 동시 역할 탭
+
+기본값은 비활성이다. 명시적인 공개 시연 승인 후 Production에
+`DEMO_MULTI_ROLE_ENABLED=true`, `DEMO_PUBLIC_ACCESS_ENABLED=true`를 설정하고 재빌드한다.
+빌드 스크립트가 비밀이 아닌 두 플래그만 프론트에 전달한다.
+다른 PC에서도 최초 접속 시 시연 계정 세션을 자동 발급하고 점주·영업·운영자 탭을 함께 사용할 수 있다.
+세 역할은 별도 HttpOnly 쿠키를 사용하며 서버 역할 검사와 CSRF/Origin 검사를 유지한다.
+비밀번호와 API 키는 프론트 소스나 브라우저 저장소에 포함하지 않는다.
+
+공개 모드에서는 계정·매장·기준·운영 설정 변경을 차단한다.
+사진 신규 제출과 실패 작업 재처리는 전체 방문자 합계 UTC 하루 20건으로 제한한다.
+이 제한은 기존 대기 작업의 실행 횟수 제한은 아니며 무료 서비스의 전체 비용 상한도 아니다.
+공개 시연 사진과 제출 결과는 같은 시연 계정을 사용하는 방문자 사이에 공유된다.
+실제 개인정보·민감한 매장 사진을 넣지 않는 별도 시연 DB에서만 활성화한다.
+공개 접근을 중단하려면 두 플래그를 false로 변경하고 재배포한다.
 
 ## 이전 외부 Docker 서버 배포 방식
 

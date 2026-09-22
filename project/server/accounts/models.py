@@ -23,4 +23,5 @@ class AuthSession(IdentityMixin, CreatedMixin, Base):
     account_id = fk('accounts', nullable=True)
     expires_at = Column(DateTime(timezone=True), nullable=False)
     revoked_at = Column(DateTime(timezone=True), nullable=True)
+    is_public_demo = Column(Boolean, nullable=False, default=False, server_default='false')
     __table_args__ = (CheckConstraint('expires_at > created_at'), Index('ix_sessions_expiry','expires_at'), Index('ix_sessions_account','account_id','revoked_at'))

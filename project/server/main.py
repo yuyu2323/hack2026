@@ -9,7 +9,7 @@ app = FastAPI(title='StoreLoop API', version='1.0.0', docs_url=None, redoc_url=N
 install_error_handlers(app)
 app.add_middleware(CORSMiddleware, allow_origins=get_settings().allowed_origins, allow_credentials=True,
                    allow_methods=['GET','POST','PATCH','PUT','OPTIONS'],
-                   allow_headers=['Content-Type','X-CSRF-Token','Idempotency-Key'], expose_headers=['X-Request-ID','Idempotency-Replayed'])
+                   allow_headers=['Content-Type','X-CSRF-Token','Idempotency-Key','X-StoreLoop-Role'], expose_headers=['X-Request-ID','Idempotency-Replayed'])
 for domain in ('accounts','stores','operations','guidelines','submissions','issues','notifications','dashboard','analytics'):
     app.include_router(import_module('server.' + domain + '.router').router)
 

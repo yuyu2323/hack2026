@@ -14,6 +14,7 @@ import {
   type AccountMe,
   type Page,
 } from "@storeloop/api-client";
+import { demoRoleTabs, roleForPath } from "./demo-role";
 export { api, ApiError, queryString };
 export type Data = Record<string, any>;
 export const roles: Record<string, string> = {
@@ -64,6 +65,11 @@ export const date = (value?: string | null) =>
       })
     : "—";
 export function go(to: string, replace = false) {
+  if (demoRoleTabs && roleForPath(window.location.pathname) !== roleForPath(to.split("?")[0])) {
+    if (replace) window.location.replace(to);
+    else window.location.assign(to);
+    return;
+  }
   if (replace) history.replaceState({}, "", to);
   else history.pushState({}, "", to);
   window.dispatchEvent(new PopStateEvent("popstate"));

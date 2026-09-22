@@ -1,19 +1,51 @@
 import { useEffect, useState } from "react";
 import { Source, type Data } from "./core";
 import { prepareHostedPhoto } from "./hosted-photo";
+import { rolePhotoUrl } from "./demo-role";
 const hostedUploads = import.meta.env.VITE_HOSTED_UPLOAD_LIMIT === "true";
 export function PhotoPicker({
   files,
   set,
   max = 5,
+  demoSample = false,
 }: {
   files: File[];
   set: (files: File[]) => void;
   max?: number;
+  demoSample?: boolean;
 }) {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState(""),
     [urls, setUrls] = useState<string[]>([]);
+  async function addFiles(added: File[]) {
+if (files.length + added.length > max) {
+  setError(`사진은 ${max}장까지 선택할 수 있습니다.`);
+  return;
+}
+if (
+  added.some(
+    (f) =>
+      f.size > 10 * 1024 * 1024 ||
+      !["image/jpeg", "image/png"].includes(f.type),
+  )
+) {
+  setError("JPEG·PNG, 장당 10MiB 이하 사진을 선택해 주세요.");
+  return;
+}
+setError("");
+setBusy(true);
+try {
+  const prepared: File[] = [];
+  for (const file of added) {
+    prepared.push(hostedUploads ? await prepareHostedPhoto(file, max) : file);
+  }
+  set([...files, ...prepared]);
+} catch {
+  setError("사진을 처리할 수 없습니다. 크기를 줄이거나 다른 JPEG·PNG 사진을 선택해 주세요.");
+} finally {
+  setBusy(false);
+}
+  }
   useEffect(() => {
     const next = files.map((f) => URL.createObjectURL(f));
     setUrls(next);
@@ -33,36 +65,20 @@ export function PhotoPicker({
           onChange={async (e) => {
             const added = Array.from(e.target.files ?? []);
             e.target.value = "";
-            if (files.length + added.length > max) {
-              setError(`사진은 ${max}장까지 선택할 수 있습니다.`);
-              return;
-            }
-            if (
-              added.some(
-                (f) =>
-                  f.size > 10 * 1024 * 1024 ||
-                  !["image/jpeg", "image/png"].includes(f.type),
-              )
-            ) {
-              setError("JPEG·PNG, 장당 10MiB 이하 사진을 선택해 주세요.");
-              return;
-            }
-            setError("");
-            setBusy(true);
-            try {
-              const prepared: File[] = [];
-              for (const file of added) {
-                prepared.push(hostedUploads ? await prepareHostedPhoto(file, max) : file);
-              }
-              set([...files, ...prepared]);
-            } catch {
-              setError("사진을 처리할 수 없습니다. 크기를 줄이거나 다른 JPEG·PNG 사진을 선택해 주세요.");
-            } finally {
-              setBusy(false);
-            }
+            await addFiles(added);
           }}
         />
       </label>
+      {demoSample && <button type="button" className="secondary" disabled={busy || files.length >= max} onClick={async () => {
+        setBusy(true); setError("");
+        try {
+          const response = await fetch("/demo-beverage.png");
+          if (!response.ok) throw new Error("시연 사진 요청 실패");
+          const blob = await response.blob();
+          await addFiles([new File([blob], "AI 생성 시연 사진.png", { type: "image/png" })]);
+        } catch { setError("시연 사진을 불러오지 못했습니다. 다시 시도해 주세요."); }
+        finally { setBusy(false); }
+      }}>시연 사진 사용</button>}
       <p className="hint">
         매대 전체와 상품 앞면이 보이도록 밝은 곳에서 촬영해 주세요. 선택
         순서대로 사진 번호가 정해집니다.
@@ -181,10 +197,10 @@ function ProtectedPhoto({
           </button>
         </div>
       ) : (
-        <a href={photo.url} target="_blank" rel="noreferrer">
+        <a href={rolePhotoUrl(photo.url)} target="_blank" rel="noreferrer">
           <img
             key={revision}
-            src={photo.url}
+            src={rolePhotoUrl(photo.url)}
             alt={label}
             onError={() => setFailed(true)}
           />

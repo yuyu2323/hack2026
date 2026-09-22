@@ -1,3 +1,4 @@
+import { rolePhotoUrl, publicDemoAccess } from "../shared/demo-role";
 import { useEffect, useRef, useState } from "react";
 import {
   idempotencyKey,
@@ -203,7 +204,7 @@ export function SubmissionCard({
       {item.thumbnail && (
         <img
           className="card-thumb"
-          src={item.thumbnail.thumbnail_url ?? item.thumbnail.url}
+          src={rolePhotoUrl(item.thumbnail.thumbnail_url ?? item.thumbnail.url)}
           alt={`${item.category_name} 제출 사진`}
         />
       )}
@@ -411,7 +412,7 @@ function Submit({ account }: { account: AccountMe }) {
           </p>
         )}
         <h2>2. 사진과 궁금한 점을 알려 주세요</h2>
-        <PhotoPicker files={files} set={setFiles} />
+        <PhotoPicker files={files} set={setFiles} demoSample={publicDemoAccess && account.demo_public_access_enabled === true} />
         <label>
           질문 또는 현장 상황
           <textarea

@@ -14,19 +14,30 @@ _DUMMY_HASH=hash_password('external-invalid-timing-dummy')
 
 
 def account_me(db,account):
+    from server.core.auth import DEMO_ROLE_LOGINS
     result=fields(account,['id','login_id','display_name','role','region_id','is_active','version'])
     result['store_ids']=[str(value) for value in accessible_store_ids(db,account)]
+    result['demo_multi_role_enabled'] = bool(get_settings().demo_multi_role_enabled and account.is_active
+                                            and DEMO_ROLE_LOGINS.get(account.role) == account.login_id)
+    result['demo_public_access_enabled'] = get_settings().demo_public_access_enabled
     result['permissions']={'store_owner':['submit','view_business'],'ofc':['manage_guidelines','manage_issues','view_business'],'regional':['manage_guidelines','manage_issues','view_business'],'hq':['manage_guidelines','manage_issues','view_business'],'platform_operator':['operate']}[account.role]
     return result
 
 
-def new_session(db,response,account=None):
+def new_session(db,response,account=None,*,cookie_name=None):
+    settings=get_settings()
     token=secrets.token_urlsafe(32); csrf=secrets.token_urlsafe(32)
     now=utcnow(); expires=now+timedelta(hours=12) if account else now+timedelta(minutes=30)
-    session=AuthSession(token_hash=hash_token(token),csrf_hash=hash_token(csrf),account_id=account.id if account else None,created_at=now,expires_at=expires)
+    session=AuthSession(token_hash=hash_token(token),csrf_hash=hash_token(csrf),account_id=account.id if account else None,created_at=now,expires_at=expires,
+                        is_public_demo=settings.demo_public_access_enabled)
     db.add(session)
-    settings=get_settings()
-    response.set_cookie(settings.session_cookie_name,token,httponly=True,secure=settings.session_cookie_secure,samesite='lax',path='/',max_age=int((expires-now).total_seconds()))
+    response.set_cookie(cookie_name or settings.session_cookie_name,token,httponly=True,secure=settings.session_cookie_secure,samesite='lax',path='/',max_age=int((expires-now).total_seconds()))
+    if cookie_name is None and account is not None and settings.demo_multi_role_enabled:
+        from server.core.auth import DEMO_ROLE_LOGINS
+        if account.role in DEMO_ROLE_LOGINS:
+            response.set_cookie(settings.session_cookie_name+'_'+account.role,token,httponly=True,
+                                secure=settings.session_cookie_secure,samesite='lax',path='/',
+                                max_age=int((expires-now).total_seconds()))
     return csrf,expires
 
 

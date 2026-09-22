@@ -19,3 +19,7 @@
 - 사용자가 직접 연 운영 페이지에서 실제 FastAPI 404를 확인해 브라우저 차단과 별개의 프론트 경로 누락을 식별했다.
 - index.py에 API 뒤 정적 파일 mount(check_dir=False)를 추가하고 public 파일을 함수 패키지에 포함했다. 기존 SPA rewrites 유지.
 - 독립 검토 backend_deploy_review 완료. TestClient로 HTML root 200, health API 우선순위, .env 404 통과.
+- 공개 다중 역할 기능: 서버 인증/세션/quota 20개, 프론트33개, API client3개, Vercel config3개 테스트 통과. 전체 시연 플래그 활성 빌드 성공.
+- 독립 보안 검토에서 공개 종료 후 세션 잔존 권한 문제를 발견해 is_public_demo DB marker로 해결. 재검토 blocker 없음.
+- 사용자가 공개 자동 로그인, 공유 시연 데이터, 관리 변경 제한, 전역 UTC 신규/재처리20건 범위를 명시 승인했다.
+- OpenAI 현재 호출은 OpenAIRunner -> https://api.openai.com/v1/responses, gpt-4.1-mini, store:false. 실제 운영 응답 검증은 후속 진행.

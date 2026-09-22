@@ -16,6 +16,8 @@ class Settings(BaseSettings):
     media_database_max_bytes: int = 200 * 1024 * 1024
     session_cookie_secure: bool = False
     session_cookie_name: str = 'storeloop_session'
+    demo_multi_role_enabled: bool = False
+    demo_public_access_enabled: bool = False
     allowed_origins_value: str = Field(
         default_factory=lambda: ('https://' + os.environ['VERCEL_PROJECT_PRODUCTION_URL'])
         if os.environ.get('VERCEL_PROJECT_PRODUCTION_URL') else 'http://127.0.0.1:5182',
