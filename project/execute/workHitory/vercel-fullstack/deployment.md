@@ -23,3 +23,7 @@
 - 독립 보안 검토에서 공개 종료 후 세션 잔존 권한 문제를 발견해 is_public_demo DB marker로 해결. 재검토 blocker 없음.
 - 사용자가 공개 자동 로그인, 공유 시연 데이터, 관리 변경 제한, 전역 UTC 신규/재처리20건 범위를 명시 승인했다.
 - OpenAI 현재 호출은 OpenAIRunner -> https://api.openai.com/v1/responses, gpt-4.1-mini, store:false. 실제 운영 응답 검증은 후속 진행.
+- 운영 공개모드 배포699f0b7 Ready. 점주/ofc/operator 세 탭 로그인 확인.
+- 신규 실제 제출 d33389e2-eb54-475f-b865-1d0efea6b9cc, 작업6a99b82d-2d94-4537-a9d2-c26b7af35e1e: 실제AI 성공, 준수율50%, 판단가능100%, 시도1회.
+- 팀 강제 Vercel Authentication은 Owner만 변경 가능. 승인된 공개범위 내 Vercel Share > Anyone with the link 기능 활성화, 새 IAB 브라우저에서 Vercel/앱 자격 입력 없이 operator 자동로그인 확인. 공유링크 접근값은 저장하지 않음.
+- 사용자가 OpenAI 대시보드0토큰 지적. Personal/모든프로젝트/오늘 조회에서도0 확인. 사용량 지연으로 단정하지 않고 provider 응답 토큰과 키 지문 진단을 추가했다. mockHTTP20개 통과, root 비밀노출 없음 검토.

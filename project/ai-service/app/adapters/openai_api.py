@@ -1,6 +1,9 @@
 """유료 자동 재시도 없이 OpenAI Responses API를 한 번 호출한다."""
 import asyncio
 import base64
+import json
+import hashlib
+import re
 import time
 
 import httpx
@@ -11,6 +14,33 @@ from packages.review_contract.schema import result_json_schema
 from packages.review_contract.validation import parse_result, strict_json_loads, validate_result
 
 ENDPOINT = "https://api.openai.com/v1/responses"
+
+
+def log_usage(body, request_id, job_id, api_key, *, project=None, organization=None):
+    """원문을 복사하지 않고 허용된 식별자와 정수 사용량만 기록한다."""
+    def identifier(value, pattern):
+        return value if isinstance(value, str) and len(value) <= 256 and re.fullmatch(pattern, value) and api_key not in value else None
+    usage = body.get('usage')
+    usage = usage if isinstance(usage, dict) else {}
+    def tokens(name):
+        value = usage.get(name)
+        return value if type(value) is int and 0 <= value <= 2**63-1 else None
+    record = {
+        'event': 'openai_response_usage', 'job_id': str(job_id),
+        'model': identifier(body.get('model'), r'[A-Za-z0-9][A-Za-z0-9._:-]{0,119}'),
+        'request_id': identifier(request_id, r'req_[A-Za-z0-9_-]+'),
+        'response_id': identifier(body.get('id'), r'resp_[A-Za-z0-9_-]+'),
+        'project_id': identifier(project, r'proj_[A-Za-z0-9_-]+'),
+        'organization_id': identifier(organization, r'org[-_][A-Za-z0-9_-]+'),
+        'key_fingerprint': hashlib.sha256(api_key.encode()).hexdigest()[:12],
+        'input_tokens': tokens('input_tokens'), 'output_tokens': tokens('output_tokens'),
+        'total_tokens': tokens('total_tokens'),
+    }
+    try:
+        print(json.dumps(record, ensure_ascii=True, separators=(',', ':')), flush=True)
+    except OSError:
+        # 로그 sink 오류로 이미 성공한 유료 분석을 실패시키지 않는다.
+        pass
 
 
 class OpenAIRunner:
@@ -51,6 +81,9 @@ class OpenAIRunner:
                             raise ContractError("MODEL_AUTH_FAILED", "분석 서비스 인증을 확인하고 있습니다.")
                         if response.status_code != 200:
                             raise ContractError("MODEL_EXECUTION_FAILED", "분석 서비스 요청을 완료하지 못했습니다.")
+                        request_id = response.headers.get('x-request-id')
+                        project_id = response.headers.get('openai-project')
+                        organization_id = response.headers.get('openai-organization')
                         data = bytearray()
                         async for chunk in response.aiter_bytes():
                             data.extend(chunk)
@@ -80,6 +113,7 @@ class OpenAIRunner:
             result = validate_result(parse_result(texts[0].encode()), context)
         except (ValueError, KeyError, TypeError, AttributeError):
             raise ContractError("INVALID_RESULT", "분석 결과 형식과 참조를 확인할 수 없습니다.") from None
+        log_usage(body, request_id, context.job_id, key, project=project_id, organization=organization_id)
         return {
             "result": result.model_dump(), "model": self.settings.openai_model,
             "prompt_version": PROMPT_VERSION, "cli_version": "not-applicable:openai-responses",

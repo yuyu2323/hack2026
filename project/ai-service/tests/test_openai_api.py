@@ -3,6 +3,7 @@ import asyncio
 import base64
 import copy
 import json
+import hashlib
 
 import httpx
 import pytest
@@ -117,3 +118,32 @@ def test_provider_configuration_and_health_do_not_call_external_api(monkeypatch)
     assert result.status_code==503
     assert "invalid-test-only" not in str(data)
     with pytest.raises(ValidationError):Settings(_env_file=None,ai_provider="typo")
+
+@pytest.mark.asyncio
+async def test_safe_usage_telemetry_preserves_result_contract(context,payload,capsys):
+    body=response_body(payload)
+    body.update(id='resp_test001',model='gpt-4.1-mini-2025-04-14',usage={
+        'input_tokens':1234,'output_tokens':567,'total_tokens':1801,
+        'private_metadata':'do-not-log-private-metadata'})
+    body['private']='do-not-log-provider-body'
+    runner=OpenAIRunner(settings(),httpx.MockTransport(lambda request:httpx.Response(200,json=body,headers={'x-request-id':'req_test001','openai-project':'proj_test001','openai-organization':'org-test001'})))
+    result=await runner.analyze(AnalysisInput.model_validate(context),[b'private-photo-bytes'],[b'private-reference-bytes'])
+    lines=capsys.readouterr().out.splitlines()
+    assert len(lines)==1
+    record=json.loads(lines[0])
+    assert record=={'event':'openai_response_usage','job_id':context['job_id'],'model':'gpt-4.1-mini-2025-04-14',
+                   'request_id':'req_test001','response_id':'resp_test001','input_tokens':1234,'output_tokens':567,'total_tokens':1801,
+                   'project_id':'proj_test001','organization_id':'org-test001','key_fingerprint':hashlib.sha256(b'invalid-test-only').hexdigest()[:12]}
+    assert set(result)=={'result','model','prompt_version','cli_version','duration_ms'}
+    assert result['result']==payload
+    for private in ['invalid-test-only','private-photo-bytes','private-reference-bytes','do-not-log',context['question']]:
+        assert private not in lines[0]
+
+@pytest.mark.asyncio
+async def test_malformed_usage_identifiers_are_not_logged(context,payload,capsys):
+    body=response_body(payload)
+    body.update(id='resp_invalid-test-only',model='private model\ntext',usage={'input_tokens':True,'output_tokens':-1,'total_tokens':{'private':'value'}})
+    runner=OpenAIRunner(settings(),httpx.MockTransport(lambda request:httpx.Response(200,json=body,headers={'x-request-id':'req_invalid-test-only','openai-project':'proj_invalid-test-only','openai-organization':'org-invalid-test-only'})))
+    await runner.analyze(AnalysisInput.model_validate(context),[b'p'],[b'r'])
+    record=json.loads(capsys.readouterr().out)
+    assert all(record[field] is None for field in ('model','response_id','request_id','project_id','organization_id','input_tokens','output_tokens','total_tokens'))
