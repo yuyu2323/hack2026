@@ -3,7 +3,7 @@
   "framework": "fastapi",
   "installCommand": "npm ci",
   "buildCommand": "npm run build:vercel",
-  "functions": {"index.py": {"maxDuration": 180, "includeFiles": "{ai-service,packages}/**"}},
+  "functions": {"index.py": {"maxDuration": 180, "includeFiles": "{ai-service,packages,public}/**"}},
   "rewrites": [
     {"source": "/", "destination": "/index.html"},
     {"source": "/login", "destination": "/index.html"},
