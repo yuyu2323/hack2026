@@ -54,3 +54,7 @@ npm run build
 ## GPT API 및 서버 배포
 
 환경변수 `AI_PROVIDER=openai`로 GPT API를 선택할 수 있습니다. 세 역할 프론트·Python API·worker·PostgreSQL·Python AI를 함께 실행하는 Docker 배포본은 [서버 배포 안내](docs/11-deployment.md)를 따릅니다. 배포 기본값은 `AI_REQUESTS_ENABLED=false`이며 실제 유료 테스트는 사용자가 활성화합니다.
+
+## Vercel 프론트 배포
+
+[Vercel 배포 절차](docs/12-vercel-deployment.md)를 따릅니다. Root Directory는 `project`, Framework는 `Other`, 빌드는 `npm run build:vercel`입니다. Vercel의 `BACKEND_ORIGIN`에 외부 Docker 서버의 HTTPS origin을 설정하면 세 역할 프론트와 API 프록시를 생성합니다. Python·AI·DB는 기존 외부 서버에서 실행하며 OpenAI 키는 해당 서버에만 보관합니다.

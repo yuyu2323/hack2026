@@ -31,3 +31,6 @@
 **/storageState*.json
 **/credentials*.json
 .DS_Store
+
+# Vercel 연결 정보와 배포 산출물
+**/.vercel/

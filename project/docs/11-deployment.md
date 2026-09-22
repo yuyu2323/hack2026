@@ -66,3 +66,7 @@ AI 어댑터 모의 응답 테스트는 인증 실패·429·미완료·refusal·
 `deploy/sites`는 별도 Sites 소스로 등록할 수 있는 Worker 프로젝트다. 컨테이너 프론트와 API를 같은 HTTPS 서버로 올린 뒤 Sites의 `BACKEND_ORIGIN`에 그 origin을 지정한다. 이 Worker는 세 역할 화면과 정적 파일 및 `/api/*`를 같은 origin으로 제공한다. 호스팅 로그인 쿠키·Authorization은 외부 서버로 전달하지 않고 StoreLoop 앱 세션만 전달한다. 공개 Python 서버의 `ALLOWED_ORIGINS`에는 Sites의 실제 origin을 추가해야 한다. API 서버 주소가 없으면 503을 반환하며 임의 목업 성공으로 대체하지 않는다.
 
 호스팅 순서는 외부 컨테이너 서버 준비 → Sites 신규 등록 및 project_id 설정 → BACKEND_ORIGIN 설정 → Sites 공식 소스·빌드·저장·private 배포 절차다. Worker build는 `npm run build`, 로컬 모의 테스트는 `npm test`이며 네트워크를 호출하지 않는다. `.openai/hosting.json`은 실제 등록 결과의 project_id만 사용하며 임의 ID를 저장하지 않는다.
+
+## Vercel을 프론트로 사용
+
+현재 선택한 Vercel 구성은 [12-vercel-deployment.md](12-vercel-deployment.md)를 따른다. Sites 등록은 필요 없다. `prepare_env.py --origin https://PROJECT.vercel.app --backend-origin https://backend.example.com`으로 프론트 허용 Origin과 백엔드 TLS 주소를 분리할 수 있다.

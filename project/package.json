@@ -8,7 +8,9 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",
-    "test:client": "node --import tsx --test packages/api-client/tests/*.test.ts"
+    "test:client": "node --import tsx --test packages/api-client/tests/*.test.ts",
+    "build:vercel": "node deploy/vercel/build.mjs",
+    "test:vercel": "node --test deploy/vercel/config.test.mjs"
   },
   "devDependencies": {
     "tsx": "^4.20.0",
