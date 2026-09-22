@@ -224,3 +224,12 @@ G1 확정 후 local-ai 담당이 `ai-service/`와 `packages/review_contract/` Py
 - `packages.review_contract.schema.result_json_schema()`: CLI에 전달할 정본 JSON Schema 객체.
 
 root는 `PYTHONPATH=project`로 공통 패키지 import를 제공하고 AI는 `uvicorn app.main:app --app-dir ai-service`, 업무 API/worker는 `server.*` 절대 패키지 경로로 실행한다. 두 가상환경에서 필요한 공유 패키지 의존성을 동일 호환 버전으로 설치한다. 공통 계약 인터페이스 변경은 root/DB/API/worker 담당에게 먼저 전파하고 수신·반영 확인 후 구현한다.
+
+
+## 시안 02 배포 확장: OpenAI Responses API
+
+사용자 승인에 따라 AI_PROVIDER=codex|openai로 기존 CLI와 API를 선택한다. 기본은 codex이며 배포 구성은 openai를 명시한다. OpenAI 모델·서버 비밀·출력 토큰 상한은 환경변수로 주입한다. 이미지 순서, 질문, 적용 기준/Reference, 엄격한 결과 스키마와 참조 검증은 동일하다. API 호출은 요청당 1회이며 자동 재시도·CLI로 대체 실행·결과 수선 호출은 하지 않는다. AI_REQUESTS_ENABLED=false이면 유료 요청을 보내지 않는다.
+
+기존 schema_version=1.0 봉투를 유지한다. API 모드의 cli_version은 실제 CLI 버전이 아닌 not-applicable:openai-responses 고정 표식이다. health의 provider로 실행 방식을 구분하며 키 존재 여부는 인증 성공이 아니다. health는 모델을 호출하지 않는다. 응답은 store=false, JSON Schema strict, tools 미지정이며 refusal·미완료·잘못된 JSON·참조 불일치는 실패 처리한다.
+
+공식 근거: https://developers.openai.com/api/docs/guides/images-vision 및 https://developers.openai.com/api/docs/guides/structured-outputs . 실제 유료 API 검증은 사용자 후행 항목이다.

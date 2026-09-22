@@ -11,6 +11,7 @@ from starlette.exceptions import HTTPException
 from starlette.responses import JSONResponse
 
 from app.adapters.codex import CodexRunner
+from app.adapters.openai_api import OpenAIRunner
 from app.config import get_settings
 from app.services.images import validate_image
 from packages.review_contract.errors import ContractError
@@ -65,8 +66,8 @@ class InternalBoundary:
 
 def create_app(settings=None, runner=None):
     settings = settings or get_settings()
-    runner = runner or CodexRunner(settings)
-    app = FastAPI(title="StoreLoop local AI", docs_url=None, redoc_url=None, openapi_url=None)
+    runner = runner or (OpenAIRunner(settings) if settings.ai_provider == "openai" else CodexRunner(settings))
+    app = FastAPI(title="StoreLoop AI", docs_url=None, redoc_url=None, openapi_url=None)
     app.add_middleware(InternalBoundary, settings=settings)
     app.state.analysis_lock = asyncio.Lock()
     app.state.last_success_at = None
@@ -76,7 +77,10 @@ def create_app(settings=None, runner=None):
     @app.get("/health")
     async def health():
         return {
-            "status": "up", "cli_available": shutil.which(settings.codex_bin) is not None,
+            "status": "up", "provider": settings.ai_provider,
+            "requests_enabled": settings.ai_requests_enabled,
+            "configuration_ready": bool(settings.openai_api_key.get_secret_value().strip()) if settings.ai_provider == "openai" else shutil.which(settings.codex_bin) is not None,
+            "cli_available": settings.ai_provider == "codex" and shutil.which(settings.codex_bin) is not None,
             "model_readiness": "unknown" if app.state.last_success_at is None and app.state.last_failure_at is None
             else ("unavailable" if app.state.last_error_code else "available"),
             "busy": app.state.analysis_lock.locked(),
@@ -87,6 +91,8 @@ def create_app(settings=None, runner=None):
     @app.post("/internal/analyze")
     async def analyze(request: Request):
         request_id = str(uuid4())
+        if not settings.ai_requests_enabled:
+            return error_response("MODEL_EXECUTION_FAILED", "분석 호출이 비활성화되어 있습니다.", 503, request_id)
         if app.state.analysis_lock.locked():
             return error_response("AI_BUSY", "다른 분석을 처리하고 있습니다.", 409, request_id)
         async with app.state.analysis_lock:

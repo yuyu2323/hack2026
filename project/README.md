@@ -50,3 +50,7 @@ npm run build
 ## 문서 범위
 
 `docs/00`~`09`, `goal.md`, 기존 `execute` 기록과 매뉴얼의 화면 증거는 main에서 수행한 원래 개발·검수의 이력입니다. 그 안의 5개 시안·이전 포트 언급은 역사적 내용이며 현재 브랜치 실행에는 위 절차를 적용합니다. 원래 상위 계약 docs/00~02는 변경하지 않았습니다. 이번 분리 검증은 `execute/workHitory/branch-split/concept-02.md`에서 확인합니다. 200% 확대 등 기존 후행 검수는 그대로 남습니다.
+
+## GPT API 및 서버 배포
+
+환경변수 `AI_PROVIDER=openai`로 GPT API를 선택할 수 있습니다. 세 역할 프론트·Python API·worker·PostgreSQL·Python AI를 함께 실행하는 Docker 배포본은 [서버 배포 안내](docs/11-deployment.md)를 따릅니다. 배포 기본값은 `AI_REQUESTS_ENABLED=false`이며 실제 유료 테스트는 사용자가 활성화합니다.

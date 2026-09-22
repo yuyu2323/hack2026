@@ -1,0 +1,27 @@
+{
+  "container_build": "PASS",
+  "startup": "PASS",
+  "roles": [
+    {
+      "role": "store_owner",
+      "html": 200,
+      "login": 200,
+      "session": 200
+    },
+    {
+      "role": "hq",
+      "html": 200,
+      "login": 200,
+      "session": 200
+    },
+    {
+      "role": "platform_operator",
+      "html": 200,
+      "login": 200,
+      "session": 200
+    }
+  ],
+  "paid_model_calls": 0,
+  "api_key_used": false,
+  "openai_provider_disabled_gate": "PASS"
+}

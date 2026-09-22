@@ -1,0 +1,13 @@
+.local
+**/.local
+**/.venv
+**/node_modules
+**/dist
+**/__pycache__
+**/.pytest_cache
+**/.env
+**/.env.*
+.git
+execute
+deliverables
+*.log

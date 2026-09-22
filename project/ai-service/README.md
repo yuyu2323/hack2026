@@ -15,3 +15,7 @@ PYTHONPATH=.:ai-service ai-service/.venv/bin/python -m app.smoke --output execut
 `GET /health`는 CLI 설치 여부, 프로세스, busy, 최근 실제 분석 성공/실패 시각만 제공하며 모델을 호출하지 않는다. 실제 모델 가용성 검증은 smoke 또는 실제 제출로 수행한다.
 
 현재 조기 실제 검증은 `real-ai-early-002.json`: gpt-6-astra / codex-cli0.154.0 / 실제 합성 제출1+Reference1 / schema·참조 PASS / HTTP36.089초. 30초 목표를 초과했으며 브라우저 전체 지연은 별도 검증한다. unit tests의 fake executor는 실제 AI 결과로 표시하지 않는다.
+
+## OpenAI API 방식
+
+`AI_PROVIDER=openai`, `OPENAI_API_KEY`, `OPENAI_MODEL`로 선택한다. 기존 CLI는 `AI_PROVIDER=codex`다. API 방식은 Codex CLI 설치 없이 실행되며 `AI_REQUESTS_ENABLED=false`로 외부 분석 호출을 끌 수 있다. health는 어떤 방식에서도 모델을 호출하지 않는다. `OPENAI_MAX_OUTPUT_TOKENS` 기본 6000, 자동 재시도 없음. 상세 배포 절차는 `../docs/11-deployment.md`를 따른다.

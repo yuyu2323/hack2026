@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """구성 파일을 만들기 전에 필수 로컬 도구 버전을 확인한다."""
 import re
+import os
+from pathlib import Path
+import shlex
 import shutil
 import subprocess
 import sys
@@ -24,7 +27,16 @@ def main():
     version([shutil.which('node') or 'node', '--version'], (22, 12, 0), 'Node')
     version([shutil.which('npm') or 'npm', '--version'], (10, 0, 0), 'npm')
     version([pg_binary('pg_ctl'), '--version'], (14, 0, 0), 'PostgreSQL')
-    version([shutil.which('codex') or 'codex', '--version'], (0, 0, 0), 'Codex CLI')
+    provider = os.environ.get('AI_PROVIDER')
+    if provider is None:
+        runtime = Path(__file__).resolve().parents[1] / '.local/runtime.env'
+        if runtime.exists():
+            for line in runtime.read_text().splitlines():
+                if line.startswith('AI_PROVIDER='):
+                    values = shlex.split(line.split('=', 1)[1])
+                    provider = values[0] if values else 'codex'
+    if (provider or 'codex') == 'codex':
+        version([shutil.which('codex') or 'codex', '--version'], (0, 0, 0), 'Codex CLI')
 
 if __name__ == '__main__':
     main()
