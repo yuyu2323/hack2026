@@ -147,3 +147,23 @@ async def test_malformed_usage_identifiers_are_not_logged(context,payload,capsys
     await runner.analyze(AnalysisInput.model_validate(context),[b'p'],[b'r'])
     record=json.loads(capsys.readouterr().out)
     assert all(record[field] is None for field in ('model','response_id','request_id','project_id','organization_id','input_tokens','output_tokens','total_tokens'))
+
+@pytest.mark.asyncio
+@pytest.mark.parametrize('case,stage',[('incomplete','response_envelope'),('reference','result_references'),('schema','result_schema')])
+async def test_billed_invalid_response_logs_usage_before_validation_failure(context,payload,capsys,case,stage):
+    bad=copy.deepcopy(payload)
+    if case=='reference':bad['criteria'][0]['evidence'][0]['photo_position']=5
+    if case=='schema':bad.pop('summary')
+    body=response_body(bad)
+    body.update(id='resp_failed001',model='gpt-4.1-mini',usage={'input_tokens':100,'output_tokens':20,'total_tokens':120})
+    if case=='incomplete':body['status']='incomplete'
+    runner=OpenAIRunner(settings(),httpx.MockTransport(lambda request:httpx.Response(200,json=body,headers={'x-request-id':'req_failed001'})))
+    with pytest.raises(ContractError):
+        await runner.analyze(AnalysisInput.model_validate(context),[b'private-photo'],[b'private-reference'])
+    lines=capsys.readouterr().out.splitlines()
+    assert len(lines)==2
+    usage,failure=map(json.loads,lines)
+    assert usage['event']=='openai_response_usage' and usage['total_tokens']==120
+    assert failure=={'event':'openai_response_validation_failed','job_id':context['job_id'],'stage':stage,'code':'INVALID_RESULT'}
+    for private in ['invalid-test-only','private-photo','private-reference',context['question']]:
+        assert private not in '\n'.join(lines)

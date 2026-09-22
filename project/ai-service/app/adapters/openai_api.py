@@ -16,6 +16,13 @@ from packages.review_contract.validation import parse_result, strict_json_loads,
 ENDPOINT = "https://api.openai.com/v1/responses"
 
 
+def emit_telemetry(record):
+    try:
+        print(json.dumps(record, ensure_ascii=True, separators=(',', ':')), flush=True)
+    except OSError:
+        pass
+
+
 def log_usage(body, request_id, job_id, api_key, *, project=None, organization=None):
     """원문을 복사하지 않고 허용된 식별자와 정수 사용량만 기록한다."""
     def identifier(value, pattern):
@@ -36,11 +43,7 @@ def log_usage(body, request_id, job_id, api_key, *, project=None, organization=N
         'input_tokens': tokens('input_tokens'), 'output_tokens': tokens('output_tokens'),
         'total_tokens': tokens('total_tokens'),
     }
-    try:
-        print(json.dumps(record, ensure_ascii=True, separators=(',', ':')), flush=True)
-    except OSError:
-        # 로그 sink 오류로 이미 성공한 유료 분석을 실패시키지 않는다.
-        pass
+    emit_telemetry(record)
 
 
 class OpenAIRunner:
@@ -94,10 +97,17 @@ class OpenAIRunner:
         except httpx.RequestError:
             raise ContractError("MODEL_EXECUTION_FAILED", "분석 서비스에 연결하지 못했습니다.") from None
         # 제공자 오류 본문·인증 값·원본 응답은 로그나 오류 메시지에 노출하지 않는다.
+        stage = 'response_json'
         try:
             body = strict_json_loads(bytes(data))
+            if not isinstance(body, dict):
+                raise ValueError
+            # 과금된 응답은 스키마/참조 검증 실패와 무관하게 먼저 기록한다.
+            log_usage(body, request_id, context.job_id, key, project=project_id, organization=organization_id)
+            stage = 'response_envelope'
             if body.get("status") != "completed" or body.get("error"):
                 raise ValueError
+            stage = 'assistant_output'
             texts = []
             for item in body["output"]:
                 if item.get("type") == "reasoning":
@@ -110,10 +120,16 @@ class OpenAIRunner:
                     texts.append(part["text"])
             if len(texts) != 1 or not isinstance(texts[0], str):
                 raise ValueError
-            result = validate_result(parse_result(texts[0].encode()), context)
-        except (ValueError, KeyError, TypeError, AttributeError):
+            stage = 'result_schema'
+            parsed = parse_result(texts[0].encode())
+            stage = 'result_references'
+            result = validate_result(parsed, context)
+        except (ValueError, KeyError, TypeError, AttributeError) as error:
+            known_codes = {'INVALID_JSON', 'EMPTY_RESPONSE', 'INVALID_RESULT'}
+            code = error.code if isinstance(error, ContractError) and error.code in known_codes else 'INVALID_RESULT'
+            emit_telemetry({'event':'openai_response_validation_failed', 'job_id':str(context.job_id),
+                            'stage':stage, 'code':code})
             raise ContractError("INVALID_RESULT", "분석 결과 형식과 참조를 확인할 수 없습니다.") from None
-        log_usage(body, request_id, context.job_id, key, project=project_id, organization=organization_id)
         return {
             "result": result.model_dump(), "model": self.settings.openai_model,
             "prompt_version": PROMPT_VERSION, "cli_version": "not-applicable:openai-responses",
