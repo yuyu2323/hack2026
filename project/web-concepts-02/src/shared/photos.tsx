@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Source, type Data } from "./core";
 import { prepareHostedPhoto } from "./hosted-photo";
 import { rolePhotoUrl } from "./demo-role";
@@ -8,16 +8,20 @@ export function PhotoPicker({
   set,
   max = 5,
   demoSample = false,
+  onBusyChange,
 }: {
   files: File[];
   set: (files: File[]) => void;
   max?: number;
   demoSample?: boolean;
+  onBusyChange?: (busy: boolean) => void;
 }) {
   const [busy, setBusy] = useState(false);
+  const processing = useRef(false);
   const [error, setError] = useState(""),
     [urls, setUrls] = useState<string[]>([]);
   async function addFiles(added: File[]) {
+if (!added.length) return;
 if (files.length + added.length > max) {
   setError(`사진은 ${max}장까지 선택할 수 있습니다.`);
   return;
@@ -46,6 +50,38 @@ try {
   setBusy(false);
 }
   }
+  async function receiveFiles(read: () => Promise<File[]>) {
+    if (processing.current) return;
+    processing.current = true;
+    onBusyChange?.(true);
+    setBusy(true);
+    setError("");
+    try {
+      const added = await read();
+      if (!added.length) setError("클립보드에 이미지가 없습니다. 사진 자체를 복사한 뒤 다시 시도해 주세요.");
+      else await addFiles(added);
+    } catch {
+      setError("클립보드를 읽을 수 없습니다. 브라우저 권한을 허용하거나 Ctrl+V / ⌘V로 붙여넣어 주세요.");
+    } finally {
+      processing.current = false;
+      onBusyChange?.(false);
+      setBusy(false);
+    }
+  }
+  useEffect(() => {
+    function paste(event: ClipboardEvent) {
+      const target = event.target;
+      if (target instanceof HTMLElement && target.closest("input, textarea, [contenteditable]:not([contenteditable='false'])")) return;
+      const images = Array.from(event.clipboardData?.items ?? [])
+        .filter((item) => item.kind === "file" && item.type.startsWith("image/"))
+        .map((item) => item.getAsFile()).filter((file): file is File => file !== null);
+      if (!images.length) return;
+      event.preventDefault();
+      void receiveFiles(async () => images);
+    }
+    document.addEventListener("paste", paste);
+    return () => document.removeEventListener("paste", paste);
+  });
   useEffect(() => {
     const next = files.map((f) => URL.createObjectURL(f));
     setUrls(next);
@@ -65,11 +101,26 @@ try {
           onChange={async (e) => {
             const added = Array.from(e.target.files ?? []);
             e.target.value = "";
-            await addFiles(added);
+            if (!added.length) return;
+            await receiveFiles(async () => added);
           }}
         />
       </label>
+      <button type="button" className="secondary" disabled={busy || files.length >= max} onClick={() => void receiveFiles(async () => {
+        if (!navigator.clipboard?.read) throw new Error("클립보드 읽기 미지원");
+        const items = await navigator.clipboard.read();
+        const images: File[] = [];
+        for (const item of items) {
+          const type = item.types.find((value) => ["image/png", "image/jpeg"].includes(value));
+          if (type) images.push(new File([await item.getType(type)], `붙여넣은 사진 ${images.length + 1}.${type === "image/png" ? "png" : "jpg"}`, { type }));
+        }
+        return images;
+      })}>클립보드 이미지 붙여넣기</button>
+      <p className="hint">사진을 복사한 뒤 이 화면에서 Ctrl+V / ⌘V로 붙여넣을 수도 있습니다. 글 입력 중에는 버튼을 사용해 주세요.</p>
       {demoSample && <button type="button" className="secondary" disabled={busy || files.length >= max} onClick={async () => {
+        if (processing.current) return;
+        processing.current = true;
+        onBusyChange?.(true);
         setBusy(true); setError("");
         try {
           const response = await fetch("/demo-beverage.png");
@@ -77,7 +128,7 @@ try {
           const blob = await response.blob();
           await addFiles([new File([blob], "AI 생성 시연 사진.png", { type: "image/png" })]);
         } catch { setError("시연 사진을 불러오지 못했습니다. 다시 시도해 주세요."); }
-        finally { setBusy(false); }
+        finally { processing.current = false; onBusyChange?.(false); setBusy(false); }
       }}>시연 사진 사용</button>}
       <p className="hint">
         매대 전체와 상품 앞면이 보이도록 밝은 곳에서 촬영해 주세요. 선택

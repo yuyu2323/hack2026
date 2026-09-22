@@ -315,6 +315,7 @@ function Submit({ account }: { account: AccountMe }) {
     question: "",
   });
   const [files, setFiles] = useState<File[]>([]);
+  const [photosBusy, setPhotosBusy] = useState(false);
   const m = useMutation();
   const key = useRef(idempotencyKey());
   const [validation, setValidation] = useState("");
@@ -366,6 +367,7 @@ function Submit({ account }: { account: AccountMe }) {
         className="panel"
         onSubmit={(e) => {
           e.preventDefault();
+          if (photosBusy || m.busy) return;
           if (!files.length) {
             setValidation("사진을 1장 이상 선택해 주세요.");
             return;
@@ -412,7 +414,7 @@ function Submit({ account }: { account: AccountMe }) {
           </p>
         )}
         <h2>2. 사진과 궁금한 점을 알려 주세요</h2>
-        <PhotoPicker files={files} set={setFiles} demoSample={publicDemoAccess && account.demo_public_access_enabled === true} />
+        <PhotoPicker files={files} set={setFiles} onBusyChange={setPhotosBusy} demoSample={publicDemoAccess && account.demo_public_access_enabled === true} />
         <label>
           질문 또는 현장 상황
           <textarea
@@ -439,6 +441,7 @@ function Submit({ account }: { account: AccountMe }) {
           <button
             disabled={
               m.busy ||
+              photosBusy ||
               !stores.data?.items.length ||
               !categories.data?.items.length
             }

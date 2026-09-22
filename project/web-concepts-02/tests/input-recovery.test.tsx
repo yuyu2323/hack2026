@@ -78,6 +78,7 @@ it("CSRF 오류에도 제출 초안과 사진을 유지하고 같은 멱등키�
     screen.getByRole("textbox", { name: /질문 또는 현장 상황/ }),
     { target: { value: "작성 중인 점검 질문" } },
   );
+  await waitFor(() => expect((screen.getByRole("button", { name: "사진 제출하기 →" }) as HTMLButtonElement).disabled).toBe(false));
   fireEvent.click(screen.getByRole("button", { name: "사진 제출하기 →" }));
   await waitFor(() => expect(upload).toHaveBeenCalledTimes(1));
   expect(await screen.findByText("보안 확인이 갱신되었습니다.")).toBeTruthy();
@@ -91,6 +92,7 @@ it("CSRF 오류에도 제출 초안과 사진을 유지하고 같은 멱등키�
   ).toBe("작성 중인 점검 질문");
   expect(screen.getByAltText("제출 예정 사진 1")).toBeTruthy();
   expect(upload.mock.calls[0][2][0].file).toBe(file);
+  await waitFor(() => expect((screen.getByRole("button", { name: "사진 제출하기 →" }) as HTMLButtonElement).disabled).toBe(false));
   fireEvent.click(screen.getByRole("button", { name: "사진 제출하기 →" }));
   await waitFor(() => expect(upload).toHaveBeenCalledTimes(2));
   expect(upload.mock.calls[1]).toEqual(upload.mock.calls[0]);

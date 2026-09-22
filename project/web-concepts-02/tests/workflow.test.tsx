@@ -56,7 +56,7 @@ describe("사진 입력 경계", () => {
     fireEvent.change(screen.getByLabelText(/매대 사진 선택/), {
       target: { files: [a, b] },
     });
-    expect(screen.getByRole("alert").textContent).toContain("1장까지");
+    expect((await screen.findByRole("alert")).textContent).toContain("1장까지");
     expect(set).not.toHaveBeenCalled();
   });
   it("지원하지 않는 파일을 제출 목록에 추가하지 않는다", async () => {
@@ -67,7 +67,7 @@ describe("사진 입력 경계", () => {
     fireEvent.change(screen.getByLabelText(/매대 사진 선택/), {
       target: { files: [new File(["x"], "x.svg", { type: "image/svg+xml" })] },
     });
-    expect(screen.getByRole("alert").textContent).toContain("JPEG·PNG");
+    expect((await screen.findByRole("alert")).textContent).toContain("JPEG·PNG");
     expect(set).not.toHaveBeenCalled();
   });
 });
